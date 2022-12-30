@@ -41,7 +41,7 @@ header ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   line-height: 70px;
   margin: 0;
   padding: 0px;
@@ -241,14 +241,18 @@ header #bottomRight {
   .nav-ul {
     border-radius: 3px;
     margin: 0;
+    z-index: 10;
   }
   .nav-ul li {
     position: relative;
     display: block;
     text-align: center;
+    font-size: 1.4rem;
   }
-  .menu_li_link {
+  header .menu_li_link {
     position: relative;
+    background: linear-gradient(280deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    width: 280px;
   }
   .menu_li_link:after {
     content: "";
@@ -341,22 +345,24 @@ header #bottomRight {
   padding: 10px 15px;
   border-radius: 15px;
   cursor: pointer;
-  background: #b6604f;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
-  background: transparent;
   border: 3px solid rgba(99, 96, 96, 0.6);
+  border: 1px solid #b6604f;
   color: rgba(241, 241, 241, 0.9450980392);
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-weight: 800;
+  font-weight: 600;
   transition: all 0.2s;
   -webkit-transition: all 0.2s;
+  background: linear-gradient(to left, rgba(214, 131, 114, 0.5) 0%, rgba(214, 131, 114, 0.6) 100%);
+  transition: all 0.1s;
 }
 .main_home button:hover {
   color: #fff;
   background: linear-gradient(to left, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%);
-  background: linear-gradient(to left, rgba(214, 131, 114, 0.6) 0%, rgba(214, 131, 114, 0.6) 100%);
+  background: linear-gradient(to left, rgba(214, 131, 114, 0.8) 0%, rgba(214, 131, 114, 0.8) 100%);
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+  transform: translatey(-1px);
 }
 @media only screen and (max-width: 500px) {
   .main_home button {
@@ -380,9 +386,9 @@ header #bottomRight {
   object-fit: cover;
 }
 
-main .main_frozzen.frozzen {
-  filter: blur(20px);
-  background-color: #125ae9;
+.main_frozzen.frozzen {
+  background: linear-gradient(280deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  filter: blur(10px);
 }
 
 .main_contact {
@@ -399,9 +405,28 @@ main .main_frozzen.frozzen {
 }
 .main_contact .wrap_contact .span_mail {
   display: block;
-  margin-top: 20px;
 }
 .main_contact .mainFrozzen.frozzen {
   background: linear-gradient(280deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
   filter: blur(10px);
-}/*# sourceMappingURL=styles.css.map */
+}
+.main_contact .mail_link_contact {
+  border: 1px solid #b6604f;
+  border-radius: 15px;
+  display: block;
+  margin: 25px auto 10px;
+  width: 220px;
+  align-self: center;
+  background: linear-gradient(to left, rgba(214, 131, 114, 0.6) 0%, rgba(214, 131, 114, 0.6) 100%);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+.main_contact .mail_link_contact:hover {
+  background: linear-gradient(to left, rgba(214, 131, 114, 0.9) 0%, rgba(214, 131, 114, 0.8) 100%);
+  transform: translatey(-1px);
+}
+.main_contact .mail_link_contact span {
+  padding: 5px 5px 5px 5px;
+  line-height: 30px;
+}
+
+/*# sourceMappingURL=styles.css.map */

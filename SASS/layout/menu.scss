@@ -22,7 +22,7 @@ header{
     align-items: center;
     // color: #fffb0a;
     // background: linear-gradient(245deg,#5f5f76, rgb(108, 177, 225) 100%);
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     line-height: 70px;
     margin: 0;
     padding:0px;
@@ -232,6 +232,7 @@ header{
       width: 100%;
       position: relative;
       margin:0;
+     
     }
     /* animation de la mise en croix du hamburger */
     .slide {
@@ -252,16 +253,21 @@ header{
       // height: 168px;
       border-radius:3px;
       margin:0;
-
+      z-index:10;
     }
     .nav-ul li{
       position: relative;
       display: block; 
       text-align: center; 
+     font-size: 1.4rem;
     }
-
-    .menu_li_link{
-    position:relative;
+    header{
+   
+      .menu_li_link{
+        position:relative;
+        background: linear-gradient(280deg,rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+        width: 280px;
+      }
     }
     .menu_li_link:after{
       content:"";
@@ -289,6 +295,7 @@ header{
       position: absolute;
       //box-shadow: 2px 2px 4px 2px rgba(221, 223, 243, 0.6);   
       top: 60px;
+
     }
     
     .nav-ul::before {

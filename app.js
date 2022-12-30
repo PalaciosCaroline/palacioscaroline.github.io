@@ -10,6 +10,17 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle("open")
     navUl.classList.toggle("slide")
     mainFrozzen.classList.toggle("frozzen")
-
 })
+
+function ulResize(){
+    if(window.innerWidth > 800){
+        if(hamburger.classList.contains("open")){
+            hamburger.classList.remove("open")
+            navUl.classList.remove("slide")
+            mainFrozzen.classList.remove("frozzen")
+        }
+    }
+}
+
+window.addEventListener('resize', ulResize)
 
