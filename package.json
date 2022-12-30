@@ -14,5 +14,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PalaciosCaroline/CV_WEB.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PalaciosCaroline/CV_WEB/issues"
+  },
+  "homepage": "https://github.com/PalaciosCaroline/CV_WEB#readme",
   "description": ""
 }

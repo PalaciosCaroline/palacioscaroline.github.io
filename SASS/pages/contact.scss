@@ -1,0 +1,19 @@
+.main_contact{
+    @include allCenter;
+    height: 60vh;
+    color: #fff;
+
+    .wrap_contact{
+        background: linear-gradient(280deg,rgba(0,0,0,0.2),rgba(0,0,0,0.6));
+        padding: 20px 20px 20px 20px;
+        box-shadow: 2px 2px 4px 2px rgba(221, 223, 243, 0.6);  
+        .span_mail{
+            display: block;
+            margin-top: 20px;
+        }
+    }
+    .mainFrozzen.frozzen{
+        background: linear-gradient(280deg,rgba(0,0,0,0.2),rgba(0,0,0,0.6));
+        filter: blur(10px);
+    }
+}

@@ -1,0 +1,404 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(250deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("./../../../assets/img17.jpg");
+  background-attachment: fixed;
+  filter: brightness(1.2);
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  font-family: "Crimson Text", serif;
+  font-family: "ubuntu", Georgia, "Times New Roman", Times, serif;
+  height: 100vh;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+header {
+  background: linear-gradient(280deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
+  position: relative;
+  display: flex;
+}
+@media only screen and (max-width: 830px) {
+  header {
+    flex-direction: column;
+  }
+}
+header .header_nav {
+  margin: 0 auto;
+}
+header .activeLink {
+  color: #d68372;
+}
+header ul {
+  list-style-type: none;
+  position: relative;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  line-height: 70px;
+  margin: 0;
+  padding: 0px;
+  height: 70px;
+}
+header li {
+  margin: 0;
+  padding: 0 30px 0 30px;
+  font-weight: 400;
+}
+header .menu_li_link {
+  padding-bottom: 5px;
+  width: 220px;
+}
+header .menu_li_link span {
+  position: relative;
+}
+header .menu_li_link span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.2s ease;
+}
+header .menu_li_link:hover span::after {
+  transform: scaleX(1);
+}
+header .activeLink.menu_li_link:hover span::after {
+  background-color: #d68372;
+}
+header .boxNomStar {
+  display: flex;
+  position: relative;
+}
+header .li_contact {
+  position: relative;
+}
+header .li_contact span {
+  z-index: 15;
+}
+header #starContainer {
+  position: absolute;
+  z-index: 5;
+  right: 10px;
+  top: 30px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 830px) {
+  header #starContainer {
+    display: none;
+  }
+}
+header #star {
+  display: flex;
+  flex-direction: column;
+}
+header #half {
+  display: flex;
+}
+header .starQuarter {
+  width: 40px;
+  height: 40px;
+  animation: animStarSize 6.5s ease-in-out infinite;
+}
+@media only screen and (max-width: 830px) {
+  header .starQuarter {
+    animation: none;
+  }
+}
+header #topLeft {
+  background: radial-gradient(ellipse at top left, transparent 70%, rgb(249, 249, 238) 100%);
+}
+header #topRight {
+  background: radial-gradient(ellipse at top right, transparent 70%, rgb(249, 249, 202) 100%);
+}
+header #bottomLeft {
+  background: radial-gradient(ellipse at bottom left, transparent 70%, rgb(247, 247, 230) 100%);
+}
+header #bottomRight {
+  background: radial-gradient(ellipse at bottom right, transparent 70%, rgb(253, 253, 230) 100%);
+}
+@keyframes animStarSize {
+  0% {
+    height: 40px;
+    width: 40px;
+  }
+  25% {
+    height: 60px;
+    width: 50px;
+  }
+  50% {
+    height: 40px;
+    width: 40px;
+  }
+  75% {
+    height: 50px;
+    width: 60px;
+  }
+  100% {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+.hamburger {
+  height: 50px;
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  padding: 5px;
+  margin-left: auto;
+  justify-self: flex-end;
+}
+
+.hamburger :first-child {
+  /*1ere barre pas de margin top*/
+  margin-top: 0;
+}
+
+.bar1, .bar2, .bar3 {
+  margin-top: 6px;
+  width: 30px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: all 0.2s;
+}
+
+.open .bar1 {
+  transform: translateY(250%) rotate(-45deg);
+}
+
+.open .bar2 {
+  opacity: 0;
+  transform: rotate(45deg);
+}
+
+.open .bar3 {
+  transform: translateY(-250%) rotate(45deg);
+}
+
+/**Media Queries**/
+@media only screen and (max-width: 800px) {
+  header .menu_li_link span {
+    position: relative;
+  }
+  header .menu_li_link span::after {
+    display: none;
+  }
+  header .menu_li_link:hover span::after {
+    transform: scaleX(0);
+  }
+  header ul {
+    line-height: 50px;
+  }
+  .page_header {
+    margin: 0 4% 0 4%;
+    padding-right: 0;
+  }
+  .hamburger {
+    padding: 15px 0 15px 0;
+    display: flex;
+  }
+  nav {
+    width: 100%;
+  }
+  .header_nav {
+    display: block;
+    margin: 0 auto;
+  }
+  .nav-ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    margin: 0;
+  }
+  /* animation de la mise en croix du hamburger */
+  .slide {
+    display: block;
+    margin-top: 15px;
+  }
+  .nav-ul a {
+    text-align: center;
+    padding-top: 5px;
+    display: inline-block;
+  }
+  .nav-ul {
+    border-radius: 3px;
+    margin: 0;
+  }
+  .nav-ul li {
+    position: relative;
+    display: block;
+    text-align: center;
+  }
+  .menu_li_link {
+    position: relative;
+  }
+  .menu_li_link:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+  }
+  .nav-ul {
+    justify-self: center;
+    height: 195px;
+    border-radius: 3px;
+    overflow: hidden;
+    position: absolute;
+    top: 60px;
+  }
+  .nav-ul::before {
+    content: "";
+    position: absolute;
+    inset: -80px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .nav-ul {
+    height: auto;
+  }
+}
+.main_home {
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+.main_home .container {
+  margin: auto;
+  height: 455px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+.main_home .wrapTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_home .wrapTitle.hidden {
+  display: none;
+}
+.main_home .wrapTitle.marginTop {
+  margin-top: 100px;
+}
+.main_home .presentation {
+  margin: 10px 0 10px 0;
+  font-weight: 400;
+  text-shadow: 1px 1px #151718, 1px 1px #3c3d3f;
+}
+.main_home .presentation h1, .main_home .presentation p {
+  margin: 0;
+}
+.main_home .text-3d {
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  line-height: 3.6rem;
+}
+@media only screen and (max-width: 500px) {
+  .main_home .text-3d {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+}
+.main_home h1 {
+  margin-bottom: 15px;
+}
+.main_home .text_web {
+  font-size: 1.6rem;
+  color: #d68372;
+}
+@media only screen and (max-width: 500px) {
+  .main_home .text_web {
+    font-size: 1.2rem;
+  }
+}
+.main_home button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  background: #b6604f;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+  background: transparent;
+  border: 3px solid rgba(99, 96, 96, 0.6);
+  color: rgba(241, 241, 241, 0.9450980392);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 800;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+}
+.main_home button:hover {
+  color: #fff;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%);
+  background: linear-gradient(to left, rgba(214, 131, 114, 0.6) 0%, rgba(214, 131, 114, 0.6) 100%);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+@media only screen and (max-width: 500px) {
+  .main_home button {
+    margin-top: 5px;
+  }
+}
+.main_home .box_photo {
+  border-radius: 50%;
+  border: 4px solid #333;
+  border: 3px solid rgba(99, 96, 96, 0.6);
+  overflow: hidden;
+  height: 100px;
+  width: 100px;
+}
+.main_home .box_photo.hiddenImg {
+  display: none;
+}
+.main_home .box_photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main_contact {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 60vh;
+  color: #fff;
+}
+.main_contact .wrap_contact {
+  background: linear-gradient(280deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+  padding: 20px 20px 20px 20px;
+  box-shadow: 2px 2px 4px 2px rgba(221, 223, 243, 0.6);
+}
+.main_contact .wrap_contact .span_mail {
+  display: block;
+  margin-top: 20px;
+}
+.main_contact .mainFrozzen.frozzen {
+  background: linear-gradient(280deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+  filter: blur(10px);
+}
+
+/*# sourceMappingURL=styles.css.map */
