@@ -63,7 +63,7 @@ header .menu_li_link span::after {
   content: "";
   display: block;
   position: absolute;
-  bottom: 0;
+  bottom: -5px;
   width: 100%;
   height: 2px;
   background-color: #fff;
@@ -319,20 +319,20 @@ header #bottomRight {
 }
 .main_home .text-3d {
   color: rgb(255, 255, 255);
-  font-size: 3rem;
-  line-height: 3.6rem;
+  font-size: 2.6rem;
+  line-height: 3.2rem;
 }
 @media only screen and (max-width: 500px) {
   .main_home .text-3d {
-    font-size: 2.2rem;
-    line-height: 3rem;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
   }
 }
 .main_home h1 {
   margin-bottom: 15px;
 }
 .main_home .text_web {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   color: #d68372;
 }
 @media only screen and (max-width: 500px) {
@@ -366,7 +366,7 @@ header #bottomRight {
 }
 @media only screen and (max-width: 500px) {
   .main_home button {
-    margin-top: 5px;
+    margin-top: 15px;
   }
 }
 .main_home .box_photo {

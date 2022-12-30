@@ -40,18 +40,18 @@
   }
   .text-3d{
     color: rgb(255, 255, 255);
-    font-size:3rem;
-    line-height: 3.6rem;
+    font-size:2.6rem;
+    line-height: 3.2rem;
     @include devices(mobile){
-      font-size: 2.2rem;
-      line-height: 3rem;
+      font-size: 1.8rem;
+      line-height: 2.4rem;
     }   
   }
   h1{
     margin-bottom:15px;
   }
   .text_web{
-    font-size:1.6rem;
+    font-size:1.3rem;
     color: #d68372;
     @include devices(mobile){
       font-size: 1.2rem;
@@ -84,7 +84,7 @@
       transform: translatey(-1px);
     }
     @include devices(mobile){
-      margin-top: 5px;
+      margin-top: 15px;
     }   
   }
    
