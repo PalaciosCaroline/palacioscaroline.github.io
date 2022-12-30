@@ -1,0 +1,109 @@
+header{
+    background: linear-gradient(250deg,rgba(0,0,0,0.2),rgba(0,0,0,0.8));
+  }
+
+ul{
+    list-style-type: none;
+    position:relative;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // color: #fffb0a;
+    // background: linear-gradient(245deg,#5f5f76, rgb(108, 177, 225) 100%);
+    font-size: 1.8rem;
+    line-height: 70px;
+    margin: 0;
+    padding:0px;
+   height: 70px;
+  //  border-bottom: 1px solid #d68372;
+  }
+  
+  li{
+    margin: 0;
+    padding: 0 30px 0 30px;
+    font-weight: 400;
+  }
+
+  .boxNomStar{
+    display: flex;
+    position: relative;
+  }
+  .li_contact{
+    position: relative;
+  }
+  #starContainer {
+    position: absolute;
+    z-index:5;
+    right: 10px;
+    top:30px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include devices(small-pc){
+        display: none;
+    }
+  }
+  
+  
+  
+  #star {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  #half {
+    display: flex;
+   
+  }
+  
+  .starQuarter {
+    width: $small;
+    height: $small;
+    animation: animStarSize 6.5s ease-in-out infinite;
+    @include devices(small-pc){
+        animation: none;
+    }
+  }
+  
+  #topLeft {
+    background: radial-gradient(ellipse at top left, transparent 70%, rgb(249, 249, 238) 100%);
+  }
+  
+  #topRight {
+    background: radial-gradient(ellipse at top right, transparent 70%, rgb(249, 249, 202) 100%);
+  }
+  
+  #bottomLeft {
+    background: radial-gradient(ellipse at bottom left, transparent 70%, rgb(247, 247, 230) 100%);
+  }
+  
+  #bottomRight {
+    background: radial-gradient(ellipse at bottom right, transparent 70%, rgb(253, 253, 230) 100%);
+  }
+  
+  @keyframes animStarSize{
+    0% {
+      height: $small;
+      width: $small;
+    }
+    25% {
+      height: $bigger;
+      width: $big;
+    }
+    50% {
+      height: $small;
+      width: $small;
+    }
+    75% {
+      height: $big;
+      width: $bigger;
+    }
+    100% {
+      height: $small;
+      width: $small;
+    }
+  }
