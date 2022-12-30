@@ -380,6 +380,11 @@ header #bottomRight {
   object-fit: cover;
 }
 
+main .main_frozzen.frozzen {
+  filter: blur(20px);
+  background-color: #125ae9;
+}
+
 .main_contact {
   align-items: center;
   justify-content: center;
@@ -399,6 +404,4 @@ header #bottomRight {
 .main_contact .mainFrozzen.frozzen {
   background: linear-gradient(280deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
   filter: blur(10px);
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

@@ -1,5 +1,5 @@
-.main_home{
 
+.main_home{
     display: flex;
     display:flex;
     justify-content: center;
@@ -105,4 +105,13 @@
   // &.hidden{
   //   display: none;
   // }
+}
+main{
+  .main_frozzen{
+    &.frozzen{
+    // background: linear-gradient(280deg,rgba(0,0,0,0.9),rgba(0,0,0,0.6));
+    filter: blur(20px);
+    background-color: #125ae9;
+    }
+  }
 }
