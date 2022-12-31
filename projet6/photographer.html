@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <script src="https://kit.fontawesome.com/20f0ec48fd.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+    <title>Fisheye - photographe </title>
+  </head>
+  <body>
+    <header class="header_page">
+      <a href="index.html" aria-label="logo Fisheye" aria-roledescription="retour vers la page d'accueil"><img src="./../assets/assetsProjet6/images/logo.png" class="logo" alt="Fisheye Home page"/></a>
+      <a href="./../pages/projets.html" class="link_CV"><span>Retour au Web CV</span></a></header>
+  
+    <main id="main">
+      <header class="photograph-header">
+        <button class="contact_button">Contactez-moi</button>
+      </header>
+
+      <div id="contact_modal" role="dialog">
+        <div class="modal" id="modalForm">
+          <header>
+            <!-- <h2 tabindex="0" id="modalContactTitle">Contactez-moi</h2> -->
+            <img tabindex="2" src="./../assets/assetsProjet6/icons/close.svg" role='button' alt='fermeture du formulaire de contact'/>
+          </header>
+          <div id="message_send" tabindex="1" class="block">Merci<br>Votre message a bien été envoyé à 
+          </div> 
+          <form id="form_contact" tabindex="0" aria-label="formulaire de contact avec le photographe" action="photographer.html" method="post" >
+            <div>
+              <label for="Firstname">Prénom</label>
+              <input type="text" id="Firstname" tabindex="0" class="form_input entry"  name="prenom" title="prenom" required/>
+              <label  for="Lastname">Nom</label>
+              <input type="text" id="Lastname" tabindex="0" class="form_input entry" name="nom" title="nom" required/>
+              <label for="email">Email</label>
+              <input tabindex="0" class="form_input entry" type="email" id="email" name="email" title="email" required/>
+              <label for="your_message">Message</label>
+              <textarea tabindex="0" class="form_textarea entry" rows="4" id="your_message" name="message" title="message" required></textarea>
+            </div>
+            <button tabindex="0" id="btnContactSubmit" class="contact_button" type="submit" aria-label="envoi">Envoyer</button>
+          </form>
+        </div>
+      </div>
+
+      <div id="section_media">
+        <div id="boxmedia">
+        </div>
+      </div>
+    </main>
+    <script  src="scripts/pages/photographer.js" type="module"></script>
+    <noscript><div id='noscript_warning'>Veuillez s'il vous plait activez JavaScript afin de bénéficier des fonctionnalités du site</div></noscript>
+  </body>
+</html>
+
