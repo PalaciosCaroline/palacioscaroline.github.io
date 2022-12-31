@@ -340,34 +340,43 @@ header #bottomRight {
     font-size: 1.2rem;
   }
 }
-.main_home button {
+.main_home .btn_home {
+  position: relative;
+  overflow: hidden;
   margin-top: 15px;
   padding: 10px 15px;
   border-radius: 15px;
-  cursor: pointer;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
-  border: 3px solid rgba(99, 96, 96, 0.6);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
   border: 1px solid #b6604f;
-  color: rgba(241, 241, 241, 0.9450980392);
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  color: #fff;
+  letter-spacing: 1px;
   font-weight: 600;
   transition: all 0.2s;
   -webkit-transition: all 0.2s;
   background: linear-gradient(to left, rgba(214, 131, 114, 0.5) 0%, rgba(214, 131, 114, 0.6) 100%);
-  transition: all 0.1s;
 }
-.main_home button:hover {
-  color: #fff;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%);
+.main_home .btn_home:hover {
   background: linear-gradient(to left, rgba(214, 131, 114, 0.8) 0%, rgba(214, 131, 114, 0.8) 100%);
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
-  transform: translatey(-1px);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  transform: translatey(1px);
 }
 @media only screen and (max-width: 500px) {
-  .main_home button {
+  .main_home .btn_home {
     margin-top: 15px;
   }
+}
+.main_home .btn_home::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.4);
+  transform: rotate(-45deg);
+  left: -150px;
+}
+.main_home .btn_home:hover::before {
+  transition: 0.8s transform linear;
+  transform: translateX(500px) rotate(-45deg);
 }
 .main_home .box_photo {
   border-radius: 50%;
@@ -411,6 +420,8 @@ header #bottomRight {
   filter: blur(10px);
 }
 .main_contact .mail_link_contact {
+  position: relative;
+  overflow: hidden;
   border: 1px solid #b6604f;
   border-radius: 15px;
   display: block;
@@ -419,12 +430,31 @@ header #bottomRight {
   align-self: center;
   background: linear-gradient(to left, rgba(214, 131, 114, 0.6) 0%, rgba(214, 131, 114, 0.6) 100%);
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
 }
 .main_contact .mail_link_contact:hover {
   background: linear-gradient(to left, rgba(214, 131, 114, 0.9) 0%, rgba(214, 131, 114, 0.8) 100%);
-  transform: translatey(-1px);
+  transform: translatey(1px);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+.main_contact .mail_link_contact::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.4);
+  transform: rotate(-45deg);
+  left: -150px;
+}
+.main_contact .mail_link_contact:hover::before {
+  transition: 0.8s transform linear;
+  transform: translateX(500px) rotate(-45deg);
 }
 .main_contact .mail_link_contact span {
   padding: 5px 5px 5px 5px;
   line-height: 30px;
-}/*# sourceMappingURL=styles.css.map */
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+/*# sourceMappingURL=styles.css.map */
