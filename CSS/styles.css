@@ -410,44 +410,38 @@ header #bottomRight {
   /*-------- Section Parallax ----------*/
   /* ------------ Section Tarifs ------------ */
 }
-.main_projets.accueil {
+.main_projets .accueil {
   width: 100%;
-  height: 100vh;
-  min-height: 970px;
+  min-height: 290px;
   background-image: url(ressources/accueil-pic-lum-down.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom: 1px dotted #777;
   padding-top: 1px;
+  background: linear-gradient(280deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
 }
-.main_projets.logo-kyoto {
-  border-radius: 50%;
-  width: 180px;
-  display: block;
-  margin: 179px auto 0;
-}
-.main_projets.accueil h1 {
+.main_projets .accueil h1 {
   text-align: center;
-  font-size: 100px;
+  font-size: 4rem;
   text-shadow: 0 0 10px #000;
-  color: #f1f1f1;
+  color: #fff;
   margin-top: 10px;
   font-family: Merienda one, sans-serif;
 }
-.main_projets.sous-titre {
+.main_projets .sous-titre {
   text-align: center;
-  font-size: 25px;
+  font-size: 1.4rem;
   font-weight: bold;
-  color: #f1f1f1;
+  color: #fff;
   margin: 5px 0;
   text-shadow: 0 0 10px #000;
 }
-.main_projets.btn-accueil {
+.main_projets .btn-accueil {
   border-radius: 9999px;
   background: crimson;
   border: 1px solid #333;
-  color: #f1f1f1;
+  color: #fff;
   text-align: center;
   font-size: 22px;
   display: block;
@@ -458,26 +452,26 @@ header #bottomRight {
   margin: 30px auto 0;
   transition: all 0.2s ease-in-out;
 }
-.main_projets.btn-accueil:hover {
+.main_projets .btn-accueil:hover {
   background: rgb(177, 0, 36);
   color: #fff;
 }
 @media screen and (max-width: 850px) {
-  .main_projets.accueil {
-    height: 650px;
+  .main_projets .accueil {
+    height: 200px;
     min-height: auto;
     background-position: right;
   }
-  .main_projets.logo-kyoto {
+  .main_projets .logo-kyoto {
     margin: 120px auto 0;
   }
-  .main_projets.accueil h1 {
+  .main_projets .accueil h1 {
     font-size: 60px;
   }
-  .main_projets.sous-titre {
+  .main_projets .sous-titre {
     font-size: 23px;
   }
-  .main_projets.btn-accueil {
+  .main_projets .btn-accueil {
     width: 150px;
     height: 50px;
     line-height: 50px;
@@ -486,18 +480,14 @@ header #bottomRight {
   }
 }
 @media screen and (max-width: 400px) {
-  .main_projets.accueil {
-    height: 550px;
+  .main_projets .accueil {
+    height: 200px;
   }
-  .main_projets.logo-kyoto {
-    width: 150px;
-    margin: 110px auto 0;
-  }
-  .main_projets.accueil h1 {
-    font-size: 35px;
+  .main_projets .accueil h1 {
+    font-size: 2rem;
   }
   .main_projets .sous-titre {
-    font-size: 20px;
+    font-size: 1rem;
   }
   .main_projets .btn-accueil {
     width: 130px;
@@ -505,15 +495,14 @@ header #bottomRight {
     line-height: 45px;
     font-size: 16px;
   }
-  .main_projets .logo-menu {
-    top: 15px;
-    width: 40px;
-  }
+}
+.main_projets hr {
+  color: #fff;
+  margin: 0;
 }
 .main_projets .section-asymetrique {
   display: grid;
   grid-template: 200px repeat(3, auto)/1fr 600px 1fr;
-  background: linear-gradient(280deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
 }
 .main_projets .section-asymetrique h2 {
   grid-area: 1/1/2/-1;
@@ -521,7 +510,7 @@ header #bottomRight {
   justify-content: center;
   align-items: center;
   color: #fff;
-  font-size: 50px;
+  font-size: 1rem;
   text-transform: uppercase;
   padding-bottom: 20px;
 }
@@ -613,11 +602,11 @@ header #bottomRight {
 }
 .main_projets .ligne-gauche {
   grid-area: 1/2/-1/3;
-  border-left: 1px solid #333;
+  border-left: 3px solid #fff;
 }
 .main_projets .ligne-droite {
   grid-area: 1/3/-1/4;
-  border-left: 1px solid #333;
+  border-left: 3px solid #fff;
 }
 @media screen and (max-width: 1200px) {
   .main_projets .section-asymetrique {
@@ -702,7 +691,7 @@ header #bottomRight {
     display: none;
   }
   .main_projets .section-asymetrique h2 {
-    font-size: 30px;
+    font-size: 1.2rem;
   }
   .main_projets .bloc,
   .main_projets .img-grid {
@@ -733,12 +722,12 @@ header #bottomRight {
 }
 .main_projets .parallax p {
   font-size: 65px;
-  color: #f1f1f1;
+  color: #fff;
 }
 .main_projets .parallax span {
   display: block;
   font-size: 25px;
-  color: #f1f1f1;
+  color: #fff;
 }
 @media screen and (max-width: 400px) {
   .main_projets .parallax p {
