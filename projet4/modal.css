@@ -17,6 +17,41 @@ body {
   font-size: 18px;
 }
 
+.link_CV{
+    border: 2px solid #b6604f;
+    border-radius: 20px;
+    display: block;
+    margin:5px auto 5px;
+    width: 220px;
+    align-self: center;
+    background: linear-gradient(to left,rgba(214,131,114,0.6) 0%,rgba(214,131,114,0.6) 100%);
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+    text-decoration: none;
+    /* background: linear-gradient(to left,rgba(214,131,114,0.9) 0%,rgba(214,131,114,0.8) 100%); */
+    text-align: center;
+}
+   
+
+.link_CV:hover{
+    background: linear-gradient(to left,rgba(214,131,114,0.9) 0%,rgba(214,131,114,0.8) 100%);
+    transform: translatey(1px); 
+}
+
+.link_CV span {
+    padding: 8px 10px 10px 8px;
+    display: block;
+    border-radius: 20px;
+    line-height: 30px;
+    background: linear-gradient(to left,rgba(85, 78, 77, 0.3) 0%,rgba(84, 74, 72, 0.3) 100%),url('./../../../assets/img17.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    border: 2px solid #b6604f;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+        font-weight: 800;
+        font-size: 1.4rem;
+} 
+
 p {
   margin-bottom: 0;
   padding: 0.5vw;
@@ -125,7 +160,7 @@ display: flex;
     margin-bottom:60px;
   }
   .header-logo{
-    width: 200px;
+    width: 140px;
   }
   .hamburger {
       display: flex;  
@@ -213,14 +248,24 @@ display: flex;
 
 @media screen and (max-width: 800px) {
   .page_header{
-    margin-bottom:30px;
-    margin-top: 30px;
+    margin-bottom:10px;
+    margin-top: 20px;
   }
 }
 
 @media (max-width: 550px) {
   .header-logo{
-    width: 190px;
+    width: 120px;
+  }
+}
+@media (max-width: 470px) {
+  .header-logo{
+    width: 80px;
+  }
+}
+@media (max-width: 430px) {
+  .header-logo{
+    display: none;
   }
 }
 /*fin header*/
