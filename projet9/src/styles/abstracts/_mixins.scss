@@ -1,0 +1,80 @@
+@mixin devices($breakpoint) {
+  //the name of the mixin is devices
+  @if $breakpoint == small-mobile {
+    @media only screen and (max-width: 360px) {
+      @content;
+    }
+  }
+  @if $breakpoint == mobile {
+    @media only screen and (max-width: 550px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: 680px) {
+      @content;
+    }
+  }
+  @if $breakpoint == small-pc {
+    @media only screen and (max-width: 800px) {
+      @content;
+    }
+  }
+  @if $breakpoint == 900-pc {
+    @media only screen and (max-width: 900px) {
+      @content;
+    }
+  }
+  @if $breakpoint == big-pc {
+    @media only screen and (min-width: 2000px) {
+      @content;
+    }
+  }
+}
+
+@mixin marge-page {
+  margin-right: 7%;
+  margin-left: 7%;
+}
+@mixin marge-page-mobile {
+  margin-right: 5.3%;
+  margin-left: 5.3%;
+}
+
+@mixin padding-box {
+  padding-right: 3%;
+  padding-left: 3%;
+}
+
+@mixin allCenter {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+@mixin alignCenter {
+  align-items: center;
+  display: flex;
+}
+
+@mixin justifyBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin filterPosition {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@mixin logo {
+  display: block;
+  content: '';
+  -webkit-mask: url(./../../assets/logo.svg) no-repeat 50% 50%;
+  mask: url(./../../assets/logo.svg) no-repeat 50% 50%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}

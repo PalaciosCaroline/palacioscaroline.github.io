@@ -1,0 +1,18 @@
+.banner {
+  position: relative;
+  height: 225px;
+  width: 100%;
+  background-size: cover;
+  border-radius: 25px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  filter: brightness(65%);
+  @include devices(mobile) {
+    border-radius: 10px;
+  }
+  @include devices(big-pc) {
+    height: 340px;
+  }
+}

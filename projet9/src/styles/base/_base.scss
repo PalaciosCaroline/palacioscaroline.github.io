@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: $font-family;
+  font-weight: 500;
+  color: $color-primary;
+}
+
+a,
+button {
+  cursor: pointer;
+  color: $color-primary;
+}
+
+ul {
+  list-style: none;
+}
+
+//marge
+.box_logementFiche {
+  @include marge-page;
+  @include devices(mobile) {
+    @include marge-page-mobile;
+  }
+}
+
+.box_home {
+  @include marge-page;
+  @include devices(small-pc) {
+    padding-bottom: 10px;
+  }
+  @include devices(mobile) {
+    @include marge-page-mobile;
+  }
+}
+
+.apropos_page {
+  @include marge-page;
+}
+
+.btn_collapse:active,
+.slideShow button:active,
+.btn_collapse:focus:not(.focus-visible),
+.slideShow button:focus:not(.focus-visible) {
+  outline: none !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+}
