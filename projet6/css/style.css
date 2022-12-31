@@ -34,6 +34,7 @@ body {
 .link_CV6:hover{
     background: linear-gradient(to left,rgba(214,131,114,0.9) 0%,rgba(214,131,114,0.8) 100%);
     transform: translatey(1px); 
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.8);
 }
 
 .link_CV6 span {

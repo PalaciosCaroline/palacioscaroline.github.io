@@ -7,9 +7,12 @@ li{
 list-style: none;
 cursor:pointer;
 }
-
+#link_CV7{
+    text-decoration: none;
+}
 .link_CV7{
     position:absolute;
+    text-decoration: none;
     top:20px;
     right: 80px;
     border: 2px solid #b6604f;
@@ -29,6 +32,7 @@ cursor:pointer;
 .link_CV7:hover{
     background: linear-gradient(to left,rgba(214,131,114,0.9) 0%,rgba(214,131,114,0.8) 100%);
     transform: translatey(1px); 
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.8);
 }
 
 .link_CV7 span {
@@ -46,6 +50,12 @@ cursor:pointer;
         font-size: 1.4rem;
 } 
 
+.link_CV7:hover span::after {
+    display: none;
+}
+#link_CV7:hover span::after {
+    display: none;
+}
 
 .container_page{
     margin: 30px 7% 30px 7%;
