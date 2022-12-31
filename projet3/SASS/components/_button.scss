@@ -1,0 +1,116 @@
+@mixin btn--pill{    
+    background: $bg-btn; 
+    color: #FFF;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.4);
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    margin-top: 30px; 
+    &:hover,
+    &:focus,
+    &:active {
+        transform: translateY(-1px);
+        opacity:0.95;
+        box-shadow: 0 0 50px -20px rgba(255,255,255,0.8) inset, 2px 2px 7px 1px rgba(0, 0, 0, 0.7);            
+    }  
+    @include devices (maxi-pc){
+        padding: 30px 120px;
+        border-radius: 50px;
+    }  
+}
+@mixin btn--heart{
+    border:none;
+    position: relative;
+    background-color: white;    
+    margin-right: 15px;
+    bottom: 3px;
+    height: 40px;
+    width: 55px;
+    @include devices (small-pc){
+        margin-right: 30px;
+    }
+    .empty{                    
+        position: absolute;
+        z-index:1;
+        top:22%;
+        left:25%;     
+        height: 24px;   
+        width: 24px;    
+    }
+    .full{
+        display: block;       
+        position: absolute;
+        z-index:99;
+        top:22%;
+        left:25%;   
+        height: 24px;   
+        width: 24px;          
+        transform: scale(0); 
+        .main-stop {
+            stop-color: $color-primary;
+        }
+        .alt-stop {
+            stop-color:$color-secondary;
+        }                   
+    }
+    &:hover, 
+    &:focus          
+    &:active {         
+        .full {            
+            animation: heartFilling 0.2s forwards;
+            transform-origin:12px 12px;
+        }
+        .empty {
+            animation : disappearanceCoeur 0.3s 0.05s forwards;
+        }            
+    }  
+    @keyframes heartFilling {
+        0%{transform: scale(0.1);}
+        20%{transform: scale(0.3);}
+        50%{transform: scale(0.5);}
+        70%{transform: scale(0.7);}
+        100%{transform: scale(1);}
+    }   
+    @keyframes disappearanceCoeur {
+        0%{opacity:0.9;}
+        100%{opacity:0;}
+    }
+}
+
+//btn retour au web CV
+.link_CV{
+    border: 2px solid #b6604f;
+    border-radius: 20px;
+    display: block;
+    margin:25px auto 10px;
+    width: 220px;
+    align-self: center;
+    background: linear-gradient(to left,rgba(214,131,114,0.6) 0%,rgba(214,131,114,0.6) 100%);
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+    text-decoration: none;
+    /* background: linear-gradient(to left,rgba(214,131,114,0.9) 0%,rgba(214,131,114,0.8) 100%); */
+    text-align: center;
+}
+   
+.link_CV:hover{
+    background: linear-gradient(to left,rgba(214,131,114,0.9) 0%,rgba(214,131,114,0.8) 100%);
+    transform: translatey(1px); 
+}
+
+.link_CV span {
+    padding: 8px 10px 10px 8px;
+    display: block;
+    border-radius: 20px;
+    line-height: 30px;
+    background: linear-gradient(to left,rgba(85, 78, 77, 0.3) 0%,rgba(84, 74, 72, 0.3) 100%),url('./../../../assets/img17.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    border: 2px solid #b6604f;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+        font-weight: 800;
+        font-size: 1.4rem;
+} 

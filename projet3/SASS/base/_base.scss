@@ -1,0 +1,29 @@
+body{
+    font-family:'Roboto';
+    font-size: 1rem;
+    font-weight: 300;
+}
+a{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.logo{
+    font-family: 'Shrikhand';
+}
+ul {
+    list-style: none;
+}
+.flex {
+    display: flex;
+}
+.center {
+    justify-content: center;
+    align-items: center;
+}
+/*alternative text to icons for accessibility*/
+.alternative_text_accessibility {
+    position:absolute;
+    left:-9999px;
+  }
+/**/

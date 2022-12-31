@@ -1,0 +1,40 @@
+.home_header_page{
+    height: 60px;
+    width: 100%;
+    position: relative;
+    @include devices(small-pc){
+        height: 70px;
+    } 
+    img{
+        margin:auto;
+        width: 160px;
+        @include devices(small-pc){
+            width: 220px;
+        } 
+    } 
+}
+.nav_returnHome{
+    a {
+        display: block;
+        height: 60px;
+        left:20px;
+        position:absolute;
+        @include devices(small-pc){
+            width: 80px;
+            left:15px;
+            height: 70px;
+        }
+        i {
+            position: absolute;
+            font-size: 1.4rem;
+            color: $color-background-header--dark;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            @include devices(small-pc){        
+                font-size:2rem;
+            }
+        }
+    }
+}
+

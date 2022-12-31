@@ -1,0 +1,238 @@
+.menu_streamer_img {
+    overflow: hidden;
+    height: 270px;
+    @include devices (maxi-pc){
+        height: 350px;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+.menu_box{
+    @include devices (pc){
+        display: flex;
+        justify-content: space-between;
+        .menu_list{
+            width: 32%;
+        }
+    }
+}
+.menu{
+    position: relative;
+    z-index: 1;
+    background-color:$color-background-header--menu;
+    margin-top: -3rem;
+    border-radius: 25px 25px 0 0;
+    padding-bottom: 70px;
+    @include padding-box;
+    .menu_header_title{
+        border-radius: 50px 50px 0 0;
+        display: flex;
+        padding-top: 30px;
+        margin-bottom: 10px;
+        justify-content: space-between;
+        align-content: center;
+        @include devices (small-pc) {
+            padding-bottom: 25px;
+        }
+        @include devices (pc) {
+            padding-top: 40px;
+        }
+        @include devices (maxi-pc){
+            padding-top:50px;
+        }
+        h1{
+            font-family: $font-family-title;
+            font-size: 1.7em;
+            margin-top: 5px;
+            font-weight: 500;
+            display: block;
+            @include devices (maxi-pc){
+               font-size: 2.5rem;
+            }
+        }
+        .btn--heart{
+            @include  btn--heart;
+            margin:auto 8px;
+            background-color: $color-background-header--menu;
+        }
+    }
+    .dish_type {
+        position: relative;
+        font-size: 1rem;
+        font-weight: 300;
+        display: block;
+        width: 100%;
+        margin-bottom: 22px;
+        margin-top: 22px;
+        &::after{
+            content:'';
+            position: absolute;
+            width: 40px;
+            height: 3px;
+            bottom:-8px;
+            display: block;
+            background-color: $color-tertiary;
+        }
+    }
+    &_list{
+        display: flex;
+        flex-direction: column;
+        overflow:hidden;
+        &_item{
+            box-sizing: border-box;
+            width: 99.8%;
+            margin-left: 0.1%; 
+            margin-right: 0.1%;
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: #fff;
+            border-radius: 15px;
+            height: 69px;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            overflow: hidden;
+            box-shadow :0 1px 6px 0 rgba(100, 99, 99, 0.3);
+        }
+        & .menu_list_item{ 
+            animation: slidePage 1s backwards;
+            @for $i from 1 through 15 {
+                &:nth-child(#{$i}){
+                    animation: slidePage 0.15s backwards;
+                    animation-delay: (0.2s * $i) + 0.15s ;
+                }
+            }
+            @include devices (maxi-pc){
+                height: 90px;
+            }
+        }
+        & .item_text{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding-left:10px;
+            padding-right: 15px;
+            width: calc(100% - 45px);
+            box-sizing: border-box;
+            h3{
+                font-size: 1.1em;
+                margin:0 0 7px 0;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-weight: 500;
+            }
+            p.text{
+                font-size: 0.9em;
+                font-weight: 300;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                margin:0;
+                margin-right: 15px;
+            }
+        }
+        .price_check{
+            width: 105px;
+            margin-right: -60px;
+            justify-content: space-between;
+            flex-shrink: 0;
+            height: 100%;
+            @include devices(small-pc){
+                width: 125px;
+                margin-right: -80px;
+            }
+            @include devices(pc){
+                width: 105px;
+                margin-right: -60px;
+            }
+            span.price{
+                font-weight: 400;
+                width: 45px;
+                display: block;
+                align-self: center;
+            }
+            .menu_list_item_check{
+                flex-grow: 2;
+                background-color: $color-tertiary;
+                border-radius: 0 15px 15px 0;
+                width: 60px;
+                @include devices(small-pc){
+                    width: 80px;
+                }
+                @include devices(pc){
+                    width: 60px;
+                }
+                i {
+                    color: #ffffff;
+                    font-size: 1.2em;
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+}
+.menu_list_item:hover .item_text,
+.menu_list_item:focus .item_text,
+.menu_list_item:active .item_text {
+    width: calc(95% - 120px);
+    @include devices(small-pc){
+        width: calc(90% - 135px);
+    }
+    @include devices(pc){
+        width: calc(90% - 120px);
+    }
+}
+.menu_list_item:hover .price_check,
+.menu_list_item:focus .price_check,
+.menu_list_item:active .price_check {
+    animation: slidingShutter 0.3s ease-in-out both;
+    @include devices(small-pc){
+        animation: slidingShutterSmallPc 0.3s ease-in-out both;
+   }
+    @include devices(pc){
+        animation: slidingShutter 0.3s ease-in-out both;
+   }
+}
+.menu_list_item:hover i,
+.menu_list_item:focus i,
+.menu_list_item:active i {
+    animation: iconRotate 0.3s  0.15s linear both;
+}
+@keyframes slidePage {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.2;
+    } 
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes iconRotate{
+    0%{transform: rotate(180deg);}
+    100%{transform: rotate(360deg) ; }
+}
+@keyframes slidingShutter {
+    0% { margin-right: -60px;
+    }
+    100% {
+        margin-right: 0;
+    }
+}
+@keyframes slidingShutterSmallPc {
+    0% { margin-right: -80px;
+    }
+    100% {
+        margin-right: 0;
+    }
+}
+.order{
+    @include btn--pill;
+    padding: 16px 50px;
+}

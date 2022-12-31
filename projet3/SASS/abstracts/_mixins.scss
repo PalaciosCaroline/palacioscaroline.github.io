@@ -1,0 +1,56 @@
+@mixin devices ($breakpoint) { //the name of the mixin is devices
+  @if $breakpoint == mobile {
+    @media only screen and (max-width: 500px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet {    
+    @media only screen and (max-width: 680px) {
+      @content;
+    }
+  } 
+  @if $breakpoint == small-pc {
+    @media only screen and (min-width: 950px) {
+      @content;
+    }
+  }
+  @if $breakpoint == pc {
+    @media only screen and (min-width: 1300px) {
+      @content;
+    }
+  }
+  @if $breakpoint == big-pc {
+    @media only screen and (min-width: 1800px) {
+      @content;
+    }
+  }
+  @if $breakpoint == maxi-pc {
+    @media only screen and (min-width: 2300px) {
+      @content;
+    }
+  }
+}
+@mixin tag-new{
+  content: "Nouveau";
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background-color: $color-tertiary;
+  color: darken($color-tertiary, 40%);
+  font-weight: 700;
+  padding: 5px 15px;  
+  border-radius: 3px;  
+}
+@mixin cardHover {
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+    transition: all 0.2s ease-in-out;    
+}
+@mixin marge-page{
+    padding-right: 5.5%;
+    padding-left: 5.5%;
+}
+@mixin padding-box{
+  padding-right: 3%;
+  padding-left: 3%;
+}
