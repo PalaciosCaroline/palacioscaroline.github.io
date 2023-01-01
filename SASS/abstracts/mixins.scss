@@ -85,7 +85,9 @@
     font-weight: 600;
     transition: all 0.2s;
     -webkit-transition: all 0.2s;
-    background: linear-gradient(to left,rgba(214,131,114,0.5) 0%,rgba(214,131,114,0.6) 100%);
+    // background: linear-gradient(to left,rgba(214,131,114,0.5) 0%,rgba(214,131,114,0.6) 100%);
+  
+    background: linear-gradient(to left,rgba(219,136,118,0.6) 0%,rgba(214,131,114,0.6) 100%);
     &:hover {
     background: linear-gradient(to left,rgba(214,131,114,0.8) 0%,rgba(214,131,114,0.8) 100%);
     box-shadow: 1px 1px 4px rgba(0,0,0,0.8);

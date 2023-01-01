@@ -1,0 +1,160 @@
+//boite Skill Capacity
+.main_formation{
+  color:#fff;
+  margin: 20px 4% 20px 4%;
+  .box_formation{
+  display: flex;
+  }
+  h1{
+    padding-left: 50px;
+    margin:50px;
+    margin-bottom:10px;
+  }
+
+
+.boite{       /*capacité empeche le déformement*/
+    width: 552px;
+    height: 512px;
+    padding-top: 15px;
+    margin-top:30px;
+  }
+  
+  
+  
+  
+  @media (max-width:800px) {    /*responsive lorsq ecran<800px)*/
+  
+   .identite{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        transition: transform ease-out 0.5s; /*effet de transition, ease-in permet de commencer vite et de terminer doucement la transition ≠ ease-in*/
+        align-items: center;
+    }
+    .corps{
+        width: 90%;
+        height: 100%;
+        flex-direction: column;
+        transition: transform ease-out 0.5s; /*effet de transition, ease-in permet de commencer vite et de terminer doucement la transition ≠ ease-in*/
+        align-items: center;
+        padding:2%;
+        margin:2%;
+    }
+    
+    .skillcapacite{
+        padding: 15px;
+        margin-left:10px;
+    }   
+    
+  }
+  
+  .capacite{
+    display: flex;
+    width: 50%;
+    margin:20px;
+  }
+  
+  .skillcapacite::before{
+    content: "Mes capacités";
+    position: absolute;
+    top: -18px;
+    left:60px;
+    background-color: #c0c0c2;
+    background-color: rgba(214,131,114,0.8);
+    padding: 5px 12px;
+    color: #fff;
+  }
+  
+  .skillcapacite{
+    display: flex;
+    border: 2px, solid, black;
+    padding: 26px;
+    border-radius: 30px;
+    position: relative;
+    background-color:rgb(192,127,6); 
+    background-color:rgba(214,131,114,0.8); 
+    background-color:rgba(0,0,0,0.6); 
+  }
+  
+  
+  .skillcapacite .name{
+    display: flex;
+    flex-direction: column;
+    color: #37373a;
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 400;
+    margin-right: 30px;
+  }
+  
+  .skillcapacite .name span{
+    margin: 7px 0;
+    box-shadow: 9.91px 9.91px 15px rgb(192,127,6), -9.91px -9.91px 15px   rgb(192,127,6);   
+    box-shadow: 4.91px 4.91px 10px   rgba(214,131,114,0.8), -4.91px -4.91px 10px   rgba(214,131,114,0.8);   
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 50px   ;
+    border:5px solid #ebecf0;
+    transition: 0.2s;
+    cursor:pointer;
+    width:180px;
+  }
+  
+  .skillcapacite .name span:hover {
+       margin: 7px 0;
+       box-shadow: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #ffffff, inset 9.91px 9.91px 15px #d9dade, inset -9.91px -9.91px 15px #ffffff ;
+  
+  }
+  
+  .niveau_capacite{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .niveau{
+    width: 200px;
+    height: 20px;
+    border-radius: 20px;
+  box-shadow: inset 6px 6px 6px #d9dade, inset -6px -6px 6px #ffffff;
+  }
+  
+  .niveau .progress{
+    height: 100%;
+    background: linear-gradient(to right, #9a989c, #4a484e);
+    border-radius: 20px;
+  }
+  
+  .niveau:nth-child(1) .progress {
+    width: 90%;
+  }
+  .niveau:nth-child(2) .progress {
+    width: 80%;
+  }
+  .niveau:nth-child(3) .progress {
+    width: 80%;
+  }
+  .niveau:nth-child(4) .progress {
+    width: 70%;
+  }
+  .niveau:nth-child(5) .progress {
+    width: 90%;
+  }
+  
+  .competence{
+    color: whitesmoke;
+    margin-left: 10px;
+    padding-left: 40px;
+  }
+  
+  .box_diplome{
+    display: flex;
+    justify-content: center;
+    margin-left:40px;
+    h2{
+      display: block;
+      width: 100%;
+      justify-self: center;
+    }
+  }
+}

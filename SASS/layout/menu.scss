@@ -610,7 +610,7 @@ header a{
   .starQuarter {
     width: $small;
     height: $small;
-    animation: animStarSize 6.5s ease-in-out infinite;
+    animation: animStarSize 4s ease-in-out infinite;
     // @include devices(small-pc){
     //     animation: none;
     // }

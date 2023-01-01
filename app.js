@@ -1,17 +1,11 @@
-
-
 const hamburger = document.getElementById('hamburger')
 const navUl = document.getElementById('nav_ul')
 const boxImg = document.querySelector('.box_photo')
 const wrapTitle = document.querySelector('.wrapTitle')
 const mainFrozzen = document.querySelector('.main_frozzen')
 const header = document.getElementById('header')
-
-// hamburger.addEventListener('click', () => {
-//     hamburger.classList.toggle("open")
-//     navUl.classList.toggle("slide")
-//     mainFrozzen.classList.toggle("frozzen")
-// })
+const btnHome = document.getElementById('btn_home')
+const boiteCapacity = document.getElementById('boiteCapacity')
 
 hamburger.addEventListener('click', () => {
 
@@ -49,3 +43,7 @@ function ulResize(){
 
 window.addEventListener('resize', ulResize)
 
+
+btnHome.addEventListener('click', () => {
+    boiteCapacity.classList.toggle('isVisible')
+})
