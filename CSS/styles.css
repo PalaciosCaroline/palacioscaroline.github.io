@@ -721,10 +721,10 @@ header a {
 }
 @media screen and (max-width: 600px) {
   .main_projets .section-asymetrique {
-    grid-template: 80px repeat(6, auto) 60px/100%;
+    grid-template: 80px repeat(6, auto) 10px/100%;
   }
   .main_projets .section-asymetrique2 {
-    grid-template: 0 repeat(6, auto) 50px/100%;
+    grid-template: 50px repeat(6, auto) 50px/100%;
   }
   .main_projets .ligne-gauche, .main_projets .ligne-droite {
     display: none;
