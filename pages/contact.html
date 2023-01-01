@@ -4,48 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./../CSS/styles.css">
-    
-    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+    <!-- <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script> -->
     <title>Document</title>
 </head>
 <body>
   <!-- <div class="home">  -->
     <!-- <div class="box_filter"> -->
-      <div id="menu_container"></div>
-<header class="flex page_header">
-  <div class="hamburger" id="hamburger">
-    <div class="bar1"></div>
-    <div class="bar2"></div>
-    <div class="bar3"></div>
-  </div>        
-    <nav class="header_nav">
-        <ul class="ul-content navbar nav-ul flex"  id="nav_ul">
-          <li><a class="menu_li_link " href="./../index.html"><span>Home</span></a></li>
-            <li><a class="menu_li_link " href="./projets.html"><span>Projets</span></a></li>
-            <li><a class="menu_li_link" href="./formation.html"><span>Formation</span></a></li>
-            <li><a class="menu_li_link" href="./experiences.html"><span>Expérience</span></a></li>
-            <li class="li_contact"><a class="menu_li_link activeLink" href="./contact.html"><span>Contact</span></a><div id="starContainer">
-              <div id="star">
-                <div id="half">
-                  <div id="topLeft" class="starQuarter"></div>
-                  <div id="topRight" class="starQuarter"></div>
-                </div>
-                <div id="half">
-                  <div id="bottomLeft" class="starQuarter"></div>
-                  <div id="bottomRight" class="starQuarter"></div>
-                </div>
-              <div>
-            </div></li>
-              
-        </ul>
-    </nav>
-</header>
+ 
+      <header class="flex page_header" id="header">
+
+        <nav class="header_nav navbar">
+            <ul class="ul-content navbar nav-ul nav_ul flex"  id="nav_ul">
+              <li class="navbar_item"><a class="menu_li_link " href="./../index.html"><span>Home</span></a></li>
+              <li class="navbar_item"><a class="menu_li_link" href="./../pages/projets.html"><span>Projets</span></a></li>
+              <li class="navbar_item"><a class="menu_li_link" href="./../pages/formation.html"><span>Formation</span></a></li>
+              <li class="navbar_item"><a class="menu_li_link" href="./../experiences.html"><span>Expérience</span></a></li>
+              <li class="li_contact navbar_item"><a class="menu_li_link activeLink" href="./pages/contact.html"><span>Contact</span></a><div id="starContainer">
+                    <div id="star">
+                    <div id="half">
+                        <div id="topLeft" class="starQuarter"></div>
+                        <div id="topRight" class="starQuarter"></div>
+                    </div>
+                    <div id="half">
+                        <div id="bottomLeft" class="starQuarter"></div>
+                        <div id="bottomRight" class="starQuarter"></div>
+                    </div>
+                    <div>
+                </div></li>
+
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </nav>
+    </header>
 <main class="main_contact main_frozzen">
   <div class="wrap_contact">
     <h1>
@@ -57,22 +55,22 @@
           93110 Rosny-sous-Bois<br/>
           Tél: 06.51.69.44.27<br/>
         </div>
-        <a href="mailto:contact@ohmyfood.com" class="mail_link_contact"><span class="span_mail"> caroline2807@yahoo.fr</span></a> 
-   
-    
-   
+        <a href="mailto:contact@ohmyfood.com" class="mail_link_contact"><span class="span_mail"> caroline2807@yahoo.fr</span></a>
+
+
+
   </div>
 
 </main>
- 
-</div> 
+
+</div>
 
 
 <!-- Charge notre composant React -->
 
 
-<script src="./../menu.js"></script>
-  <script src="./../app.js"></script> 
+<script src="./../script/menu.js"></script>
+  <script src="./../app.js"></script>
 
 </body>
 </html>

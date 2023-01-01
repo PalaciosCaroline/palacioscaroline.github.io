@@ -328,15 +328,21 @@
 
   //Essai
   header{
-  
     background: linear-gradient(280deg,rgba(0,0,0,0.2),rgba(0,0,0,0.4));
     height: 60px;
     width: 100%;
     top:0;
-    position: sticky;       /*fixe header en haut sans masquer le texte en-dessous */
+    // position: sticky;     
+      /*fixe header en haut sans masquer le texte en-dessous */
     z-index: 1;   /*priorise le header pour ne pas le masquer*/
     // box-shadow: 1px 4px 4px 0px #ff00002b;   /*ombrage sous header*/
     // transition: box-shadows 1s;
+    @include devices(small-pc){
+      background: linear-gradient(280deg,rgba(0,0,0,0.4),rgba(0,0,0,0.8));
+      position: sticky;     
+      top:0;
+      z-index: 1;
+    }
 }
 
 /*travail pr agrandir ombre en de-ss du header en JS*/
@@ -411,9 +417,9 @@ header a{
 
 .nav_ul a:hover{
     // background-color: rgb(192,127,6, 0.6);
-    @include devices(small-pc){
-    background: linear-gradient(to left,rgba(214,131,114,0.5) 0%,rgba(214,131,114,0.6) 100%);
-    }
+    // @include devices(small-pc){
+    // background: linear-gradient(to left,rgba(214,131,114,0.5) 0%,rgba(214,131,114,0.6) 100%);
+    // }
     border-radius: 10px;
     
 }
@@ -459,11 +465,11 @@ header a{
 }
 
 .open .bar1{
-    transform: translateY(240%) rotate(-45deg);
+    transform: translateY(245%) rotate(-45deg);
 }
 
 .open .bar3{
-    transform: translateY(-240%) rotate(45deg);
+    transform: translateY(-245%) rotate(45deg);
 }
 
 .open .bar2{
@@ -488,11 +494,13 @@ header a{
         left: -85%; /*pour faire disparaître le nav*/
         -webkit-backdrop-filter: blur(4px);
         backdrop-filter: blur(4px);     /*effet arrière trouble -webkit mit à cause du validator w3c*/
-        background-color: rgba(0, 0, 0, 0.4) ;        /*effet arrière trouble*/
+        // background-color: rgba(0, 0, 0, 0.6) ;      
+          /*effet arrière trouble*/
+        background: linear-gradient(280deg,rgba(0,0,0,0.4),rgba(0,0,0,0.8));
         width: 85%;
         height: 100%;
         flex-direction: column;
-        transition: transform ease-out 0.5s; /*effet de transition, ease-in permet de commencer vite et de terminer doucement la transition ≠ ease-in*/
+        transition: transform ease-out 0.3s; /*effet de transition, ease-in permet de commencer vite et de terminer doucement la transition ≠ ease-in*/
     }
 
     .slide{
@@ -526,7 +534,12 @@ header a{
     span{
       position: relative;
       height: 100%;
-
+      &::after { 
+        @include devices(small-pc){
+            display: none;
+           
+        }    
+      }
     }
       & span::after {
           content:"";
@@ -539,14 +552,12 @@ header a{
           transform: scaleX(0);
           transform-origin: center;
           transition: transform 0.2s ease;
-          @include devices(small-pc){
-                & span::after { 
-                  display: none;
-                }    
-          }
         }   
       &:hover span::after {
           transform: scaleX(1);
+        //   @include devices(small-pc){
+        //     transform: scaleX(0);
+        // }  
       }  
       
     }            
@@ -606,15 +617,15 @@ header a{
   }
   
   #topLeft {
-    background: radial-gradient(ellipse at top left, transparent 70%, rgb(249, 249, 238) 100%);
+    background: radial-gradient(ellipse at top left, transparent 70%, rgb(255, 255, 255) 100%);
   }
   
   #topRight {
-    background: radial-gradient(ellipse at top right, transparent 70%, rgb(249, 249, 202) 100%);
+    background: radial-gradient(ellipse at top right, transparent 70%, rgb(255, 255, 255) 100%);
   }
   
   #bottomLeft {
-    background: radial-gradient(ellipse at bottom left, transparent 70%, rgb(247, 247, 230) 100%);
+    background: radial-gradient(ellipse at bottom left, transparent 70%, rgb(255, 255, 255) 100%);
   }
   
   #bottomRight {

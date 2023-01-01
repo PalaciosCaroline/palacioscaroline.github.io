@@ -10,42 +10,43 @@
 
     <link rel="stylesheet" href="./../CSS/styles.css">
     
-    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <!-- <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script> -->
     <title>Document</title>
 </head>
 <body>
   <!-- <div class="home">  -->
     <!-- <div class="box_filter"> -->
 
-<header class="flex page_header">
-  <div class="hamburger" id="hamburger">
-    <div class="bar1"></div>
-    <div class="bar2"></div>
-    <div class="bar3"></div>
-  </div>        
-    <nav class="header_nav">
-        <ul class="ul-content navbar nav-ul flex"  id="nav_ul">
-          <li><a class="menu_li_link " href="./../index.html"><span>Home</span></a></li>
-            <li><a class="menu_li_link activeLink" href="./projets.html"><span>Projets</span></a></li>
-            <li><a class="menu_li_link" href="./formation.html"><span>Formation</span></a></li>
-            <li><a class="menu_li_link" href="./experiences.html"><span>Expérience</span></a></li>
-            <li class="li_contact"><a class="menu_li_link" href="./contact.html"><span>Contact</span></a><div id="starContainer">
-              <div id="star">
-                <div id="half">
-                  <div id="topLeft" class="starQuarter"></div>
-                  <div id="topRight" class="starQuarter"></div>
-                </div>
-                <div id="half">
-                  <div id="bottomLeft" class="starQuarter"></div>
-                  <div id="bottomRight" class="starQuarter"></div>
-                </div>
-              <div>
-            </div></li>
-              
-        </ul>
-    </nav>
-</header>
+    <header class="flex page_header" id="header">
+    
+        <nav class="header_nav navbar">
+            <ul class="ul-content navbar nav-ul nav_ul flex"  id="nav_ul">
+                <li class="navbar_item"><a class="menu_li_link " href="./../index.html"><span>Home</span></a></li>
+                <li class="navbar_item"><a class="menu_li_link activeLink" href="./projets.html"><span>Projets</span></a></li>
+                <li class="navbar_item"><a class="menu_li_link" href="./../pages/formation.html"><span>Formation</span></a></li>
+                <li class="navbar_item"><a class="menu_li_link" href="./../pages/experiences.html"><span>Expérience</span></a></li>
+                <li class="li_contact navbar_item"><a class="menu_li_link" href="./../pages/contact.html"><span>Contact</span></a><div id="starContainer">
+                    <div id="star">
+                    <div id="half">
+                        <div id="topLeft" class="starQuarter"></div>
+                        <div id="topRight" class="starQuarter"></div>
+                    </div>
+                    <div id="half">
+                        <div id="bottomLeft" class="starQuarter"></div>
+                        <div id="bottomRight" class="starQuarter"></div>
+                    </div>
+                    <div>
+                </div></li>
+                    
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>   
+        </nav>
+    </header>
 <main class="main_projets main_frozzen">
   
 
@@ -72,8 +73,10 @@
             <button class="btn-bloc-left"><a href="./../projet6/index.html"><article>En savoir plus</article></a></button>
         </div>
     </div>
-    <img src="./../assets/imgProjets/projet6essai.png" alt="couloir d'un temple de kyoto" class="img-grid img-grid-1">
-
+    <div class="img-grid img-grid-1">
+    <!-- <img src="./../assets/imgProjets/projet6essai2.png" alt="" > -->
+    <img src="./../assets/imgProjets/projet6essai.png" alt="" >
+</div>
     <div class="bloc bloc-right bloc-2">
         <div class="bloc-txt-right">
             <h3>Projet 7</h3>
@@ -81,7 +84,9 @@
             <button class="btn-bloc-left"><a href="./../projet7/index.html"><article>En savoir plus</article></a></button>
         </div>
     </div>
-    <img src="ressources/chateau-kyoto.jpg" alt="château de kyoto" class="img-grid img-grid-2">
+    <div class="img-grid img-grid-2">
+    <img src="./../assets/imgProjets/imgprojet7.png" alt="">
+</div>
 
     <div class="bloc bloc-left bloc-3">
         <div class="bloc-txt-left">
@@ -90,13 +95,18 @@
             <button class="btn-bloc-left"><a href="./../projet3/index.html"><article>En savoir plus</article></a></button>
         </div>
     </div>
-    <img src="ressources/geisha.jpg" alt="geisha" class="img-grid img-grid-3">
+    <div class="img-grid img-grid-3">
+    <img src="./../assets/imgProjets/imgprojet3haute.png" alt=""> 
+    <!-- <img src="./../assets/imgProjets/imgprojet3haute2.png" alt=""> -->
+    </div>
 
     <div class="ligne-gauche"></div>
     <div class="ligne-droite"></div>
 </section>
-<section class="section-asymetrique" id="asym">
-    <h2>Autres Projets</h2>
+
+<section class="section-asymetrique section-asymetrique2" id="asym">
+
+    <!-- <h2>Autres Projets</h2> -->
     <div class="bloc bloc-right bloc-2">
         <div class="bloc-txt-right">
             <h3>Projet 4</h3>
@@ -104,7 +114,10 @@
             <button class="btn-bloc-left"><a href="./../projet4/index.html"><article>En savoir plus</article></a></button>
         </div>
     </div>
-    <img src="ressources/chateau-kyoto.jpg" alt="château de kyoto" class="img-grid img-grid-2">
+    <div class="img-grid img-grid-2">
+    <!-- <img src="./../assets/imgProjets/imgprojet4essai.png" alt="" > -->
+    <img src="./../assets/imgProjets/imgprojet4formessai.png" alt="" >
+</div>
 
     <div class="bloc bloc-left bloc-3">
         <div class="bloc-txt-left">
@@ -113,7 +126,7 @@
             <button class="btn-bloc-left"><a href="./../projet3/index.html"><article>En savoir plus</article></a></button>
         </div>
     </div>
-    <img src="ressources/geisha.jpg" alt="geisha" class="img-grid img-grid-3">
+    <img src="" alt="" class="img-grid img-grid-3">
 
     <div class="ligne-gauche"></div>
     <div class="ligne-droite"></div>

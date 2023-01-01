@@ -8,7 +8,9 @@
     /* Accueil  */
 
     .accueil {
-    width: 100%;
+    // width: 100%;
+    width: 80%;
+    margin: 0 auto;
     // height: 100vh;
     min-height: 290px;
     background-image: url(ressources/accueil-pic-lum-down.jpg);
@@ -69,10 +71,10 @@
         margin: 120px auto 0;
     }
     .accueil h1 {
-        font-size: 60px;
+        font-size: 3rem;
     }
     .sous-titre {
-        font-size: 23px;
+        font-size: 1.2rem;
     }
     .btn-accueil {
         width: 150px;
@@ -102,7 +104,7 @@
         font-size: 16px;
     }
 
-    }
+}
 
     /* Section asymétrique */
     hr{
@@ -126,6 +128,15 @@
     padding-bottom: 20px;
     }
 
+    .img-grid {
+        img{
+            // @include devices(small-pc){
+            //     width: 100%;
+            // }
+            height: 100%;
+            object-fit: cover;
+        }
+    }
     /* Placement */
 
     .bloc-1,
@@ -144,7 +155,7 @@
     }
 
     .bloc {
-    background: #333;
+    // background: #333;
     background: linear-gradient(to right,rgba(163, 97, 84, 0.9) 0%,rgba(214,131,114,1) 100%);
     color: #fff;
     position: relative;
@@ -236,11 +247,16 @@
     @media screen and (max-width: 1200px) {
 
     .section-asymetrique {
-        grid-template: 200px repeat(6, auto) 100px / 1fr 600px 1fr;
+        // grid-template: 200px repeat(6, auto) 100px / 1fr 600px 1fr;
+        grid-template: 80px repeat(6, auto) 0 / 1fr 600px 1fr;
+    }
+    .section-asymetrique2 {
+        // grid-template: 200px repeat(6, auto) 100px / 1fr 600px 1fr;
+        grid-template: 0 repeat(6, auto) 30px / 1fr 600px 1fr;
     }
 
     .section-asymetrique h2 {
-        font-size: 50px;
+        font-size: 1.4rem;
         padding-bottom: 0px;
     }
 
@@ -328,7 +344,11 @@
     @media screen and (max-width: 600px){
 
     .section-asymetrique {
-        grid-template: 150px repeat(6, auto) 100px / 100%;
+        grid-template: 80px repeat(6, auto) 60px / 100%;
+    }
+
+    .section-asymetrique2{
+        grid-template: 0 repeat(6, auto) 50px / 100%;
     }
 
     .ligne-gauche, .ligne-droite {

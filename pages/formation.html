@@ -10,42 +10,42 @@
 
     <link rel="stylesheet" href="./../CSS/styles.css">
     
-    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  
     <title>Document</title>
 </head>
 <body>
   <!-- <div class="home">  -->
     <!-- <div class="box_filter"> -->
-      <div id="menu_container"></div>
-<header class="flex page_header">
-  <div class="hamburger" id="hamburger">
-    <div class="bar1"></div>
-    <div class="bar2"></div>
-    <div class="bar3"></div>
-  </div>        
-    <nav class="header_nav">
-        <ul class="ul-content navbar nav-ul flex"  id="nav_ul">
-          <li><a class="menu_li_link " href="./../index.html"><span>Home</span></a></li>
-            <li><a class="menu_li_link" href="./projets.html"><span>Projets</span></a></li>
-            <li><a class="menu_li_link  activeLink" href="./formation.html"><span>Formation</span></a></li>
-            <li><a class="menu_li_link" href="./experiences.html"><span>Expérience</span></a></li>
-            <li class="li_contact"><a class="menu_li_link" href="./contact.html"><span>Contact</span></a><div id="starContainer">
-              <div id="star">
-                <div id="half">
-                  <div id="topLeft" class="starQuarter"></div>
-                  <div id="topRight" class="starQuarter"></div>
-                </div>
-                <div id="half">
-                  <div id="bottomLeft" class="starQuarter"></div>
-                  <div id="bottomRight" class="starQuarter"></div>
-                </div>
-              <div>
-            </div></li>
-              
-        </ul>
-    </nav>
-</header>
+ 
+      <header class="flex page_header" id="header">
+    
+        <nav class="header_nav navbar">
+            <ul class="ul-content navbar nav-ul nav_ul flex"  id="nav_ul">
+              <li class="navbar_item"><a class="menu_li_link " href="./../index.html"><span>Home</span></a></li>
+              <li class="navbar_item"><a class="menu_li_link" href="./../pages/projets.html"><span>Projets</span></a></li>
+              <li class="navbar_item"><a class="menu_li_link activeLink" href="./formation.html"><span>Formation</span></a></li>
+              <li class="navbar_item"><a class="menu_li_link" href="./../pages/experiences.html"><span>Expérience</span></a></li>
+              <li class="li_contact navbar_item"><a class="menu_li_link" href="./../pages/contact.html"><span>Contact</span></a><div id="starContainer">
+                    <div id="star">
+                    <div id="half">
+                        <div id="topLeft" class="starQuarter"></div>
+                        <div id="topRight" class="starQuarter"></div>
+                    </div>
+                    <div id="half">
+                        <div id="bottomLeft" class="starQuarter"></div>
+                        <div id="bottomRight" class="starQuarter"></div>
+                    </div>
+                    <div>
+                </div></li>
+                    
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>   
+        </nav>
+    </header>
 <main class="main_formation">
   
 
@@ -57,8 +57,8 @@
 <!-- Charge notre composant React -->
 
 
-<script src="menu.js"></script>
-  <script src="app.js"></script>
+<script src="./../script/menu.js"></script>
+  <script src="./../app.js"></script>
 
 </body>
 </html>
