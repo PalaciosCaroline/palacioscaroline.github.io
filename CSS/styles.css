@@ -969,6 +969,28 @@ header a {
   width: 100%;
 }
 
+#imgProjet7_2 {
+  border: 1px solid #333;
+  position: absolute;
+  width: 300px;
+  right: 0;
+  bottom: 0;
+}
+#imgProjet7_2 img {
+  width: 100%;
+}
+
+#imgProjet6_3 {
+  border: 1px solid #333;
+  position: absolute;
+  width: 200px;
+  left: 0;
+  bottom: 0;
+}
+#imgProjet6_3 img {
+  width: 100%;
+}
+
 .main_contact {
   align-items: center;
   justify-content: center;
