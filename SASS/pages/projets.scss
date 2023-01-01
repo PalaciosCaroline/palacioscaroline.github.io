@@ -3,18 +3,14 @@
    
     scroll-behavior: smooth;
     
-   
-
     /* Accueil  */
 
     .accueil {
     // width: 100%;
     width: 80%;
     margin: 0 auto;
-    min-height: 290px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    // min-height: 290px;
+    height: auto;
     border-bottom: 1px dotted #777;
     padding-top: 1px;
     background: linear-gradient(280deg,rgba(0,0,0,0.4),rgba(0,0,0,0.6));
@@ -37,31 +33,13 @@
     text-shadow: 0 0 10px #000;
     }
 
-    .btn-accueil {
-    border-radius: 9999px;
-    background: crimson;
-    border: 1px solid #333;
-    color: #fff;
-    text-align: center;
-    font-size: 22px;
-    display: block;
-    width: 200px;
-    height: 70px;
-    line-height: 70px;
-    text-decoration: none;
-    margin: 30px auto 0;
-    transition: all 0.2s ease-in-out;
-    }
-    .btn-accueil:hover {
-    background: rgb(177,0,36);
-    color: #fff;
-    }
+    
 
     @media screen and (max-width: 850px){
 
     .accueil {
-        height: 250px;
-        min-height: auto;
+        // height: 250px;
+        // min-height: auto;
         background-position: right;
     }
     .logo-kyoto {
@@ -78,15 +56,15 @@
         height: 50px;
         line-height: 50px;
         font-size: 18px;
-        margin: 15px auto 0;
+        margin: 15px auto 15px;
     }
 
     }
 
     @media screen and (max-width: 400px){
-    .accueil {
-        height: 200px;
-    }
+    // .accueil {
+    //     // height: 200px;
+    // }
     
     .accueil h1 {
         font-size: 2rem;
@@ -126,7 +104,7 @@
     justify-content: center;
     align-items: center;
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.4rem;
     text-transform: uppercase;
     padding-bottom: 20px;
     }
@@ -433,6 +411,7 @@
     }
     .section-tarifs h3 {
     text-align: center;
+    color:#fff;
     font-size: 45px;
     margin: 120px 0 20px;
     padding: 0 30px;
@@ -542,12 +521,11 @@
 
 }
 .img-grid{
-    // background-color: #fff;
-    
+    background-color: #fff;
     // width: 300px;
     &::after {
         content: '';
-        background-color: #a7a393;
+        background-color: #bab9b1;
         position: absolute;
         top: 8px;
         right: -15px;
@@ -572,6 +550,7 @@
 
 @media only screen and (max-width: 830px) {
     .img-grid{
+            background-color: transparent;
         &::after { 
                 display: none;
             }
@@ -587,71 +566,84 @@
 //     position: relative;
 // }
 
-@media only screen and (max-width: 830px) {
-    .box_imgProjet{
-        position: relative;
-        &::after { 
-                display: none;
-            }
+// @media only screen and (max-width: 830px) {
+//     .box_imgProjet{
+//         position: relative;
+//         &::after { 
+//                 display: none;
+//             }
         
-        &::before {  
-            display: none;
-        }
+//         &::before {  
+//             display: none;
+//         }
     
+//     }
+// }
+
+#imgProjet4_2,
+#imgProjet_2,
+#imgProjet3_2,
+#imgProjet7_2 {
+    border-top:1px solid rgb(117, 114, 114);
+    border-left:1px solid rgb(133, 131, 131);
+    position:absolute;
+    bottom:0;
+    right: 0;
+    img{
+        width: 100%;
+
     }
 }
-
 
 #imgProjet4_2{
-    border:1px solid #333;
-    position:absolute;
-   width: 220px;
-    bottom:0;
-    right: 0;
-    img{
-        width: 100%;
-
-    }
+   width: 220px;    
 }
+
 #imgProjet_2{
-    border:1px solid #333;
-    position:absolute;
     width: 240px;
-    bottom:0;
-    right: 0;
-    img{
-        width: 100%;
-
-    }
 }
+
 #imgProjet3_2{
-    border:1px solid #333;
-    position:absolute;
     width: 300px;
-    right: 0;
-    bottom:0;
-    img{
-        width: 100%;
-    }
 }
 
 #imgProjet7_2{
-    border:1px solid #333;
-    position:absolute;
     width: 300px;
-    right: 0;
-    bottom:0;
-    img{
-        width: 100%;
-    }
 }
+
 #imgProjet6_3{
-    border:1px solid #333;
+    border-top:1px solid rgb(132, 130, 130);
+    border-right:1px solid rgb(139, 137, 137);
     position:absolute;
     width: 200px;
     left: 0;
     bottom:0;
     img{
         width: 100%;
+    }
+}
+
+#AccueilProjetExplic{
+    display: none;
+}
+
+#AccueilProjetExplic.isVisible{
+    display: flex;
+    color:#fff;
+    margin:15px 10px;
+    font-size: 1rem;
+    background: linear-gradient(280deg,rgba(0,0,0,0.6),rgba(0,0,0,0.8));
+}
+
+
+.btn-accueil {
+    @include btnRose;
+    font-size: 1.3rem;
+    width: 200px;
+    height: 70px;
+    line-height: 70px;
+    margin: 30px auto 15px;
+    @include devices(mobile){
+    margin-top: 15px;
     }
 }

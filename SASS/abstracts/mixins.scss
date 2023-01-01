@@ -69,4 +69,41 @@
     left: 0;
     right: 0;
   }
+
+
+@mixin btnRose {
+    position:relative;
+    overflow: hidden;
+    border-radius: 9999px;
+    text-align: center;
+    display: block;  
+    text-decoration: none;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+    border: 1px solid #b6604f;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    background: linear-gradient(to left,rgba(214,131,114,0.5) 0%,rgba(214,131,114,0.6) 100%);
+    &:hover {
+    background: linear-gradient(to left,rgba(214,131,114,0.8) 0%,rgba(214,131,114,0.8) 100%);
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+    transform: translatey(1px);
+    }
+    &::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    background: rgba(255,255,255,0.4);
+    transform: rotate(-45deg);
+    left: -150px;
+    }
+    &:hover::before {
+    transition: 0.8s transform linear;
+    transform: translateX(500px) rotate(-45deg);
+    } 
+}
+
   
