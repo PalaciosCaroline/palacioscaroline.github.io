@@ -528,14 +528,15 @@ perspective-origin: bottom 100px;
     // background-color: #fff;
     // background-color: rgba(0,0,0,0.7);
     // // background-color: rgba(255,255,255,0.8);
-    // background: linear-gradient(to right,rgba(163, 97, 84, 0.6) 0%,rgba(214,131,114,0.8) 100%);
+    background: linear-gradient(to right,rgba(163, 97, 84, 0.6) 0%,rgba(214,131,114,0.8) 100%);
     border:5px solid rgb(122, 49, 35);
     border:5px solid  #DB8876;
     border:4px solid  #c2634e;
     // width: 300px;
     // perspective: 300px;
     @include devices(small-pc){
-        background-color: none;
+      
+        background: none;
         border:none;
     }
 }
