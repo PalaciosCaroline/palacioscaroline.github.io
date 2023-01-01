@@ -312,6 +312,11 @@ header a {
     width: 40px;
   }
 }
+@media only screen and (max-width: 830px) {
+  .menu_li_link span::after {
+    display: none;
+  }
+}
 .main_home {
   display: flex;
   display: flex;
@@ -443,13 +448,12 @@ header a {
   width: 80%;
   margin: 0 auto;
   min-height: 290px;
-  background-image: url(ressources/accueil-pic-lum-down.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom: 1px dotted #777;
   padding-top: 1px;
-  background: linear-gradient(280deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  background: linear-gradient(280deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
 }
 .main_projets .accueil h1 {
   text-align: center;
@@ -488,7 +492,7 @@ header a {
 }
 @media screen and (max-width: 850px) {
   .main_projets .accueil {
-    height: 200px;
+    height: 250px;
     min-height: auto;
     background-position: right;
   }
@@ -532,9 +536,22 @@ header a {
 }
 .main_projets .section-asymetrique {
   display: grid;
-  grid-template: 200px repeat(3, auto)/1fr 600px 1fr;
+  grid-template: 200px repeat(6, auto) 10px/1fr 600px 1fr;
+}
+.main_projets .section-asymetrique2 {
+  grid-template: 40px repeat(6, auto) 30px/1fr 600px 1fr;
 }
 .main_projets .section-asymetrique h2 {
+  grid-area: 1/1/2/-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+.main_projets .section-asymetrique .h2bis {
   grid-area: 1/1/2/-1;
   display: flex;
   justify-content: center;
@@ -590,6 +607,7 @@ header a {
   white-space: nowrap;
   font-size: 35px;
   margin: 30px 15px;
+  color: #fff;
 }
 .main_projets .bloc-txt-left p {
   line-height: 40px;
@@ -643,10 +661,10 @@ header a {
 }
 @media screen and (max-width: 1200px) {
   .main_projets .section-asymetrique {
-    grid-template: 80px repeat(6, auto) 0/1fr 600px 1fr;
+    grid-template: 80px repeat(6, auto) 10px/1fr 600px 1fr;
   }
   .main_projets .section-asymetrique2 {
-    grid-template: 0 repeat(6, auto) 30px/1fr 600px 1fr;
+    grid-template: 40px repeat(6, auto) 30px/1fr 600px 1fr;
   }
   .main_projets .section-asymetrique h2 {
     font-size: 1.4rem;
@@ -721,10 +739,10 @@ header a {
 }
 @media screen and (max-width: 600px) {
   .main_projets .section-asymetrique {
-    grid-template: 80px repeat(6, auto) 10px/100%;
+    grid-template: 120px repeat(6, auto) 1px/100%;
   }
   .main_projets .section-asymetrique2 {
-    grid-template: 50px repeat(6, auto) 50px/100%;
+    grid-template: 1px repeat(6, auto) 50px/100%;
   }
   .main_projets .ligne-gauche, .main_projets .ligne-droite {
     display: none;
@@ -844,7 +862,7 @@ header a {
   width: 200px;
   height: 50px;
   border-radius: 9999px;
-  color: #333;
+  color: #fff;
   font-size: 18px;
   line-height: 50px;
   margin: 20px auto;
@@ -870,6 +888,85 @@ header a {
     width: 200px;
     margin: 20px auto 20px;
   }
+}
+
+.box_imgProjet {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.img-grid::after {
+  content: "";
+  background-color: #a7a393;
+  position: absolute;
+  top: 8px;
+  right: -15px;
+  height: 100%;
+  width: 15px;
+  transform: skewy(45deg);
+}
+.img-grid::before {
+  content: "";
+  background-color: #5e5a4c;
+  position: absolute;
+  bottom: -15px;
+  left: 8px;
+  height: 15px;
+  width: 100%;
+  transform: skewX(45deg);
+}
+
+@media only screen and (max-width: 830px) {
+  .img-grid::after {
+    display: none;
+  }
+  .img-grid::before {
+    display: none;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .box_imgProjet {
+    position: relative;
+  }
+  .box_imgProjet::after {
+    display: none;
+  }
+  .box_imgProjet::before {
+    display: none;
+  }
+}
+#imgProjet4_2 {
+  border: 1px solid #333;
+  position: absolute;
+  width: 220px;
+  bottom: 0;
+  right: 0;
+}
+#imgProjet4_2 img {
+  width: 100%;
+}
+
+#imgProjet_2 {
+  border: 1px solid #333;
+  position: absolute;
+  width: 240px;
+  bottom: 0;
+  right: 0;
+}
+#imgProjet_2 img {
+  width: 100%;
+}
+
+#imgProjet3_2 {
+  border: 1px solid #333;
+  position: absolute;
+  width: 300px;
+  right: 0;
+  bottom: 0;
+}
+#imgProjet3_2 img {
+  width: 100%;
 }
 
 .main_contact {
