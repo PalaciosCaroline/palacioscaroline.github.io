@@ -80,6 +80,8 @@
     text-decoration: none;
     box-shadow: 2px 2px 8px rgba(0,0,0,0.8);
     border: 1px solid #b6604f;
+    border: 1px solid #ec8d7a;
+    border: 1px solid #ef9785;
     color: #fff;
     letter-spacing: 1px;
     font-weight: 600;
@@ -87,7 +89,7 @@
     -webkit-transition: all 0.2s;
     // background: linear-gradient(to left,rgba(214,131,114,0.5) 0%,rgba(214,131,114,0.6) 100%);
   
-    background: linear-gradient(to left,rgba(219,136,118,0.6) 0%,rgba(214,131,114,0.6) 100%);
+    // background: linear-gradient(to left,rgba(219,136,118,0.6) 0%,rgba(214,131,114,0.6) 100%),linear-gradient(to left,rgba(255,255,255,0.5),rgba(255,255,255,0.6));
     &:hover {
     background: linear-gradient(to left,rgba(214,131,114,0.8) 0%,rgba(214,131,114,0.8) 100%);
     box-shadow: 1px 1px 4px rgba(0,0,0,0.8);
