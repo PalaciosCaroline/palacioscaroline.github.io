@@ -7,7 +7,6 @@ body {
   filter: brightness(1.2);
   background-size: cover;
   height: 100vh;
-  text-align: center;
   font-family: "Crimson Text", serif;
   font-family: "ubuntu", Georgia, "Times New Roman", Times, serif;
   height: 100vh;
@@ -17,6 +16,15 @@ a {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
 }
 
 .noscroll {
@@ -473,6 +481,7 @@ header a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
   height: 70vh;
 }
 .main_home .container {
@@ -595,6 +604,7 @@ header a {
 
 .main_projets {
   color: #fff;
+  text-align: center;
   scroll-behavior: smooth;
   /* Accueil  */
   /* Section asymétrique */
@@ -1237,15 +1247,11 @@ header a {
     margin: 20px 2% 20px 2%;
   }
 }
-.main_formation h1 {
-  padding-left: 50px;
-  margin: 50px;
-  margin-bottom: 10px;
-}
 .main_formation .box_diplome {
   font-size: 1.2rem;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  padding: 10px 30px 10px 30px;
   margin-left: 40px;
   background-color: rgba(0, 0, 0, 0.8);
   background-color: hsl(220deg, 7.7%, 22.9%);
@@ -1255,10 +1261,41 @@ header a {
   background: linear-gradient(280deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
   height: 100vh;
 }
-.main_formation .box_diplome h2 {
+.main_formation .box_diplome h1 {
+  align-self: center;
+  margin-top: 20px;
+  position: relative;
+  width: 300px;
+}
+.main_formation .box_diplome h1::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -15px;
+  left: -38%;
+  width: 150%;
+  background-position: center;
+  height: 2px;
+  background-color: #fff;
+}
+.main_formation .box_diplome .box_titre h2 {
+  align-self: flex-start;
   display: block;
   width: 100%;
-  justify-self: center;
+  font-size: 1.5rem;
+  margin: 10px 20px 10px 0;
+}
+.main_formation .box_diplome .box_titre h3 {
+  padding-left: 85px;
+  font-size: 1.1rem;
+  color: rgb(186, 182, 182);
+  margin: 5px 20px 15px 0;
+}
+.main_formation .box_diplome .box_titre span {
+  margin-right: 20px;
+}
+.main_formation .box_diplome .box_titre .flex {
+  align-items: center;
 }
 
 .main_contact {

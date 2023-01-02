@@ -7,7 +7,7 @@ body{
     background-size: cover;
     
          height:100vh;
-        text-align: center;
+        // text-align: center;
        
        
         font-family: 'Crimson Text', serif;
@@ -19,4 +19,13 @@ a{
   color:#fff;
   text-decoration: none;
   cursor: pointer;
+}
+
+.flex{
+  display: flex;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
 }

@@ -8,19 +8,13 @@
     margin: 20px 2% 20px 2%;
   }
   }
-  h1{
-    padding-left: 50px;
-    margin:50px;
-    margin-bottom:10px;
-  }
-
-
-
-
+  
   .box_diplome{
     font-size: 1.2rem;
-      display: flex;
-    justify-content: center;
+     display: flex;
+
+     flex-direction: column;
+     padding: 10px 30px 10px 30px;
     margin-left:40px;
     background-color:rgba(0,0,0,0.8); 
     // background-color: linear-gradient(to right, #9a989c, #4a484e);
@@ -30,10 +24,46 @@
     background-color:rgba(0,0,0,0.8); 
     background: linear-gradient(280deg,rgba(0,0,0,0.7),rgba(0,0,0,0.8));
     height: 100vh;
-    h2{
-      display: block;
-      width: 100%;
-      justify-self: center;
+    h1{
+      align-self: center;
+      margin-top:20px;
+      position: relative;
+      // display: block;
+      width: 300px;
+     
+      &::after {
+        content:"";
+        display: block;
+        position: absolute; 
+        bottom:-15px;
+        left:-38%;
+        width: 150%;      
+      background-position: center;   
+        height: 2px;                
+        background-color: #fff;
+      }
+    }
+    .box_titre{
+      h2{
+        align-self: flex-start;
+        display: block;
+        width: 100%;
+        font-size: 1.5rem;
+        margin: 10px 20px 10px 0;
+      }
+      h3{
+        padding-left: 85px;
+        font-size: 1.1rem;
+        color:rgb(186, 182, 182);
+        margin: 5px 20px 15px 0;
+      }
+      span{
+        margin-right: 20px;
+      }
+      .flex{
+        align-items: center;
+      }
     }
   }
+
 }
