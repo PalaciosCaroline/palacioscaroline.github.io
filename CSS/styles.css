@@ -35,7 +35,7 @@ a {
 
 header {
   background: linear-gradient(280deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
-  height: 60px;
+  height: 70px;
   width: 100%;
   top: 0;
   /*fixe header en haut sans masquer le texte en-dessous */
@@ -95,6 +95,7 @@ header a {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 70px;
   width: 120px;
   font-size: 1.4rem;
   font-weight: 400;
@@ -313,10 +314,13 @@ header a {
   }
 }
 .boite { /*capacité empeche le déformement*/
-  width: 552px;
   height: 380px;
   padding-top: 15px;
-  margin-top: 30px;
+}
+@media only screen and (max-width: 1000px) {
+  .boite {
+    margin-top: 30px;
+  }
 }
 @media only screen and (max-width: 550px) {
   .boite {
@@ -325,6 +329,7 @@ header a {
 }
 @media only screen and (max-width: 550px) {
   .boite .skillcapacite {
+    margin-bottom: 40px;
     padding: 10px 20px;
   }
 }
@@ -385,7 +390,7 @@ header a {
   top: -30px;
   left: 70px;
   background-color: #c0c0c2;
-  background-color: rgba(214, 131, 114, 0.8);
+  background-color: rgb(214, 131, 114);
   padding: 10px 25px;
   color: #fff;
 }
@@ -620,8 +625,7 @@ header a {
   border-bottom: 1px dotted #777;
   padding-top: 1px;
   background: linear-gradient(280deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
-  border-bottom: 5px solid rgb(211, 208, 208);
-  box-shadow: -1px -1px 3px rgba(0, 0, 0, 0.4), 0px 0px 3px 0 rgba(0, 0, 0, 0.4), 0px 0px 3px 0 #fff;
+  border-bottom: 5px solid #615f55;
 }
 .main_projets .accueil h1 {
   text-align: center;
@@ -823,10 +827,12 @@ header a {
 .main_projets .ligne-gauche {
   grid-area: 1/2/-1/3;
   border-left: 3px solid #fff;
+  border-left: 4px solid #5e5a4c;
 }
 .main_projets .ligne-droite {
   grid-area: 1/3/-1/4;
   border-left: 3px solid #fff;
+  border-left: 4px solid #5e5a4c;
 }
 @media screen and (max-width: 1200px) {
   .main_projets .section-asymetrique {
@@ -1134,11 +1140,14 @@ header a {
   margin-top: 30px;
   grid-auto-columns: minmax(570px, auto);
   align-items: center;
+  margin-bottom: 60px;
+  justify-content: center;
 }
 @media only screen and (max-width: 1000px) {
   .main_formation .box_savoir {
     display: flex;
     flex-direction: column;
+    margin-bottom: 0;
   }
 }
 .main_formation .boite {
@@ -1157,10 +1166,31 @@ header a {
   padding: 10px 30px 10px 30px;
   border-radius: 15px;
 }
+@media only screen and (max-width: 550px) {
+  .main_formation .box_diplome .box_titre {
+    padding: 10px 10px 10px 10px;
+  }
+}
 .main_formation .box_diplome h1 {
   align-self: center;
-  margin-top: 30px;
+  padding: 10px 0 10px 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: block;
+  width: 100%;
+  margin: 0;
+  text-align: center;
   position: relative;
+}
+@media only screen and (max-width: 1000px) {
+  .main_formation .box_diplome h1 {
+    margin-top: 40px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .main_formation .box_diplome h1 {
+    font-size: 2rem;
+    margin-top: 30px;
+  }
 }
 .main_formation .box_diplome .box_titre h2 {
   align-self: flex-start;
@@ -1169,11 +1199,21 @@ header a {
   font-size: 1.5rem;
   margin: 10px 20px 5px 0;
 }
+@media only screen and (max-width: 550px) {
+  .main_formation .box_diplome .box_titre h2 {
+    font-size: 1.2rem;
+  }
+}
 .main_formation .box_diplome .box_titre h3 {
   padding-left: 85px;
   font-size: 1.1rem;
   color: rgb(186, 182, 182);
   margin: 0 20px 15px 0;
+}
+@media only screen and (max-width: 550px) {
+  .main_formation .box_diplome .box_titre h3 {
+    font-size: 0.8rem;
+  }
 }
 .main_formation .box_diplome .box_titre span {
   margin-right: 20px;
@@ -1189,12 +1229,21 @@ header a {
   text-align: center;
   color: #fff;
   font-size: 45px;
-  margin: 30px 0 20px;
+  margin: 30px 0 0 0;
   padding: 0 30px;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-bottom: 20px;
+  padding-top: 20px;
+  position: relative;
+  border-bottom: 5px solid #5e5a4c;
+  box-sizing: border-box;
 }
-.main_formation .section-tarifs hr {
-  width: 200px;
-  margin: 10px auto 30px;
+@media only screen and (max-width: 550px) {
+  .main_formation .section-tarifs h3 {
+    border-bottom: 3px solid #fff;
+    background-color: inherit;
+  }
 }
 .main_formation .container-tarifs {
   display: flex;
@@ -1208,27 +1257,63 @@ header a {
   color: #fff;
   width: 350px;
   height: auto;
-  border-radius: 25px;
   margin: 0 15px 0px 15px;
   cursor: pointer;
   box-shadow: 0 5px 8px #fff;
   transition: all 0.2s ease-in-out;
   position: relative;
 }
+@media only screen and (max-width: 550px) {
+  .main_formation .cartes-tarifs {
+    box-shadow: none;
+  }
+}
+.main_formation .cartes-tarifs::after {
+  content: "";
+  background-color: #bab9b1;
+  position: absolute;
+  top: 8px;
+  right: -10px;
+  height: 100%;
+  width: 10px;
+  transform: skewy(50deg);
+  z-index: -1;
+}
+@media only screen and (max-width: 550px) {
+  .main_formation .cartes-tarifs::after {
+    display: none;
+  }
+}
+.main_formation .cartes-tarifs::before {
+  content: "";
+  background-color: #5e5a4c;
+  position: absolute;
+  bottom: -10px;
+  left: 8px;
+  height: 10px;
+  width: 100%;
+  transform: skewX(50deg);
+}
+@media only screen and (max-width: 550px) {
+  .main_formation .cartes-tarifs::before {
+    display: none;
+  }
+}
 .main_formation .cartes-tarifs:hover {
   transform: translateY(-5px);
 }
 .main_formation .cartes-tarifs h4 {
   margin: 0;
-  border-radius: 25px 25px 0 0;
   text-align: center;
   padding: 20px 10px 10px 10px;
   font-size: 1.6rem;
-  background: rgba(248, 151, 170, 0.5);
+  background: rgba(247, 58, 58, 0.5);
+  background: rgb(214, 131, 114);
   height: 60px;
 }
 .main_formation .cartes-tarifs:nth-child(2) h4 {
   background: #b0445a;
+  background: linear-gradient(to left, rgb(177, 78, 59) 0%, rgb(214, 131, 114) 100%);
 }
 .main_formation .cartes-tarifs:nth-child(3) h4 {
   background: #f16b86;
@@ -1258,14 +1343,14 @@ header a {
 @media screen and (max-width: 900px) {
   .main_formation .section-tarifs h3 {
     font-size: 35px;
-    margin: 80px 0 80px;
+    margin: 80px 0 0 0;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 550px) {
   .main_formation .section-tarifs h3 {
     font-size: 30px;
-    padding: 0 10px;
-    margin: 50px 0;
+    padding: 10px 0 10px 0;
+    margin: 30px 0 0 0;
   }
   .main_formation .section-tarifs hr {
     width: 200px;
@@ -1273,9 +1358,6 @@ header a {
   }
 }
 
-.container-tarifs {
-  border-top: 3px solid #fff;
-}
 .container-tarifs .lien {
   display: flex;
   flex-direction: column;
@@ -1288,6 +1370,7 @@ header a {
   height: 25px;
   border-left: 3px solid #fff;
   border-right: 3px solid #fff;
+  z-index: 10;
 }
 
 .diplome_span {

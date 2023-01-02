@@ -1,14 +1,17 @@
 .boite{       /*capacité empeche le déformement*/
-    width: 552px;
+    // width: 552px;
     height: 380px;
     padding-top: 15px;
-    margin-top:30px;
+    @include devices(1000-pc){
+      margin-top:30px;
+    }
     @include devices(mobile){
       height: 280px;
+    
     }
     .skillcapacite{
       @include devices(mobile){
-        
+        margin-bottom:40px;
         padding: 10px 20px;
         }
       .name{
@@ -71,7 +74,7 @@
     top: -30px;
     left:70px;
     background-color: #c0c0c2;
-    background-color: rgba(214,131,114,0.8);
+    background-color: rgb(214, 131, 114);
     padding: 10px 25px;
     color: #fff;
   }
