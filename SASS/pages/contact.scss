@@ -2,14 +2,44 @@
     @include allCenter;
     height: 60vh;
     color: #fff;
-
+    @include devices(mobile){
+        background: linear-gradient(280deg,rgba(0,0,0,0.2),rgba(0,0,0,0.7));
+    }
     .wrap_contact{
-        background: linear-gradient(280deg,rgba(0,0,0,0.2),rgba(0,0,0,0.6));
+        background: linear-gradient(280deg,rgba(0,0,0,0.7),rgba(0,0,0,0.8));
         padding: 20px 20px 20px 20px;
         box-shadow: 2px 2px 4px 2px rgba(221, 223, 243, 0.6);  
+        width: 500px;
+        height: 350px;
+        font-size: 1.4rem;
+        @include devices(small-pc){
+            width: 450px;
+        }
+        @include devices(mobile){
+
+            margin-top:100px;
+            width: 340px;
+            border: none;
+            box-shadow: none;
+        }
         .span_mail{
-            display: block;
-          
+            display: block; 
+        }
+        hr{
+            @include devices(mobile){
+               display: none;
+            }
+        }
+        h1{
+            @include devices(small-pc){
+                font-size: 1.5rem;
+            }
+        }
+        span{
+            @include devices(small-pc){
+                font-size: 1.2rem;
+            }
+            
         }
     }
     .mainFrozzen.frozzen{
@@ -19,14 +49,20 @@
     .mail_link_contact{
        @include btnRose;
         border-radius: 25px;
-        margin:25px auto 10px;
-        width: 240px;
+        margin:35px auto 10px;
+        width: 340px;
         align-self: center; 
+        @include devices(mobile){
+            width: 300px;
+        }
         span {
             display: block;
-            padding: 5px 10px 5px 10px;
+            padding: 10px 15px 10px 15px;
             line-height: 30px;
             box-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+            @include devices(mobile){
+                padding: 10px 5px 10px 5px;
+            }
         }
     }
 }
