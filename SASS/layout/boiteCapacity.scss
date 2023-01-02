@@ -1,10 +1,10 @@
 .boite{       /*capacité empeche le déformement*/
     width: 552px;
-    height: 512px;
+    height: 380px;
     padding-top: 15px;
     margin-top:30px;
     @include devices(mobile){
-      
+      height: 280px;
     }
     .skillcapacite{
       @include devices(mobile){
@@ -65,12 +65,14 @@
   
   .skillcapacite::before{
     content: "Mes capacités";
+    transform: rotate(-5deg);
     position: absolute;
-    top: -18px;
-    left:60px;
+  
+    top: -30px;
+    left:70px;
     background-color: #c0c0c2;
     background-color: rgba(214,131,114,0.8);
-    padding: 5px 12px;
+    padding: 10px 25px;
     color: #fff;
   }
   
@@ -80,8 +82,8 @@
     padding: 20px 30px 20px 30px;
     border-radius: 30px;
     position: relative;
-    background-color:rgb(192,127,6); 
-    background-color:rgba(214,131,114,0.8); 
+    // background-color:rgb(192,127,6); 
+    // background-color:rgba(214,131,114,0.8); 
     background-color:rgba(0,0,0,0.7); 
     
   }
