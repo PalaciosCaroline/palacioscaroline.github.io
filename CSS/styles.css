@@ -2,12 +2,11 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(250deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("./../../../assets/img17.jpg");
+  background: linear-gradient(250deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url("./../../../assets/img17.jpg");
+  background-attachment: fixed;
   filter: brightness(1.2);
   background-size: cover;
-  height: 100vh;
   font-family: Arial, Georgia, "Times New Roman", Times, serif;
-  height: 100vh;
 }
 
 a {
@@ -33,17 +32,21 @@ a {
   color: #f28b76;
 }
 
-header {
+#header_fixed {
   background: linear-gradient(280deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
   height: 70px;
   width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
   /*fixe header en haut sans masquer le texte en-dessous */
-  z-index: 1; /*priorise le header pour ne pas le masquer*/
+  z-index: 20; /*priorise le header pour ne pas le masquer*/
 }
 @media only screen and (max-width: 830px) {
-  header {
+  #header_fixed {
     background: linear-gradient(280deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));
+    background: linear-gradient(280deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
+    height: 50px;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -85,6 +88,7 @@ header a {
 }
 
 .nav_ul {
+  background: linear-gradient(280deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
   list-style: none;
   margin: 0;
   padding: 0;
@@ -127,8 +131,9 @@ header a {
   flex-direction: column; /*flex-dir par défaut en row*/
   justify-content: center;
   cursor: pointer; /*fait apparaître le pointeur*/
-  padding: 5px;
-  margin-left: 15px;
+  position: absolute;
+  left: 20px;
+  top: 13px;
 }
 
 .bar1, .bar2, .bar3 { /*barres du hamburger*/
@@ -165,18 +170,21 @@ header a {
   .navbar {
     display: flex;
     justify-content: inherit;
+    top: 50px;
   }
   .hamburger {
     display: flex;
   } /*faire apparaître le burger lorsq ecran<800px car sinon display est en none)*/
   .nav_ul {
-    position: fixed;
-    top: 60px;
-    left: -85%; /*pour faire disparaître le nav*/
+    position: absolute;
+    top: 50px;
+    height: 100vh;
+    left: -85%;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(30px); /*effet arrière trouble -webkit mit à cause du validator w3c*/
     /*effet arrière trouble*/
     background: linear-gradient(280deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
     width: 85%;
-    height: 100%;
     flex-direction: column;
     transition: transform ease-out 0.3s; /*effet de transition, ease-in permet de commencer vite et de terminer doucement la transition ≠ ease-in*/
   }
@@ -191,6 +199,7 @@ header a {
     border-bottom: 1px solid rgba(251, 250, 247, 0.4);
     width: 80%;
     justify-content: left;
+    height: 45px;
     padding: 5px;
   }
   .nav_ul a:hover {
@@ -402,6 +411,8 @@ header a {
   border-radius: 30px;
   position: relative;
   background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(2, 9, 69, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .skillcapacite .name {
@@ -416,12 +427,10 @@ header a {
 
 .skillcapacite .name span {
   margin: 7px 0;
-  box-shadow: 9.91px 9.91px 15px rgb(192, 127, 6), -9.91px -9.91px 15px rgb(192, 127, 6);
-  box-shadow: 4.91px 4.91px 10px rgba(214, 131, 114, 0.8), -4.91px -4.91px 10px rgba(214, 131, 114, 0.8);
   padding: 10px 20px;
   text-align: center;
   border-radius: 50px;
-  border: 5px solid #ebecf0;
+  border: 2px solid #ebecf0;
   transition: 0.2s;
   cursor: pointer;
   width: 170px;
@@ -440,20 +449,21 @@ header a {
 
 .niveau {
   width: 200px;
-  height: 18px;
+  height: 15px;
   border-radius: 20px;
   box-shadow: inset 6px 6px 6px #d9dade, inset -6px -6px 6px #ffffff;
 }
 @media only screen and (max-width: 550px) {
   .niveau {
     width: 140px;
-    height: 15px;
+    height: 12px;
   }
 }
 
 .niveau .progress {
   height: 100%;
   background: linear-gradient(to right, #9a989c, #4a484e);
+  background: linear-gradient(to right, #627cb4, #254393);
   border-radius: 20px;
 }
 
@@ -489,7 +499,7 @@ header a {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  height: 70vh;
+  height: 100vh;
 }
 .main_home .container {
   margin: auto;
@@ -613,14 +623,20 @@ header a {
   color: #fff;
   text-align: center;
   scroll-behavior: smooth;
+  padding-top: 70px;
   /* Accueil  */
   /* Section asymétrique */
   /* Placement */
   /* Lignes verticales */
 }
+@media only screen and (max-width: 830px) {
+  .main_projets {
+    padding-top: 50px;
+  }
+}
 .main_projets .accueil {
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto 0;
   height: auto;
   border-bottom: 1px dotted #777;
   padding-top: 1px;
@@ -1142,12 +1158,18 @@ header a {
   align-items: center;
   margin-bottom: 60px;
   justify-content: center;
+  padding-top: 100px;
 }
 @media only screen and (max-width: 1000px) {
   .main_formation .box_savoir {
+    padding-top: 70px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .main_formation .box_savoir {
+    padding-top: 60px;
   }
 }
 .main_formation .boite {
@@ -1163,8 +1185,13 @@ header a {
 }
 .main_formation .box_diplome .box_titre {
   background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgb(35, 43, 57);
+  background-color: rgb(20, 27, 40);
   padding: 10px 30px 10px 30px;
-  border-radius: 15px;
+  transition: all 0.2s ease-in-out;
+}
+.main_formation .box_diplome .box_titre .cartes-tarifs:hover {
+  transform: translateY(-8px);
 }
 @media only screen and (max-width: 550px) {
   .main_formation .box_diplome .box_titre {
@@ -1175,6 +1202,8 @@ header a {
   align-self: center;
   font-size: 2rem;
   padding: 15px 0 15px 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgb(20, 27, 40);
   background-color: rgba(0, 0, 0, 0.6);
   display: block;
   width: 100%;
@@ -1191,6 +1220,45 @@ header a {
   .main_formation .box_diplome h1 {
     font-size: 2rem;
     margin-top: 30px;
+  }
+}
+.main_formation .box_diplome .box_titre {
+  position: relative;
+}
+.main_formation .box_diplome .box_titre::after {
+  content: "";
+  background-color: #bab9b1;
+  background-color: rgb(168, 101, 99);
+  background-color: rgb(25, 58, 144);
+  background-color: rgb(38, 79, 185);
+  position: absolute;
+  top: 6px;
+  right: -10px;
+  height: 100%;
+  width: 10px;
+  transform: skewy(50deg);
+  z-index: -1;
+}
+@media only screen and (max-width: 550px) {
+  .main_formation .box_diplome .box_titre::after {
+    display: none;
+  }
+}
+.main_formation .box_diplome .box_titre::before {
+  content: "";
+  background-color: #5e5a4c;
+  background-color: rgb(120, 76, 67);
+  background-color: rgb(23, 33, 97);
+  position: absolute;
+  bottom: -10px;
+  left: 6px;
+  height: 10px;
+  width: 100%;
+  transform: skewX(50deg);
+}
+@media only screen and (max-width: 550px) {
+  .main_formation .box_diplome .box_titre::before {
+    display: none;
   }
 }
 .main_formation .box_diplome .box_titre h2 {
@@ -1255,6 +1323,8 @@ header a {
 .main_formation .cartes-tarifs {
   background-color: #333;
   background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgb(35, 43, 57);
+  background-color: rgb(20, 27, 40);
   color: #fff;
   width: 350px;
   height: auto;
@@ -1272,6 +1342,8 @@ header a {
   content: "";
   background-color: #bab9b1;
   background-color: rgb(168, 101, 99);
+  background-color: rgb(25, 58, 144);
+  background-color: rgb(38, 79, 185);
   position: absolute;
   top: 6px;
   right: -10px;
@@ -1289,6 +1361,7 @@ header a {
   content: "";
   background-color: #5e5a4c;
   background-color: rgb(120, 76, 67);
+  background-color: rgb(23, 33, 97);
   position: absolute;
   bottom: -10px;
   left: 6px;
@@ -1301,8 +1374,14 @@ header a {
     display: none;
   }
 }
+.main_formation .cartes-tarifs i {
+  color: rgb(214, 131, 114);
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 10px;
+}
 .main_formation .cartes-tarifs:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
 }
 .main_formation .cartes-tarifs h4 {
   margin: 0;
@@ -1316,6 +1395,8 @@ header a {
 .main_formation .cartes-tarifs:nth-child(2) h4 {
   background: #b0445a;
   background: linear-gradient(to left, rgb(177, 78, 59) 0%, rgb(214, 131, 114) 100%);
+  background: linear-gradient(to left, rgb(25, 58, 144) 0%, rgb(114, 141, 214) 100%);
+  background: linear-gradient(to left, rgb(25, 58, 144) 0%, rgb(114, 141, 214) 100%);
   position: relative;
   overflow: hidden;
   transition: all 0.2s;

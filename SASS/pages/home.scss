@@ -1,12 +1,14 @@
 
 
 .main_home{
+  
     display:flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    height: 70vh;
+    // height: 70vh;
+    height: 100vh;
     .container{
         margin:auto;
         height: 455px;

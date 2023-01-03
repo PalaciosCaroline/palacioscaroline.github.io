@@ -82,12 +82,15 @@
   .skillcapacite{
     display: flex;
     border: 2px, solid, black;
+
     padding: 20px 30px 20px 30px;
     border-radius: 30px;
     position: relative;
     // background-color:rgb(192,127,6); 
     // background-color:rgba(214,131,114,0.8); 
     background-color:rgba(0,0,0,0.7); 
+    background-color :  rgba(2, 9,69,0.8);
+    background-color : rgba(0, 0, 0, 0.6);;
     
   }
   
@@ -104,12 +107,14 @@
   
   .skillcapacite .name span{
     margin: 7px 0;
-    box-shadow: 9.91px 9.91px 15px rgb(192,127,6), -9.91px -9.91px 15px   rgb(192,127,6);   
-    box-shadow: 4.91px 4.91px 10px   rgba(214,131,114,0.8), -4.91px -4.91px 10px   rgba(214,131,114,0.8);   
+    // box-shadow: 9.91px 9.91px 15px rgb(192,127,6), -9.91px -9.91px 15px   rgb(192,127,6);   
+    // box-shadow: 4.91px 4.91px 10px   rgba(214,131,114,0.8), -4.91px -4.91px 10px   rgba(214,131,114,0.8);   
     padding: 10px 20px;
     text-align: center;
     border-radius: 50px   ;
-    border:5px solid #ebecf0;
+    // border:5px solid #ebecf0;
+    border:2px solid #ebecf0;
+    // border:2px solid #0627ad;
     transition: 0.2s;
     cursor:pointer;
     width:170px;
@@ -129,18 +134,19 @@
   
   .niveau{
     width: 200px;
-    height: 18px;
+    height: 15px;
     border-radius: 20px;
     box-shadow: inset 6px 6px 6px #d9dade, inset -6px -6px 6px #ffffff;
     @include devices(mobile){
       width: 140px;
-      height: 15px;
+      height: 12px;
     }
   }
   
   .niveau .progress{
     height: 100%;
     background: linear-gradient(to right, #9a989c, #4a484e);
+    background: linear-gradient(to right, #627cb4, #254393);
     border-radius: 20px;
   }
   

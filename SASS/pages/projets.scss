@@ -2,13 +2,17 @@
     color: #fff;
     text-align: center;
     scroll-behavior: smooth;
-    
+    padding-top:70px;
+    @include devices(small-pc){
+        padding-top:50px;
+    }
     /* Accueil  */
 
     .accueil {
+     
     // width: 100%;
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 0;
     // min-height: 290px;
     height: auto;
     border-bottom: 1px dotted #777;

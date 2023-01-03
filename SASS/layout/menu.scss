@@ -1,321 +1,4 @@
-// header{
-//     background: linear-gradient(280deg,rgba(0,0,0,0.2),rgba(0,0,0,0.4));
-//     position:relative;
-//     display: flex;
-//     @include devices(small-pc){
-//       // justify-content: space-between;
-//       flex-direction: column;
-//     }
-//   .header_nav{
-//     margin: 0 auto;
-//   }
 
-//   .activeLink{
-//   color:#d68372;
-//   }
-//   ul{
-//     list-style-type: none;
-//     position:relative;
-//     color: #fff;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     // color: #fffb0a;
-//     // background: linear-gradient(245deg,#5f5f76, rgb(108, 177, 225) 100%);
-//     font-size: 1.2rem;
-//     line-height: 70px;
-//     margin: 0;
-//     padding:0px;
-//    height: 70px;
-//   //  border-bottom: 1px solid #d68372;
-//   }
-  
-//   li{
-//     margin: 0;
-//     padding: 0 30px 0 30px;
-//     font-weight: 400;
-    
-//   }
-
-//   .menu_li_link {
-//     padding-bottom: 5px;
-//     width: 220px;
-//     span{
-//       position: relative;
-//     }
-//       & span::after {
-//           content:"";
-//           display: block;
-//           position: absolute; 
-//           bottom:-5px;
-//           width: 100%;           
-//           height: 2px;                
-//           background-color: #fff;
-//           transform: scaleX(0);
-//           transform-origin: center;
-//           transition: transform 0.2s ease;
-//       }    
-//       &:hover span::after {
-//           transform: scaleX(1);
-//       }  
-      
-//     }            
-//     .activeLink.menu_li_link:hover span::after{
-//       background-color: #d68372;
-//     } 
-//   .boxNomStar{
-//     display: flex;
-//     position: relative;
-//   }
-//   .li_contact{
-//     position: relative;
-//     span{
-     
-//       z-index:15;
-//     }
-   
-//   }
-//   #starContainer {
-//     position: absolute;
-//     z-index:5;
-//     right: 10px;
-//     top:30px;
-//     width: 40px;
-//     height: 40px;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     @include devices(small-pc){
-//         display: none;
-//     }
-    
-//   }
-  
-  
-  
-//   #star {
-//     display: flex;
-//     flex-direction: column;
-    
-//   }
-  
-//   #half {
-//     display: flex;
-   
-//   }
-  
-//   .starQuarter {
-//     width: $small;
-//     height: $small;
-//     animation: animStarSize 6.5s ease-in-out infinite;
-//     @include devices(small-pc){
-//         animation: none;
-//     }
-//   }
-  
-//   #topLeft {
-//     background: radial-gradient(ellipse at top left, transparent 70%, rgb(249, 249, 238) 100%);
-//   }
-  
-//   #topRight {
-//     background: radial-gradient(ellipse at top right, transparent 70%, rgb(249, 249, 202) 100%);
-//   }
-  
-//   #bottomLeft {
-//     background: radial-gradient(ellipse at bottom left, transparent 70%, rgb(247, 247, 230) 100%);
-//   }
-  
-//   #bottomRight {
-//     background: radial-gradient(ellipse at bottom right, transparent 70%, rgb(253, 253, 230) 100%);
-//   }
-  
-//   @keyframes animStarSize{
-//     0% {
-//       height: $small;
-//       width: $small;
-//     }
-//     25% {
-//       height: $bigger;
-//       width: $big;
-//     }
-//     50% {
-//       height: $small;
-//       width: $small;
-//     }
-//     75% {
-//       height: $big;
-//       width: $bigger;
-//     }
-//     100% {
-//       height: $small;
-//       width: $small;
-//     }
-//   }
-
-  
-//   }
-
-//   .hamburger {
-//     height: 50px;
-//     display: none;
-//     cursor: pointer;
-//     flex-direction: column;
-//     padding: 5px;
-//     margin-left: auto;
-//     justify-self: flex-end;
-//   }
-//   .hamburger :first-child {
-//     /*1ere barre pas de margin top*/
-//     margin-top: 0;
-//   }
-//   .bar1, .bar2, .bar3 {
-//     margin-top: 6px;
-//     width: 30px;
-//     height: 4px;
-//     border-radius: 5px;
-//     background-color: #fff;
-//     transition: all 0.2s;
-//   }
-//   .open .bar1 {
-//     transform: translateY(250%) rotate(-45deg);
-//   }
-//   .open .bar2 {
-//     opacity: 0;
-//     transform: rotate(45deg);
-//   }
-//   .open .bar3 {
-//     transform: translateY(-250%) rotate(45deg);
-//   }
-  
-//   /**Media Queries**/
-//   @media only screen and (max-width: 800px) {
-//     header .menu_li_link {
-     
-//       span{
-//         position: relative;
-//       }
-//         & span::after {
-      
-//             display: none;
-        
-//         }    
-//         &:hover span::after {
-//             transform: scaleX(0);
-//         }  
-        
-//     }  
-//   header{          
-//     ul{
-//       line-height: 50px;
-//     }
-//   }
-//     .page_header{
-//       // margin-right: 8%;
-//       margin: 0 4% 0 4%;
-//       padding-right: 0;
-//       // margin-bottom:60px;
-//     }
-//     .hamburger {
-//       padding: 15px 0 15px 0;
-//         display: flex;  
-//     }
-//     nav{
-//       width: 100%;
-//     }
-//     .header_nav{
-//       display: block;
-//      margin: 0 auto;
-//     }
-//     .nav-ul {   
-//       display: none; 
-//       flex-direction: column;
-//       width: 100%;
-//       position: relative;
-//       margin:0;
-     
-//     }
-
-//     /* animation de la mise en croix du hamburger */
-//     .slide {
-//         display: block;
-//         margin-top: 15px;
-//     }
-//     .nav-ul a {
-//       text-align: center;
-//       padding-top : 5px;
-//       // justify-content: left;
-//       // padding-left: 10px;
-//       display: inline-block;
-    
-//     }
-    
-//     .nav-ul {
-//       // width: 250px;
-//       // height: 168px;
-//       border-radius:3px;
-//       margin:0;
-//       z-index:10;
-//     }
-
-    
-//     .nav-ul li{
-//       position: relative;
-//       display: block; 
-//       text-align: center; 
-//      font-size: 1.4rem;
-//     }
-//     header{
-   
-//       .menu_li_link{
-//         position:relative;
-//         background: linear-gradient(280deg,rgba(0,0,0,0.7),rgba(0,0,0,0.7));
-//         width: 280px;
-//       }
-//     }
-//     .menu_li_link:after{
-//       content:"";
-//       display: block;
-//       position: absolute; 
-//       bottom:0;
-//       width: 100%;           
-//       height: 2px;                
-//       background-color: #fff;
-    
-//     }
-
-
-//     // .nav-ul li:nth-child(1){
-//     //   padding-top : 5px;
-//     // }
-//     // .nav-ul li:nth-child(4){
-//     //   padding-bottom : 5px;
-//     // }
-//     .nav-ul{
-//     justify-self: center;
-//       height: 195px; 
-//       border-radius:3px;
-//       overflow: hidden;
-//       position: absolute;
-//       //box-shadow: 2px 2px 4px 2px rgba(221, 223, 243, 0.6);   
-//       top: 60px;
-
-//     }
-    
-//     .nav-ul::before {
-//       content: "";
-//       position: absolute;
-//       inset: -80px;
-     
-//     }
-    
-//   }
-  
-//   @media only screen and (max-width: 800px) {
-   
-//     .nav-ul{
-//         height: auto; 
-//     }
-//   }
 
 
 .noscroll{
@@ -325,20 +8,39 @@
   .activeLink{
   color:#f28b76;
   }
+// #menu_container{
+//   position: -webkit-sticky;
+//   position: sticky;
+//   z-index:20;
+//   top:0;
+//   width: 100%;
+//   // margin-top:1px;
+//   // margin-bottom: 1px;
+//   left:0
+// }
+
+// html>body #menu_container {
+//   position: fixed
 
   //Essai
-  header{
+  #header_fixed{
+   
     background: linear-gradient(280deg,rgba(0,0,0,0.2),rgba(0,0,0,0.4));
     height: 70px;
     width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
     top:0;
-    // position: sticky;     
+  // left:0;
+      //  position:sticky;
       /*fixe header en haut sans masquer le texte en-dessous */
-    z-index: 1;   /*priorise le header pour ne pas le masquer*/
+    z-index: 20;   /*priorise le header pour ne pas le masquer*/
     // box-shadow: 1px 4px 4px 0px #ff00002b;   /*ombrage sous header*/
     // transition: box-shadows 1s;
     @include devices(small-pc){
       background: linear-gradient(280deg,rgba(0,0,0,0.4),rgba(0,0,0,0.8));
+      background: linear-gradient(280deg,rgba(0,0,0,0.7),rgba(0,0,0,0.8));
+     height: 50px;
       position: sticky;     
       top:0;
       z-index: 1;
@@ -395,6 +97,7 @@ header a{
 }
 
 .nav_ul{
+  background: linear-gradient(280deg,rgba(0,0,0,0.7),rgba(0,0,0,0.8));
     list-style: none;
     margin: 0;
     padding: 0;
@@ -440,8 +143,11 @@ header a{
     flex-direction: column;   /*flex-dir par défaut en row*/
     justify-content: center;
     cursor: pointer;    /*fait apparaître le pointeur*/
-    padding: 5px;
-    margin-left: 15px;
+    // padding: 5px;
+    // margin-left: 15px;
+    position: absolute;
+    left:20px;
+    top:13px;
 }
 
 
@@ -480,6 +186,9 @@ header a{
   .navbar{
     display: flex;
     justify-content: inherit;
+   
+    
+    top:50px;
   }
 
     .hamburger{
@@ -488,18 +197,21 @@ header a{
 
 
     .nav_ul{
-        position: fixed;
-        top: 60px;
-        left: -85%; /*pour faire disparaître le nav*/
-        // -webkit-backdrop-filter: blur(4px);
-        // backdrop-filter: blur(30px);     /*effet arrière trouble -webkit mit à cause du validator w3c*/
+        position: absolute;
+        top:50px;
+        height: 100vh;
+    left:-85%;
+        -webkit-backdrop-filter: blur(4px);
+        backdrop-filter: blur(30px);     /*effet arrière trouble -webkit mit à cause du validator w3c*/
         // background-color: rgba(0, 0, 0, 0.6) ;      
           /*effet arrière trouble*/
         background: linear-gradient(280deg,rgba(0,0,0,0.7),rgba(0,0,0,0.8));
         width: 85%;
-        height: 100%;
+        // height: 100%;
         flex-direction: column;
         transition: transform ease-out 0.3s; /*effet de transition, ease-in permet de commencer vite et de terminer doucement la transition ≠ ease-in*/
+
+        
     }
 
     .nav_ul.navFormation{
@@ -509,6 +221,7 @@ header a{
 
     .slide{
         transform: translateX(100%);
+       
     }
 
 
@@ -517,6 +230,7 @@ header a{
         border-bottom: 1px solid rgba(251, 250, 247, 0.4);
         width: 80%;
         justify-content: left;
+        height: 45px;
         padding: 5px;
     }
 
