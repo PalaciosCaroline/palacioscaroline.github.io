@@ -1189,9 +1189,10 @@ header a {
   background-color: rgb(20, 27, 40);
   padding: 10px 30px 10px 30px;
   transition: all 0.2s ease-in-out;
+  z-index: 2;
 }
-.main_formation .box_diplome .box_titre .cartes-tarifs:hover {
-  transform: translateY(-8px);
+.main_formation .box_diplome .box_titre:hover {
+  transform: translateY(-5px);
 }
 @media only screen and (max-width: 550px) {
   .main_formation .box_diplome .box_titre {
@@ -1286,6 +1287,7 @@ header a {
 }
 .main_formation .box_diplome .box_titre span {
   margin-right: 20px;
+  z-index: -1;
 }
 .main_formation .box_diplome .box_titre .flex {
   align-items: center;
@@ -1469,7 +1471,7 @@ header a {
   height: 25px;
   border-left: 3px solid #fff;
   border-right: 3px solid #fff;
-  z-index: 10;
+  z-index: -1;
 }
 
 .diplome_span {
