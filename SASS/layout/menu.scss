@@ -5,9 +5,9 @@
   overflow:hidden; /*pr empècher le scroll lorsque nav en column*/
 }
 
-  .activeLink{
-  color:#f28b76;
-  }
+  // .activeLink{
+  // color:#f28b76;
+  // }
 // #menu_container{
 //   position: -webkit-sticky;
 //   position: sticky;
@@ -97,11 +97,14 @@ header a{
 }
 
 .nav_ul{
-  background: linear-gradient(280deg,rgba(0,0,0,0.7),rgba(0,0,0,0.8));
+  // background: linear-gradient(280deg,rgba(0,0,0,0.7),rgba(0,0,0,0.8));
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
+    background-color: rgb(37, 37, 37);
+  border:1px solid rgb(58, 56, 56);
+    background: rgb(8 27 35);
 }
 
 .nav_ul a{
@@ -279,11 +282,11 @@ header a{
       }  
       
     }            
-    .activeLink.menu_li_link:hover span::after{
+    // .activeLink.menu_li_link:hover span::after{
    
-        background-color: #d68372;
+    //     background-color: #d68372;
       
-    } 
+    // } 
   .boxNomStar{
     display: flex;
     position: relative;

@@ -75,6 +75,7 @@
     left:70px;
     background-color: #c0c0c2;
     background-color: rgb(214, 131, 114);
+    background: rgba(210, 64, 64, 0.9);
     padding: 10px 25px;
     color: #fff;
   }
@@ -146,7 +147,7 @@
   .niveau .progress{
     height: 100%;
     background: linear-gradient(to right, #9a989c, #4a484e);
-    background: linear-gradient(to right, #627cb4, #254393);
+    //background: linear-gradient(to right, #627cb4, #254393);
     border-radius: 20px;
   }
   
