@@ -590,6 +590,7 @@ header a {
   border: 1px solid #ec8d7a;
   border: 1px solid #ef9785;
   border: 1px solid rgb(169, 41, 9);
+  border: 1px solid rgb(202, 42, 2);
   color: #fff;
   letter-spacing: 1px;
   font-weight: 600;
@@ -802,8 +803,8 @@ header a {
   border: 1px solid rgba(236, 80, 49, 0.8);
   background: linear-gradient(to left, rgba(214, 131, 114, 0.8) 0%, rgba(214, 131, 114, 0.8) 100%);
   background: linear-gradient(to right, rgba(230, 139, 121, 0.8) 0%, rgba(247, 122, 105, 0.8) 100%);
-  background: linear-gradient(to right, rgba(33, 81, 13, 0.8) 0%, rgba(61, 99, 12, 0.8) 100%);
   background: linear-gradient(250deg, rgba(186, 63, 63, 0.4), rgba(130, 28, 28, 0.6));
+  background: linear-gradient(250deg, rgba(145, 11, 11, 0.6), rgba(196, 19, 19, 0.8));
   color: #f1f1f1;
   padding: 20px 35px;
   font-size: 20px;
@@ -815,7 +816,7 @@ header a {
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
 }
 .main_projets .bloc button:hover {
-  background: linear-gradient(to left, rgba(228, 41, 3, 0.9) 0%, rgba(214, 47, 13, 0.9) 100%);
+  background: linear-gradient(to left, rgb(160, 41, 17) 0%, rgba(165, 34, 8, 0.973) 50%);
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
   transform: translatey(1px);
 }
@@ -1121,6 +1122,7 @@ header a {
   border: 1px solid #ec8d7a;
   border: 1px solid #ef9785;
   border: 1px solid rgb(169, 41, 9);
+  border: 1px solid rgb(202, 42, 2);
   color: #fff;
   letter-spacing: 1px;
   font-weight: 600;
@@ -1555,11 +1557,11 @@ header a {
 }
 @media only screen and (max-width: 550px) {
   .main_contact {
-    background: linear-gradient(280deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    background: linear-gradient(280deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
   }
 }
 .main_contact .wrap_contact {
-  background: linear-gradient(280deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4));
+  background: linear-gradient(280deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
   padding: 20px 20px 20px 20px;
   box-shadow: 2px 2px 4px 2px rgba(221, 223, 243, 0.6);
   width: 500px;
@@ -1613,6 +1615,7 @@ header a {
   border: 1px solid #ec8d7a;
   border: 1px solid #ef9785;
   border: 1px solid rgb(169, 41, 9);
+  border: 1px solid rgb(202, 42, 2);
   color: #fff;
   letter-spacing: 1px;
   font-weight: 600;
