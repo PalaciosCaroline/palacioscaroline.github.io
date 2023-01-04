@@ -102,7 +102,7 @@
 
     .section-asymetrique2 {
         // grid-template: 200px repeat(6, auto) 100px / 1fr 600px 1fr;
-        grid-template: 40px repeat(6, auto) 30px / 1fr 600px 1fr;
+        grid-template: 10px repeat(6, auto) 30px / 1fr 600px 1fr;
     }
 
     .section-asymetrique h2 {
@@ -178,12 +178,16 @@
     height: 700px;
     object-fit: cover;
     position: relative;
+    @include devices(small-pc){
+        margin-top:40px;
+    }
     }
 
     .img-grid-1,
     .img-grid-3 {
-    top: 130px;
-    left: 20px;
+        top: 130px;
+        left: 20px;
+        
     }
 
     .bloc-left {
@@ -347,10 +351,12 @@ perspective-origin: bottom 100px;
 
     .bloc-left {
         left: 0px;
+       
     }
 
     .bloc-right {
         right: 0px;
+        
     }
 
     .bloc-txt-left {

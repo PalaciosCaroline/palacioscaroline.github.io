@@ -3,10 +3,16 @@ import Banner from './../components/Banner'
 import imageHome from './../assets/img_home.png'
 import Boxcards from '../components/Boxcards'
 import Loader from '../components/Loader'
+// import * as data from './../data/data.json'
+
+
+// const json = require('json-loader!./data.json');
 
 export default function Home() {
   const [logements, setlogements] = useState([])
   const [isDataLoading, setDataLoading] = useState(true)
+
+  // data = require('data');
 
   useEffect(() => {
     async function fetchDatas() {

@@ -22,5 +22,8 @@
     "url": "https://github.com/PalaciosCaroline/CV_WEB/issues"
   },
   "homepage": "https://github.com/PalaciosCaroline/CV_WEB#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "json-loader": "^0.5.7"
+  }
 }

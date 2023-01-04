@@ -1,6 +1,7 @@
 // import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 import React, { useState } from 'react'
 import arrowDown from './../assets/arrowDown.svg'
+// import arrowDown from './../../../assets/arrowDown.svg'
 
 export default function SlideShow({ imgsLogement }) {
   const [ImgIndex, setImgIndex] = useState(0)

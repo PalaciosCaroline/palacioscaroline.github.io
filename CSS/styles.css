@@ -36,6 +36,7 @@ a {
   width: 100%;
   position: -webkit-sticky;
   position: sticky;
+  z-index: 99;
   top: 0;
   /*fixe header en haut sans masquer le texte en-dessous */
   z-index: 20; /*priorise le header pour ne pas le masquer*/
@@ -44,7 +45,7 @@ a {
   #header_fixed {
     background: linear-gradient(280deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));
     background: linear-gradient(280deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
-    height: 50px;
+    height: 60px;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -91,8 +92,14 @@ header a {
   padding: 0;
   display: flex;
   background-color: rgb(37, 37, 37);
-  border: 1px solid rgb(58, 56, 56);
+  border-bottom: 1px solid rgb(58, 56, 56);
   background: rgb(8, 27, 35);
+  z-index: 99;
+}
+@media only screen and (max-width: 830px) {
+  .nav_ul {
+    border-bottom: none;
+  }
 }
 
 .nav_ul a {
@@ -133,7 +140,7 @@ header a {
   cursor: pointer; /*fait apparaître le pointeur*/
   position: absolute;
   left: 20px;
-  top: 13px;
+  top: 18px;
 }
 
 .bar1, .bar2, .bar3 { /*barres du hamburger*/
@@ -170,27 +177,23 @@ header a {
   .navbar {
     display: flex;
     justify-content: inherit;
-    top: 50px;
+    z-index: 99;
+    top: 60px;
   }
   .hamburger {
     display: flex;
   } /*faire apparaître le burger lorsq ecran<800px car sinon display est en none)*/
   .nav_ul {
     position: absolute;
-    top: 50px;
+    top: 60px;
     height: 100vh;
     left: -85%;
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(30px); /*effet arrière trouble -webkit mit à cause du validator w3c*/
     /*effet arrière trouble*/
     background: linear-gradient(280deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
-    width: 85%;
+    width: 82%;
     flex-direction: column;
     transition: transform ease-out 0.3s; /*effet de transition, ease-in permet de commencer vite et de terminer doucement la transition ≠ ease-in*/
-  }
-  .nav_ul.navFormation {
-    background: linear-gradient(280deg, rgba(58, 52, 52, 0.8), rgba(0, 0, 0, 0.9));
-    background: linear-gradient(280deg, rgba(36, 32, 32, 0.8), rgba(0, 0, 0, 0.9));
+    z-index: 99;
   }
   .slide {
     transform: translateX(100%);
@@ -701,7 +704,7 @@ header a {
   grid-template: 140px repeat(6, auto) 10px/1fr 600px 1fr;
 }
 .main_projets .section-asymetrique2 {
-  grid-template: 40px repeat(6, auto) 30px/1fr 600px 1fr;
+  grid-template: 10px repeat(6, auto) 30px/1fr 600px 1fr;
 }
 .main_projets .section-asymetrique h2 {
   grid-area: 1/1/2/-1;
@@ -759,6 +762,11 @@ header a {
   height: 700px;
   object-fit: cover;
   position: relative;
+}
+@media only screen and (max-width: 830px) {
+  .main_projets .img-grid {
+    margin-top: 40px;
+  }
 }
 .main_projets .img-grid-1,
 .main_projets .img-grid-3 {

@@ -7,10 +7,11 @@ import Logement from './pages/Logement'
 export default function Router() {
   return (
     <Routes>
-      <Route index element={<Home />} />
-      <Route path="/Apropos" element={<Apropos />} />
-      <Route path="/logement/:id" element={<Logement />} />
-      <Route path="*" element={<Erreur404 />} />
+    
+      <Route path={`${process.env.PUBLIC_URL}/`} element={<Home />} />
+      <Route path={`${process.env.PUBLIC_URL}/Apropos`} element={<Apropos />} />
+      <Route path={`${process.env.PUBLIC_URL}/logement/:id`} element={<Logement />} />
+      <Route path={`${process.env.PUBLIC_URL}*`} element={<Erreur404 />} />
     </Routes>
   )
 }

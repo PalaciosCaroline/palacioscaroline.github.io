@@ -12,7 +12,7 @@ export default function Menu() {
           <ul>
             <li>
               <NavLink
-                to="/"
+                to={`${process.env.PUBLIC_URL}/`}
                 end
                 className={({ isActive }) =>
                   isActive ? 'activeLink' : undefined
@@ -23,7 +23,7 @@ export default function Menu() {
             </li>
             <li>
               <NavLink
-                to="/Apropos"
+                to={`${process.env.PUBLIC_URL}/Apropos`}
                 className={({ isActive }) =>
                   isActive ? 'activeLink' : undefined
                 }
