@@ -1175,7 +1175,7 @@ header a {
 }
 @media only screen and (max-width: 550px) {
   .main_formation {
-    margin: 20px 2% 20px 2%;
+    padding: 20px 2% 20px 2%;
   }
 }
 .main_formation .box_savoir {
@@ -1256,6 +1256,11 @@ header a {
 }
 .main_formation .box_diplome .box_titre {
   position: relative;
+}
+@media only screen and (max-width: 550px) {
+  .main_formation .box_diplome .box_titre {
+    border-radius: 15px;
+  }
 }
 .main_formation .box_diplome .box_titre::after {
   content: "";
@@ -1375,6 +1380,7 @@ header a {
 @media only screen and (max-width: 550px) {
   .main_formation .cartes-tarifs {
     box-shadow: none;
+    border-radius: 15px;
   }
 }
 .main_formation .cartes-tarifs::after {
@@ -1431,9 +1437,12 @@ header a {
   text-align: center;
   padding: 20px 10px 10px 10px;
   font-size: 1.6rem;
-  background: rgba(247, 58, 58, 0.5);
-  background: rgb(214, 131, 114);
   height: 60px;
+}
+@media only screen and (max-width: 550px) {
+  .main_formation .cartes-tarifs h4 {
+    border-radius: 15px 15px 0 0;
+  }
 }
 .main_formation .cartes-tarifs:nth-child(2) h4 {
   background: #b0445a;
@@ -1537,7 +1546,8 @@ header a {
   align-items: center;
   justify-content: center;
   display: flex;
-  height: 60vh;
+  height: 95vh;
+  border-top: 2px solid rgb(214, 212, 212);
   color: #fff;
 }
 @media only screen and (max-width: 550px) {

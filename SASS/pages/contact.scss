@@ -1,7 +1,8 @@
 .main_contact{
     text-align: center;
     @include allCenter;
-    height: 60vh;
+    height: 95vh;
+    border-top:2px solid rgb(214, 212, 212);
     color: #fff;
     @include devices(mobile){
         background: linear-gradient(280deg,rgba(0,0,0,0.2),rgba(0,0,0,0.7));
