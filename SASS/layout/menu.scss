@@ -5,33 +5,22 @@
   overflow:hidden; /*pr empècher le scroll lorsque nav en column*/
 }
 
-  // .activeLink{
-  // color:#f28b76;
-  // }
-// #menu_container{
-//   position: -webkit-sticky;
-//   position: sticky;
-//   z-index:20;
-//   top:0;
-//   width: 100%;
-//   // margin-top:1px;
-//   // margin-bottom: 1px;
-//   left:0
-// }
-
-// html>body #menu_container {
-//   position: fixed
 
   //Essai
   #header_fixed{
-   
-    background: linear-gradient(280deg,rgba(0,0,0,0.2),rgba(0,0,0,0.4));
+   background: inherit;
+    // background: linear-gradient(280deg,rgba(0,0,0,0.2),rgba(0,0,0,0.4));
+    // background: linear-gradient (280deg, rgb(21, 28, 31) 10% , rgb(26, 34, 38) 100% );
+    background: linear-gradient (280deg, rgb(21, 28, 31) 30% , rgb(26, 34, 38) 100% );
+    background: linear-gradient(280deg,rgb(5, 13, 16),rgb(26, 34, 38));
+  
     height: 70px;
     width: 100%;
     position: -webkit-sticky;
     position: sticky;
     z-index:99;
     top:0;
+
   // left:0;
       //  position:sticky;
       /*fixe header en haut sans masquer le texte en-dessous */
@@ -39,8 +28,14 @@
     // box-shadow: 1px 4px 4px 0px #ff00002b;   /*ombrage sous header*/
     // transition: box-shadows 1s;
     @include devices(small-pc){
-      background: linear-gradient(280deg,rgba(0,0,0,0.4),rgba(0,0,0,0.8));
-      background: linear-gradient(280deg,rgba(0,0,0,0.7),rgba(0,0,0,0.8));
+      // background: linear-gradient(280deg,rgba(0,0,0,0.4),rgba(0,0,0,0.8));
+      // background: linear-gradient(280deg,rgba(0,0,0,0.7),rgba(0,0,0,0.8));
+   
+      // background: linear-gradient (280deg, rgb(21, 28, 31) 30% , rgb(26, 34, 38) 100% );
+      background: linear-gradient(280deg,rgb(4, 16, 20),rgb(39, 46, 49));
+      background: linear-gradient(280deg,rgb(15, 22, 25),rgb(39, 46, 49));
+      background: linear-gradient(280deg,rgb(5, 13, 16),rgb(26, 34, 38));
+    
      height: 60px;
       position: sticky;     
       top:0;
@@ -103,9 +98,12 @@ header a{
     margin: 0;
     padding: 0;
     display: flex;
-    background-color: rgb(37, 37, 37);
-  border-bottom :1px solid rgb(58, 56, 56);
-    background: rgb(8 27 35);
+    // background: rgb(21, 28, 31);
+    // background: linear-gradient (280deg, rgb(21, 28, 31) 30% , rgb(26, 34, 38) 100% );
+    // background: rgb(21, 28, 31);
+    background: linear-gradient(280deg,rgb(5, 13, 16),rgb(26, 34, 38));
+    background: linear-gradient(280deg,rgb(15, 22, 25),rgb(39, 46, 49));
+    background:rgb(30 38 41);
     z-index: 99;
     @include devices(small-pc){
       border-bottom :none;
@@ -156,6 +154,7 @@ header a{
     position: absolute;
     left:20px;
     top:18px;
+    z-index:102;
 }
 
 
@@ -196,8 +195,8 @@ header a{
     justify-content: inherit;
     z-index:99;
    
-    
-    top:60px;
+   
+    // top:60px;
   }
 
     .hamburger{
@@ -207,15 +206,15 @@ header a{
 
     .nav_ul{
         position: absolute;
-        top:60px;
+        // top:60px;
         height: 100vh;
-  
+  padding-top:60px;
     left:-85%;
         // -webkit-backdrop-filter: blur(4px);
         // backdrop-filter: blur(30px);     /*effet arrière trouble -webkit mit à cause du validator w3c*/
         // background-color: rgba(0, 0, 0, 0.6) ;      
           /*effet arrière trouble*/
-        background: linear-gradient(280deg,rgba(0,0,0,0.7),rgba(0,0,0,0.8));
+        // background: linear-gradient(280deg,rgba(0,0,0,0.7),rgba(0,0,0,0.8));
         width: 82%;
         // height: 100%;
         flex-direction: column;

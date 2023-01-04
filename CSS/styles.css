@@ -2,7 +2,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(250deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("./../../../assets/img17.jpg");
+  background: linear-gradient(250deg, rgba(26, 26, 30, 0.6), rgba(47, 44, 44, 0.5)), url("./../../../assets/img17.jpg");
   background-position: 20% 20%;
   background-attachment: fixed;
   filter: brightness(1.2);
@@ -31,7 +31,9 @@ a {
 }
 
 #header_fixed {
-  background: linear-gradient(280deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
+  background: inherit;
+  background: linear-gradient 280deg, rgb(21, 28, 31) 30%, rgb(26, 34, 38) 100%;
+  background: linear-gradient(280deg, rgb(5, 13, 16), rgb(26, 34, 38));
   height: 70px;
   width: 100%;
   position: -webkit-sticky;
@@ -43,8 +45,9 @@ a {
 }
 @media only screen and (max-width: 830px) {
   #header_fixed {
-    background: linear-gradient(280deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));
-    background: linear-gradient(280deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
+    background: linear-gradient(280deg, rgb(4, 16, 20), rgb(39, 46, 49));
+    background: linear-gradient(280deg, rgb(15, 22, 25), rgb(39, 46, 49));
+    background: linear-gradient(280deg, rgb(5, 13, 16), rgb(26, 34, 38));
     height: 60px;
     position: sticky;
     top: 0;
@@ -91,9 +94,9 @@ header a {
   margin: 0;
   padding: 0;
   display: flex;
-  background-color: rgb(37, 37, 37);
-  border-bottom: 1px solid rgb(58, 56, 56);
-  background: rgb(8, 27, 35);
+  background: linear-gradient(280deg, rgb(5, 13, 16), rgb(26, 34, 38));
+  background: linear-gradient(280deg, rgb(15, 22, 25), rgb(39, 46, 49));
+  background: rgb(30, 38, 41);
   z-index: 99;
 }
 @media only screen and (max-width: 830px) {
@@ -141,6 +144,7 @@ header a {
   position: absolute;
   left: 20px;
   top: 18px;
+  z-index: 102;
 }
 
 .bar1, .bar2, .bar3 { /*barres du hamburger*/
@@ -178,18 +182,16 @@ header a {
     display: flex;
     justify-content: inherit;
     z-index: 99;
-    top: 60px;
   }
   .hamburger {
     display: flex;
   } /*faire apparaître le burger lorsq ecran<800px car sinon display est en none)*/
   .nav_ul {
     position: absolute;
-    top: 60px;
     height: 100vh;
+    padding-top: 60px;
     left: -85%;
     /*effet arrière trouble*/
-    background: linear-gradient(280deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
     width: 82%;
     flex-direction: column;
     transition: transform ease-out 0.3s; /*effet de transition, ease-in permet de commencer vite et de terminer doucement la transition ≠ ease-in*/
@@ -493,16 +495,16 @@ header a {
   padding-left: 40px;
 }
 
-.main_home {
-  background: rgb(8, 27, 35);
+#home {
   background: rgb(21, 28, 31);
+  background: rgb(30, 38, 41);
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   height: 100vh;
 }
-.main_home .container {
+#home .container {
   margin: auto;
   height: 455px;
   display: flex;
@@ -511,40 +513,40 @@ header a {
   flex-direction: column;
   overflow: hidden;
 }
-.main_home .wrapTitle {
+#home .wrapTitle {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.main_home .wrapTitle.hidden {
+#home .wrapTitle.hidden {
   display: none;
 }
-.main_home .wrapTitle.marginTop {
+#home .wrapTitle.marginTop {
   margin-top: 100px;
 }
-.main_home .presentation {
+#home .presentation {
   margin: 10px 0 10px 0;
   font-weight: 400;
   position: relative;
 }
-.main_home .presentation h1, .main_home .presentation p {
+#home .presentation h1, #home .presentation p {
   margin: 0;
 }
-.main_home .text-3d {
+#home .text-3d {
   color: rgb(255, 255, 255);
   font-size: 2.6rem;
   line-height: 3.2rem;
 }
 @media only screen and (max-width: 550px) {
-  .main_home .text-3d {
+  #home .text-3d {
     font-size: 1.8rem;
     line-height: 2.4rem;
   }
 }
-.main_home h1 {
+#home h1 {
   margin-bottom: 15px;
 }
-.main_home .text_web {
+#home .text_web {
   font-size: 1.3rem;
   color: #d68372;
   color: #5b5756;
@@ -553,11 +555,11 @@ header a {
   color: rgb(169, 41, 9);
 }
 @media only screen and (max-width: 550px) {
-  .main_home .text_web {
+  #home .text_web {
     font-size: 1.2rem;
   }
 }
-.main_home .box_photo {
+#home .box_photo {
   border-radius: 50%;
   border: 4px solid #333;
   border: 3px solid rgba(99, 96, 96, 0.6);
@@ -565,10 +567,10 @@ header a {
   height: 100px;
   width: 100px;
 }
-.main_home .box_photo.hiddenImg {
+#home .box_photo.hiddenImg {
   display: none;
 }
-.main_home .box_photo img {
+#home .box_photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -642,7 +644,7 @@ header a {
   height: auto;
   border-bottom: 1px dotted #777;
   padding-bottom: 20px;
-  background: linear-gradient(280deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+  background: linear-gradient(280deg, rgba(7, 7, 7, 0.7), rgba(0, 0, 0, 0.6));
   border-bottom: 5px solid #615f55;
 }
 @media only screen and (max-width: 830px) {
