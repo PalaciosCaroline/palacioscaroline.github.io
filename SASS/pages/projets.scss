@@ -19,7 +19,9 @@
     height: auto;
     border-bottom: 1px dotted #777;
    padding-bottom:20px;
-    background: linear-gradient(280deg,rgba(7, 7, 7, 0.9),rgba(7, 5, 5, 0.8));
+    background: linear-gradient(280deg,rgba(7, 7, 7, 0.4),rgba(7, 5, 5, 0.5));
+    backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
     // border-bottom: 5px solid rgb(211, 208, 208);
     border-bottom: 5px solid #615f55;
     @include devices(small-pc){
@@ -163,7 +165,8 @@
     background: linear-gradient(to left, rgb(20 57 4) 0%, rgb(27 98 13) 100%);
     background-color: rgb(68 75 86);
     background: linear-gradient(to left, rgb(21 26 38) 0%, rgb(71 75 70) 100%);
-    background: linear-gradient(to left, rgb(30 35 46) 0%, rgb(57 58 63) 100%);
+    background: linear-gradient(to left, rgb(31 31 31) 0%, rgb(57 58 63) 100%);
+    background: linear-gradient(to left, rgb(34 33 33) 0%, rgb(52 53 57) 100%);
 
     // background: #654e01;
    
@@ -178,9 +181,7 @@
     height: 700px;
     object-fit: cover;
     position: relative;
-    @include devices(small-pc){
-        margin-top:40px;
-    }
+    
     }
 
     .img-grid-1,
@@ -700,7 +701,7 @@ perspective-origin: bottom 100px;
     color:#fff;
     margin:15px 10px;
     font-size: 1.2rem;
-    background: linear-gradient(280deg,rgba(0,0,0,0.6),rgba(0,0,0,0.8));
+    background: linear-gradient(280deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3));
    
 }
 

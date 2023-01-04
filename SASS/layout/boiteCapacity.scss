@@ -73,9 +73,7 @@
   
     top: -30px;
     left:70px;
-    background-color: #c0c0c2;
-    background-color: rgb(214, 131, 114);
-    background: rgba(210, 64, 64, 0.9);
+ 
     background: rgb(255 31 31 / 100%);
 
     padding: 10px 25px;
@@ -84,16 +82,18 @@
   
   .skillcapacite{
     display: flex;
-    border: 2px, solid, black;
+    // border: 2px, solid, rgb(216, 209, 209);
 
     padding: 20px 30px 20px 30px;
-    border-radius: 30px;
+    
+    border-radius: 15px;
     position: relative;
+    border: 2px solid rgb(91, 86, 86);
     // background-color:rgb(192,127,6); 
     // background-color:rgba(214,131,114,0.8); 
-    background-color:rgba(0,0,0,0.7); 
-    background-color :  rgba(2, 9,69,0.8);
-    background-color : rgba(0, 0, 0, 0.6);;
+    // background-color:rgba(0,0,0,0.7); 
+    // background-color :  rgba(2, 9,69,0.8);
+    // background-color : rgba(0, 0, 0, 0.6);
     
   }
   
@@ -101,7 +101,7 @@
   .skillcapacite .name{
     display: flex;
     flex-direction: column;
-    color: #37373a;
+    
     color: #fff;
     font-size: 1.4em;
     font-weight: 400;
@@ -111,12 +111,13 @@
   .skillcapacite .name span{
     margin: 7px 0;
     // box-shadow: 9.91px 9.91px 15px rgb(192,127,6), -9.91px -9.91px 15px   rgb(192,127,6);   
-    // box-shadow: 4.91px 4.91px 10px   rgba(214,131,114,0.8), -4.91px -4.91px 10px   rgba(214,131,114,0.8);   
+    // box-shadow: 4.91px 4.91px 10px   rgba(250, 234, 231, 0.8), -4.91px -4.91px 10px   rgba(243, 221, 217, 0.8);   
+    box-shadow: 1px 1px 3px rgb(186, 177, 177);
     padding: 10px 20px;
     text-align: center;
     border-radius: 50px   ;
     // border:5px solid #ebecf0;
-    border:2px solid #ebecf0;
+     border:1px solid #66676a;
     // border:2px solid #0627ad;
     transition: 0.2s;
     cursor:pointer;
@@ -125,7 +126,8 @@
   
   .skillcapacite .name span:hover {
        margin: 7px 0;
-       box-shadow: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #ffffff, inset 9.91px 9.91px 15px #d9dade, inset -9.91px -9.91px 15px #ffffff ;
+       border:none;
+       box-shadow: 5.91px 5.91px 10px #d9dade, -5.91px -5.91px 10px #ffffff, inset 5.91px 5.91px 10px #d9dade, inset -5.91px -5.91px 10px #ffffff ;
   
   }
   

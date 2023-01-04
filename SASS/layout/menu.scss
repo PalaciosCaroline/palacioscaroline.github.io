@@ -13,6 +13,7 @@
     // background: linear-gradient (280deg, rgb(21, 28, 31) 10% , rgb(26, 34, 38) 100% );
     background: linear-gradient (280deg, rgb(21, 28, 31) 30% , rgb(26, 34, 38) 100% );
     background: linear-gradient(280deg,rgb(5, 13, 16),rgb(26, 34, 38));
+    background: rgb(31,31,31);
   
     height: 70px;
     width: 100%;
@@ -35,6 +36,7 @@
       background: linear-gradient(280deg,rgb(4, 16, 20),rgb(39, 46, 49));
       background: linear-gradient(280deg,rgb(15, 22, 25),rgb(39, 46, 49));
       background: linear-gradient(280deg,rgb(5, 13, 16),rgb(26, 34, 38));
+      background: rgb(31,31,31);
     
      height: 60px;
       position: sticky;     
@@ -103,10 +105,11 @@ header a{
     // background: rgb(21, 28, 31);
     background: linear-gradient(280deg,rgb(5, 13, 16),rgb(26, 34, 38));
     background: linear-gradient(280deg,rgb(15, 22, 25),rgb(39, 46, 49));
-    background:rgb(30 38 41);
+    background:rgb(31 31 31);
     z-index: 99;
     @include devices(small-pc){
       border-bottom :none;
+      background:rgb(41 39 39);
     }
 }
 
@@ -139,6 +142,7 @@ header a{
   line-height: 70px;
   @include devices(small-pc){
     line-height: 45px;
+
   }
   
 }

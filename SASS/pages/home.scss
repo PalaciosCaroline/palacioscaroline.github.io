@@ -2,9 +2,8 @@
 
 #home{
   // background:rgb(30, 28, 28);
- 
-  background: rgb(21 28 31);
   background: rgb(30 38 41);
+  background: rgb(31,31,31);
    
     // background: linear-gradient(280deg,rgb(5, 13, 16),rgb(26, 34, 38));
  
@@ -23,7 +22,7 @@
         align-items: center;
         flex-direction: column;
         overflow: hidden;
-
+        padding-bottom:180px;
       }
   .wrapTitle{
     // width: 100%;
@@ -66,11 +65,8 @@
   }
   .text_web{
     font-size:1.3rem;
-    color: #d68372;
-    color: #5b5756;
-    color: rgb(186 102 81);
-    color: rgb(233 53 8);
     color: rgb(169 41 9);
+    color: rgb(198 40 1);
     @include devices(mobile){
       font-size: 1.2rem;
     }

@@ -34,6 +34,7 @@ a {
   background: inherit;
   background: linear-gradient 280deg, rgb(21, 28, 31) 30%, rgb(26, 34, 38) 100%;
   background: linear-gradient(280deg, rgb(5, 13, 16), rgb(26, 34, 38));
+  background: rgb(31, 31, 31);
   height: 70px;
   width: 100%;
   position: -webkit-sticky;
@@ -48,6 +49,7 @@ a {
     background: linear-gradient(280deg, rgb(4, 16, 20), rgb(39, 46, 49));
     background: linear-gradient(280deg, rgb(15, 22, 25), rgb(39, 46, 49));
     background: linear-gradient(280deg, rgb(5, 13, 16), rgb(26, 34, 38));
+    background: rgb(31, 31, 31);
     height: 60px;
     position: sticky;
     top: 0;
@@ -96,12 +98,13 @@ header a {
   display: flex;
   background: linear-gradient(280deg, rgb(5, 13, 16), rgb(26, 34, 38));
   background: linear-gradient(280deg, rgb(15, 22, 25), rgb(39, 46, 49));
-  background: rgb(30, 38, 41);
+  background: rgb(31, 31, 31);
   z-index: 99;
 }
 @media only screen and (max-width: 830px) {
   .nav_ul {
     border-bottom: none;
+    background: rgb(41, 39, 39);
   }
 }
 
@@ -399,9 +402,6 @@ header a {
   position: absolute;
   top: -30px;
   left: 70px;
-  background-color: #c0c0c2;
-  background-color: rgb(214, 131, 114);
-  background: rgba(210, 64, 64, 0.9);
   background: rgb(255, 31, 31);
   padding: 10px 25px;
   color: #fff;
@@ -409,19 +409,15 @@ header a {
 
 .skillcapacite {
   display: flex;
-  border: 2px, solid, black;
   padding: 20px 30px 20px 30px;
-  border-radius: 30px;
+  border-radius: 15px;
   position: relative;
-  background-color: rgba(0, 0, 0, 0.7);
-  background-color: rgba(2, 9, 69, 0.8);
-  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid rgb(91, 86, 86);
 }
 
 .skillcapacite .name {
   display: flex;
   flex-direction: column;
-  color: #37373a;
   color: #fff;
   font-size: 1.4em;
   font-weight: 400;
@@ -430,10 +426,11 @@ header a {
 
 .skillcapacite .name span {
   margin: 7px 0;
+  box-shadow: 1px 1px 3px rgb(186, 177, 177);
   padding: 10px 20px;
   text-align: center;
   border-radius: 50px;
-  border: 2px solid #ebecf0;
+  border: 1px solid #66676a;
   transition: 0.2s;
   cursor: pointer;
   width: 170px;
@@ -441,7 +438,8 @@ header a {
 
 .skillcapacite .name span:hover {
   margin: 7px 0;
-  box-shadow: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #ffffff, inset 9.91px 9.91px 15px #d9dade, inset -9.91px -9.91px 15px #ffffff;
+  border: none;
+  box-shadow: 5.91px 5.91px 10px #d9dade, -5.91px -5.91px 10px #ffffff, inset 5.91px 5.91px 10px #d9dade, inset -5.91px -5.91px 10px #ffffff;
 }
 
 .niveau_capacite {
@@ -496,8 +494,8 @@ header a {
 }
 
 #home {
-  background: rgb(21, 28, 31);
   background: rgb(30, 38, 41);
+  background: rgb(31, 31, 31);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -512,6 +510,7 @@ header a {
   align-items: center;
   flex-direction: column;
   overflow: hidden;
+  padding-bottom: 180px;
 }
 #home .wrapTitle {
   display: flex;
@@ -548,11 +547,8 @@ header a {
 }
 #home .text_web {
   font-size: 1.3rem;
-  color: #d68372;
-  color: #5b5756;
-  color: rgb(186, 102, 81);
-  color: rgb(233, 53, 8);
   color: rgb(169, 41, 9);
+  color: rgb(198, 40, 1);
 }
 @media only screen and (max-width: 550px) {
   #home .text_web {
@@ -644,7 +640,9 @@ header a {
   height: auto;
   border-bottom: 1px dotted #777;
   padding-bottom: 20px;
-  background: linear-gradient(280deg, rgba(7, 7, 7, 0.9), rgba(7, 5, 5, 0.8));
+  background: linear-gradient(280deg, rgba(7, 7, 7, 0.4), rgba(7, 5, 5, 0.5));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-bottom: 5px solid #615f55;
 }
 @media only screen and (max-width: 830px) {
@@ -756,7 +754,8 @@ header a {
   background: linear-gradient(to left, rgb(20, 57, 4) 0%, rgb(27, 98, 13) 100%);
   background-color: rgb(68, 75, 86);
   background: linear-gradient(to left, rgb(21, 26, 38) 0%, rgb(71, 75, 70) 100%);
-  background: linear-gradient(to left, rgb(30, 35, 46) 0%, rgb(57, 58, 63) 100%);
+  background: linear-gradient(to left, rgb(31, 31, 31) 0%, rgb(57, 58, 63) 100%);
+  background: linear-gradient(to left, rgb(34, 33, 33) 0%, rgb(52, 53, 57) 100%);
   color: #fff;
   position: relative;
   border-radius: 2px;
@@ -768,11 +767,6 @@ header a {
   height: 700px;
   object-fit: cover;
   position: relative;
-}
-@media only screen and (max-width: 830px) {
-  .main_projets .img-grid {
-    margin-top: 40px;
-  }
 }
 .main_projets .img-grid-1,
 .main_projets .img-grid-3 {
@@ -1109,7 +1103,7 @@ header a {
   color: #fff;
   margin: 15px 10px;
   font-size: 1.2rem;
-  background: linear-gradient(280deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
+  background: linear-gradient(280deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
 }
 
 .btn-accueil {
@@ -1175,7 +1169,8 @@ header a {
 
 .main_formation {
   color: #fff;
-  margin: 20px 4% 20px 4%;
+  padding: 20px 4% 20px 4%;
+  background-color: #292b2e;
   /* ------------ Section Tarifs ------------ */
 }
 @media only screen and (max-width: 550px) {
@@ -1223,9 +1218,10 @@ header a {
   background-color: rgb(20, 27, 40);
   background: rgb(8, 27, 35);
   background-color: rgb(37, 39, 43);
-  padding: 10px 30px 10px 30px;
+  padding: 30px 30px 30px 30px;
   transition: all 0.2s ease-in-out;
   z-index: 2;
+  width: 90%;
 }
 .main_formation .box_diplome .box_titre:hover {
   transform: translateY(-5px);
@@ -1236,14 +1232,13 @@ header a {
   }
 }
 .main_formation .box_diplome h1 {
-  align-self: center;
   font-size: 2rem;
   padding: 15px 0 15px 0;
   background-color: rgba(0, 0, 0, 0.6);
   background-color: rgb(20, 27, 40);
   background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(27, 21, 21, 0.2);
   display: block;
-  width: 100%;
   margin: 0;
   text-align: center;
   position: relative;
@@ -1316,6 +1311,7 @@ header a {
   padding-left: 85px;
   font-size: 1.1rem;
   color: rgb(186, 182, 182);
+  color: rgb(154, 116, 116);
   margin: 0 20px 15px 0;
 }
 @media only screen and (max-width: 550px) {
@@ -1342,6 +1338,7 @@ header a {
   padding: 0 15px;
   display: block;
   background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(27, 21, 21, 0.2);
   padding-bottom: 20px;
   padding-top: 20px;
   position: relative;
@@ -1367,6 +1364,7 @@ header a {
   background-color: rgb(20, 27, 40);
   background-color: rgb(37, 39, 43);
   color: #fff;
+  z-index: 3;
   width: 350px;
   height: auto;
   margin: 0 15px 0px 15px;
@@ -1515,7 +1513,7 @@ header a {
   height: 25px;
   border-left: 3px solid #fff;
   border-right: 3px solid #fff;
-  z-index: -1;
+  z-index: 1;
 }
 
 .diplome_span {
