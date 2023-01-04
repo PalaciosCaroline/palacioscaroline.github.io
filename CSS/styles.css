@@ -400,6 +400,7 @@ header a {
   background-color: #c0c0c2;
   background-color: rgb(214, 131, 114);
   background: rgba(210, 64, 64, 0.9);
+  background: rgb(255, 31, 31);
   padding: 10px 25px;
   color: #fff;
 }
@@ -494,6 +495,7 @@ header a {
 
 .main_home {
   background: rgb(8, 27, 35);
+  background: rgb(21, 28, 31);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -548,6 +550,7 @@ header a {
   color: #5b5756;
   color: rgb(186, 102, 81);
   color: rgb(233, 53, 8);
+  color: rgb(169, 41, 9);
 }
 @media only screen and (max-width: 550px) {
   .main_home .text_web {
@@ -587,6 +590,7 @@ header a {
   border: 1px solid #b6604f;
   border: 1px solid #ec8d7a;
   border: 1px solid #ef9785;
+  border: 1px solid rgb(169, 41, 9);
   color: #fff;
   letter-spacing: 1px;
   font-weight: 600;
@@ -1117,6 +1121,7 @@ header a {
   border: 1px solid #b6604f;
   border: 1px solid #ec8d7a;
   border: 1px solid #ef9785;
+  border: 1px solid rgb(169, 41, 9);
   color: #fff;
   letter-spacing: 1px;
   font-weight: 600;
@@ -1413,6 +1418,7 @@ header a {
 }
 .main_formation .cartes-tarifs i {
   color: rgb(214, 131, 114);
+  color: rgb(45, 211, 31);
   font-size: 1.2rem;
   font-weight: bold;
   margin-right: 10px;
@@ -1593,6 +1599,7 @@ header a {
   border: 1px solid #b6604f;
   border: 1px solid #ec8d7a;
   border: 1px solid #ef9785;
+  border: 1px solid rgb(169, 41, 9);
   color: #fff;
   letter-spacing: 1px;
   font-weight: 600;
