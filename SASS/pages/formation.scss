@@ -173,15 +173,15 @@
         font-size: 1.5rem;
         margin: 10px 20px 5px 0;
         @include devices(mobile){
-          font-size: 1.2rem;
+          font-size: 1rem;
         }
       }
       h3{
-        padding-left: 85px;
+        padding-left: 25px;
         font-size: 1.1rem;
         color:rgb(186, 182, 182);
         color: rgb(154 116 116);
-        margin: 0 20px 15px 0;
+        margin: 0 10px 15px 0;
         @include devices(mobile){
           font-size: 0.8rem;
         }

@@ -48,12 +48,8 @@
 
     @media screen and (max-width: 850px){
 
-    .accueil {
-        background-position: right;
-    }
-    .logo-kyoto {
-        margin: 120px auto 0;
-    }
+    
+    
     .accueil h1 {
         font-size: 3rem;
     }
@@ -100,6 +96,7 @@
     // grid-template: 200px repeat(3, auto) / 1fr 600px 1fr;
     grid-template: 140px repeat(6, auto) 10px / 1fr 600px 1fr;
     // background: linear-gradient(280deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+    
     }
 
     .section-asymetrique2 {
@@ -130,6 +127,9 @@
     }
 
     .img-grid {
+        @include devices(mobile){
+            background-color: #404040
+        }
         img{
             // @include devices(small-pc){
             //     width: 100%;
@@ -137,6 +137,7 @@
             height: 100%;
            
             object-fit: cover;
+
         }
     }
     /* Placement */
