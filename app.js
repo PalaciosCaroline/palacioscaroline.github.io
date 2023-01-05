@@ -56,25 +56,15 @@ navUl.addEventListener('click', () =>{
 
 })
 
-
-// function pagebar()
-// {
-//   var links=document.getElementById('navbar').getElementsByTagName("a");
-//   var current = location.href;
-//   for (var i=0; i < links.length; i++)
-//   {
-//    if(links[i].href == current)
-//    {
-//     links[i].style.color ='blue';
-//       links[i].href = "";
-      
-//    }
-//  }
-// } 
-
 const btnAccueilProjet = document.getElementById('btnAccueilProjet');
 const AccueilProjetExplic = document.getElementById('AccueilProjetExplic');
 
 btnAccueilProjet.addEventListener('click', () => {
     AccueilProjetExplic.classList.toggle('isVisible')
+        if(AccueilProjetExplic.classList.contains('isVisible'))
+        {
+            btnAccueilProjet.classList.add('redColor')
+        } else {
+            btnAccueilProjet.classList.remove('redColor')
+        }
 })

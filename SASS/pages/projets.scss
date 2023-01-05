@@ -1,20 +1,15 @@
 .main_projets {
   color: #fff;
-  // background: rgb(28, 32, 28);
-  // background: rgb(8 27 35);
-  // background-color: #041027;
-
   text-align: center;
-
-  // padding-top:70px;
 
   /* Accueil  */
   background: linear-gradient(
       250deg,
-      rgba(26, 26, 30, 0.6),
-      rgba(47, 44, 44, 0.5)
+      rgba(26, 26, 30, 0.2),
+      rgba(47, 44, 44, 0.2)
     ),
     url('./../../../assets/img17.jpg');
+  background: url('./../../../assets/img17.jpg');
   background-position: 20% 20%;
   background-attachment: fixed;
   // filter: brightness(1.2);
@@ -30,10 +25,20 @@
     height: auto;
     border-bottom: 1px dotted #777;
     padding-bottom: 20px;
-    background: linear-gradient(280deg, rgba(30, 27, 27, 0.2)rgba(86, 75, 75, 0.1));
+  
+    background: linear-gradient(
+    250deg,
+    rgba(26, 26, 30, 0.5),
+    rgba(13, 13, 14, 0.3)
+  );
+    background: linear-gradient(
+    rgba(191, 191, 197, 0.1) 10%,
+    rgba(13, 13, 14, 0.4)
+  );
+    // background: rgba(50, 50, 50, 0.1);
     box-shadow: 1px 1px 4px 1px rgba(96, 95, 95, 0.3);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
    
     border-bottom: 5px solid #615f55;
     @include devices(small-pc) {
@@ -43,7 +48,7 @@
 
   .accueil h1 {
     text-align: center;
-    font-size: 4rem;
+    font-size: 3.2rem;
     text-shadow: 0 0 10px #000;
     margin-top: 10px;
     font-family: Merienda one, sans-serif;
@@ -58,7 +63,7 @@
 
   @media screen and (max-width: 850px) {
     .accueil h1 {
-      font-size: 3rem;
+      font-size: 2.2rem;
     }
     .sous-titre {
       font-size: 1.2rem;
@@ -88,6 +93,69 @@
       height: 45px;
       line-height: 45px;
       font-size: 16px;
+    }
+  }
+
+  #AccueilProjetExplic {
+    display: none;
+  }
+  
+  #AccueilProjetExplic.isVisible {
+    display: flex;
+    color: #fff;
+    margin: 15px 10px;
+    font-size: 1.2rem;
+    background: linear-gradient(280deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    transform-origin: top center;
+    animation: scaleZ 0.6s ease-in-out forwards;
+    position: relative;
+  }
+  
+  
+  
+  @keyframes scaleZ {
+    0% {
+    opacity: 0;
+    transform: scale(0);
+    top:-15px;
+    }
+    10% {
+    opacity: 0.3;
+    top:0px;
+    }
+  
+    80% {
+    transform: scale(1.03);
+    opacity: 1;
+    }
+  
+    100% {
+    
+    transform: scale(1);
+    }
+  }
+  
+  .btn-accueil {
+    @include btnRose;
+    font-size: 1.3rem;
+    width: 200px;
+    height: 70px;
+    line-height: 70px;
+    margin: 30px auto 15px;
+    background-color: initial;
+    border: 3px solid rgba(175, 6, 6, 0.9);
+    padding-left:5px;
+    padding-right:5px;
+    &:hover,
+    &.redColor {
+      background: linear-gradient(
+        to left,
+        rgba(228, 41, 3, 0.9) 0%,
+        rgba(214, 47, 13, 0.9) 100%
+      );
+    }
+    @include devices(mobile) {
+      margin-top: 15px;
     }
   }
 
@@ -161,31 +229,9 @@
   }
 
   .bloc {
-    // background: #333;
-    background: linear-gradient(
-      to right,
-      rgba(163, 97, 84, 0.9) 0%,
-      rgba(214, 131, 114, 1) 100%
-    );
-    background-color: #fff;
-    background: linear-gradient(
-      to right,
-      rgb(177 78 59 / 90%) 0%,
-      rgb(203 100 80) 100%
-    );
-    background: linear-gradient(
-      to left,
-      rgba(177, 78, 59, 1) 0%,
-      rgb(234, 127, 108) 100%
-    );
-    background: linear-gradient(to left, rgb(20 57 4) 0%, rgb(27 98 13) 100%);
-    background-color: rgb(68 75 86);
-    background: linear-gradient(to left, rgb(21 26 38) 0%, rgb(71 75 70) 100%);
+   
     background: linear-gradient(to left, rgb(31 31 31) 0%, rgb(57 58 63) 100%);
     background: linear-gradient(to left, rgb(34 33 33) 0%, rgb(52 53 57) 100%);
-
-    // background: #654e01;
-
     color: #fff;
     position: relative;
     border-radius: 2px;
@@ -227,8 +273,9 @@
     border-radius: 9999px;
     outline: none;
     border: 1px solid rgba(236, 80, 49, 0.8);
-    background: linear-gradient(250deg, rgb(169 6 6), rgb(175 29 29));
+   
     background: linear-gradient(250deg, rgb(169, 6, 6), rgb(184 13 13));
+    background: linear-gradient(250deg, rgb(164, 9, 9), rgb(170, 12, 12));
     color: #f1f1f1;
     padding: 20px 35px;
     font-size: 20px;
@@ -237,13 +284,14 @@
     display: block;
     position: relative;
     overflow: hidden;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
     &:hover {
       background: linear-gradient(
         to left,
         rgb(160, 41, 17) 0%,
         rgba(165, 34, 8, 0.973) 50%
       );
+      background: linear-gradient(to left, rgb(231 16 27) 0%, rgb(222 8 8) 100%);
       box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
       transform: translatey(1px);
     }
@@ -700,38 +748,7 @@
   }
 }
 
-#AccueilProjetExplic {
-  display: none;
-}
 
-#AccueilProjetExplic.isVisible {
-  display: flex;
-  color: #fff;
-  margin: 15px 10px;
-  font-size: 1.2rem;
-  background: linear-gradient(280deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-}
-
-.btn-accueil {
-  @include btnRose;
-  font-size: 1.3rem;
-  width: 200px;
-  height: 70px;
-  line-height: 70px;
-  margin: 30px auto 15px;
-  background-color: initial;
-  border: 1px solid rgba(192, 72, 49, 0.9);
-  &:hover {
-    background: linear-gradient(
-      to left,
-      rgba(228, 41, 3, 0.9) 0%,
-      rgba(214, 47, 13, 0.9) 100%
-    );
-  }
-  @include devices(mobile) {
-    margin-top: 15px;
-  }
-}
 
 .box_imgProjet2 {
   height: 90%;

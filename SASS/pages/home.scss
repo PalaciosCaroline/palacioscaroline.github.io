@@ -96,9 +96,10 @@
   padding: 10px 15px;
   border-radius: 25px;
   width: 140px;
-  box-shadow: 3px 3px 10px 2px rgba(44, 9, 9, 0.8);
+  // box-shadow: 3px 3px 10px 2px rgba(44, 9, 9, 0.8);
   box-shadow: 4px 4px 10px 4px rgba(36, 3, 3, 0.8);
-  font-weight: 300;
+  font-weight: 500;
+  border-color: rgb(180 57 27);
   @include devices(mobile) {
     margin-top: 15px;
   }
