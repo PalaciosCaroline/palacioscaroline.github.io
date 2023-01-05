@@ -3,17 +3,17 @@ body {
   padding: 0;
   // background: linear-gradient(250deg,rgba(26, 26, 30, 0.6),rgba(47, 44, 44, 0.5)),url('./../../../assets/img17.jpg');
   // background-position: 20% 20%;
-  background: linear-gradient(
-  250deg,
-  rgba(26, 26, 30, 0.2),
-  rgba(47, 44, 44, 0.2)
-),
-url('./../../../assets/img17.jpg');
-background: url('./../../../assets/img17.jpg');
-  background-attachment: fixed;
-  // filter: brightness(1.2);
-background-size: cover;
-  background-repeat: no-repeat;
+//   background: linear-gradient(
+//   250deg,
+//   rgba(26, 26, 30, 0.2),
+//   rgba(47, 44, 44, 0.2)
+// ),
+// url('./../../../assets/img17.jpg');
+// background: url('./../../../assets/img17.jpg');
+//   background-attachment: fixed;
+//   filter: brightness(1.2);
+// background-size: cover;
+//   background-repeat: no-repeat;
   // scroll-behavior: smooth;
   font-family: Arial, Georgia, 'Times New Roman', Times, serif;
   font-family: 'Trebuchet MS', Georgia, 'Times New Roman', Times, serif;
@@ -25,6 +25,20 @@ background-size: cover;
   //   height: 100%;
   //   width:30%;
   // }
+}
+
+.wrapped{
+  background: linear-gradient(
+  250deg,
+  rgba(26, 26, 30, 0.2),
+  rgba(47, 44, 44, 0.2)
+),
+url('./../../../assets/img17.jpg');
+background: url('./../../../assets/img17.jpg');
+  background-attachment: fixed;
+  // filter: brightness(1.2);
+background-size: cover;
+  background-repeat: no-repeat;
 }
 
 a {
