@@ -1,11 +1,17 @@
 .main_contact{
     text-align: center;
     @include allCenter;
-    height: 95vh;
+    height: 100vh;
     border-top:2px solid rgb(214, 212, 212);
     color: #fff;
+    background: linear-gradient(250deg,rgba(26, 26, 30, 0.6),rgba(47, 44, 44, 0.5)),url('./../../../assets/img17.jpg');
+    background-position: 20% 20%;
+    background-attachment: fixed;
+    // filter: brightness(1.2);
+    background-size: cover;
+    background-repeat: no-repeat;
     @include devices(mobile){
-        background: linear-gradient(280deg,#00000033,rgba(0,0,0,0.4));
+        // background: linear-gradient(280deg,#00000033,rgba(0,0,0,0.4));
     }
     .wrap_contact{
         background: linear-gradient(280deg,rgba(0,0,0,0.6),rgba(0,0,0,0.5));
@@ -14,6 +20,7 @@
         width: 500px;
         height: 350px;
         font-size: 1.4rem;
+        padding-bottom: 100px;
         @include devices(small-pc){
             width: 450px;
         }

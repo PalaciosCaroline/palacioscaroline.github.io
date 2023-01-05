@@ -1,17 +1,13 @@
 //boite Skill Capacity
-.main_formation{
-  
- 
-  
-  color:#fff;
+.main_formation {
+  color: #fff;
   padding: 20px 4% 20px 4%;
   background-color: #292b2e;
 
-  @include devices(mobile){
+  @include devices(mobile) {
     padding: 20px 2% 20px 2%;
   }
-  .box_savoir{
-  
+  .box_savoir {
     // background-color: rgb(13, 166, 115);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -22,14 +18,14 @@
     align-items: center;
     margin-bottom: 60px;
     justify-content: center;
-    padding-top:100px;
-    @include devices(1000-pc){
-      padding-top:70px;
+    padding-top: 100px;
+    @include devices(1000-pc) {
+      padding-top: 70px;
       display: flex;
       flex-direction: column;
     }
-    @include devices(small-pc){
-      padding-top:60px;
+    @include devices(small-pc) {
+      padding-top: 60px;
     }
   }
 
@@ -37,100 +33,97 @@
     grid-column: 1 / 2;
     grid-row: 1;
   }
-  
-  
-  .box_diplome{
 
+  .box_diplome {
     grid-column: 2 / 4;
     grid-row: 1;
     // grid-area: 3 / 2 / 4 / 3;
     font-size: 1.2rem;
-     display: flex;
-   
-     flex-direction: column;
-   
+    display: flex;
+
+    flex-direction: column;
+
     // margin-left:40px;
     // @include devices(1000-pc){
     //   grid-column: 2 / 3;
     // }
-    // background-color:rgba(0,0,0,0.8); 
+    // background-color:rgba(0,0,0,0.8);
     // background: linear-gradient(280deg,rgba(0,0,0,0.7),rgba(0,0,0,0.8));
     // background-color: rgb(223, 221, 221);
-    
-    .box_titre{
+
+    .box_titre {
       // background: linear-gradient(280deg,rgba(0,0,0,0.7),rgba(0,0,0,0.8));
       // background-color: rgb(223, 221, 221);
-      background-color :  rgba(0, 0,0,0.8);
-      background-color : rgb(35, 43, 57);
-      background-color : rgb(20 27 40);
+      background-color: rgba(0, 0, 0, 0.8);
+      background-color: rgb(35, 43, 57);
+      background-color: rgb(20 27 40);
       background: rgb(8, 27, 35);
       background-color: rgb(37 39 43);
       padding: 30px 30px 30px 30px;
       // border-radius:15px;
       transition: all 0.2s ease-in-out;
-     z-index:2;
-     width: 90%;
+      z-index: 2;
+      width: 90%;
       &:hover {
-        transform: translateY(-5px)
-        }
-      @include devices(mobile){
+        transform: translateY(-5px);
+      }
+      @include devices(mobile) {
         padding: 10px 10px 10px 10px;
       }
     }
-    h1{
+    h1 {
       // align-self: center;
       // margin-top:30px;
       // margin-bottom:25px;
       font-size: 2rem;
       padding: 15px 0 15px 0;
       // width: 60%;
-      background-color :  rgba(0, 0,0,0.6);
-      background-color :  rgb(20 27 40);
       background-color: rgba(0, 0, 0, 0.6);
-      background-color: rgb(27, 21 ,21,0.2);
-    
+      background-color: rgb(20 27 40);
+      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgb(27, 21, 21, 0.2);
+
       display: block;
       // width: 100%;
-      margin:0;
-      
+      margin: 0;
+
       text-align: center;
       // margin-bottom:0;
       position: relative;
       // width: 330px;
       // display: block;
       // width: 340px;
-     
-     
+
       // &::after {
       //   content:"";
       //   display: block;
-      //   position: absolute; 
+      //   position: absolute;
       //   bottom:-15px;
       //   // left:-36%;
-      //   width: 100%;      
-      // background-position: center;   
-      //   height: 2px;                
+      //   width: 100%;
+      // background-position: center;
+      //   height: 2px;
       //   background-color: #fff;
       // }
-      @include devices(1000-pc){
-        margin-top:40px;
+      @include devices(1000-pc) {
+        margin-top: 40px;
       }
-      @include devices(mobile){
+      @include devices(mobile) {
         font-size: 2rem;
-        margin-top:30px;
+        margin-top: 30px;
       }
     }
-    .box_titre{
+    .box_titre {
       position: relative;
-      @include devices(mobile){
-        border-radius :15px;
+      @include devices(mobile) {
+        border-radius: 15px;
       }
 
       &::after {
         content: '';
         background-color: #bab9b1;
         background-color: rgb(168, 101, 99);
-        background-color: rgb(25 58 144) ;
+        background-color: rgb(25 58 144);
         background-color: rgb(38 79 185);
         background-color: rgb(68, 75, 86);
         // background-color: rgba(192, 119, 104);
@@ -141,12 +134,12 @@
         height: 100%;
         width: 10px;
         transform: skewy(50deg);
-        z-index:-1;
-        @include devices(mobile){
+        z-index: -1;
+        @include devices(mobile) {
           display: none;
         }
       }
-    
+
       &::before {
         content: '';
         background-color: #5e5a4c;
@@ -161,232 +154,156 @@
         height: 10px;
         width: 100%;
         transform: skewX(50deg);
-        @include devices(mobile){
+        @include devices(mobile) {
           display: none;
         }
       }
-    
-      h2{
+
+      h2 {
         align-self: flex-start;
         display: block;
         width: 100%;
         font-size: 1.5rem;
         margin: 10px 20px 5px 0;
-        @include devices(mobile){
+        @include devices(mobile) {
           font-size: 1rem;
         }
       }
-      h3{
+      h3 {
         padding-left: 25px;
         font-size: 1.1rem;
-        color:rgb(186, 182, 182);
+        color: rgb(186, 182, 182);
         color: rgb(154 116 116);
         margin: 0 10px 15px 0;
-        @include devices(mobile){
+        @include devices(mobile) {
           font-size: 0.8rem;
         }
       }
-      span{
+      span {
         margin-right: 20px;
-        z-index:-1;
+        z-index: -1;
       }
-      .flex{
+      .flex {
         align-items: center;
       }
     }
   }
 
-//  /*-------- Section Parallax ----------*/
-
-//  .parallax {
-//   width: 100%;
-//   height: 300px;
-//   background: url(ressources/parallax-large-flou.jpg);
-//   background-position: center;
-//   background-attachment: fixed;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   flex-direction: column;
-//   }
-//   .parallax p {
-//   font-size: 65px;
-//   color: #fff;
-//   }
-//   .parallax span {
-//   display: block;
-//   font-size: 25px;
-//   color: #fff;
-//   }
-
-//   @media screen and (max-width: 400px) {
-//   .parallax p {
-//       font-size: 55px;
-//   }
-//   }
-
-  /* ------------ Section Tarifs ------------ */
-
   .section-tarifs {
-  padding-bottom: 50px;
-  border-bottom: 1px dashed rgb(91, 90, 90);
-  // border-bottom: 1px dashed rgba(0, 0,0,0.8);
+    padding-bottom: 50px;
   }
   .section-tarifs h3 {
-  
-  text-align: center;
-  color:#fff;
-  font-size: 2rem;
-  margin: 30px 0 0 0;
-  padding: 0 15px;
-  display: block;
-  background-color :  rgba(0, 0,0,0.6);
-  background-color: rgb(27 ,21 ,21,0.2);
-  padding-bottom:20px;
-  padding-top:20px;
-//  box-shadow: 1px 1px 5px 1px #fff;
- position: relative;
- border-bottom: 5px solid #5e5a4c;
- box-sizing: border-box;
- @include devices(mobile){
-  border-bottom: 3px solid #fff;
-  background-color: inherit;
- }
-    // &::after {
-    //   content: '';
-    //   background-color: #bab9b1;
-    //   // background-color: rgba(192, 119, 104);
-    //   // background-color: rgb(168 101 99);
-    //   position: absolute;
-    //   top: 13px;
-    //   right: -20px;
-    //   height: 100%;
-    //   width: 20px;
-    //   transform: skewy(50deg);
-    //   z-index:-1;
-    //   @include devices(mobile){
-    //     display: none;
-    //   }
-    // }
-
-    // &::before {
-    //   content: '';
-    //   background-color: #5e5a4c;
-    //   // background-color: rgba(120, 76, 67);
-    //   // background-color: rgba(120, 76, 67);
-    //   position: absolute;
-    //   bottom: -20px;
-    //   left: 12px;
-    //   height: 20px;
-    //   width: 100%;
-    //   transform: skewX(50deg);
-    //   @include devices(mobile){
-    //     display: none;
-    //   }
-    // }
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    margin: 30px 0 0 0;
+    padding: 0 15px;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgb(27, 21, 21, 0.2);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    //  box-shadow: 1px 1px 5px 1px #fff;
+    position: relative;
+    border-bottom: 5px solid #5e5a4c;
+    box-sizing: border-box;
+    @include devices(mobile) {
+      border-bottom: 3px solid #fff;
+      background-color: inherit;
+    }
   }
-  // .section-tarifs hr {
-  // width: 200px;
-  // margin: 10px auto 30px;
-  // }
 
   .container-tarifs {
-  display: flex;
-  justify-content: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
   }
   .cartes-tarifs {
-
     background-color: #333;
-    background-color :  rgba(0, 0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     background-color: rgb(35 43 57);
     background-color: rgb(20 27 40);
 
     background-color: rgb(37 39 43);
-    color:#fff;
-    z-index:3;
-  width: 350px;
-  height: auto;
-  // border-radius: 25px;
-  margin: 0 15px 0px 15px;
-  cursor: pointer;
-  // box-shadow: 0 5px 8px #fff;
-  transition: all 0.2s ease-in-out;
-  position: relative;
-  @include devices(mobile){
-    box-shadow: none;
+    color: #fff;
+    z-index: 3;
+    width: 350px;
+    height: auto;
   
-      border-radius :15px;
-    
-  }
-  &::after {
-    content: '';
-    background-color: #bab9b1;
-    background-color: rgb(168, 101, 99);
-    background-color: rgb(25 58 144) ;
-    background-color: rgb(38 79 185);
-    background-color: rgb(68, 75, 86);
-    // background-color: rgba(192, 119, 104);
-    // background-color: rgb(168 101 99);
-    position: absolute;
-    top: 6px;
-    right: -10px;
-    height: 100%;
-    width: 10px;
-    transform: skewy(50deg);
-    z-index:-1;
-    @include devices(mobile){
-      display: none;
-    }
-  }
+    margin: 0 15px 0px 15px;
+    cursor: pointer;
+ 
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    @include devices(mobile) {
+      box-shadow: none;
 
-  &::before {
-    content: '';
-    background-color: #5e5a4c;
-    background-color: rgb(120, 76, 67);
-    background-color: rgb(23 33 97);
-    background-color: rgb(41, 44, 55);
-    background-color: rgb(29 32 41);
-    // background-color: rgba(120, 76, 67);
-    // background-color: rgba(120, 76, 67);
-    position: absolute;
-    bottom: -10px;
-    left: 6px;
-    height: 10px;
-    width: 100%;
-    transform: skewX(50deg);
-    @include devices(mobile){
-      display: none;
+      border-radius: 15px;
     }
-  }
-  i{
-    color: rgb(214, 131, 114);
-    color: rgb(45 211 31);
-    font-size:1.2rem;
-    font-weight: bold;
-    margin-right: 10px;
-  }
+    &::after {
+      content: '';
+      background-color: #bab9b1;
+      background-color: rgb(168, 101, 99);
+      background-color: rgb(25 58 144);
+      background-color: rgb(38 79 185);
+      background-color: rgb(68, 75, 86);
+      // background-color: rgba(192, 119, 104);
+      // background-color: rgb(168 101 99);
+      position: absolute;
+      top: 6px;
+      right: -10px;
+      height: 100%;
+      width: 10px;
+      transform: skewy(50deg);
+      z-index: -1;
+      @include devices(mobile) {
+        display: none;
+      }
+    }
+
+    &::before {
+      content: '';
+      background-color: #5e5a4c;
+      background-color: rgb(120, 76, 67);
+      background-color: rgb(23 33 97);
+      background-color: rgb(41, 44, 55);
+      background-color: rgb(29 32 41);
+      // background-color: rgba(120, 76, 67);
+      // background-color: rgba(120, 76, 67);
+      position: absolute;
+      bottom: -10px;
+      left: 6px;
+      height: 10px;
+      width: 100%;
+      transform: skewX(50deg);
+      @include devices(mobile) {
+        display: none;
+      }
+    }
+    i {
+      color: rgb(214, 131, 114);
+      color: rgb(45 211 31);
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-right: 10px;
+    }
   }
   .cartes-tarifs:hover {
-  transform: translateY(-8px)
+    transform: translateY(-8px);
   }
 
   .cartes-tarifs h4 {
     margin: 0;
     // border-radius: 25px 25px 0 0;
-  text-align: center;
-  padding: 20px 10px 10px 10px;
-  font-size: 1.6rem;
- 
-  
-  height: 60px;
-  @include devices(mobile){
-    
-      border-radius :15px 15px 0 0;
-    
-  }
+    text-align: center;
+    padding: 20px 10px 10px 10px;
+    font-size: 1.6rem;
 
+    height: 60px;
+    @include devices(mobile) {
+      border-radius: 15px 15px 0 0;
+    }
   }
   // .cartes-tarifs span {
   // display: block;
@@ -396,39 +313,54 @@
   // font-weight: bold;
   // }
   .cartes-tarifs:nth-child(2) h4 {
-  background: #b0445a;
-  // background:  linear-gradient(to left, rgb(177, 78, 59) 0%, rgb(234, 127, 108) 100%);
-  background:  linear-gradient(to left, rgb(177, 78, 59) 0%,  rgb(214, 131, 114) 100%);
-  background: linear-gradient(to left, rgb(25, 58, 144) 0%, rgb(114, 141, 214) 100%);
-  background: linear-gradient(to left, rgb(25 58 144) 0%, rgb(114 141 214) 100%);
-  background: linear-gradient(to left, rgb(21, 26, 38) 0%, rgb(71, 75, 70) 100%);
-  position:relative;
-  overflow: hidden;
-  transition: all 0.2s;
+    background: #b0445a;
+    // background:  linear-gradient(to left, rgb(177, 78, 59) 0%, rgb(234, 127, 108) 100%);
+    background: linear-gradient(
+      to left,
+      rgb(177, 78, 59) 0%,
+      rgb(214, 131, 114) 100%
+    );
+    background: linear-gradient(
+      to left,
+      rgb(25, 58, 144) 0%,
+      rgb(114, 141, 214) 100%
+    );
+    background: linear-gradient(
+      to left,
+      rgb(25 58 144) 0%,
+      rgb(114 141 214) 100%
+    );
+    background: linear-gradient(
+      to left,
+      rgb(21, 26, 38) 0%,
+      rgb(71, 75, 70) 100%
+    );
+    position: relative;
+    overflow: hidden;
+    transition: all 0.2s;
     -webkit-transition: all 0.2s;
-  &::before {
-    content: '';
-    position: absolute;
-    width: 200px;
-    height: 20px;
-    background: rgba(255,255,255,0.4);
-    transform: rotate(-45deg);
-    left: -150px;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 200px;
+      height: 20px;
+      background: rgba(255, 255, 255, 0.4);
+      transform: rotate(-45deg);
+      left: -150px;
     }
     &:hover::before {
-    transition: 0.8s transform linear;
-    transform: translateX(500px) rotate(-45deg);
-    } 
+      transition: 0.8s transform linear;
+      transform: translateX(500px) rotate(-45deg);
+    }
   }
   .cartes-tarifs:nth-child(3) h4 {
-  background: #f16b86;
-
+    background: #f16b86;
   }
 
   .cartes-tarifs p {
-  font-size: 18px;
-  padding: 3px 5px 3px 10px;
-  // border-top: 1px solid rgb(194,197,194);
+    font-size: 18px;
+    padding: 3px 5px 3px 10px;
+    // border-top: 1px solid rgb(194,197,194);
   }
   // .cartes-tarifs p:last-of-type{
   // border-bottom: 1px solid rgb(194,197,194);
@@ -438,55 +370,51 @@
   // }
 
   .cartes-tarifs a {
-  display: block;
-  text-decoration: none;
-  border: 1px solid #333;
-  text-align: center;
-  width: 200px;
-  height: 50px;
-  border-radius: 9999px;
-  color: #fff;
-  font-size: 18px;
-  line-height: 50px;
-  margin: 20px auto;
-  transition: all 0.2s ease-in-out;
+    display: block;
+    text-decoration: none;
+    border: 1px solid #333;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    border-radius: 9999px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 50px;
+    margin: 20px auto;
+    transition: all 0.2s ease-in-out;
   }
   .cartes-tarifs a:hover {
-  background: #333;
-  // color: #f1f1f1;
+    background: #333;
+    // color: #f1f1f1;
   }
 
   @media screen and (max-width: 900px) {
-  .section-tarifs h3 {
+    .section-tarifs h3 {
       font-size: 35px;
       margin: 80px 0 0 0;
-  }
+    }
   }
   @media screen and (max-width: 550px) {
-  .section-tarifs h3 {
-    
+    .section-tarifs h3 {
       font-size: 30px;
       padding: 10px 0 10px 0;
       margin: 30px 0 0 0;
-  }
-  .section-tarifs hr {
+    }
+    .section-tarifs hr {
       width: 200px;
       margin: 20px auto 20px;
+    }
   }
-
-  }
-
 }
 
-.container-tarifs{
- 
-  .lien{
+.container-tarifs {
+  .lien {
     display: flex;
     // justify-content: center;
     flex-direction: column;
     align-items: center;
   }
-  .lien_span{
+  .lien_span {
     display: block;
     text-align: center;
     width: 80px;
@@ -494,26 +422,23 @@
     // border-top: 10px solid #5e5a4c;
     border-left: 3px solid #fff;
     border-right: 3px solid #fff;
-    z-index:1;
+    z-index: 1;
   }
 }
 
-.diplome_span{
+.diplome_span {
   display: block;
   text-align: center;
   width: 140px;
   height: 25px;
   border-left: 3px solid #fff;
   border-right: 3px solid #fff;
-
 }
 
-.diplome_lien{
+.diplome_lien {
   display: flex;
   // justify-content: center;
   flex-direction: column;
   align-items: center;
   border-top: 3px solid #5e5a4c;
 }
-
-

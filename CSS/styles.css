@@ -2,12 +2,11 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(250deg, rgba(26, 26, 30, 0.6), rgba(47, 44, 44, 0.5)), url("./../../../assets/img17.jpg");
   background-position: 20% 20%;
   background-attachment: fixed;
-  filter: brightness(1.2);
   background-size: cover;
   background-repeat: no-repeat;
+  scroll-behavior: smooth;
   font-family: Arial, Georgia, "Times New Roman", Times, serif;
 }
 
@@ -31,35 +30,22 @@ a {
 }
 
 #header_fixed {
-  background: inherit;
-  background: linear-gradient 280deg, rgb(21, 28, 31) 30%, rgb(26, 34, 38) 100%;
-  background: linear-gradient(280deg, rgb(5, 13, 16), rgb(26, 34, 38));
-  background: rgb(31, 31, 31);
   height: 70px;
   width: 100%;
   position: -webkit-sticky;
   position: sticky;
-  z-index: 99;
   top: 0;
-  /*fixe header en haut sans masquer le texte en-dessous */
-  z-index: 20; /*priorise le header pour ne pas le masquer*/
+  z-index: 110; /*priorise le header pour ne pas le masquer*/
 }
 @media only screen and (max-width: 830px) {
   #header_fixed {
-    background: linear-gradient(280deg, rgb(4, 16, 20), rgb(39, 46, 49));
-    background: linear-gradient(280deg, rgb(15, 22, 25), rgb(39, 46, 49));
     background: linear-gradient(280deg, rgb(5, 13, 16), rgb(26, 34, 38));
     background: rgb(31, 31, 31);
     height: 60px;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 110;
   }
-}
-
-/*travail pr agrandir ombre en de-ss du header en JS*/
-.shadowheader {
-  box-shadow: 1px 8px 7px 2px rgba(255, 81, 0, 0.168627451);
 }
 
 header a {
@@ -73,22 +59,6 @@ header a {
   justify-content: center;
   height: 100%;
   width: 100%;
-}
-
-.logo {
-  height: 100%;
-  display: flex; /*met en row (rangée) la liste (par défaut en column*/
-  align-items: center;
-  font-size: clamp(1rem, 5vw, 3rem); /*clamp pour responsive*/
-  padding-left: 5px;
-}
-
-.logo a {
-  transition: color 0.5s; /*action au passage de la souris*/
-}
-
-.logo a:hover {
-  color: rgb(192, 127, 6);
 }
 
 .nav_ul {
@@ -528,7 +498,8 @@ header a {
   font-weight: 400;
   position: relative;
 }
-#home .presentation h1, #home .presentation p {
+#home .presentation h1,
+#home .presentation p {
   margin: 0;
 }
 #home .text-3d {
@@ -586,11 +557,7 @@ header a {
   display: block;
   text-decoration: none;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-  border: 1px solid #b6604f;
-  border: 1px solid #ec8d7a;
-  border: 1px solid #ef9785;
-  border: 1px solid rgb(169, 41, 9);
-  border: 1px solid rgb(202, 42, 2);
+  border: 3px solid rgb(169, 41, 9);
   color: #fff;
   letter-spacing: 1px;
   font-weight: 600;
@@ -605,7 +572,6 @@ header a {
   font-weight: 300;
 }
 #btn_home:hover {
-  background: linear-gradient(to left, rgba(214, 131, 114, 0.8) 0%, rgba(214, 131, 114, 0.8) 100%);
   background: linear-gradient(to left, rgba(228, 41, 3, 0.9) 0%, rgba(214, 47, 13, 0.9) 100%);
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
   transform: translatey(1px);
@@ -632,8 +598,12 @@ header a {
 .main_projets {
   color: #fff;
   text-align: center;
-  scroll-behavior: smooth;
   /* Accueil  */
+  background: linear-gradient(250deg, rgba(26, 26, 30, 0.6), rgba(47, 44, 44, 0.5)), url("./../../../assets/img17.jpg");
+  background-position: 20% 20%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
   /* Section asymétrique */
   /* Placement */
   /* Lignes verticales */
@@ -957,7 +927,8 @@ header a {
   .main_projets .section-asymetrique2 {
     grid-template: 1px repeat(6, auto) 50px/100%;
   }
-  .main_projets .ligne-gauche, .main_projets .ligne-droite {
+  .main_projets .ligne-gauche,
+  .main_projets .ligne-droite {
     display: none;
   }
   .main_projets .section-asymetrique h2 {
@@ -990,7 +961,7 @@ header a {
   background: linear-gradient(to right, rgba(163, 97, 84, 0.6) 0%, rgba(214, 131, 114, 0.8) 100%);
   background: linear-gradient(to right, rgba(219, 153, 140, 0.35) 0%, rgba(110, 63, 63, 0.36) 100%);
   border: 5px solid rgb(122, 49, 35);
-  border: 5px solid #DB8876;
+  border: 5px solid #db8876;
   border: 4px solid #c2634e;
   border: 4px solid rgb(145, 116, 110);
 }
@@ -1118,11 +1089,7 @@ header a {
   display: block;
   text-decoration: none;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-  border: 1px solid #b6604f;
-  border: 1px solid #ec8d7a;
-  border: 1px solid #ef9785;
-  border: 1px solid rgb(169, 41, 9);
-  border: 1px solid rgb(202, 42, 2);
+  border: 3px solid rgb(169, 41, 9);
   color: #fff;
   letter-spacing: 1px;
   font-weight: 600;
@@ -1137,7 +1104,6 @@ header a {
   border: 1px solid rgba(192, 72, 49, 0.9);
 }
 .btn-accueil:hover {
-  background: linear-gradient(to left, rgba(214, 131, 114, 0.8) 0%, rgba(214, 131, 114, 0.8) 100%);
   background: linear-gradient(to left, rgba(228, 41, 3, 0.9) 0%, rgba(214, 47, 13, 0.9) 100%);
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
   transform: translatey(1px);
@@ -1176,7 +1142,6 @@ header a {
   color: #fff;
   padding: 20px 4% 20px 4%;
   background-color: #292b2e;
-  /* ------------ Section Tarifs ------------ */
 }
 @media only screen and (max-width: 550px) {
   .main_formation {
@@ -1338,7 +1303,6 @@ header a {
 }
 .main_formation .section-tarifs {
   padding-bottom: 50px;
-  border-bottom: 1px dashed rgb(91, 90, 90);
 }
 .main_formation .section-tarifs h3 {
   text-align: center;
@@ -1551,14 +1515,14 @@ header a {
   align-items: center;
   justify-content: center;
   display: flex;
-  height: 95vh;
+  height: 100vh;
   border-top: 2px solid rgb(214, 212, 212);
   color: #fff;
-}
-@media only screen and (max-width: 550px) {
-  .main_contact {
-    background: linear-gradient(280deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
-  }
+  background: linear-gradient(250deg, rgba(26, 26, 30, 0.6), rgba(47, 44, 44, 0.5)), url("./../../../assets/img17.jpg");
+  background-position: 20% 20%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .main_contact .wrap_contact {
   background: linear-gradient(280deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
@@ -1567,6 +1531,7 @@ header a {
   width: 500px;
   height: 350px;
   font-size: 1.4rem;
+  padding-bottom: 100px;
 }
 @media only screen and (max-width: 830px) {
   .main_contact .wrap_contact {
@@ -1611,11 +1576,7 @@ header a {
   display: block;
   text-decoration: none;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-  border: 1px solid #b6604f;
-  border: 1px solid #ec8d7a;
-  border: 1px solid #ef9785;
-  border: 1px solid rgb(169, 41, 9);
-  border: 1px solid rgb(202, 42, 2);
+  border: 3px solid rgb(169, 41, 9);
   color: #fff;
   letter-spacing: 1px;
   font-weight: 600;
@@ -1627,7 +1588,6 @@ header a {
   align-self: center;
 }
 .main_contact .mail_link_contact:hover {
-  background: linear-gradient(to left, rgba(214, 131, 114, 0.8) 0%, rgba(214, 131, 114, 0.8) 100%);
   background: linear-gradient(to left, rgba(228, 41, 3, 0.9) 0%, rgba(214, 47, 13, 0.9) 100%);
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
   transform: translatey(1px);
