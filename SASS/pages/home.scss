@@ -9,21 +9,21 @@
   height: 100vh;
   .container {
     margin: auto;
-    height: 455px;
+    // height: 455px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     overflow: hidden;
-    padding-bottom: 180px;
+    // padding-bottom: 180px;
   }
   .wrapTitle {
     &.hidden {
       display: none;
     }
-    &.marginTop {
-      margin-top: 100px;
-    }
+    // &.marginTop {
+    //   margin-top: 100px;
+    // }
   }
 
   .presentation {

@@ -496,19 +496,14 @@ header a {
 }
 #home .container {
   margin: auto;
-  height: 455px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   overflow: hidden;
-  padding-bottom: 180px;
 }
 #home .wrapTitle.hidden {
   display: none;
-}
-#home .wrapTitle.marginTop {
-  margin-top: 100px;
 }
 #home .presentation {
   margin: 10px 0 25px 0;
@@ -673,7 +668,7 @@ header a {
   /* Lignes verticales */
 }
 .main_projets .accueil {
-  padding-top: 70px;
+  padding-top: 90px;
   width: 80%;
   margin: 0 auto 0;
   height: auto;
@@ -1626,6 +1621,7 @@ header a {
   .main_contact .wrap_contact {
     margin-top: 100px;
     width: 340px;
+    height: 290px;
     border: none;
     box-shadow: none;
   }
