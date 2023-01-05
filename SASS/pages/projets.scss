@@ -30,10 +30,10 @@
     height: auto;
     border-bottom: 1px dotted #777;
     padding-bottom: 20px;
-    background: linear-gradient(280deg, rgba(7, 7, 7, 0.4), rgba(7, 5, 5, 0.5));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    // border-bottom: 5px solid rgb(211, 208, 208);
+    background: linear-gradient(280deg, rgba(143, 137, 137, 0.1)rgba(86, 75, 75, 0.3)30%));
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+   
     border-bottom: 5px solid #615f55;
     @include devices(small-pc) {
       padding-top: 50px;
@@ -225,31 +225,8 @@
   .bloc button {
     border-radius: 9999px;
     outline: none;
-    border: none;
-    background: crimson;
-    background: rgb(200 23 23 / 80%);
     border: 1px solid rgba(236, 80, 49, 0.8);
-    background: linear-gradient(
-      to left,
-      rgba(214, 131, 114, 0.8) 0%,
-      rgba(214, 131, 114, 0.8) 100%
-    );
-    background: linear-gradient(
-      to right,
-      rgba(230, 139, 121, 0.8) 0%,
-      rgba(247, 122, 105, 0.8) 100%
-    );
-
-    background: linear-gradient(
-      250deg,
-      rgba(186, 63, 63, 0.4),
-      rgba(130, 28, 28, 0.6)
-    );
-    background: linear-gradient(
-      250deg,
-      rgba(145, 11, 11, 0.6),
-      rgba(196, 19, 19, 0.8)
-    );
+    background: linear-gradient(250deg, rgb(169 6 6), rgb(175 29 29));
     color: #f1f1f1;
     padding: 20px 35px;
     font-size: 20px;
