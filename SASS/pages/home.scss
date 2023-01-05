@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+
   height: 100vh;
   .container {
     margin: auto;
@@ -18,9 +18,9 @@
   }
   .wrapTitle {
     // width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
+  
+   
     &.hidden {
       display: none;
     }
@@ -30,9 +30,9 @@
   }
 
   .presentation {
-    margin: 10px 0 10px 0;
+    margin: 10px 0 25px 0;
     font-weight: 400;
-
+    // text-align: center;
     position: relative;
     // text-shadow:
     // 1px 1px #151718,
@@ -44,15 +44,16 @@
   }
   .text-3d {
     color: rgb(255, 255, 255);
-    font-size: 2.6rem;
-    line-height: 3.2rem;
-    @include devices(mobile) {
-      font-size: 1.8rem;
-      line-height: 2.4rem;
-    }
+  
   }
   h1 {
-    margin-bottom: 15px;
+    margin-bottom: 0px;
+    font-size: 2.6rem;
+    line-height: 2.6rem;
+    @include devices(mobile) {
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+    }
   }
   .text_web {
     font-size: 1.3rem;
@@ -64,7 +65,69 @@
       font-size: 1.2rem;
     }
   }
+  
+  .c1{
+    display: inline-block;
+    
+  }
+  .c2{
+   
+    display: inline-block;
+    
+  }
+ 
 
+  .type1{
+      overflow: hidden;
+      border-right: .15em solid rgb(227, 227, 227);
+      white-space: nowrap; 
+      width: 0;
+     
+      animation: 
+        typing 2s 0.3s steps(30, end) forwards;
+  }
+  // .type2{
+  //     overflow: hidden;
+  //     border-right: .15em solid rgb(237, 239, 237);
+  //     white-space: nowrap; 
+  //     width: 0;
+  //     animation: 
+  //       typing 1.5s 2.3s steps(30, end) forwards,
+  //       blink .75s 2.3s infinite,
+  //       borderVisible 0.01s 2.3s forwards,
+  //       borderHidden 0.01s 5.8s forwards;
+  // }
+
+  .type2{
+    opacity:0;
+    overflow: hidden;
+      border-right: .15em solid rgb(237, 239, 237);
+      white-space: nowrap; 
+      width: 0;
+      animation: 
+        typing 1.5s 2.3s steps(30, end) forwards,
+        blink .75s 2.3s infinite,
+        borderVisible 0.01s 2.3s forwards,
+        borderHidden 0.01s 5.8s forwards;
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  @keyframes borderVisible {
+      from {opacity: 0;}
+      to { opacity:1 }
+    }
+  @keyframes borderHidden {
+    from {border-right: .15em solid rgb(224, 224, 224);}
+    to { border-right: none }
+  }
+  @keyframes blink {
+    from { border-color: transparent }
+    to { border-color:rgb(189, 193, 190); }
+  }
+  
   .box_photo {
     border-radius: 50%;
     border: 4px solid #333;

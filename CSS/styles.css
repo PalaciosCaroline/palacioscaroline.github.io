@@ -4,6 +4,7 @@ body {
   padding: 0;
   scroll-behavior: smooth;
   font-family: Arial, Georgia, "Times New Roman", Times, serif;
+  font-family: "Trebuchet MS", Georgia, "Times New Roman", Times, serif;
 }
 
 a {
@@ -465,7 +466,6 @@ header a {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   height: 100vh;
 }
 #home .container {
@@ -478,11 +478,6 @@ header a {
   overflow: hidden;
   padding-bottom: 180px;
 }
-#home .wrapTitle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 #home .wrapTitle.hidden {
   display: none;
 }
@@ -490,7 +485,7 @@ header a {
   margin-top: 100px;
 }
 #home .presentation {
-  margin: 10px 0 10px 0;
+  margin: 10px 0 25px 0;
   font-weight: 400;
   position: relative;
 }
@@ -500,17 +495,17 @@ header a {
 }
 #home .text-3d {
   color: rgb(255, 255, 255);
-  font-size: 2.6rem;
-  line-height: 3.2rem;
-}
-@media only screen and (max-width: 550px) {
-  #home .text-3d {
-    font-size: 1.8rem;
-    line-height: 2.4rem;
-  }
 }
 #home h1 {
-  margin-bottom: 15px;
+  margin-bottom: 0px;
+  font-size: 2.6rem;
+  line-height: 2.6rem;
+}
+@media only screen and (max-width: 550px) {
+  #home h1 {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
 }
 #home .text_web {
   font-size: 1.3rem;
@@ -521,6 +516,59 @@ header a {
 @media only screen and (max-width: 550px) {
   #home .text_web {
     font-size: 1.2rem;
+  }
+}
+#home .c1 {
+  display: inline-block;
+}
+#home .c2 {
+  display: inline-block;
+}
+#home .type1 {
+  overflow: hidden;
+  border-right: 0.15em solid rgb(227, 227, 227);
+  white-space: nowrap;
+  width: 0;
+  animation: typing 2s 0.3s steps(30, end) forwards;
+}
+#home .type2 {
+  opacity: 0;
+  overflow: hidden;
+  border-right: 0.15em solid rgb(237, 239, 237);
+  white-space: nowrap;
+  width: 0;
+  animation: typing 1.5s 2.3s steps(30, end) forwards, blink 0.75s 2.3s infinite, borderVisible 0.01s 2.3s forwards, borderHidden 0.01s 5.8s forwards;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes borderVisible {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes borderHidden {
+  from {
+    border-right: 0.15em solid rgb(224, 224, 224);
+  }
+  to {
+    border-right: none;
+  }
+}
+@keyframes blink {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: rgb(189, 193, 190);
   }
 }
 #home .box_photo {
@@ -617,7 +665,14 @@ header a {
   box-shadow: 1px 1px 4px 1px rgba(96, 95, 95, 0.3);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border-bottom: 5px solid #615f55;
+  border-bottom: 7px solid #615f55;
+  background: rgba(113, 108, 108, 0.21);
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.9px);
+  -webkit-backdrop-filter: blur(4.9px);
+  border-left: 1px solid rgba(113, 108, 108, 0.4);
+  border-right: 1px solid rgba(113, 108, 108, 0.4);
 }
 @media only screen and (max-width: 830px) {
   .main_projets .accueil {
