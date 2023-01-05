@@ -1,180 +1,176 @@
-.boite{       /*capacité empeche le déformement*/
-    // width: 552px;
-    height: 380px;
-    padding-top: 15px;
-    @include devices(1000-pc){
-      margin-top:30px;
+.boite {
+  /*capacité empeche le déformement*/
+  // width: 552px;
+  height: 380px;
+  padding-top: 15px;
+  @include devices(1000-pc) {
+    margin-top: 30px;
+  }
+  @include devices(mobile) {
+    height: 280px;
+  }
+  .skillcapacite {
+    @include devices(mobile) {
+      margin-bottom: 40px;
+      padding: 10px 20px;
     }
-    @include devices(mobile){
-      height: 280px;
-    
-    }
-    .skillcapacite{
-      @include devices(mobile){
-        margin-bottom:40px;
-        padding: 10px 20px;
-        }
-      .name{
-        margin-left:10px;
-        margin-right: 15px;
-        span{
-          @include devices(mobile){
-          font-size:1rem;
+    .name {
+      margin-left: 10px;
+      margin-right: 15px;
+      span {
+        @include devices(mobile) {
+          font-size: 1rem;
           padding: 3px 3px 3px 3px;
           width: 120px;
-          }
         }
       }
     }
   }
-  
-  @media (max-width:800px) {    /*responsive lorsq ecran<800px)*/
-  
-   .identite{
-        width: 100%;
-        height: 100%;
-        flex-direction: column;
-        transition: transform ease-out 0.5s; /*effet de transition, ease-in permet de commencer vite et de terminer doucement la transition ≠ ease-in*/
-        align-items: center;
-    }
-    .corps{
-        width: 90%;
-        height: 100%;
-        flex-direction: column;
-        transition: transform ease-out 0.5s; /*effet de transition, ease-in permet de commencer vite et de terminer doucement la transition ≠ ease-in*/
-        align-items: center;
-        padding:2%;
-        margin:2%;
-    }
-    
-    .skillcapacite{
-        padding: 15px;
-        margin-left:10px;
-        @include devices(mobile){
-          margin-left:0;
-        }
-    }   
-    
-  }
-  
-  .capacite{
-    display: flex;
-    width: 50%;
-    margin:20px;
-    @include devices(mobile){
-      margin:20px 0;
-    }
-  }
-  
-  .skillcapacite::before{
-    content: "Mes capacités";
-    transform: rotate(-5deg);
-    position: absolute;
-  
-    top: -30px;
-    left:70px;
- 
-    background: rgb(255 31 31 / 100%);
+}
 
-    padding: 10px 25px;
-    color: #fff;
-  }
-  
-  .skillcapacite{
-    display: flex;
-    // border: 2px, solid, rgb(216, 209, 209);
+@media (max-width: 800px) {
+  /*responsive lorsq ecran<800px)*/
 
-    padding: 20px 30px 20px 30px;
-    
-    border-radius: 15px;
-    position: relative;
-    border: 2px solid rgb(91, 86, 86);
-    // background-color:rgb(192,127,6); 
-    // background-color:rgba(214,131,114,0.8); 
-    // background-color:rgba(0,0,0,0.7); 
-    // background-color :  rgba(2, 9,69,0.8);
-    // background-color : rgba(0, 0, 0, 0.6);
-    
-  }
-  
-  
-  .skillcapacite .name{
-    display: flex;
-    flex-direction: column;
-    
-    color: #fff;
-    font-size: 1.4em;
-    font-weight: 400;
-    margin-right: 30px;
-  }
-  
-  .skillcapacite .name span{
-    margin: 7px 0;
-    // box-shadow: 9.91px 9.91px 15px rgb(192,127,6), -9.91px -9.91px 15px   rgb(192,127,6);   
-    // box-shadow: 4.91px 4.91px 10px   rgba(250, 234, 231, 0.8), -4.91px -4.91px 10px   rgba(243, 221, 217, 0.8);   
-    box-shadow: 1px 1px 3px rgb(186, 177, 177);
-    padding: 10px 20px;
-    text-align: center;
-    border-radius: 50px   ;
-    // border:5px solid #ebecf0;
-     border:1px solid #66676a;
-    // border:2px solid #0627ad;
-    transition: 0.2s;
-    cursor:pointer;
-    width:170px;
-  }
-  
-  .skillcapacite .name span:hover {
-       margin: 7px 0;
-       border:none;
-       box-shadow: 5.91px 5.91px 10px #d9dade, -5.91px -5.91px 10px #ffffff, inset 5.91px 5.91px 10px #d9dade, inset -5.91px -5.91px 10px #ffffff ;
-  
-  }
-  
-  .niveau_capacite{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  
-  .niveau{
-    width: 200px;
-    height: 15px;
-    border-radius: 20px;
-    box-shadow: inset 6px 6px 6px #d9dade, inset -6px -6px 6px #ffffff;
-    @include devices(mobile){
-      width: 140px;
-      height: 12px;
-    }
-  }
-  
-  .niveau .progress{
+  .identite {
+    width: 100%;
     height: 100%;
-    background: linear-gradient(to right, #9a989c, #4a484e);
-    //background: linear-gradient(to right, #627cb4, #254393);
-    border-radius: 20px;
+    flex-direction: column;
+    transition: transform ease-out 0.5s; /*effet de transition, ease-in permet de commencer vite et de terminer doucement la transition ≠ ease-in*/
+    align-items: center;
   }
-  
-  .niveau:nth-child(1) .progress {
+  .corps {
     width: 90%;
+    height: 100%;
+    flex-direction: column;
+    transition: transform ease-out 0.5s; /*effet de transition, ease-in permet de commencer vite et de terminer doucement la transition ≠ ease-in*/
+    align-items: center;
+    padding: 2%;
+    margin: 2%;
   }
-  .niveau:nth-child(2) .progress {
-    width: 80%;
-  }
-  .niveau:nth-child(3) .progress {
-    width: 80%;
-  }
-  .niveau:nth-child(4) .progress {
-    width: 70%;
-  }
-  .niveau:nth-child(5) .progress {
-    width: 90%;
-  }
-  
-  .competence{
-    color: whitesmoke;
+
+  .skillcapacite {
+    padding: 15px;
     margin-left: 10px;
-    padding-left: 40px;
+    @include devices(mobile) {
+      margin-left: 0;
+    }
   }
-  
-  
+}
+
+.capacite {
+  display: flex;
+  width: 50%;
+  margin: 20px;
+  @include devices(mobile) {
+    margin: 20px 0;
+  }
+}
+
+.skillcapacite::before {
+  content: 'Mes capacités';
+  transform: rotate(-5deg);
+  position: absolute;
+
+  top: -30px;
+  left: 70px;
+
+  background: rgb(255 31 31 / 100%);
+
+  padding: 10px 25px;
+  color: #fff;
+}
+
+.skillcapacite {
+  display: flex;
+  // border: 2px, solid, rgb(216, 209, 209);
+
+  padding: 20px 30px 20px 30px;
+
+  border-radius: 15px;
+  position: relative;
+  border: 2px solid rgb(91, 86, 86);
+  // background-color:rgb(192,127,6);
+  // background-color:rgba(214,131,114,0.8);
+  // background-color:rgba(0,0,0,0.7);
+  // background-color :  rgba(2, 9,69,0.8);
+  // background-color : rgba(0, 0, 0, 0.6);
+}
+
+.skillcapacite .name {
+  display: flex;
+  flex-direction: column;
+
+  color: #fff;
+  font-size: 1.4em;
+  font-weight: 400;
+  margin-right: 30px;
+}
+
+.skillcapacite .name span {
+  margin: 7px 0;
+  // box-shadow: 9.91px 9.91px 15px rgb(192,127,6), -9.91px -9.91px 15px   rgb(192,127,6);
+  // box-shadow: 4.91px 4.91px 10px   rgba(250, 234, 231, 0.8), -4.91px -4.91px 10px   rgba(243, 221, 217, 0.8);
+  box-shadow: 1px 1px 3px rgb(186, 177, 177);
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 50px;
+  // border:5px solid #ebecf0;
+  border: 1px solid #66676a;
+  // border:2px solid #0627ad;
+  transition: 0.2s;
+  cursor: pointer;
+  width: 170px;
+}
+
+.skillcapacite .name span:hover {
+  margin: 7px 0;
+  border: none;
+  box-shadow: 5.91px 5.91px 10px #d9dade, -5.91px -5.91px 10px #ffffff,
+    inset 5.91px 5.91px 10px #d9dade, inset -5.91px -5.91px 10px #ffffff;
+}
+
+.niveau_capacite {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.niveau {
+  width: 200px;
+  height: 15px;
+  border-radius: 20px;
+  box-shadow: inset 6px 6px 6px #d9dade, inset -6px -6px 6px #ffffff;
+  @include devices(mobile) {
+    width: 140px;
+    height: 12px;
+  }
+}
+
+.niveau .progress {
+  height: 100%;
+  background: linear-gradient(to right, #9a989c, #4a484e);
+  //background: linear-gradient(to right, #627cb4, #254393);
+  border-radius: 20px;
+}
+
+.niveau:nth-child(1) .progress {
+  width: 90%;
+}
+.niveau:nth-child(2) .progress {
+  width: 80%;
+}
+.niveau:nth-child(3) .progress {
+  width: 80%;
+}
+.niveau:nth-child(4) .progress {
+  width: 70%;
+}
+.niveau:nth-child(5) .progress {
+  width: 90%;
+}
+
+.competence {
+  color: whitesmoke;
+  margin-left: 10px;
+  padding-left: 40px;
+}

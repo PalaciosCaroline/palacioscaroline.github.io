@@ -1,7 +1,7 @@
 .main_projets {
   color: #fff;
   text-align: center;
-box-sizing: border-box;
+  box-sizing: border-box;
   // background: linear-gradient(
   //     250deg,
   //     rgba(26, 26, 30, 0.2),
@@ -171,12 +171,10 @@ box-sizing: border-box;
   .section-asymetrique {
     display: grid;
     grid-template: 140px repeat(6, auto) 10px / 1fr 600px 1fr;
-    
   }
 
   .section-asymetrique2 {
     grid-template: 10px repeat(6, auto) 30px / 1fr 600px 1fr;
-    
   }
 
   .section-asymetrique h2 {
@@ -203,10 +201,14 @@ box-sizing: border-box;
 
   .img-grid {
     @include devices(mobile) {
-      background: linear-gradient(to left, rgb(34 33 33) 0%, rgb(52 53 57) 100%);
+      background: linear-gradient(
+        to left,
+        rgb(34 33 33) 0%,
+        rgb(52 53 57) 100%
+      );
       border-bottom: 10px solid rgb(123, 1, 1);
       border-bottom: 10px solid rgb(175 2 2);
-      margin-bottom:-3px;
+      margin-bottom: -3px;
     }
     img {
       height: 100%;
@@ -236,14 +238,12 @@ box-sizing: border-box;
     position: relative;
     height: 750px;
     margin-bottom: 250px;
-  
   }
   .img-grid {
     width: 500px;
     height: 700px;
     object-fit: cover;
     position: relative;
-   
   }
 
   .img-grid-1,
@@ -280,7 +280,7 @@ box-sizing: border-box;
     padding: 20px 35px;
     font-size: 20px;
     margin: 35px auto;
-   
+
     display: block;
     position: relative;
     overflow: hidden;
