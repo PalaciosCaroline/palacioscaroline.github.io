@@ -43,16 +43,10 @@
 
     flex-direction: column;
 
-    // margin-left:40px;
-    // @include devices(1000-pc){
-    //   grid-column: 2 / 3;
-    // }
-    // background-color:rgba(0,0,0,0.8);
-    // background: linear-gradient(280deg,rgba(0,0,0,0.7),rgba(0,0,0,0.8));
-    // background-color: rgb(223, 221, 221);
+  
 
     .box_titre {
-      // background: linear-gradient(280deg,rgba(0,0,0,0.7),rgba(0,0,0,0.8));
+     
       // background-color: rgb(223, 221, 221);
       background-color: rgba(0, 0, 0, 0.8);
       background-color: rgb(35, 43, 57);
@@ -90,21 +84,7 @@
       text-align: center;
       // margin-bottom:0;
       position: relative;
-      // width: 330px;
-      // display: block;
-      // width: 340px;
-
-      // &::after {
-      //   content:"";
-      //   display: block;
-      //   position: absolute;
-      //   bottom:-15px;
-      //   // left:-36%;
-      //   width: 100%;
-      // background-position: center;
-      //   height: 2px;
-      //   background-color: #fff;
-      // }
+     
       @include devices(1000-pc) {
         margin-top: 40px;
       }
@@ -187,17 +167,32 @@
         align-items: center;
       }
     }
+ 
+  }
+  .section_certif{
+    h3{
+      text-align: center;
+      color: #fff;
+      font-size: 2rem;
+      margin: 30px 0 0 0;
+      
+      display: block;
+      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgb(27, 21, 21, 0.2);
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
   }
 
-  .section-tarifs {
+  .section-skill {
     padding-bottom: 50px;
-  }
-  .section-tarifs h3 {
+  
+    h3 {
     text-align: center;
-    color: #fff;
-    font-size: 2rem;
+  
+   
     margin: 30px 0 0 0;
-    padding: 0 15px;
+    
     display: block;
     background-color: rgba(0, 0, 0, 0.6);
     background-color: rgb(27, 21, 21, 0.2);
@@ -213,13 +208,13 @@
     }
   }
 
-  .container-tarifs {
+  .container-skill {
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
   }
-  .cartes-tarifs {
+  .cartes-skill {
     background-color: #333;
     background-color: rgba(0, 0, 0, 0.7);
     background-color: rgb(35 43 57);
@@ -289,11 +284,11 @@
       margin-right: 10px;
     }
   }
-  .cartes-tarifs:hover {
+  .cartes-skill:hover {
     transform: translateY(-8px);
   }
 
-  .cartes-tarifs h4 {
+  .cartes-skill h4 {
     margin: 0;
     // border-radius: 25px 25px 0 0;
     text-align: center;
@@ -305,14 +300,14 @@
       border-radius: 15px 15px 0 0;
     }
   }
-  // .cartes-tarifs span {
+  // .cartes-skill span {
   // display: block;
   // text-align: center;
   // padding: 15px;
   // font-size: 25px;
   // font-weight: bold;
   // }
-  .cartes-tarifs:nth-child(2) h4 {
+  .cartes-skill:nth-child(2) h4 {
     background: #b0445a;
     // background:  linear-gradient(to left, rgb(177, 78, 59) 0%, rgb(234, 127, 108) 100%);
     background: linear-gradient(
@@ -353,23 +348,23 @@
       transform: translateX(500px) rotate(-45deg);
     }
   }
-  .cartes-tarifs:nth-child(3) h4 {
+  .cartes-skill:nth-child(3) h4 {
     background: #f16b86;
   }
 
-  .cartes-tarifs p {
+  .cartes-skill p {
     font-size: 18px;
     padding: 3px 5px 3px 10px;
     // border-top: 1px solid rgb(194,197,194);
   }
-  // .cartes-tarifs p:last-of-type{
+  // .cartes-skill p:last-of-type{
   // border-bottom: 1px solid rgb(194,197,194);
   // }
-  // .cartes-tarifs p:nth-child(odd) {
+  // .cartes-skill p:nth-child(odd) {
   // // background: rgba(195,195,195,0.219);
   // }
 
-  .cartes-tarifs a {
+  .cartes-skill a {
     display: block;
     text-decoration: none;
     border: 1px solid #333;
@@ -383,31 +378,31 @@
     margin: 20px auto;
     transition: all 0.2s ease-in-out;
   }
-  .cartes-tarifs a:hover {
+  .cartes-skill a:hover {
     background: #333;
     // color: #f1f1f1;
   }
 
   @media screen and (max-width: 900px) {
-    .section-tarifs h3 {
+    .section-skill h3 {
       font-size: 35px;
       margin: 80px 0 0 0;
     }
   }
   @media screen and (max-width: 550px) {
-    .section-tarifs h3 {
+    .section-skill h3 {
       font-size: 30px;
       padding: 10px 0 10px 0;
       margin: 30px 0 0 0;
     }
-    .section-tarifs hr {
+    .section-skill hr {
       width: 200px;
       margin: 20px auto 20px;
     }
   }
 }
 
-.container-tarifs {
+.container-skill {
   .lien {
     display: flex;
     // justify-content: center;
@@ -441,4 +436,5 @@
   flex-direction: column;
   align-items: center;
   border-top: 3px solid #5e5a4c;
+}
 }

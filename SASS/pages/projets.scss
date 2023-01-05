@@ -5,16 +5,21 @@
   // background-color: #041027;
 
   text-align: center;
-  
+
   // padding-top:70px;
 
   /* Accueil  */
-  background: linear-gradient(250deg,rgba(26, 26, 30, 0.6),rgba(47, 44, 44, 0.5)),url('./../../../assets/img17.jpg');
-    background-position: 20% 20%;
-    background-attachment: fixed;
-    // filter: brightness(1.2);
-    background-size: cover;
-    background-repeat: no-repeat;
+  background: linear-gradient(
+      250deg,
+      rgba(26, 26, 30, 0.6),
+      rgba(47, 44, 44, 0.5)
+    ),
+    url('./../../../assets/img17.jpg');
+  background-position: 20% 20%;
+  background-attachment: fixed;
+  // filter: brightness(1.2);
+  background-size: cover;
+  background-repeat: no-repeat;
 
   .accueil {
     padding-top: 70px;

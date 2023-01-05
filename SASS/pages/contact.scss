@@ -1,77 +1,80 @@
-.main_contact{
-    text-align: center;
-    @include allCenter;
-    height: 100vh;
-    border-top:2px solid rgb(214, 212, 212);
-    color: #fff;
-    background: linear-gradient(250deg,rgba(26, 26, 30, 0.6),rgba(47, 44, 44, 0.5)),url('./../../../assets/img17.jpg');
-    background-position: 20% 20%;
-    background-attachment: fixed;
-    // filter: brightness(1.2);
-    background-size: cover;
-    background-repeat: no-repeat;
-    @include devices(mobile){
-        // background: linear-gradient(280deg,#00000033,rgba(0,0,0,0.4));
+.main_contact {
+  text-align: center;
+  @include allCenter;
+  height: 100vh;
+  border-top: 2px solid rgb(214, 212, 212);
+  color: #fff;
+  background: linear-gradient(
+      250deg,
+      rgba(26, 26, 30, 0.6),
+      rgba(47, 44, 44, 0.5)
+    ),
+    url('./../../../assets/img17.jpg');
+  background-position: 20% 20%;
+  background-attachment: fixed;
+  // filter: brightness(1.2);
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include devices(mobile) {
+    // background: linear-gradient(280deg,#00000033,rgba(0,0,0,0.4));
+  }
+  .wrap_contact {
+    background: linear-gradient(280deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
+    padding: 20px 20px 20px 20px;
+    box-shadow: 2px 2px 4px 2px rgba(221, 223, 243, 0.6);
+    width: 500px;
+    height: 350px;
+    font-size: 1.4rem;
+    padding-bottom: 100px;
+    @include devices(small-pc) {
+      width: 450px;
     }
-    .wrap_contact{
-        background: linear-gradient(280deg,rgba(0,0,0,0.6),rgba(0,0,0,0.5));
-        padding: 20px 20px 20px 20px;
-        box-shadow: 2px 2px 4px 2px rgba(221, 223, 243, 0.6);  
-        width: 500px;
-        height: 350px;
-        font-size: 1.4rem;
-        padding-bottom: 100px;
-        @include devices(small-pc){
-            width: 450px;
-        }
-        @include devices(mobile){
-
-            margin-top:100px;
-            width: 340px;
-            border: none;
-            box-shadow: none;
-        }
-        .span_mail{
-            display: block; 
-        }
-        hr{
-            @include devices(mobile){
-               display: none;
-            }
-        }
-        h1{
-            @include devices(small-pc){
-                font-size: 1.5rem;
-            }
-        }
-        span{
-            @include devices(small-pc){
-                font-size: 1.2rem;
-            }
-            
-        }
+    @include devices(mobile) {
+      margin-top: 100px;
+      width: 340px;
+      border: none;
+      box-shadow: none;
     }
-    .mainFrozzen.frozzen{
-        background: linear-gradient(280deg,rgba(0,0,0,0.2),rgba(0,0,0,0.6));
-        filter: blur(10px);
+    .span_mail {
+      display: block;
     }
-    .mail_link_contact{
-       @include btnRose;
-        border-radius: 25px;
-        margin:35px auto 10px;
-        width: 340px;
-        align-self: center; 
-        @include devices(mobile){
-            width: 300px;
-        }
-        span {
-            display: block;
-            padding: 10px 15px 10px 15px;
-            line-height: 30px;
-            box-shadow: 1px 1px 4px rgba(0,0,0,0.8);
-            @include devices(mobile){
-                padding: 10px 5px 10px 5px;
-            }
-        }
+    hr {
+      @include devices(mobile) {
+        display: none;
+      }
     }
+    h1 {
+      @include devices(small-pc) {
+        font-size: 1.5rem;
+      }
+    }
+    span {
+      @include devices(small-pc) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .mainFrozzen.frozzen {
+    background: linear-gradient(280deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+    filter: blur(10px);
+  }
+  .mail_link_contact {
+    @include btnRose;
+    border-radius: 25px;
+    margin: 35px auto 10px;
+    width: 340px;
+    align-self: center;
+    @include devices(mobile) {
+      width: 300px;
+    }
+    span {
+      display: block;
+      padding: 10px 15px 10px 15px;
+      line-height: 30px;
+      box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+      @include devices(mobile) {
+        padding: 10px 5px 10px 5px;
+      }
+    }
+  }
 }

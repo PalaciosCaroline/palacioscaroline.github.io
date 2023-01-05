@@ -1301,15 +1301,23 @@ header a {
 .main_formation .box_diplome .box_titre .flex {
   align-items: center;
 }
-.main_formation .section-tarifs {
-  padding-bottom: 50px;
-}
-.main_formation .section-tarifs h3 {
+.main_formation .section_certif h3 {
   text-align: center;
   color: #fff;
   font-size: 2rem;
   margin: 30px 0 0 0;
-  padding: 0 15px;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(27, 21, 21, 0.2);
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.main_formation .section-skill {
+  padding-bottom: 50px;
+}
+.main_formation .section-skill h3 {
+  text-align: center;
+  margin: 30px 0 0 0;
   display: block;
   background-color: rgba(0, 0, 0, 0.6);
   background-color: rgba(27, 21, 21, 0.2);
@@ -1320,18 +1328,18 @@ header a {
   box-sizing: border-box;
 }
 @media only screen and (max-width: 550px) {
-  .main_formation .section-tarifs h3 {
+  .main_formation .section-skill h3 {
     border-bottom: 3px solid #fff;
     background-color: inherit;
   }
 }
-.main_formation .container-tarifs {
+.main_formation .section-skill .container-skill {
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-.main_formation .cartes-tarifs {
+.main_formation .section-skill .cartes-skill {
   background-color: #333;
   background-color: rgba(0, 0, 0, 0.7);
   background-color: rgb(35, 43, 57);
@@ -1347,12 +1355,12 @@ header a {
   position: relative;
 }
 @media only screen and (max-width: 550px) {
-  .main_formation .cartes-tarifs {
+  .main_formation .section-skill .cartes-skill {
     box-shadow: none;
     border-radius: 15px;
   }
 }
-.main_formation .cartes-tarifs::after {
+.main_formation .section-skill .cartes-skill::after {
   content: "";
   background-color: #bab9b1;
   background-color: rgb(168, 101, 99);
@@ -1368,11 +1376,11 @@ header a {
   z-index: -1;
 }
 @media only screen and (max-width: 550px) {
-  .main_formation .cartes-tarifs::after {
+  .main_formation .section-skill .cartes-skill::after {
     display: none;
   }
 }
-.main_formation .cartes-tarifs::before {
+.main_formation .section-skill .cartes-skill::before {
   content: "";
   background-color: #5e5a4c;
   background-color: rgb(120, 76, 67);
@@ -1387,21 +1395,21 @@ header a {
   transform: skewX(50deg);
 }
 @media only screen and (max-width: 550px) {
-  .main_formation .cartes-tarifs::before {
+  .main_formation .section-skill .cartes-skill::before {
     display: none;
   }
 }
-.main_formation .cartes-tarifs i {
+.main_formation .section-skill .cartes-skill i {
   color: rgb(214, 131, 114);
   color: rgb(45, 211, 31);
   font-size: 1.2rem;
   font-weight: bold;
   margin-right: 10px;
 }
-.main_formation .cartes-tarifs:hover {
+.main_formation .section-skill .cartes-skill:hover {
   transform: translateY(-8px);
 }
-.main_formation .cartes-tarifs h4 {
+.main_formation .section-skill .cartes-skill h4 {
   margin: 0;
   text-align: center;
   padding: 20px 10px 10px 10px;
@@ -1409,11 +1417,11 @@ header a {
   height: 60px;
 }
 @media only screen and (max-width: 550px) {
-  .main_formation .cartes-tarifs h4 {
+  .main_formation .section-skill .cartes-skill h4 {
     border-radius: 15px 15px 0 0;
   }
 }
-.main_formation .cartes-tarifs:nth-child(2) h4 {
+.main_formation .section-skill .cartes-skill:nth-child(2) h4 {
   background: #b0445a;
   background: linear-gradient(to left, rgb(177, 78, 59) 0%, rgb(214, 131, 114) 100%);
   background: linear-gradient(to left, rgb(25, 58, 144) 0%, rgb(114, 141, 214) 100%);
@@ -1424,7 +1432,7 @@ header a {
   transition: all 0.2s;
   -webkit-transition: all 0.2s;
 }
-.main_formation .cartes-tarifs:nth-child(2) h4::before {
+.main_formation .section-skill .cartes-skill:nth-child(2) h4::before {
   content: "";
   position: absolute;
   width: 200px;
@@ -1433,18 +1441,18 @@ header a {
   transform: rotate(-45deg);
   left: -150px;
 }
-.main_formation .cartes-tarifs:nth-child(2) h4:hover::before {
+.main_formation .section-skill .cartes-skill:nth-child(2) h4:hover::before {
   transition: 0.8s transform linear;
   transform: translateX(500px) rotate(-45deg);
 }
-.main_formation .cartes-tarifs:nth-child(3) h4 {
+.main_formation .section-skill .cartes-skill:nth-child(3) h4 {
   background: #f16b86;
 }
-.main_formation .cartes-tarifs p {
+.main_formation .section-skill .cartes-skill p {
   font-size: 18px;
   padding: 3px 5px 3px 10px;
 }
-.main_formation .cartes-tarifs a {
+.main_formation .section-skill .cartes-skill a {
   display: block;
   text-decoration: none;
   border: 1px solid #333;
@@ -1458,33 +1466,32 @@ header a {
   margin: 20px auto;
   transition: all 0.2s ease-in-out;
 }
-.main_formation .cartes-tarifs a:hover {
+.main_formation .section-skill .cartes-skill a:hover {
   background: #333;
 }
 @media screen and (max-width: 900px) {
-  .main_formation .section-tarifs h3 {
+  .main_formation .section-skill .section-skill h3 {
     font-size: 35px;
     margin: 80px 0 0 0;
   }
 }
 @media screen and (max-width: 550px) {
-  .main_formation .section-tarifs h3 {
+  .main_formation .section-skill .section-skill h3 {
     font-size: 30px;
     padding: 10px 0 10px 0;
     margin: 30px 0 0 0;
   }
-  .main_formation .section-tarifs hr {
+  .main_formation .section-skill .section-skill hr {
     width: 200px;
     margin: 20px auto 20px;
   }
 }
-
-.container-tarifs .lien {
+.main_formation .container-skill .lien {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.container-tarifs .lien_span {
+.main_formation .container-skill .lien_span {
   display: block;
   text-align: center;
   width: 80px;
@@ -1493,8 +1500,7 @@ header a {
   border-right: 3px solid #fff;
   z-index: 1;
 }
-
-.diplome_span {
+.main_formation .diplome_span {
   display: block;
   text-align: center;
   width: 140px;
@@ -1502,8 +1508,7 @@ header a {
   border-left: 3px solid #fff;
   border-right: 3px solid #fff;
 }
-
-.diplome_lien {
+.main_formation .diplome_lien {
   display: flex;
   flex-direction: column;
   align-items: center;
