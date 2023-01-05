@@ -24,6 +24,9 @@
     @include devices(small-pc){
       background: linear-gradient(280deg,rgb(5, 13, 16),rgb(26, 34, 38));
       background: rgb(31,31,31);
+      background: rgb(33,33,33);
+      background: rgb(37,37,37);
+      background: radial-gradient(circle, rgba(45,45,45,1) 0%, rgba(37,37,37,1)  100%);
     
      height: 60px;
       position: sticky;     
@@ -54,6 +57,9 @@ header a{
     background: linear-gradient(280deg,rgb(5, 13, 16),rgb(26, 34, 38));
     background: linear-gradient(280deg,rgb(15, 22, 25),rgb(39, 46, 49));
     background:rgb(31 31 31);
+    background:rgb(33 33 33);
+    background:rgb(37 37 37);
+    background: radial-gradient(circle, rgba(45,45,45,1) 0%, rgba(37,37,37,1)  100%);
     z-index: 99;
     @include devices(small-pc){
       border-bottom :none;
@@ -75,12 +81,7 @@ header a{
 }
 
 .nav_ul a:hover{
-    // background-color: rgb(192,127,6, 0.6);
-    // @include devices(small-pc){
-    // background: linear-gradient(to left,rgba(214,131,114,0.5) 0%,rgba(214,131,114,0.6) 100%);
-    // }
     border-radius: 10px;
-    
 }
 
 .navbar_item{
@@ -96,13 +97,11 @@ header a{
 }
 
 
-.hamburger{          /*création du burger*/
+.hamburger{         
     display: none;  /*disparition du burger sur ecran>800px*/
     flex-direction: column;   /*flex-dir par défaut en row*/
     justify-content: center;
     cursor: pointer;    /*fait apparaître le pointeur*/
-    // padding: 5px;
-    // margin-left: 15px;
     position: absolute;
     left:20px;
     top:18px;
@@ -114,6 +113,7 @@ header a{
     width: 35px;
     height: 4px;
     background-color: white;
+    box-shadow: 1px 1px 1px rgb(139, 137, 137);
     border-radius: 5px;         /* bord arrondi */
 }
 
@@ -124,16 +124,15 @@ header a{
 .open .bar1,
 .open .bar2,
 .open .bar3{
-    // background-color: rgb(192,127,6);
     transition: all 0.3s;    /* transition changement de couleur*/
 }
 
 .open .bar1{
-    transform: translateY(245%) rotate(-45deg);
+    transform: translateY(257%) rotate(-45deg);
 }
 
 .open .bar3{
-    transform: translateY(-245%) rotate(45deg);
+    transform: translateY(-257%) rotate(45deg);
 }
 
 .open .bar2{
