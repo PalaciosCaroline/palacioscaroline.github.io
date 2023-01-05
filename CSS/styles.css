@@ -653,7 +653,7 @@ header a {
   background: linear-gradient(250deg, rgba(26, 26, 30, 0.2), rgba(47, 44, 44, 0.2)), url("./../../../assets/img17.jpg");
   background: url("./../../../assets/img17.jpg");
   background-position: 20% 20%;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
   background-repeat: no-repeat;
   /* Section asymétrique */
