@@ -4,17 +4,21 @@
   height: 100vh;
   border-top: 2px solid rgb(214, 212, 212);
   color: #fff;
+  // background: linear-gradient(
+  //     250deg,
+  //     rgba(26, 26, 30, 0.6),
+  //     rgba(47, 44, 44, 0.5)
+  //   ),
+  //   url('./../../../assets/img17.jpg');
+ 
+  // background-attachment: fixed;
+  // background-size: cover;
+  // background-repeat: no-repeat;
   background: linear-gradient(
       250deg,
-      rgba(26, 26, 30, 0.6),
-      rgba(47, 44, 44, 0.5)
-    ),
-    url('./../../../assets/img17.jpg');
-  background-position: 20% 20%;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
- 
+      rgba(26, 26, 30, 0.2),
+      rgba(47, 44, 44, 0.1)
+    );
   .wrap_contact {
     background: linear-gradient(280deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
     padding: 20px 20px 20px 20px;
