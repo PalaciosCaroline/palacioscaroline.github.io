@@ -30,9 +30,10 @@
     height: auto;
     border-bottom: 1px dotted #777;
     padding-bottom: 20px;
-    background: linear-gradient(280deg, rgba(143, 137, 137, 0.1)rgba(86, 75, 75, 0.3)30%));
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    background: linear-gradient(280deg, rgba(30, 27, 27, 0.2)rgba(86, 75, 75, 0.1));
+    box-shadow: 1px 1px 4px 1px rgba(96, 95, 95, 0.3);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
    
     border-bottom: 5px solid #615f55;
     @include devices(small-pc) {
@@ -227,6 +228,7 @@
     outline: none;
     border: 1px solid rgba(236, 80, 49, 0.8);
     background: linear-gradient(250deg, rgb(169 6 6), rgb(175 29 29));
+    background: linear-gradient(250deg, rgb(169, 6, 6), rgb(184 13 13));
     color: #f1f1f1;
     padding: 20px 35px;
     font-size: 20px;
