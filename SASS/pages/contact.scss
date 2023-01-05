@@ -1,7 +1,7 @@
 .main_contact {
   text-align: center;
   @include allCenter;
-  height: 130vh;
+  height: 100vh;
   border-top: 2px solid rgb(214, 212, 212);
   color: #fff;
   // background: linear-gradient(
@@ -20,20 +20,22 @@
       rgba(47, 44, 44, 0.1)
     );
   .wrap_contact {
+    margin-top:90px;
     background: linear-gradient(280deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
     padding: 20px 20px 20px 20px;
     box-shadow: 2px 2px 4px 2px rgba(221, 223, 243, 0.6);
     width: 500px;
     height: 350px;
     font-size: 1.4rem;
-    padding-bottom: 100px;
+    
+    // padding-bottom: 100px;
     @include devices(small-pc) {
       width: 450px;
     }
     @include devices(mobile) {
       margin-top: 100px;
       width: 340px;
-      height: 290px;
+      height: auto;
       border: none;
       box-shadow: none;
     }

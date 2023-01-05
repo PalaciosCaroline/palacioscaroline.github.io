@@ -3,7 +3,9 @@
   color: #fff;
   padding: 20px 4% 20px 4%;
   background-color: #292b2e;
-
+  background-color: rgb(50,50,50);
+  background: radial-gradient(circle, rgba(50,50,55,1) 0%, rgba(42,42,45,1)  100%);
+  // background: #454448;
   @include devices(mobile) {
     padding: 20px 2% 20px 2%;
   }
@@ -58,6 +60,7 @@
       background-color: rgb(20 27 40);
       background: rgb(8, 27, 35);
       background-color: rgb(37 39 43);
+      background-color: #454448;
       padding: 30px 30px 30px 30px;
       // border-radius:15px;
       transition: all 0.2s ease-in-out;
@@ -77,6 +80,7 @@
    
       background-color: rgba(0, 0, 0, 0.6);
       background-color: rgb(27, 21, 21, 0.2);
+      background-color: rgb(66 65 65 / 80%);
       display: block;
       margin: 0;
 
@@ -105,6 +109,7 @@
         background-color: rgb(25 58 144);
         background-color: rgb(38 79 185);
         background-color: rgb(68, 75, 86);
+        background-color: rgb(88 92 98);
         // background-color: rgba(192, 119, 104);
         // background-color: rgb(168 101 99);
         position: absolute;
@@ -125,6 +130,7 @@
         background-color: rgb(120, 76, 67);
         background-color: rgb(23 33 97);
         background-color: rgb(41, 44, 55);
+        background-color: rgb(68 65 65);;
         // background-color: rgba(120, 76, 67);
         //background-color: rgba(120, 76, 67);
         position: absolute;
@@ -193,6 +199,7 @@
     display: block;
     background-color: rgba(0, 0, 0, 0.6);
     background-color: rgb(27, 21, 21, 0.2);
+    background-color: rgb(66 65 65 / 80%);
     padding-bottom: 20px;
     padding-top: 20px;
     //  box-shadow: 1px 1px 5px 1px #fff;
@@ -218,6 +225,7 @@
     background-color: rgb(20 27 40);
 
     background-color: rgb(37 39 43);
+    background-color: #454448;
     color: #fff;
     z-index: 3;
     width: 350px;
@@ -240,6 +248,7 @@
       background-color: rgb(25 58 144);
       background-color: rgb(38 79 185);
       background-color: rgb(68, 75, 86);
+      background-color: rgb(88 92 98);
       // background-color: rgba(192, 119, 104);
       // background-color: rgb(168 101 99);
       position: absolute;
@@ -261,6 +270,8 @@
       background-color: rgb(23 33 97);
       background-color: rgb(41, 44, 55);
       background-color: rgb(29 32 41);
+      background-color:rgb(49 55 70);
+      background-color: rgb(68 65 65);
       // background-color: rgba(120, 76, 67);
       // background-color: rgba(120, 76, 67);
       position: absolute;

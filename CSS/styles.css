@@ -40,6 +40,10 @@ a {
   flex-direction: column;
 }
 
+button, a {
+  cursor: pointer;
+}
+
 .noscroll {
   overflow: hidden; /*pr empècher le scroll lorsque nav en column*/
 }
@@ -663,6 +667,7 @@ header a {
 .main_projets {
   color: #fff;
   text-align: center;
+  box-sizing: border-box;
   background: linear-gradient(250deg, rgba(26, 26, 30, 0.2), rgba(47, 44, 44, 0.1));
   /* Section asymétrique */
   /* Placement */
@@ -715,13 +720,6 @@ header a {
   .main_projets .sous-titre {
     font-size: 1.2rem;
   }
-  .main_projets .btn-accueil {
-    width: 150px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 18px;
-    margin: 15px auto 15px;
-  }
 }
 @media screen and (max-width: 400px) {
   .main_projets .accueil h1 {
@@ -729,12 +727,6 @@ header a {
   }
   .main_projets .sous-titre {
     font-size: 1rem;
-  }
-  .main_projets .btn-accueil {
-    width: 130px;
-    height: 45px;
-    line-height: 45px;
-    font-size: 16px;
   }
 }
 .main_projets #AccueilProjetExplic {
@@ -815,9 +807,18 @@ header a {
 .main_projets .btn-accueil:hover, .main_projets .btn-accueil.redColor {
   background: linear-gradient(to left, rgba(228, 41, 3, 0.9) 0%, rgba(214, 47, 13, 0.9) 100%);
 }
+@media only screen and (max-width: 830px) {
+  .main_projets .btn-accueil {
+    width: 180px;
+    height: 50px;
+    font-size: 1.2rem;
+    margin: 30px auto 20px;
+  }
+}
 @media only screen and (max-width: 550px) {
   .main_projets .btn-accueil {
-    margin-top: 15px;
+    margin: 20px auto 5px;
+    font-size: 1rem;
   }
 }
 .main_projets hr {
@@ -853,7 +854,10 @@ header a {
 }
 @media only screen and (max-width: 550px) {
   .main_projets .img-grid {
-    background-color: #404040;
+    background: linear-gradient(to left, rgb(34, 33, 33) 0%, rgb(52, 53, 57) 100%);
+    border-bottom: 10px solid rgb(123, 1, 1);
+    border-bottom: 10px solid rgb(175, 2, 2);
+    margin-bottom: -3px;
   }
 }
 .main_projets .img-grid img {
@@ -873,11 +877,9 @@ header a {
   grid-area: 4/2/5/3;
 }
 .main_projets .bloc {
-  background: linear-gradient(to left, rgb(31, 31, 31) 0%, rgb(57, 58, 63) 100%);
   background: linear-gradient(to left, rgb(34, 33, 33) 0%, rgb(52, 53, 57) 100%);
   color: #fff;
   position: relative;
-  border-radius: 2px;
   height: 750px;
   margin-bottom: 250px;
 }
@@ -903,7 +905,6 @@ header a {
   white-space: nowrap;
   font-size: 35px;
   margin: 30px 15px;
-  color: #fff;
 }
 .main_projets .bloc-txt-left p {
   line-height: 40px;
@@ -919,7 +920,6 @@ header a {
   padding: 20px 35px;
   font-size: 20px;
   margin: 35px auto;
-  cursor: pointer;
   display: block;
   position: relative;
   overflow: hidden;
@@ -1222,6 +1222,8 @@ header a {
   color: #fff;
   padding: 20px 4% 20px 4%;
   background-color: #292b2e;
+  background-color: rgb(50, 50, 50);
+  background: radial-gradient(circle, rgb(50, 50, 55) 0%, rgb(42, 42, 45) 100%);
 }
 @media only screen and (max-width: 550px) {
   .main_formation {
@@ -1273,6 +1275,7 @@ header a {
   background-color: rgb(20, 27, 40);
   background: rgb(8, 27, 35);
   background-color: rgb(37, 39, 43);
+  background-color: #454448;
   padding: 30px 30px 30px 30px;
   transition: all 0.2s ease-in-out;
   z-index: 2;
@@ -1290,6 +1293,7 @@ header a {
   padding: 15px 0 15px 0;
   background-color: rgba(0, 0, 0, 0.6);
   background-color: rgba(27, 21, 21, 0.2);
+  background-color: rgba(66, 65, 65, 0.8);
   display: block;
   margin: 0;
   text-align: center;
@@ -1321,6 +1325,7 @@ header a {
   background-color: rgb(25, 58, 144);
   background-color: rgb(38, 79, 185);
   background-color: rgb(68, 75, 86);
+  background-color: rgb(88, 92, 98);
   position: absolute;
   top: 6px;
   right: -10px;
@@ -1340,6 +1345,7 @@ header a {
   background-color: rgb(120, 76, 67);
   background-color: rgb(23, 33, 97);
   background-color: rgb(41, 44, 55);
+  background-color: rgb(68, 65, 65);
   position: absolute;
   bottom: -10px;
   left: 6px;
@@ -1400,6 +1406,7 @@ header a {
   display: block;
   background-color: rgba(0, 0, 0, 0.6);
   background-color: rgba(27, 21, 21, 0.2);
+  background-color: rgba(66, 65, 65, 0.8);
   padding-bottom: 20px;
   padding-top: 20px;
   position: relative;
@@ -1424,6 +1431,7 @@ header a {
   background-color: rgb(35, 43, 57);
   background-color: rgb(20, 27, 40);
   background-color: rgb(37, 39, 43);
+  background-color: #454448;
   color: #fff;
   z-index: 3;
   width: 350px;
@@ -1446,6 +1454,7 @@ header a {
   background-color: rgb(25, 58, 144);
   background-color: rgb(38, 79, 185);
   background-color: rgb(68, 75, 86);
+  background-color: rgb(88, 92, 98);
   position: absolute;
   top: 6px;
   right: -10px;
@@ -1466,6 +1475,8 @@ header a {
   background-color: rgb(23, 33, 97);
   background-color: rgb(41, 44, 55);
   background-color: rgb(29, 32, 41);
+  background-color: rgb(49, 55, 70);
+  background-color: rgb(68, 65, 65);
   position: absolute;
   bottom: -10px;
   left: 6px;
@@ -1599,19 +1610,19 @@ header a {
   align-items: center;
   justify-content: center;
   display: flex;
-  height: 130vh;
+  height: 100vh;
   border-top: 2px solid rgb(214, 212, 212);
   color: #fff;
   background: linear-gradient(250deg, rgba(26, 26, 30, 0.2), rgba(47, 44, 44, 0.1));
 }
 .main_contact .wrap_contact {
+  margin-top: 90px;
   background: linear-gradient(280deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
   padding: 20px 20px 20px 20px;
   box-shadow: 2px 2px 4px 2px rgba(221, 223, 243, 0.6);
   width: 500px;
   height: 350px;
   font-size: 1.4rem;
-  padding-bottom: 100px;
 }
 @media only screen and (max-width: 830px) {
   .main_contact .wrap_contact {
@@ -1622,7 +1633,7 @@ header a {
   .main_contact .wrap_contact {
     margin-top: 100px;
     width: 340px;
-    height: 290px;
+    height: auto;
     border: none;
     box-shadow: none;
   }
