@@ -2,9 +2,14 @@
 body {
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
+  background: linear-gradient(250deg, rgba(26, 26, 30, 0.2), rgba(47, 44, 44, 0.2)), url("./../../../assets/img17.jpg");
+  background: url("./../../../assets/img17.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: Arial, Georgia, "Times New Roman", Times, serif;
   font-family: "Trebuchet MS", Georgia, "Times New Roman", Times, serif;
+  background-color: rgb(58, 58, 58);
 }
 
 a {
@@ -650,11 +655,6 @@ header a {
   color: #fff;
   text-align: center;
   /* Accueil  */
-  background: linear-gradient(250deg, rgba(26, 26, 30, 0.2), rgba(47, 44, 44, 0.2)), url("./../../../assets/img17.jpg");
-  background: url("./../../../assets/img17.jpg");
-  background-attachment: scroll;
-  background-size: cover;
-  background-repeat: no-repeat;
   /* Section asymétrique */
   /* Placement */
   /* Lignes verticales */
