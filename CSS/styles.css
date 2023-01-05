@@ -557,7 +557,7 @@ header a {
   display: block;
   text-decoration: none;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-  border: 3px solid rgb(169, 41, 9);
+  border: 2px solid rgb(169, 41, 9);
   color: #fff;
   letter-spacing: 1px;
   font-weight: 600;
@@ -1089,7 +1089,7 @@ header a {
   display: block;
   text-decoration: none;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-  border: 3px solid rgb(169, 41, 9);
+  border: 2px solid rgb(169, 41, 9);
   color: #fff;
   letter-spacing: 1px;
   font-weight: 600;
@@ -1581,7 +1581,7 @@ header a {
   display: block;
   text-decoration: none;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-  border: 3px solid rgb(169, 41, 9);
+  border: 2px solid rgb(169, 41, 9);
   color: #fff;
   letter-spacing: 1px;
   font-weight: 600;
