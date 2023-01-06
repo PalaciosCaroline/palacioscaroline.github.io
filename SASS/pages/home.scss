@@ -1,29 +1,42 @@
 #home {
-  // background: rgb(31, 31, 31);
-  background: rgb(33, 33, 33);
-  background: rgb(37, 37, 37);
-  background: rgb(47,45,45);
-  // background: radial-gradient(
-  //   circle,
-  //   rgba(45, 45, 45, 1) 0%,
-  //   rgba(37, 37, 37, 1) 100%
-  // );
+ 
+  // background: rgb(47,45,45);
+ 
   // min-width: 100vw;
   min-height: 100vh;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: -5;
- background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+//   top: 0;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   z-index: -5;
+//  background-size: cover;
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
 
-  background-attachment: fixed;
+  // background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
+  &:before {
+    content: "";
+    display: block;
+    position: fixed;
+    background: rgb(47,45,45);
+    width: 100vw;
+    min-height: 100vh;  
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    z-index: -8
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
   @include devices(small-pc){
     min-height: calc(100vh - 60px);
   }
