@@ -50,14 +50,11 @@
   .box_diplome {
     grid-column: 2 / 4;
     grid-row: 1;
-    // grid-area: 3 / 2 / 4 / 3;
     font-size: 1.2rem;
     display: flex;
-
     flex-direction: column;
 
     .box_titre {
-      // background-color: rgb(223, 221, 221);
       background-color: rgba(0, 0, 0, 0.8);
       background-color: rgb(35, 43, 57);
       background-color: rgb(20 27 40);
@@ -65,7 +62,6 @@
       background-color: rgb(37 39 43);
       background-color: #454448;
       padding: 30px 30px 30px 30px;
-      // border-radius:15px;
       transition: all 0.2s ease-in-out;
       z-index: 2;
       width: 90%;
@@ -73,7 +69,8 @@
         transform: translateY(-5px);
       }
       @include devices(mobile) {
-        padding: 10px 10px 10px 10px;
+        padding: 10px 15px 10px 15px;
+      
       }
     }
 
@@ -100,9 +97,7 @@
     }
     .box_titre {
       position: relative;
-      @include devices(mobile) {
-        border-radius: 15px;
-      }
+      
 
       &::after {
         content: '';
@@ -112,8 +107,6 @@
         background-color: rgb(38 79 185);
         background-color: rgb(68, 75, 86);
         background-color: rgb(88 92 98);
-        // background-color: rgba(192, 119, 104);
-        // background-color: rgb(168 101 99);
         position: absolute;
         top: 6px;
         right: -10px;
@@ -163,6 +156,7 @@
         margin: 0 10px 15px 0;
         @include devices(mobile) {
           font-size: 0.8rem;
+          margin: 0 10px 0 0;
         }
       }
       span {
@@ -236,7 +230,6 @@
       position: relative;
       @include devices(mobile) {
         box-shadow: none;
-
         border-radius: 15px;
       }
       &::after {
@@ -247,8 +240,6 @@
         background-color: rgb(38 79 185);
         background-color: rgb(68, 75, 86);
         background-color: rgb(88 92 98);
-        // background-color: rgba(192, 119, 104);
-        // background-color: rgb(168 101 99);
         position: absolute;
         top: 6px;
         right: -10px;
@@ -306,13 +297,6 @@
         border-radius: 15px 15px 0 0;
       }
     }
-    // .cartes-skill span {
-    // display: block;
-    // text-align: center;
-    // padding: 15px;
-    // font-size: 25px;
-    // font-weight: bold;
-    // }
     .cartes-skill:nth-child(2) h4 {
       background: #b0445a;
       // background:  linear-gradient(to left, rgb(177, 78, 59) 0%, rgb(234, 127, 108) 100%);
@@ -363,13 +347,7 @@
       padding: 3px 5px 3px 10px;
       // border-top: 1px solid rgb(194,197,194);
     }
-    // .cartes-skill p:last-of-type{
-    // border-bottom: 1px solid rgb(194,197,194);
-    // }
-    // .cartes-skill p:nth-child(odd) {
-    // // background: rgba(195,195,195,0.219);
-    // }
-
+   
     .cartes-skill a {
       display: block;
       text-decoration: none;
