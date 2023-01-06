@@ -3,6 +3,7 @@
   // background: rgb(47,45,45);
  
   // min-width: 100vw;
+  width: 100%;
   min-height: 100vh;
 //   top: 0;
 //   bottom: 0;
@@ -37,9 +38,7 @@
   //   -o-background-size: cover;
   //   background-size: cover;
   // }
-  @include devices(small-pc){
-    min-height: calc(100vh - 60px);
-  }
+  
   .container {
     // padding-bottom: 100px;
     margin: auto;
