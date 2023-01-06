@@ -571,7 +571,7 @@ header a {
   box-sizing: border-box;
   opacity: 0;
   overflow: hidden;
-  border-right: 0.17em solid rgb(243, 241, 241);
+  border-right: 0.16em solid rgb(243, 241, 241);
   white-space: nowrap;
   width: 0;
   animation: typing 2s 2.8s steps(33, end) forwards, blink 0.75s 2.8s infinite, borderVisible 0.01s 2.9s forwards, borderHidden2 0.01s 6.9s forwards;
@@ -602,7 +602,7 @@ header a {
 }
 @keyframes borderHidden2 {
   from {
-    border-right: 0.17em solid rgb(224, 224, 224);
+    border-right: 0.16em solid rgb(224, 224, 224);
   }
   to {
     border-right: none;
