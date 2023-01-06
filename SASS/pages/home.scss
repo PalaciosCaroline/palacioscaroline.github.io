@@ -4,7 +4,7 @@
  
   // min-width: 100vw;
   width: 100%;
-  height: calc(100vh - 70px);
+  height: 100vh;
 //   top: 0;
 //   bottom: 0;
 //   left: 0;
@@ -19,9 +19,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  @include devices(small-pc){
-    height: calc(100vh - 60px);
-  }
+
   &:before {
     content: "";
     display: block;
