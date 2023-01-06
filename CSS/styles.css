@@ -551,11 +551,14 @@ header a {
 }
 #home .c1 {
   display: inline-block;
+  box-sizing: border-box;
 }
 #home .c2 {
   display: inline-block;
+  box-sizing: border-box;
 }
 #home .type1 {
+  position: relative;
   box-sizing: border-box;
   overflow: hidden;
   border-right: 0.15em solid rgb(245, 242, 242);
@@ -564,13 +567,14 @@ header a {
   animation: typing 2.3s 0.15s steps(33, end) forwards, borderHidden 0.01s 2.5s forwards;
 }
 #home .type2 {
+  position: relative;
   box-sizing: border-box;
   opacity: 0;
   overflow: hidden;
   border-right: 0.17em solid rgb(243, 241, 241);
   white-space: nowrap;
   width: 0;
-  animation: typing 2s 2.8s steps(33, end) forwards, blink 0.75s 2.8s infinite, borderVisible 0.01s 2.9s forwards, borderHidden2 0.01s 6.5s forwards;
+  animation: typing 2s 2.8s steps(33, end) forwards, blink 0.75s 2.8s infinite, borderVisible 0.01s 2.9s forwards, borderHidden2 0.01s 6.9s forwards;
 }
 @keyframes typing {
   from {
@@ -653,9 +657,10 @@ header a {
   padding: 10px 15px;
   border-radius: 25px;
   width: 140px;
-  box-shadow: 4px 4px 10px 4px rgba(36, 3, 3, 0.8);
+  box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, 0.6);
   font-weight: 500;
   border-color: rgb(180, 57, 27);
+  border-color: rgb(110, 105, 104);
 }
 #btn_home:hover {
   background: linear-gradient(to left, rgba(228, 41, 3, 0.9) 0%, rgba(214, 47, 13, 0.9) 100%);
@@ -1275,6 +1280,11 @@ header a {
     padding-top: 60px;
   }
 }
+@media only screen and (max-width: 550px) {
+  .main_formation .box_savoir {
+    padding-top: 30px;
+  }
+}
 .main_formation .boite {
   grid-column: 1/2;
   grid-row: 1;
@@ -1625,6 +1635,11 @@ header a {
   margin: 30px auto;
   width: 80%;
 }
+@media only screen and (max-width: 550px) {
+  .certification {
+    width: 100%;
+  }
+}
 .certification .h3_formation {
   border-top: 1px solid #fff;
   padding-top: 20px;
@@ -1642,11 +1657,16 @@ header a {
 .certification .boxCertification p {
   font-size: 1.2rem;
 }
+@media only screen and (max-width: 550px) {
+  .certification .boxCertification p {
+    font-size: 1rem;
+  }
+}
 .certification .boxCertification p:nth-child(1) {
   margin-top: 0;
   display: block;
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 830px) {
   .certification .boxCertification {
     column-count: 1;
     padding-right: 15px;

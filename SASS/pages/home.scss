@@ -61,12 +61,15 @@
 
   .c1 {
     display: inline-block;
+    box-sizing: border-box;
   }
   .c2 {
     display: inline-block;
+    box-sizing: border-box;
   }
 
   .type1 {
+    position: relative;
     box-sizing: border-box;
     overflow: hidden;
     border-right: 0.15em solid rgb(245, 242, 242);
@@ -77,6 +80,7 @@
   }
 
   .type2 {
+    position: relative;
     box-sizing: border-box;
     opacity: 0;
     overflow: hidden;
@@ -85,7 +89,7 @@
     width: 0;
     animation: typing 2s 2.8s steps(33, end) forwards,
       blink 0.75s 2.8s infinite, borderVisible 0.01s 2.9s forwards,
-      borderHidden2 0.01s 6.5s forwards;
+      borderHidden2 0.01s 6.9s forwards;
   }
 
   @keyframes typing {
@@ -160,10 +164,10 @@
   padding: 10px 15px;
   border-radius: 25px;
   width: 140px;
-  // box-shadow: 3px 3px 10px 2px rgba(44, 9, 9, 0.8);
-  box-shadow: 4px 4px 10px 4px rgba(36, 3, 3, 0.8);
+  box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, 0.6);
   font-weight: 500;
   border-color: rgb(180 57 27);
+  border-color: rgb(110 105 104);
   @include devices(mobile) {
     margin-top: 15px;
   }
