@@ -9,7 +9,7 @@ function updateTotalLikes(numberToAdd) {
 export default function PageMediaFactory(photograph, data) {
   const pictureVideo = `../../../assets/assetsProjet6/${data.photographerId}/${data.video}`;
   const pictureImg = `../../../assets/assetsProjet6/${data.photographerId}/${data.image}`;
-
+  const picture = `./../../assets/assetsProjet6/${photograph.portrait}`;
   function getUserHeaderDOM() {
     const header = document.querySelector('.photograph-header');
     const contactbtn = document.querySelector('.contact_button');
@@ -28,7 +28,7 @@ export default function PageMediaFactory(photograph, data) {
     divPortrait.classList.add('divPortrait');
     const imgChoisi = document.createElement('img');
     divPortrait.appendChild(imgChoisi);
-    imgChoisi.setAttribute('src', `./../../../assets/assetsProjet6/photographers/Photographers_Id_Photos/${photograph.portrait}}`);
+    imgChoisi.setAttribute('src', picture);
     imgChoisi.alt = '';
     header.appendChild(article);
     article.appendChild(h1);
