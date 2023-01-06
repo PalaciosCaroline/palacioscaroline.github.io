@@ -2,15 +2,27 @@
   // background: rgb(31, 31, 31);
   background: rgb(33, 33, 33);
   background: rgb(37, 37, 37);
-  background: radial-gradient(
-    circle,
-    rgba(45, 45, 45, 1) 0%,
-    rgba(37, 37, 37, 1) 100%
-  );
+  // background: radial-gradient(
+  //   circle,
+  //   rgba(45, 45, 45, 1) 0%,
+  //   rgba(37, 37, 37, 1) 100%
+  // );
+  width: 100vw;
+  min-height: 100vh;  
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -10;
+ background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+  background-attachment: local;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   .container {
     padding-bottom: 100px;
     margin: auto;
@@ -21,6 +33,7 @@
     flex-direction: column;
     overflow: hidden;
     // padding-bottom: 180px;
+   
   }
   .wrapTitle {
     &.hidden {
@@ -53,6 +66,7 @@
   .text_web {
     font-size: 1.3rem;
     color: rgb(180 57 27);
+    color: rgb(211 41 0);
 
     @include devices(mobile) {
       font-size: 1.2rem;
@@ -163,10 +177,10 @@
   padding: 10px 15px;
   border-radius: 25px;
   width: 140px;
-  box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, 0.6);
+  box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.6);
   font-weight: 500;
   border-color: rgb(180 57 27);
-  border-color: rgb(110 105 104);
+  border: 1px solid rgb(110 105 104);
   @include devices(mobile) {
     margin-top: 15px;
   }
