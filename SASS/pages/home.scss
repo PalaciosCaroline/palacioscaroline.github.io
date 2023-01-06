@@ -18,25 +18,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  &:before {
-    content: "";
-    display: block;
-    position: fixed;
-    background: rgb(47,45,45);
-    width: 100vw;
-    min-height: 100vh;  
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+  // &:before {
+  //   content: "";
+  //   display: block;
+  //   position: fixed;
+  //   background: rgb(47,45,45);
+  //   width: 100vw;
+  //   min-height: 100vh;  
+  //   top: 0;
+  //   bottom: 0;
+  //   left: 0;
+  //   right: 0;
     
-    z-index: -8
+  //   z-index: -8
     
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
+  //   -webkit-background-size: cover;
+  //   -moz-background-size: cover;
+  //   -o-background-size: cover;
+  //   background-size: cover;
+  // }
   @include devices(small-pc){
     min-height: calc(100vh - 60px);
   }
