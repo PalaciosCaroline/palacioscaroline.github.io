@@ -28,7 +28,7 @@ export default function PageMediaFactory(photograph, data) {
     divPortrait.classList.add('divPortrait');
     const imgChoisi = document.createElement('img');
     divPortrait.appendChild(imgChoisi);
-    imgChoisi.setAttribute('src', `../../../assets/assetsProjet6/${photograph.portrait}}`);
+    imgChoisi.setAttribute('src', `./../../../assets/assetsProjet6/${photograph.portrait}}`);
     imgChoisi.alt = '';
     header.appendChild(article);
     article.appendChild(h1);
