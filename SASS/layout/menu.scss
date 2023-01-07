@@ -7,7 +7,8 @@
   // background: rgb(31,31,31);
 
   height: 70px;
-  width: 100%;
+  //essai
+  // width: 100%;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -164,13 +165,14 @@ header a {
     // top:60px;
     height: 100vh;
     padding-top: 60px;
-    left: -85%;
+    //essai
+    left: -100%;
     // -webkit-backdrop-filter: blur(4px);
     // backdrop-filter: blur(30px);     /*effet arrière trouble -webkit mit à cause du validator w3c*/
     // background-color: rgba(0, 0, 0, 0.6) ;
     /*effet arrière trouble*/
     // background: linear-gradient(280deg,rgba(0,0,0,0.7),rgba(0,0,0,0.8));
-    width: 82%;
+    width: 90%;
     // height: 100%;
     flex-direction: column;
     transition: transform ease-out 0.3s; /*effet de transition, ease-in permet de commencer vite et de terminer doucement la transition ≠ ease-in*/
@@ -187,7 +189,7 @@ header a {
     width: 90%;
     justify-content: left;
     height: 45px;
-    padding: 5px;
+    padding: 5px 25px 5px 25px;
   }
 
   .nav_ul a:hover {
