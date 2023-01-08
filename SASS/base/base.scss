@@ -2,38 +2,10 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
- 
- 
-//   background: linear-gradient(
-//   250deg,
-//   rgba(26, 26, 30, 0.2),
-//   rgba(47, 44, 44, 0.2)
-// ),
-// url('./../../../assets/img17.jpg');
-// background: url('./../../../assets/img17.jpg');
-//   background-attachment: fixed;
-//   filter: brightness(1.2);
-// background-size: cover;
-//   background-repeat: no-repeat;
-  // scroll-behavior: smooth;
   font-family: Arial, Georgia, 'Times New Roman', Times, serif;
   font-family: 'Trebuchet MS', Georgia, 'Times New Roman', Times, serif;
   background-color:rgb(58, 58, 58);
   
-
-
-
-//   height: 100vh;
-//   background: linear-gradient(
-//   250deg,
-//   rgba(26, 26, 30, 0.2),
-//   rgba(47, 44, 44, 0.2)
-// ),
-// url('./../../../assets/img17.jpg');
-// background: url('./../../../assets/img17.jpg');
-
-// background-size: cover;
-//   background-repeat: no-repeat;
   &:before {
     content: "";
     display: block;
@@ -59,6 +31,19 @@ a {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
+}
+.box-tagProjet{
+ display:flex;
+ flex-wrap:wrap;
+  margin: 5px 5px;
+}
+.tagProjet{
+  display: block;
+  background-color: red;
+  padding:5px;
+  font-size:0.7rem;
+ 
+  
 }
 
 .flex {

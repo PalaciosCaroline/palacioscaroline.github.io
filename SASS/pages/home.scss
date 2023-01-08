@@ -1,42 +1,12 @@
 #home {
  
-  // background: rgb(47,45,45);
- 
-  // min-width: 100vw;
   width: 100%;
   height: 100vh;
-//   top: 0;
-//   bottom: 0;
-//   left: 0;
-//   right: 0;
-//   z-index: -5;
-//  background-size: cover;
-//   -webkit-background-size: cover;
-//   -moz-background-size: cover;
-//   -o-background-size: cover;
 
-  // background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  &:before {
-    content: "";
-    display: block;
-    position: absolute;
     background: rgb(47,45,45);
-    width: 100vw;
-    min-height: 100vh;  
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    
-    z-index: -8;
-    
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
   }
   
@@ -110,8 +80,8 @@
     white-space: nowrap;
     width: 0;
     font-size:500;
-    animation: typing 2.3s 0.15s steps(33, end) forwards,
-      borderHidden 0.01s 2.5s forwards;
+    animation: typing 2s 0.15s steps(30, end) forwards,
+      borderHidden 0.01s 2.2s forwards;
   }
 
   .type2 {
@@ -130,8 +100,8 @@
     1px 1px 1px rgb(101, 2, 2),
     1px 1px 1px rgb(101, 2, 2),
     1px 1px 1px rgb(77, 3, 3);
-    animation: typing 2s 2.8s steps(33, end) forwards, blink 0.75s 2.8s infinite,
-      borderVisible 0.01s 2.9s forwards, borderHidden2 0.01s 6.9s forwards;
+    animation: typing 1.8s 2.5s steps(30, end) forwards, blink 0.75s 2.5s infinite,
+      borderVisible 0.01s 2.7s forwards, borderHidden2 0.01s 6.7s forwards;
   }
 
   @keyframes typing {
@@ -191,7 +161,7 @@
       object-fit: cover;
     }
   }
-}
+
 
 .main_frozzen {
   &.frozzen {

@@ -31,6 +31,19 @@ a {
   cursor: pointer;
 }
 
+.box-tagProjet {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px 5px;
+}
+
+.tagProjet {
+  display: block;
+  background-color: red;
+  padding: 5px;
+  font-size: 0.7rem;
+}
+
 .flex {
   display: flex;
 }
@@ -507,80 +520,74 @@ header a {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-#home:before {
-  content: "";
-  display: block;
-  position: absolute;
   background: rgb(47, 45, 45);
-  width: 100vw;
-  min-height: 100vh;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: -8;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 }
-#home .container {
+
+.container {
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-#home .wrapTitle {
+
+.wrapTitle {
   height: auto;
 }
-#home .wrapTitle.hidden {
+.wrapTitle.hidden {
   display: none;
 }
-#home .presentation {
+
+.presentation {
   margin: 30px 0 30px 0;
   font-weight: 400;
   position: relative;
 }
-#home .presentation h1,
-#home .presentation p {
+.presentation h1,
+.presentation p {
   margin: 0;
 }
-#home .text-3d {
+
+.text-3d {
   color: rgb(255, 255, 255);
 }
-#home h1 {
+
+h1 {
   margin-bottom: 0px;
   font-size: 2.6rem;
   line-height: 2.6rem;
 }
 @media only screen and (max-width: 550px) {
-  #home h1 {
+  h1 {
     font-size: 1.8rem;
     line-height: 1.8rem;
   }
 }
-#home .text_web {
+
+.text_web {
   font-size: 1.3rem;
   color: rgb(180, 57, 27);
   color: rgb(211, 41, 0);
   color: rgb(173, 34, 0);
 }
 @media only screen and (max-width: 550px) {
-  #home .text_web {
+  .text_web {
     font-size: 1.2rem;
   }
 }
-#home .c1 {
+
+.c1 {
   display: inline-block;
   box-sizing: border-box;
 }
-#home .c2 {
+
+.c2 {
   display: inline-block;
   box-sizing: border-box;
 }
-#home .type1 {
+
+.type1 {
   position: relative;
   box-sizing: border-box;
   overflow: hidden;
@@ -588,9 +595,10 @@ header a {
   white-space: nowrap;
   width: 0;
   font-size: 500;
-  animation: typing 2.3s 0.15s steps(33, end) forwards, borderHidden 0.01s 2.5s forwards;
+  animation: typing 2s 0.15s steps(30, end) forwards, borderHidden 0.01s 2.2s forwards;
 }
-#home .type2 {
+
+.type2 {
   position: relative;
   box-sizing: border-box;
   opacity: 0;
@@ -599,8 +607,9 @@ header a {
   white-space: nowrap;
   width: 0;
   text-shadow: 1px 1px 1px rgb(63, 62, 62), 1px 1px 1px rgb(103, 3, 3), 1px 1px 1px rgb(101, 2, 2), 1px 1px 1px rgb(101, 2, 2), 1px 1px 1px rgb(101, 2, 2), 1px 1px 1px rgb(101, 2, 2), 1px 1px 1px rgb(101, 2, 2), 1px 1px 1px rgb(77, 3, 3);
-  animation: typing 2s 2.8s steps(33, end) forwards, blink 0.75s 2.8s infinite, borderVisible 0.01s 2.9s forwards, borderHidden2 0.01s 6.9s forwards;
+  animation: typing 1.8s 2.5s steps(30, end) forwards, blink 0.75s 2.5s infinite, borderVisible 0.01s 2.7s forwards, borderHidden2 0.01s 6.7s forwards;
 }
+
 @keyframes typing {
   from {
     width: 0;
@@ -641,7 +650,7 @@ header a {
     border-color: rgb(189, 193, 190);
   }
 }
-#home .box_photo {
+.box_photo {
   border-radius: 50%;
   border: 4px solid #333;
   border: 1px solid rgba(145, 138, 138, 0.6);
@@ -649,10 +658,10 @@ header a {
   height: 100px;
   width: 100px;
 }
-#home .box_photo.hiddenImg {
+.box_photo.hiddenImg {
   display: none;
 }
-#home .box_photo img {
+.box_photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
