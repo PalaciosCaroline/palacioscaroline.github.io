@@ -51,7 +51,7 @@ btnHome.addEventListener('click', () => {
 navUl.addEventListener('click', () =>{
     hamburger.classList.remove("open")
     navUl.classList.remove("slide")
-    mainFrozzen.classList.remove("frozzen")
+    // mainFrozzen.classList.remove("frozzen")
     document.body.classList.remove("noscroll");
 
 })
