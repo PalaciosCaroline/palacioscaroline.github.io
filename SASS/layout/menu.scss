@@ -8,7 +8,7 @@
 
   height: 70px;
   //essai
-  // width: 100%;
+  width: 100%;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -108,7 +108,7 @@ header a {
   position: absolute;
   left: 20px;
   top: 18px;
-  z-index: 102;
+  z-index: 999;
 }
 
 .bar1,
@@ -151,7 +151,7 @@ header a {
   .navbar {
     display: flex;
     justify-content: inherit;
-    z-index: 99;
+    z-index: 999;
 
     // top:60px;
   }
