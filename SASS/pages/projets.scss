@@ -2,23 +2,18 @@
   color: #fff;
   text-align: center;
   box-sizing: border-box;
-  // background: linear-gradient(
-  //     250deg,
-  //     rgba(26, 26, 30, 0.2),
-  //     rgba(47, 44, 44, 0.2)
-  //   ),
-  //   url('./../../../assets/img17.jpg');
-
-  // background-attachment: scroll;
-
-  // background-size: cover;
-  // background-repeat: no-repeat;
   background: linear-gradient(
     250deg,
     rgba(26, 26, 30, 0.2),
     rgba(47, 44, 44, 0.1)
   );
-
+  .borderProjet{
+    background: rgb(47,45,45);
+    height: 70px;
+    @include devices(small-pc){
+      height: 60px;
+    }
+  }
   .accueil {
     padding-top: 90px;
 
