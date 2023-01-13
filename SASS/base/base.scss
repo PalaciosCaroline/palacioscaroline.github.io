@@ -27,6 +27,14 @@ body {
   }
 }
 
+button:active,
+button:active,
+button:focus:not(.focus-visible),
+button:focus:not(.focus-visible) {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
 a {
   color: #fff;
   text-decoration: none;
