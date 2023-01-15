@@ -472,6 +472,8 @@ header a {
   transition: 0.2s;
   cursor: pointer;
   width: 170px;
+  color: #fff;
+  text-shadow: 1px 1px #0e7080, 1px 2px rgb(23, 86, 107), 1px 3px #0b5667, 1px 4px #085869, 1px 5px #0a5f72;
   font-weight: bold;
 }
 
