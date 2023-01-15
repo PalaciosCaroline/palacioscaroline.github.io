@@ -353,34 +353,45 @@ header a {
 }
 .boite {
   /*capacité empeche le déformement*/
-  height: 380px;
-  padding-top: 15px;
+  background-color: #454448;
+  justify-self: center;
+  border-radius: 15px;
 }
 @media only screen and (max-width: 1000px) {
   .boite {
     margin-top: 30px;
+    margin-bottom: 50px;
   }
 }
 @media only screen and (max-width: 550px) {
   .boite {
-    height: 280px;
+    height: auto;
+    margin-bottom: 30px;
+    width: 100%;
+    margin-right: 0;
   }
+}
+.boite .skillcapacite {
+  width: 300px;
 }
 @media only screen and (max-width: 550px) {
   .boite .skillcapacite {
-    margin-bottom: 40px;
-    padding: 10px 20px;
+    justify-content: center;
   }
 }
 .boite .skillcapacite .name {
   margin-left: 10px;
   margin-right: 15px;
 }
+.boite .skillcapacite .name span {
+  background-color: #18a5bd;
+  background-color: #0daac7;
+  padding: 5px 18px 12px 18px;
+  width: 200px;
+}
 @media only screen and (max-width: 550px) {
   .boite .skillcapacite .name span {
     font-size: 1rem;
-    padding: 3px 3px 3px 3px;
-    width: 120px;
   }
 }
 
@@ -414,7 +425,6 @@ header a {
 }
 .capacite {
   display: flex;
-  width: 50%;
   margin: 20px;
 }
 @media only screen and (max-width: 550px) {
@@ -424,11 +434,11 @@ header a {
 }
 
 .skillcapacite::before {
-  content: "Mes capacités";
+  content: "Mes qualités";
   transform: rotate(-5deg);
   position: absolute;
   top: -30px;
-  left: 70px;
+  left: 30px;
   background: rgb(255, 31, 31);
   padding: 10px 25px;
   color: #fff;
@@ -436,10 +446,10 @@ header a {
 
 .skillcapacite {
   display: flex;
+  justify-content: center;
   padding: 20px 30px 20px 30px;
   border-radius: 15px;
   position: relative;
-  border: 2px solid rgb(91, 86, 86);
 }
 
 .skillcapacite .name {
@@ -453,20 +463,24 @@ header a {
 
 .skillcapacite .name span {
   margin: 7px 0;
-  box-shadow: 1px 1px 3px rgb(186, 177, 177);
+  display: block;
+  box-shadow: 3px 3px 5px 1px rgb(25, 75, 83);
   padding: 10px 20px;
   text-align: center;
   border-radius: 50px;
-  border: 1px solid #66676a;
+  border: 5px solid #b49090;
   transition: 0.2s;
   cursor: pointer;
   width: 170px;
+  font-weight: bold;
 }
 
 .skillcapacite .name span:hover {
-  margin: 7px 0;
-  border: none;
+  color: #3a3a3d;
+  background-color: rgb(47, 219, 239);
+  border-color: rgb(251, 251, 251);
   box-shadow: 5.91px 5.91px 10px #d9dade, -5.91px -5.91px 10px #ffffff, inset 5.91px 5.91px 10px #d9dade, inset -5.91px -5.91px 10px #ffffff;
+  text-shadow: 1px 1px #d9dbdb, 1px 2px rgb(214, 216, 216), 1px 3px #cccfcf, 1px 4px #c7caca, 1px 5px #bebfc0, 1px 5px #aeb0b0;
 }
 
 .niveau_capacite {
@@ -926,8 +940,7 @@ header a {
 @media only screen and (max-width: 550px) {
   .main_projets .img-grid {
     background: linear-gradient(to left, rgb(34, 33, 33) 0%, rgb(52, 53, 57) 100%);
-    border-bottom: 13px solid rgb(114, 111, 111);
-    margin-bottom: -3px;
+    border-bottom: 8px solid rgb(114, 111, 111);
   }
 }
 .main_projets .img-grid img {
@@ -1021,6 +1034,33 @@ header a {
   top: 130px;
   left: 100px;
 }
+.main_projets .bloc-right2 {
+  right: -300px;
+}
+.main_projets .img-grid2-1,
+.main_projets .img-grid2-3 {
+  top: 130px;
+  left: 100px;
+}
+.main_projets .img-grid2-2 {
+  top: 130px;
+  left: 20px;
+}
+.main_projets .bloc-left2 {
+  left: -300px;
+}
+.main_projets .bloc2-1,
+.main_projets .img-grid2-1 {
+  grid-area: 2/2/3/3;
+}
+.main_projets .bloc-left2,
+.main_projets .img-grid2-2 {
+  grid-area: 3/2/4/3;
+}
+.main_projets .bloc2-3,
+.main_projets .img-grid2-3 {
+  grid-area: 4/2/5/3;
+}
 .main_projets .bloc-txt-right {
   position: absolute;
   right: 0;
@@ -1080,6 +1120,24 @@ header a {
   .main_projets .img-grid-3 {
     grid-area: 7/2/8/3;
   }
+  .main_projets .bloc2-1 {
+    grid-area: 2/2/3/3;
+  }
+  .main_projets .img-grid2-1 {
+    grid-area: 3/2/4/3;
+  }
+  .main_projets .bloc-left2 {
+    grid-area: 4/2/5/3;
+  }
+  .main_projets .img-grid2-2 {
+    grid-area: 5/2/6/3;
+  }
+  .main_projets .bloc2-3 {
+    grid-area: 6/2/7/3;
+  }
+  .main_projets .img-grid2-3 {
+    grid-area: 7/2/8/3;
+  }
   .main_projets .bloc {
     height: 100%;
     margin-bottom: 0px;
@@ -1104,6 +1162,25 @@ header a {
     left: 0px;
   }
   .main_projets .bloc-right {
+    right: 0px;
+  }
+  .main_projets .bloc-txt-left {
+    width: 100%;
+    height: 100%;
+  }
+  .main_projets .img-grid2-1,
+  .main_projets .img-grid-3 {
+    top: 0px;
+    left: 0px;
+  }
+  .main_projets .img-grid2-2 {
+    top: 0px;
+    left: 0px;
+  }
+  .main_projets .bloc-left2 {
+    left: 0px;
+  }
+  .main_projets .bloc-right2 {
     right: 0px;
   }
   .main_projets .bloc-txt-left {
@@ -1229,6 +1306,7 @@ header a {
   border-top: 1px solid rgb(117, 114, 114);
   border-left: 1px solid rgb(133, 131, 131);
   position: absolute;
+  box-sizing: border-box;
   bottom: 0;
   right: 0;
 }
@@ -1244,30 +1322,54 @@ header a {
 #imgProjet_2 img,
 #imgProjet3_2 img,
 #imgProjet7_2 img {
-  width: 100%;
+  height: 100%;
+}
+
+#imgProjet_12 {
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 0;
+  right: 0;
+}
+@media only screen and (max-width: 830px) {
+  #imgProjet_12 {
+    right: 12px;
+  }
+}
+#imgProjet_12 img {
+  height: 100%;
 }
 
 #imgProjet4_2 {
-  width: 220px;
+  height: 450px;
 }
 
 #imgProjet_2 {
-  width: 240px;
+  height: 300px;
+}
+
+#imgProjet_12 {
+  height: 300px;
+}
+@media screen and (max-width: 600px) {
+  #imgProjet_12 {
+    height: 200px;
+  }
 }
 
 #imgProjet3_2 {
-  width: 300px;
+  height: 400px;
 }
 
 #imgProjet7_2 {
-  width: 300px;
+  height: 400px;
 }
 
 #imgProjet6_3 {
   border-top: 1px solid rgb(132, 130, 130);
   border-right: 1px solid rgb(139, 137, 137);
   position: absolute;
-  width: 200px;
+  height: 250px;
   left: 0;
   bottom: 0;
 }
@@ -1277,7 +1379,7 @@ header a {
   }
 }
 #imgProjet6_3 img {
-  width: 100%;
+  height: 100%;
 }
 
 .box_imgProjet2 {
@@ -1487,7 +1589,6 @@ header a {
 @media only screen and (max-width: 550px) {
   .main_formation .section-skill h3 {
     border-bottom: 3px solid #fff;
-    background-color: inherit;
   }
 }
 .main_formation .section-skill .container-skill {

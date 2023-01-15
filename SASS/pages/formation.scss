@@ -9,7 +9,6 @@
     rgba(50, 50, 55, 1) 0%,
     rgba(42, 42, 45, 1) 100%
   );
-  // background: #454448;
   @include devices(mobile) {
     padding: 20px 2% 20px 2%;
   }
@@ -200,7 +199,6 @@
       box-sizing: border-box;
       @include devices(mobile) {
         border-bottom: 3px solid #fff;
-        background-color: inherit;
       }
     }
 
