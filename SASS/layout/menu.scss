@@ -16,16 +16,12 @@
   z-index: 110; /*priorise le header pour ne pas le masquer*/
 
   @include devices(small-pc) {
-    background: linear-gradient(280deg, rgb(5, 13, 16), rgb(26, 34, 38));
-    background: rgb(31, 31, 31);
-    background: rgb(33, 33, 33);
-    background: rgb(37, 37, 37);
-    background: rgb(47,45,45);
-    // background: radial-gradient(
-    //   circle,
-    //   rgba(45, 45, 45, 1) 0%,
-    //   rgba(37, 37, 37, 1) 100%
-    // );
+    // background: linear-gradient(280deg, rgb(5, 13, 16), rgb(26, 34, 38));
+    // background: rgb(31, 31, 31);
+    // background: rgb(33, 33, 33);
+    // background: rgb(37, 37, 37);
+    // background: rgb(47,45,45);
+  background-color: rgba(0,0,0,0.5);
 
     height: 60px;
     position: sticky;
@@ -52,9 +48,9 @@ header a {
   margin: 0;
   padding: 0;
   display: flex;
-  background: rgb(33 33 33);
-  background: rgb(37 37 37);
-  background: rgb(47,45,45);
+  // background: rgb(33 33 33);
+  // background: rgb(37 37 37);
+  // background: rgb(47,45,45);
   z-index: 99;
   @include devices(small-pc) {
     border-bottom: none;
@@ -170,7 +166,7 @@ header a {
   }
 
   .slide {
-    transform: translateX(100%);
+    transform: translateX(108%);
   }
 
   .nav_ul a {

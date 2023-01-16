@@ -79,11 +79,7 @@ button, a {
 }
 @media only screen and (max-width: 830px) {
   #header_fixed {
-    background: linear-gradient(280deg, rgb(5, 13, 16), rgb(26, 34, 38));
-    background: rgb(31, 31, 31);
-    background: rgb(33, 33, 33);
-    background: rgb(37, 37, 37);
-    background: rgb(47, 45, 45);
+    background-color: rgba(0, 0, 0, 0.5);
     height: 60px;
     position: sticky;
     top: 0;
@@ -109,9 +105,6 @@ header a {
   margin: 0;
   padding: 0;
   display: flex;
-  background: rgb(33, 33, 33);
-  background: rgb(37, 37, 37);
-  background: rgb(47, 45, 45);
   z-index: 99;
 }
 @media only screen and (max-width: 830px) {
@@ -221,7 +214,7 @@ header a {
     z-index: 99;
   }
   .slide {
-    transform: translateX(100%);
+    transform: translateX(108%);
   }
   .nav_ul a {
     border-bottom: 1px solid rgba(251, 250, 247, 0.4);
@@ -544,7 +537,7 @@ header a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: rgb(47, 45, 45);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 #home .container {
   position: relative;
@@ -599,6 +592,7 @@ header a {
   color: rgb(180, 57, 27);
   color: rgb(211, 41, 0);
   color: rgb(173, 34, 0);
+  color: rgba(228, 41, 3, 0.9);
 }
 @media only screen and (max-width: 550px) {
   #home .text_web {
@@ -716,6 +710,7 @@ header a {
   font-weight: 500;
   border-color: rgb(180, 57, 27);
   border: 1px solid rgb(110, 105, 104);
+  background: linear-gradient(to left, rgba(228, 41, 3, 0.9) 0%, rgba(214, 47, 13, 0.9) 100%);
 }
 #home #btn_home:hover {
   background: linear-gradient(to left, rgba(228, 41, 3, 0.9) 0%, rgba(214, 47, 13, 0.9) 100%);
