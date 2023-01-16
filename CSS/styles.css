@@ -384,8 +384,9 @@ header a {
   margin-right: 15px;
 }
 .boite .skillcapacite .name span {
-  background-color: #18a5bd;
   background-color: #0daac7;
+  background-color: #0992aa;
+  background-color: #0ba9c5;
   padding: 5px 18px 12px 18px;
   width: 200px;
 }
@@ -464,7 +465,6 @@ header a {
 .skillcapacite .name span {
   margin: 7px 0;
   display: block;
-  box-shadow: 3px 3px 5px 1px rgb(25, 75, 83);
   padding: 10px 20px;
   text-align: center;
   border-radius: 50px;
@@ -473,7 +473,7 @@ header a {
   cursor: pointer;
   width: 170px;
   color: #fff;
-  text-shadow: 1px 1px #0e7080, 1px 2px rgb(23, 86, 107), 1px 3px #0b5667, 1px 4px #085869, 1px 5px #0a5f72;
+  text-shadow: 1px 1px #232a2c, 1px 2px rgb(55, 61, 66), 1px 3px #4f4b4b, 1px 4px #4d5154;
   font-weight: bold;
 }
 
@@ -1450,10 +1450,6 @@ header a {
   flex-direction: column;
 }
 .main_formation .box_diplome .box_titre {
-  background-color: rgba(0, 0, 0, 0.8);
-  background-color: rgb(35, 43, 57);
-  background-color: rgb(20, 27, 40);
-  background: rgb(8, 27, 35);
   background-color: rgb(37, 39, 43);
   background-color: #454448;
   padding: 30px 30px 30px 30px;
@@ -1471,8 +1467,6 @@ header a {
 }
 .main_formation .box_diplome h1 {
   padding: 15px 0 15px 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  background-color: rgba(27, 21, 21, 0.2);
   background-color: rgba(66, 65, 65, 0.8);
   display: block;
   margin: 0;
@@ -1495,11 +1489,6 @@ header a {
 }
 .main_formation .box_diplome .box_titre::after {
   content: "";
-  background-color: #bab9b1;
-  background-color: rgb(168, 101, 99);
-  background-color: rgb(25, 58, 144);
-  background-color: rgb(38, 79, 185);
-  background-color: rgb(68, 75, 86);
   background-color: rgb(88, 92, 98);
   position: absolute;
   top: 6px;
@@ -1516,10 +1505,6 @@ header a {
 }
 .main_formation .box_diplome .box_titre::before {
   content: "";
-  background-color: #5e5a4c;
-  background-color: rgb(120, 76, 67);
-  background-color: rgb(23, 33, 97);
-  background-color: rgb(41, 44, 55);
   background-color: rgb(68, 65, 65);
   position: absolute;
   bottom: -10px;
@@ -1567,7 +1552,6 @@ header a {
 .main_formation .section_certif h3 {
   margin: 30px 0 0 0;
   display: block;
-  background-color: rgba(0, 0, 0, 0.6);
   background-color: rgba(27, 21, 21, 0.2);
   padding-bottom: 20px;
   padding-top: 20px;
@@ -1579,8 +1563,6 @@ header a {
   text-align: center;
   margin: 30px 0 0 0;
   display: block;
-  background-color: rgba(0, 0, 0, 0.6);
-  background-color: rgba(27, 21, 21, 0.2);
   background-color: rgba(66, 65, 65, 0.8);
   padding-bottom: 20px;
   padding-top: 20px;
@@ -1600,10 +1582,6 @@ header a {
   flex-wrap: wrap;
 }
 .main_formation .section-skill .cartes-skill {
-  background-color: #333;
-  background-color: rgba(0, 0, 0, 0.7);
-  background-color: rgb(35, 43, 57);
-  background-color: rgb(20, 27, 40);
   background-color: rgb(37, 39, 43);
   background-color: #454448;
   color: #fff;
@@ -1623,11 +1601,6 @@ header a {
 }
 .main_formation .section-skill .cartes-skill::after {
   content: "";
-  background-color: #bab9b1;
-  background-color: rgb(168, 101, 99);
-  background-color: rgb(25, 58, 144);
-  background-color: rgb(38, 79, 185);
-  background-color: rgb(68, 75, 86);
   background-color: rgb(88, 92, 98);
   position: absolute;
   top: 6px;
@@ -1644,12 +1617,6 @@ header a {
 }
 .main_formation .section-skill .cartes-skill::before {
   content: "";
-  background-color: #5e5a4c;
-  background-color: rgb(120, 76, 67);
-  background-color: rgb(23, 33, 97);
-  background-color: rgb(41, 44, 55);
-  background-color: rgb(29, 32, 41);
-  background-color: rgb(49, 55, 70);
   background-color: rgb(68, 65, 65);
   position: absolute;
   bottom: -10px;
@@ -1664,7 +1631,6 @@ header a {
   }
 }
 .main_formation .section-skill .cartes-skill i {
-  color: rgb(214, 131, 114);
   color: rgb(45, 211, 31);
   font-size: 1.2rem;
   font-weight: bold;
@@ -1687,9 +1653,6 @@ header a {
 }
 .main_formation .section-skill .cartes-skill:nth-child(2) h4 {
   background: #b0445a;
-  background: linear-gradient(to left, rgb(177, 78, 59) 0%, rgb(214, 131, 114) 100%);
-  background: linear-gradient(to left, rgb(25, 58, 144) 0%, rgb(114, 141, 214) 100%);
-  background: linear-gradient(to left, rgb(25, 58, 144) 0%, rgb(114, 141, 214) 100%);
   background: linear-gradient(to left, rgb(21, 26, 38) 0%, rgb(71, 75, 70) 100%);
   position: relative;
   overflow: hidden;

@@ -52,12 +52,7 @@
     font-size: 1.2rem;
     display: flex;
     flex-direction: column;
-
     .box_titre {
-      background-color: rgba(0, 0, 0, 0.8);
-      background-color: rgb(35, 43, 57);
-      background-color: rgb(20 27 40);
-      background: rgb(8, 27, 35);
       background-color: rgb(37 39 43);
       background-color: #454448;
       padding: 30px 30px 30px 30px;
@@ -69,23 +64,16 @@
       }
       @include devices(mobile) {
         padding: 10px 15px 10px 15px;
-      
       }
     }
 
     h1 {
       padding: 15px 0 15px 0;
-
-      background-color: rgba(0, 0, 0, 0.6);
-      background-color: rgb(27, 21, 21, 0.2);
       background-color: rgb(66 65 65 / 80%);
       display: block;
       margin: 0;
-
       text-align: center;
-      // margin-bottom:0;
       position: relative;
-
       @include devices(1000-pc) {
         margin-top: 40px;
       }
@@ -96,15 +84,8 @@
     }
     .box_titre {
       position: relative;
-      
-
       &::after {
         content: '';
-        background-color: #bab9b1;
-        background-color: rgb(168, 101, 99);
-        background-color: rgb(25 58 144);
-        background-color: rgb(38 79 185);
-        background-color: rgb(68, 75, 86);
         background-color: rgb(88 92 98);
         position: absolute;
         top: 6px;
@@ -120,13 +101,7 @@
 
       &::before {
         content: '';
-        background-color: #5e5a4c;
-        background-color: rgb(120, 76, 67);
-        background-color: rgb(23 33 97);
-        background-color: rgb(41, 44, 55);
         background-color: rgb(68 65 65);
-        // background-color: rgba(120, 76, 67);
-        //background-color: rgba(120, 76, 67);
         position: absolute;
         bottom: -10px;
         left: 6px;
@@ -170,9 +145,7 @@
   .section_certif {
     h3 {
       margin: 30px 0 0 0;
-
       display: block;
-      background-color: rgba(0, 0, 0, 0.6);
       background-color: rgb(27, 21, 21, 0.2);
       padding-bottom: 20px;
       padding-top: 20px;
@@ -184,16 +157,11 @@
 
     h3 {
       text-align: center;
-
       margin: 30px 0 0 0;
-
       display: block;
-      background-color: rgba(0, 0, 0, 0.6);
-      background-color: rgb(27, 21, 21, 0.2);
       background-color: rgb(66 65 65 / 80%);
       padding-bottom: 20px;
       padding-top: 20px;
-      //  box-shadow: 1px 1px 5px 1px #fff;
       position: relative;
       border-bottom: 5px solid #5e5a4c;
       box-sizing: border-box;
@@ -209,21 +177,14 @@
       flex-wrap: wrap;
     }
     .cartes-skill {
-      background-color: #333;
-      background-color: rgba(0, 0, 0, 0.7);
-      background-color: rgb(35 43 57);
-      background-color: rgb(20 27 40);
-
       background-color: rgb(37 39 43);
       background-color: #454448;
       color: #fff;
       z-index: 3;
       width: 350px;
       height: auto;
-
       margin: 0 15px 0px 15px;
       cursor: pointer;
-
       transition: all 0.2s ease-in-out;
       position: relative;
       @include devices(mobile) {
@@ -232,11 +193,6 @@
       }
       &::after {
         content: '';
-        background-color: #bab9b1;
-        background-color: rgb(168, 101, 99);
-        background-color: rgb(25 58 144);
-        background-color: rgb(38 79 185);
-        background-color: rgb(68, 75, 86);
         background-color: rgb(88 92 98);
         position: absolute;
         top: 6px;
@@ -252,15 +208,7 @@
 
       &::before {
         content: '';
-        background-color: #5e5a4c;
-        background-color: rgb(120, 76, 67);
-        background-color: rgb(23 33 97);
-        background-color: rgb(41, 44, 55);
-        background-color: rgb(29 32 41);
-        background-color: rgb(49 55 70);
         background-color: rgb(68 65 65);
-        // background-color: rgba(120, 76, 67);
-        // background-color: rgba(120, 76, 67);
         position: absolute;
         bottom: -10px;
         left: 6px;
@@ -272,7 +220,6 @@
         }
       }
       i {
-        color: rgb(214, 131, 114);
         color: rgb(45 211 31);
         font-size: 1.2rem;
         font-weight: bold;
@@ -297,22 +244,6 @@
     }
     .cartes-skill:nth-child(2) h4 {
       background: #b0445a;
-      // background:  linear-gradient(to left, rgb(177, 78, 59) 0%, rgb(234, 127, 108) 100%);
-      background: linear-gradient(
-        to left,
-        rgb(177, 78, 59) 0%,
-        rgb(214, 131, 114) 100%
-      );
-      background: linear-gradient(
-        to left,
-        rgb(25, 58, 144) 0%,
-        rgb(114, 141, 214) 100%
-      );
-      background: linear-gradient(
-        to left,
-        rgb(25 58 144) 0%,
-        rgb(114 141 214) 100%
-      );
       background: linear-gradient(
         to left,
         rgb(21, 26, 38) 0%,
@@ -362,7 +293,6 @@
     }
     .cartes-skill a:hover {
       background: #333;
-      // color: #f1f1f1;
     }
 
     @media screen and (max-width: 900px) {
@@ -387,7 +317,6 @@
   .container-skill {
     .lien {
       display: flex;
-      // justify-content: center;
       flex-direction: column;
       align-items: center;
     }
@@ -396,7 +325,6 @@
       text-align: center;
       width: 80px;
       height: 25px;
-      // border-top: 10px solid #5e5a4c;
       border-left: 3px solid #fff;
       border-right: 3px solid #fff;
       z-index: 1;
@@ -411,10 +339,8 @@
     border-left: 3px solid #fff;
     border-right: 3px solid #fff;
   }
-
   .diplome_lien {
     display: flex;
-    // justify-content: center;
     flex-direction: column;
     align-items: center;
     border-top: 3px solid #5e5a4c;
