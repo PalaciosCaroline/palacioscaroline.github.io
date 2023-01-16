@@ -53,7 +53,7 @@
     }
   }
 
-  .accueil h1 {
+  .accueil h2 {
     text-align: center;
     font-size: 3.2rem;
     text-shadow: 0 0 10px #000;
@@ -69,7 +69,7 @@
   }
 
   @media screen and (max-width: 850px) {
-    .accueil h1 {
+    .accueil h2 {
       font-size: 2.2rem;
       padding-top:15px;
     }
@@ -79,7 +79,7 @@
   }
 
   @media screen and (max-width: 400px) {
-    .accueil h1 {
+    .accueil h2 {
       font-size: 2rem;
     }
     .sous-titre {
@@ -202,8 +202,8 @@
         rgb(34 33 33) 0%,
         rgb(52 53 57) 100%
       );
-      border-bottom: 8px solid rgb(114, 111, 111);
-      // margin-bottom: -3px;
+      border-bottom: 10px solid rgb(114, 111, 111);
+      margin-bottom: -3px;
     }
     img {
       height: 100%;
@@ -265,18 +265,20 @@
     padding: 15px;
   }
 
-  .bloc button {
+  .bloc a {
+
     border-radius: 9999px;
     outline: none;
     border: 1px solid rgba(236, 80, 49, 0.8);
 
-    background: linear-gradient(250deg, rgb(169, 6, 6), rgb(184 13 13));
-    background: linear-gradient(250deg, rgb(164, 9, 9), rgb(170, 12, 12));
+    // background: linear-gradient(250deg, rgb(169, 6, 6), rgb(184 13 13));
+    // background: linear-gradient(250deg, rgb(164, 9, 9), rgb(170, 12, 12));
+ background-color: rgba(238, 5, 5, 1);
     color: #f1f1f1;
-    padding: 20px 35px;
+    padding: 15px 5px;
     font-size: 20px;
     margin: 35px auto;
-
+    width:200px;
     display: block;
     position: relative;
     overflow: hidden;
@@ -294,6 +296,7 @@
       );
       box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
       transform: translatey(1px);
+   background:  crimson;
     }
     &::before {
       content: '';
@@ -377,7 +380,7 @@
     line-height: 40px;
     padding: 15px;
   }
-  .bloc-txt-right button {
+  .bloc-txt-right a {
     margin: 5px auto;
   }
 
@@ -802,6 +805,9 @@
 
 #imgProjet4_2,
 #imgProjet_2,
+#imgProjet6_2,
+// #imgProjet11_3,
+#imgProjet11_2,
 #imgProjet3_2,
 #imgProjet7_2 {
   border-top: 1px solid rgb(117, 114, 114);
@@ -834,10 +840,16 @@
     height:100%;
   }
 }
+
 #imgProjet4_2 {
   // width: 220px;
   height: 450px;
 }
+#imgProjet11_2  {
+  // width: 220px;
+  height: 400px;
+}
+
 
 #imgProjet_2 {
   // width: 240px;
@@ -863,7 +875,8 @@
   height:400px;
 }
 
-#imgProjet6_3 {
+#imgProjet6_3,
+#imgProjet11_3 {
   border-top: 1px solid rgb(132, 130, 130);
   border-right: 1px solid rgb(139, 137, 137);
   position: absolute;

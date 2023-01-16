@@ -14,7 +14,7 @@
   top: 0;
 
   z-index: 110; /*priorise le header pour ne pas le masquer*/
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(39, 36, 36, 0.9);
   // background-color: rgba(20, 28, 33, 0.8);
   background-color: rgba(238, 5, 5, 0.9);
   
@@ -25,9 +25,9 @@
     // background: rgb(33, 33, 33);
     // background: rgb(37, 37, 37);
     // background: rgb(47,45,45);
-  background-color: rgba(0,0,0,0.5);
-
-    height: 60px;
+  // background-color: rgba(0,0,0,0.8);
+background-color: inherit;
+  
     position: sticky;
     top: 0;
     z-index: 110;
@@ -37,7 +37,6 @@
 header a {
   color: white;
   text-decoration: none;
- 
 }
 
 .navbar {
@@ -92,20 +91,27 @@ header a {
 }
 
 .hamburger {
-  display: none; /*disparition du burger sur ecran>800px*/
-  flex-direction: column; /*flex-dir par défaut en row*/
+  display: none;
+  flex-direction: column; 
   justify-content: center;
-  cursor: pointer; /*fait apparaître le pointeur*/
+  cursor: pointer;
   position: absolute;
-  left: 20px;
-  top: 18px;
+  // left: 20px;
+  padding-left:16px;
+
+  top: 8px;
   z-index: 999;
+  width: 50px;
+  border-radius: 0 50px 50px 0;
+  height: 50px;
+  background-color:#ee0303;
+
+  box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.7);
 }
 
 .bar1,
 .bar2,
 .bar3 {
-  /*barres du hamburger*/
   width: 35px;
   height: 4px;
   background-color: white;
@@ -157,13 +163,15 @@ header a {
     height: 100vh;
     padding-top: 60px;
     //essai
-    left: -100%;
+   
     // -webkit-backdrop-filter: blur(4px);
     // backdrop-filter: blur(30px);     /*effet arrière trouble -webkit mit à cause du validator w3c*/
     // background-color: rgba(0, 0, 0, 0.6) ;
     /*effet arrière trouble*/
     // background: linear-gradient(280deg,rgba(0,0,0,0.7),rgba(0,0,0,0.8));
-    width: 90%;
+    width: 85vw;
+    width:280px;
+    left: -280px;
     // height: 100%;
     flex-direction: column;
     transition: transform ease-out 0.3s; /*effet de transition, ease-in permet de commencer vite et de terminer doucement la transition ≠ ease-in*/
@@ -171,7 +179,7 @@ header a {
   }
 
   .slide {
-    transform: translateX(108%);
+    transform: translateX(100%);
   }
 
   .nav_ul a {
@@ -263,7 +271,8 @@ header a {
   flex-direction: column;
 }
 
-#half {
+#half ,
+#half2 {
   display: flex;
 }
 
@@ -275,6 +284,7 @@ header a {
   //     animation: none;
   // }
 }
+
 
 #topLeft {
   background: radial-gradient(
