@@ -5,7 +5,6 @@ body {
   height: 100%;
   font-family: Arial, Georgia, "Times New Roman", Times, serif;
   font-family: "Trebuchet MS", Georgia, "Times New Roman", Times, serif;
-  background-color: rgb(58, 58, 58);
 }
 body:before {
   content: "";
@@ -18,7 +17,7 @@ body:before {
   left: 0;
   right: 0;
   z-index: -10;
-  background: url("./../../../assets/img17.jpg") no-repeat center center;
+  background: linear-gradient(280deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("./../../../assets/img17.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -70,12 +69,14 @@ button, a {
 }
 
 #header_fixed {
-  height: 70px;
+  height: 60px;
   width: 100%;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 110; /*priorise le header pour ne pas le masquer*/
+  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(238, 5, 5, 0.9);
 }
 @media only screen and (max-width: 830px) {
   #header_fixed {
@@ -119,7 +120,7 @@ header a {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 70px;
+  height: 60px;
   width: 120px;
   font-size: 1.4rem;
   font-weight: 400;
@@ -138,7 +139,7 @@ header a {
   display: block;
   padding: 0px 30px 0 30px;
   width: 150px;
-  line-height: 70px;
+  line-height: 60px;
 }
 @media only screen and (max-width: 830px) {
   .navbar_item {
@@ -537,11 +538,11 @@ header a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 #home .container {
   position: relative;
-  top: -70px;
+  top: -60px;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -4,8 +4,8 @@ body {
   height: 100%;
   font-family: Arial, Georgia, 'Times New Roman', Times, serif;
   font-family: 'Trebuchet MS', Georgia, 'Times New Roman', Times, serif;
-  background-color:rgb(58, 58, 58);
-  
+  // background-color:rgb(58, 58, 58);
+ 
   &:before {
     content: "";
     display: block;
@@ -19,8 +19,9 @@ body {
     right: 0;
     
     z-index: -10;
-    background: url('./../../../assets/img17.jpg') no-repeat center center;
- 
+    
+    background: linear-gradient(280deg, rgb(0, 0,0, 0.2), rgb(0, 0,0,0.4)),url('./../../../assets/img17.jpg') no-repeat center center;
+   
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

@@ -6,7 +6,7 @@
 #header_fixed {
   // background: rgb(31,31,31);
 
-  height: 70px;
+  height: 60px;
   //essai
   width: 100%;
   position: -webkit-sticky;
@@ -14,7 +14,11 @@
   top: 0;
 
   z-index: 110; /*priorise le header pour ne pas le masquer*/
-
+  background-color: rgba(0, 0, 0, 0.8);
+  // background-color: rgba(20, 28, 33, 0.8);
+  background-color: rgba(238, 5, 5, 0.9);
+  
+ 
   @include devices(small-pc) {
     // background: linear-gradient(280deg, rgb(5, 13, 16), rgb(26, 34, 38));
     // background: rgb(31, 31, 31);
@@ -33,6 +37,7 @@
 header a {
   color: white;
   text-decoration: none;
+ 
 }
 
 .navbar {
@@ -63,7 +68,7 @@ header a {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 70px;
+  height: 60px;
   width: 120px;
   font-size: 1.4rem;
   font-weight: 400;
@@ -80,7 +85,7 @@ header a {
   display: block;
   padding: 0px 30px 0 30px;
   width: 150px;
-  line-height: 70px;
+  line-height: 60px;
   @include devices(small-pc) {
     line-height: 45px;
   }
