@@ -539,6 +539,7 @@ header a {
 
 #home {
   position: relative;
+  top: -70px;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -551,6 +552,7 @@ header a {
   height: 300px;
   width: 100%;
   overflow: hidden;
+  background-color: inherit;
 }
 #home .home_cover {
   -o-object-fit: cover;
@@ -731,7 +733,6 @@ header a {
   font-weight: 500;
   border-color: rgb(180, 57, 27);
   border: 1px solid rgb(110, 105, 104);
-  background: linear-gradient(to left, rgba(228, 41, 3, 0.9) 0%, rgba(214, 47, 13, 0.9) 100%);
   background-color: rgb(238, 5, 5);
 }
 #home #btn_home:hover {
@@ -774,6 +775,11 @@ header a {
 @media only screen and (max-width: 830px) {
   .main_projets .borderProjet {
     height: 60px;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .main_projets #border-endSection {
+    display: none;
   }
 }
 .main_projets .accueil {
@@ -1028,6 +1034,11 @@ header a {
   overflow: hidden;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
 }
+@media only screen and (max-width: 830px) {
+  .main_projets .bloc a {
+    margin: 5px auto 20px;
+  }
+}
 .main_projets .bloc a:hover {
   background: linear-gradient(to left, rgb(160, 41, 17) 0%, rgba(165, 34, 8, 0.973) 50%);
   background: linear-gradient(to left, rgb(231, 16, 27) 0%, rgb(222, 8, 8) 100%);
@@ -1099,6 +1110,11 @@ header a {
 }
 .main_projets .bloc-txt-right a {
   margin: 5px auto;
+}
+@media only screen and (max-width: 830px) {
+  .main_projets .bloc-txt-right a {
+    margin: 5px auto 20px;
+  }
 }
 .main_projets .ligne-gauche {
   grid-area: 1/2/-1/3;
@@ -1289,11 +1305,11 @@ header a {
   background-color: rgb(26, 66, 11);
   background-color: rgb(68, 75, 86);
   position: absolute;
-  top: 13px;
+  top: 11px;
   right: -20px;
   height: 100%;
   width: 20px;
-  transform: skewy(50deg);
+  transform: skewy(40deg);
 }
 .bloc::before {
   content: "";
@@ -1303,10 +1319,10 @@ header a {
   background-color: rgb(41, 44, 55);
   position: absolute;
   bottom: -20px;
-  left: 12px;
+  left: 11px;
   height: 20px;
   width: 100%;
-  transform: skewX(50deg);
+  transform: skewX(40deg);
 }
 
 @media only screen and (max-width: 830px) {
@@ -1844,8 +1860,13 @@ header a {
   height: 100vh;
   border-top: 2px solid rgb(214, 212, 212);
   color: #fff;
-  background: linear-gradient(250deg, rgba(26, 26, 30, 0.2), rgba(47, 44, 44, 0.1));
   background: rgb(37, 37, 37);
+}
+@media only screen and (max-width: 830px) {
+  .main_contact {
+    border-top: none;
+    background-color: inherit;
+  }
 }
 .main_contact .wrap_contact {
   margin-top: 90px;

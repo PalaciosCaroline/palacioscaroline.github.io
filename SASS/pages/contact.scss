@@ -6,8 +6,12 @@
   color: #fff;
  
 
-    background: linear-gradient(250deg, rgba(26, 26, 30, 0.2), rgba(47, 44, 44, 0.1));
+   
     background: rgb(37,37,37);
+    @include devices(small-pc){
+      border-top: none;
+      background-color: inherit;
+    }
   .wrap_contact {
     margin-top:90px;
     // background: linear-gradient(280deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));

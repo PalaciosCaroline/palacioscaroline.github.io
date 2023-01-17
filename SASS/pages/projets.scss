@@ -14,6 +14,11 @@
       height: 60px;
     }
   }
+  #border-endSection{
+    @include devices(small-pc) {
+      display:none;
+    }
+  }
   .accueil {
     padding-top: 90px;
 
@@ -33,7 +38,7 @@
       rgba(191, 191, 197, 0.1) 10%,
       rgba(13, 13, 14, 0.4)
     );
-
+  
     box-shadow: 1px 1px 4px 1px rgba(96, 95, 95, 0.3);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -50,7 +55,11 @@
 
     @include devices(small-pc) {
       padding-top: 50px;
+      
+       
+      
     }
+    
   }
 
   .accueil h2 {
@@ -206,6 +215,9 @@
     img {
       height: 100%;
       object-fit: cover;
+      // @include devices(small-pc){
+      //   margin-top: 20px;
+      // }
     }
   }
   /* Placement */
@@ -281,6 +293,9 @@
     position: relative;
     overflow: hidden;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
+    @include devices(small-pc){
+      margin: 5px auto 20px;
+    }
     &:hover {
       background: linear-gradient(
         to left,
@@ -380,6 +395,9 @@
   }
   .bloc-txt-right a {
     margin: 5px auto;
+    @include devices(small-pc){
+      margin: 5px auto 20px;
+    }
   }
 
   /* Lignes verticales */
@@ -764,11 +782,11 @@
     background-color: rgb(26 66 11);
     background-color: rgb(68 75 86);
     position: absolute;
-    top: 13px;
+    top: 11px;
     right: -20px;
     height: 100%;
     width: 20px;
-    transform: skewy(50deg);
+    transform: skewy(40deg);
   }
 
   &::before {
@@ -779,10 +797,10 @@
     background-color: rgb(41 44 55);
     position: absolute;
     bottom: -20px;
-    left: 12px;
+    left: 11px;
     height: 20px;
     width: 100%;
-    transform: skewX(50deg);
+    transform: skewX(40deg);
   }
 }
 
