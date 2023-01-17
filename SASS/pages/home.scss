@@ -12,7 +12,12 @@
   // @include devices(mobile) {
   //   top:-60px;
   // }
+.home_cover{
+  object-position: cover;
+  height:100%;
+  width:100%;
 
+}
   .container {
     position:relative;
     top:-60px;
@@ -20,6 +25,15 @@
     justify-content: center;
     align-items: center;  
     flex-direction: column;
+
+    //essai
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    //
+
+
     @include devices(small-pc) {
       top:-60px;
     } 

@@ -544,6 +544,11 @@ header a {
   align-items: center;
   flex-direction: column;
 }
+#home .home_cover {
+  object-position: cover;
+  height: 100%;
+  width: 100%;
+}
 #home .container {
   position: relative;
   top: -60px;
@@ -551,6 +556,10 @@ header a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 @media only screen and (max-width: 830px) {
   #home .container {
