@@ -12,26 +12,15 @@
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-
-  z-index: 110; /*priorise le header pour ne pas le masquer*/
-  // background-color: rgba(39, 36, 36, 0.9);
-  // // background-color: rgba(20, 28, 33, 0.8);
-  background-color: rgba(238, 5, 5, 1);
-  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 110;
   background-color: rgba(50, 50, 50);
-
-  // background-color: #454448;
-  // background: rgb(50,50,50);
+  //animation
+  z-index: 99999;
+  opacity: 0;
+  animation: displaynav 0.1s forwards;
+  animation-delay: 1.9s;
   @include devices(small-pc) {
-    // background: linear-gradient(280deg, rgb(5, 13, 16), rgb(26, 34, 38));
-    // background: rgb(31, 31, 31);
-    // background: rgb(33, 33, 33);
-    // background: rgb(37, 37, 37);
-    // background: rgb(47,45,45);
-  // background-color: rgba(0,0,0,0.8);
-background-color: inherit;
-// background-color: #454448;
-// background: radial-gradient(circle, rgb(50, 50, 55) 0%, rgb(42, 42, 45) 100%);
+    background-color: inherit;
     position: sticky;
     top: 0;
     z-index: 110;
@@ -50,15 +39,11 @@ header a {
   height: 100%;
   width: 100%;
 }
-
 .nav_ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
-  // background: rgb(33 33 33);
-  // background: rgb(37 37 37);
-  // background: rgb(47,45,45);
   z-index: 99;
   @include devices(small-pc) {
     border-bottom: none;
@@ -96,22 +81,18 @@ header a {
 
 .hamburger {
   display: none;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: center;
   cursor: pointer;
   position: absolute;
-  // left: 20px;
-  padding-left:16px;
-
+  padding-left: 16px;
   top: 8px;
   z-index: 999;
   width: 50px;
   border-radius: 0 50px 50px 0;
   height: 50px;
-  background-color:#ee0303;
-  background-color:rgb(164,0,0);
-
-  box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.4);
+  background-color: rgb(164, 0, 0);
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.4);
 }
 
 .bar1,
@@ -120,19 +101,18 @@ header a {
   width: 35px;
   height: 4px;
   background-color: white;
-
-  border-radius: 5px; /* bord arrondi */
+  border-radius: 5px; 
 }
 
 .bar2,
 .bar3 {
-  margin-top: 6px; /*marge sur 2 et 3eme bar*/
+  margin-top: 6px; 
 }
 
 .open .bar1,
 .open .bar2,
 .open .bar3 {
-  transition: all 0.3s; /* transition changement de couleur*/
+  transition: all 0.3s; 
 }
 
 .open .bar1 {
@@ -149,37 +129,26 @@ header a {
 }
 
 @media (max-width: 800px) {
-  /*responsive lorsq ecran<800px)*/
   .navbar {
     display: flex;
     justify-content: inherit;
     z-index: 999;
-
-    // top:60px;
   }
 
   .hamburger {
     display: flex;
-  } /*faire apparaître le burger lorsq ecran<800px car sinon display est en none)*/
+  } 
 
   .nav_ul {
     position: absolute;
-    // top:60px;
     height: 100vh;
     padding-top: 60px;
     //essai
-   
-    // -webkit-backdrop-filter: blur(4px);
-    // backdrop-filter: blur(30px);     /*effet arrière trouble -webkit mit à cause du validator w3c*/
-    // background-color: rgba(0, 0, 0, 0.6) ;
-    /*effet arrière trouble*/
-    // background: linear-gradient(280deg,rgba(0,0,0,0.7),rgba(0,0,0,0.8));
     width: 85vw;
-    width:280px;
+    width: 280px;
     left: -280px;
-    // height: 100%;
     flex-direction: column;
-    transition: transform ease-out 0.3s; /*effet de transition, ease-in permet de commencer vite et de terminer doucement la transition ≠ ease-in*/
+    transition: transform ease-out 0.3s; 
     z-index: 99;
   }
 
@@ -188,7 +157,6 @@ header a {
   }
 
   .nav_ul a {
-    // border-bottom: 1px solid rgb(192,127,6, 0.4);
     border-bottom: 1px solid rgba(251, 250, 247, 0.4);
     width: 90%;
     justify-content: left;
@@ -200,10 +168,6 @@ header a {
     animation: none;
     border-radius: 0;
   }
-
-  // .navbar_item{
-  //   border-bottom: 2px solid rgba(251, 250, 247, 0.4);
-  // }
 }
 
 //span
@@ -214,7 +178,7 @@ header a {
     position: relative;
     height: 100%;
     @include devices(small-pc) {
-     padding-left:10px;
+      padding-left: 10px;
     }
     &::after {
       @include devices(small-pc) {
@@ -236,16 +200,9 @@ header a {
   }
   &:hover span::after {
     transform: scaleX(1);
-    //   @include devices(small-pc){
-    //     transform: scaleX(0);
-    // }
   }
 }
-// .activeLink.menu_li_link:hover span::after{
 
-//     background-color: #d68372;
-
-// }
 .boxNomStar {
   display: flex;
   position: relative;
@@ -266,9 +223,6 @@ header a {
   display: flex;
   align-items: center;
   justify-content: center;
-  // @include devices(small-pc){
-  //     display: none;
-  // }
 }
 
 #star {
@@ -276,7 +230,7 @@ header a {
   flex-direction: column;
 }
 
-#half ,
+#half,
 #half2 {
   display: flex;
 }
@@ -285,11 +239,7 @@ header a {
   width: $small;
   height: $small;
   animation: animStarSize 4s ease-in-out infinite;
-  // @include devices(small-pc){
-  //     animation: none;
-  // }
 }
-
 
 #topLeft {
   background: radial-gradient(

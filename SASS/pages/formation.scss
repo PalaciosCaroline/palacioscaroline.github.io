@@ -2,18 +2,19 @@
 .main_formation {
   color: #fff;
   padding: 20px 4% 20px 4%;
-  // background-color: #292b2e;
   background-color: rgb(50, 50, 50);
-  
+
   @include devices(mobile) {
     padding: 20px 2% 20px 2%;
   }
+  
   h1,
   .h3_formation {
     text-align: center;
     color: #fff;
     font-size: 2rem;
   }
+  
   .box_savoir {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -161,9 +162,6 @@
       position: relative;
       border-bottom: 5px solid #5e5a4c;
       box-sizing: border-box;
-      // @include devices(mobile) {
-      //   border-bottom: 3px solid #fff;
-      // }
     }
 
     .container-skill {
@@ -251,7 +249,7 @@
       overflow: hidden;
       transition: all 0.2s;
       -webkit-transition: all 0.2s;
-      margin-bottom:20px;
+      margin-bottom: 20px;
       &::before {
         content: '';
         position: absolute;
@@ -273,17 +271,16 @@
     .cartes-skill p {
       font-size: 1.2rem;
       padding: 0 5px 0 10px;
-      margin:10px 0 10px 0 ;
+      margin: 10px 0 10px 0;
       @include devices(mobile) {
         padding: 0 5px 0 10px;
-        margin:5px 0 5px 0 ;
+        margin: 5px 0 5px 0;
       }
-      &:nth-child(1){
-        padding-top:20px;
+      &:nth-child(1) {
+        padding-top: 20px;
       }
-      // border-top: 1px solid rgb(194,197,194);
     }
-   
+
     .cartes-skill a {
       display: block;
       text-decoration: none;
@@ -336,9 +333,8 @@
       border-right: 3px solid #fff;
       z-index: 1;
       @include devices(mobile) {
-       border-color: transparent;
+        border-color: transparent;
       }
-
     }
   }
 
@@ -351,14 +347,13 @@
     border-right: 3px solid #fff;
     @include devices(mobile) {
       border-color: transparent;
-     }
+    }
   }
   .diplome_lien {
     display: flex;
     flex-direction: column;
     align-items: center;
     border-top: 5px solid #5e5a4c;
-    
   }
 }
 
@@ -366,7 +361,7 @@
   margin: 30px auto;
   width: 80%;
   @include devices(mobile) {
-   width: 100%;
+    width: 100%;
   }
   .h3_formation {
     border-top: 1px solid #fff;
@@ -380,13 +375,12 @@
   .boxCertification {
     column-count: 2;
     column-gap: 1em;
-    
-   
-    p{
+
+    p {
       font-size: 1.2rem;
       @include devices(mobile) {
         font-size: 1rem;
-       }
+      }
       &:nth-child(1) {
         margin-top: 0;
         display: block;
