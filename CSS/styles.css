@@ -18,8 +18,7 @@ body:before {
   right: 0;
   z-index: -10;
   background-color: #000;
-  background: url("./../../../assets/img17.jpg") no-repeat center center;
-  background: url("./../../../assets/e4.jpg") no-repeat center center;
+  background: url("./../../e4.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
