@@ -7,13 +7,14 @@
  
 
    
-    background: rgb(37,37,37);
+    background: rgb(50,50,50);
     @include devices(small-pc){
       border-top: none;
       background-color: inherit;
     }
   .wrap_contact {
     margin-top:90px;
+    background-color: #454448;
     // background: linear-gradient(280deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
     padding: 20px 20px 20px 20px;
     box-shadow: 2px 2px 4px 2px rgba(221, 223, 243, 0.6);
@@ -52,18 +53,15 @@
       }
     }
   }
-  .mainFrozzen.frozzen {
-    background: linear-gradient(280deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
-    filter: blur(10px);
-  }
+  
   .mail_link_contact {
     @include btnRose;
     border-radius: 25px;
     margin: 35px auto 10px;
     width: 340px;
     align-self: center;
-    background-color:rgba(192, 7, 7, 1);
-    background-color: rgba(238, 5, 5, 1);
+    background-color:rgba(164, 0, 0, 1);
+    // background-color: rgba(238, 5, 5, 1);
     @include devices(mobile) {
       width: 300px;
     }
@@ -71,9 +69,10 @@
       display: block;
       padding: 10px 15px 10px 15px;
       line-height: 30px;
-      box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+   ;
       @include devices(mobile) {
         padding: 10px 5px 10px 5px;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8)
       }
     }
   }

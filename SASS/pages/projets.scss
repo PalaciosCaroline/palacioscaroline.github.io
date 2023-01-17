@@ -143,10 +143,11 @@
     margin: 30px auto 15px;
     background-color: initial;
     // border: 3px solid rgba(175, 6, 6, 0.9);
-    border: 3px solid rgb(238, 5, 5);;
+    border: 3px solid rgb(238, 5, 5);
+    border: 3px solid rgb(164, 0, 0);
     padding-left: 5px;
     padding-right: 5px;
-
+background-color: rgb(164,0,0);
     &:hover,
     &.redColor {
       background: rgb(238, 5, 5);
@@ -279,11 +280,11 @@
 
     border-radius: 9999px;
     outline: none;
-    border: 1px solid rgba(236, 80, 49, 0.8);
+    border: 1px solid rgba(164, 0, 0, 1);
 
     // background: linear-gradient(250deg, rgb(169, 6, 6), rgb(184 13 13));
-    // background: linear-gradient(250deg, rgb(164, 9, 9), rgb(170, 12, 12));
- background-color: rgba(238, 5, 5, 1);
+    background: linear-gradient(250deg, rgb(164, 9, 9), rgb(170, 12, 12));
+//  background-color: rgba(238, 5, 5, 1);
     color: #f1f1f1;
     padding: 15px 5px;
     font-size: 20px;

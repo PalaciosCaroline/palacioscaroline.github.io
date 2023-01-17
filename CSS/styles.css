@@ -17,6 +17,7 @@ body:before {
   left: 0;
   right: 0;
   z-index: -10;
+  background-color: #000;
   background: url("./../../../assets/img17.jpg") no-repeat center center;
   background: url("./../../../assets/e4.jpg") no-repeat center center;
   -webkit-background-size: cover;
@@ -161,7 +162,8 @@ header a {
   border-radius: 0 50px 50px 0;
   height: 50px;
   background-color: #ee0303;
-  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.7);
+  background-color: rgb(164, 0, 0);
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.4);
 }
 
 .bar1,
@@ -170,7 +172,6 @@ header a {
   width: 35px;
   height: 4px;
   background-color: white;
-  box-shadow: 1px 1px 1px rgb(139, 137, 137);
   border-radius: 5px; /* bord arrondi */
 }
 
@@ -442,6 +443,7 @@ header a {
   top: -30px;
   left: 30px;
   background: rgb(255, 31, 31);
+  background: rgb(165, 0, 0);
   padding: 10px 25px;
   color: #fff;
 }
@@ -696,8 +698,8 @@ header a {
   border: 4px solid #333;
   border: 1px solid rgba(145, 138, 138, 0.6);
   overflow: hidden;
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
 }
 #home .box_photo.hiddenImg {
   display: none;
@@ -719,7 +721,7 @@ header a {
   justify-content: center;
   display: block;
   text-decoration: none;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
   border: 2px solid rgb(147, 3, 3);
   color: #fff;
   letter-spacing: 1px;
@@ -732,8 +734,8 @@ header a {
   width: 180px;
   font-weight: 500;
   border-color: rgb(180, 57, 27);
-  border: 1px solid rgb(110, 105, 104);
-  background-color: rgb(238, 5, 5);
+  border: 1px solid rgba(164, 1, 1, 0.5);
+  background: linear-gradient(250deg, rgb(164, 9, 9), rgb(170, 12, 12));
 }
 #home #btn_home:hover {
   background: linear-gradient(to left, rgba(228, 41, 3, 0.9) 0%, rgba(214, 47, 13, 0.9) 100%);
@@ -880,7 +882,7 @@ header a {
   justify-content: center;
   display: block;
   text-decoration: none;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
   border: 2px solid rgb(147, 3, 3);
   color: #fff;
   letter-spacing: 1px;
@@ -893,8 +895,10 @@ header a {
   margin: 30px auto 15px;
   background-color: initial;
   border: 3px solid rgb(238, 5, 5);
+  border: 3px solid rgb(164, 0, 0);
   padding-left: 5px;
   padding-right: 5px;
+  background-color: rgb(164, 0, 0);
 }
 .main_projets .btn-accueil:hover {
   background: linear-gradient(to left, rgba(228, 41, 3, 0.9) 0%, rgba(214, 47, 13, 0.9) 100%);
@@ -1022,8 +1026,8 @@ header a {
 .main_projets .bloc a {
   border-radius: 9999px;
   outline: none;
-  border: 1px solid rgba(236, 80, 49, 0.8);
-  background-color: rgb(238, 5, 5);
+  border: 1px solid rgb(164, 0, 0);
+  background: linear-gradient(250deg, rgb(164, 9, 9), rgb(170, 12, 12));
   color: #f1f1f1;
   padding: 15px 5px;
   font-size: 20px;
@@ -1444,9 +1448,7 @@ header a {
 .main_formation {
   color: #fff;
   padding: 20px 4% 20px 4%;
-  background-color: #292b2e;
   background-color: rgb(50, 50, 50);
-  background: radial-gradient(circle, rgb(50, 50, 55) 0%, rgb(42, 42, 45) 100%);
 }
 @media only screen and (max-width: 550px) {
   .main_formation {
@@ -1860,7 +1862,7 @@ header a {
   height: 100vh;
   border-top: 2px solid rgb(214, 212, 212);
   color: #fff;
-  background: rgb(37, 37, 37);
+  background: rgb(50, 50, 50);
 }
 @media only screen and (max-width: 830px) {
   .main_contact {
@@ -1870,6 +1872,7 @@ header a {
 }
 .main_contact .wrap_contact {
   margin-top: 90px;
+  background-color: #454448;
   padding: 20px 20px 20px 20px;
   box-shadow: 2px 2px 4px 2px rgba(221, 223, 243, 0.6);
   box-shadow: 3px 3px 2px 3px rgba(225, 225, 225, 0.4);
@@ -1909,10 +1912,6 @@ header a {
     font-size: 1.2rem;
   }
 }
-.main_contact .mainFrozzen.frozzen {
-  background: linear-gradient(280deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
-  filter: blur(10px);
-}
 .main_contact .mail_link_contact {
   position: relative;
   overflow: hidden;
@@ -1921,7 +1920,7 @@ header a {
   justify-content: center;
   display: block;
   text-decoration: none;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
   border: 2px solid rgb(147, 3, 3);
   color: #fff;
   letter-spacing: 1px;
@@ -1932,8 +1931,7 @@ header a {
   margin: 35px auto 10px;
   width: 340px;
   align-self: center;
-  background-color: rgb(192, 7, 7);
-  background-color: rgb(238, 5, 5);
+  background-color: rgb(164, 0, 0);
 }
 .main_contact .mail_link_contact:hover {
   background: linear-gradient(to left, rgba(228, 41, 3, 0.9) 0%, rgba(214, 47, 13, 0.9) 100%);
@@ -1962,11 +1960,11 @@ header a {
   display: block;
   padding: 10px 15px 10px 15px;
   line-height: 30px;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
 }
 @media only screen and (max-width: 550px) {
   .main_contact .mail_link_contact span {
     padding: 10px 5px 10px 5px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
   }
 }
 

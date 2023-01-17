@@ -109,8 +109,9 @@ header a {
   border-radius: 0 50px 50px 0;
   height: 50px;
   background-color:#ee0303;
+  background-color:rgb(164,0,0);
 
-  box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.7);
+  box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.4);
 }
 
 .bar1,
@@ -119,7 +120,7 @@ header a {
   width: 35px;
   height: 4px;
   background-color: white;
-  box-shadow: 1px 1px 1px rgb(139, 137, 137);
+
   border-radius: 5px; /* bord arrondi */
 }
 
