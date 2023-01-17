@@ -7,13 +7,25 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  // // background: rgb(47,45,45);
+  // background: radial-gradient(circle, rgb(50, 50, 55) 0%, rgb(42, 42, 45) 100%);
+
+
+  // background: rgb(50,50,50);
+  // background-color: #454448;
 // background-color: rgba(0, 0, 0, 0.3);
-  // @include devices(mobile) {
-  //   top:-60px;
-  // }
+//   @include devices(mobile) {
+       top:-60px;
+//   }
+.img_bannerHome{
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+ 
+}
 .home_cover{
-  object-position: cover;
+  -o-object-fit: cover;
+  object-fit: cover;
+  // object-position: 10% 70%;
   height:100%;
   width:100%;
 
@@ -27,10 +39,10 @@
     flex-direction: column;
 
     //essai
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    // position: absolute;
+    // top:50%;
+    // left:50%;
+    // transform: translate(-50%,-50%);
     //
 
 

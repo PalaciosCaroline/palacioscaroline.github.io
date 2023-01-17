@@ -18,6 +18,7 @@ body:before {
   right: 0;
   z-index: -10;
   background: url("./../../../assets/img17.jpg") no-repeat center center;
+  background: url("./../../../assets/e4.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -75,8 +76,9 @@ button, a {
   position: sticky;
   top: 0;
   z-index: 110; /*priorise le header pour ne pas le masquer*/
-  background-color: rgba(39, 36, 36, 0.9);
   background-color: rgb(238, 5, 5);
+  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgb(50, 50, 50);
 }
 @media only screen and (max-width: 830px) {
   #header_fixed {
@@ -543,9 +545,16 @@ header a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  top: -60px;
+}
+#home .img_bannerHome {
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
 }
 #home .home_cover {
-  object-position: cover;
+  -o-object-fit: cover;
+  object-fit: cover;
   height: 100%;
   width: 100%;
 }
@@ -556,10 +565,6 @@ header a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 @media only screen and (max-width: 830px) {
   #home .container {

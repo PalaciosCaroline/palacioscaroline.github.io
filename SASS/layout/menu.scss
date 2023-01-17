@@ -14,12 +14,14 @@
   top: 0;
 
   z-index: 110; /*priorise le header pour ne pas le masquer*/
-  background-color: rgba(39, 36, 36, 0.9);
-  // background-color: rgba(20, 28, 33, 0.8);
+  // background-color: rgba(39, 36, 36, 0.9);
+  // // background-color: rgba(20, 28, 33, 0.8);
   background-color: rgba(238, 5, 5, 1);
+  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(50, 50, 50);
 
-  
- 
+  // background-color: #454448;
+  // background: rgb(50,50,50);
   @include devices(small-pc) {
     // background: linear-gradient(280deg, rgb(5, 13, 16), rgb(26, 34, 38));
     // background: rgb(31, 31, 31);
@@ -28,7 +30,8 @@
     // background: rgb(47,45,45);
   // background-color: rgba(0,0,0,0.8);
 background-color: inherit;
-  
+// background-color: #454448;
+// background: radial-gradient(circle, rgb(50, 50, 55) 0%, rgb(42, 42, 45) 100%);
     position: sticky;
     top: 0;
     z-index: 110;
