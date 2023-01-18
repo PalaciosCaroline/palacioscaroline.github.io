@@ -18,7 +18,6 @@ body:before {
   z-index: -10;
   background-color: #000;
   background: url("./../../e4.jpg") no-repeat center center;
-  filter: brightness(1.5);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -836,7 +835,7 @@ header a {
   display: block;
   text-decoration: none;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
-  border: 2px solid rgb(147, 3, 3);
+  border: 3px solid rgb(147, 3, 3);
   color: #fff;
   letter-spacing: 1px;
   font-weight: 600;
@@ -848,14 +847,14 @@ header a {
   width: 220px;
   font-weight: 500;
   font-size: 1.2rem;
-  border-color: rgb(180, 57, 27);
-  border: 1px solid rgba(164, 1, 1, 0.5);
-  background: linear-gradient(250deg, rgb(164, 9, 9), rgb(170, 12, 12));
+  background: rgb(164, 0, 0);
 }
 #home #btn_home:hover {
-  background: linear-gradient(to left, rgba(228, 41, 3, 0.9) 0%, rgba(214, 47, 13, 0.9) 100%);
+  background: rgb(226, 0, 0);
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
   transform: translatey(1px);
+  border-left: 1px solid rgb(147, 3, 3);
+  border-right: 1px solid rgb(147, 3, 3);
 }
 #home #btn_home::before {
   content: "";
@@ -873,6 +872,8 @@ header a {
 @media only screen and (max-width: 550px) {
   #home #btn_home {
     margin-top: 15px;
+    border-left: none;
+    border-right: none;
   }
 }
 
@@ -925,8 +926,8 @@ header a {
   height: auto;
   padding-bottom: 20px;
   box-shadow: 1px 1px 4px 1px rgba(96, 95, 95, 0.3);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
   border-bottom: 7px solid #615f55;
   border-radius: 0 0 16px 16px;
   border-left: 1px solid rgba(113, 108, 108, 0.4);
@@ -1010,7 +1011,7 @@ header a {
   display: block;
   text-decoration: none;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
-  border: 2px solid rgb(147, 3, 3);
+  border: 3px solid rgb(147, 3, 3);
   color: #fff;
   letter-spacing: 1px;
   font-weight: 600;
@@ -1021,12 +1022,15 @@ header a {
   height: 70px;
   margin: 30px auto 15px;
   padding-right: 5px;
-  background-color: rgb(164, 0, 0);
+  border: 3px solid rgb(164, 0, 0);
+  background: inherit;
 }
 .main_projets .btn-accueil:hover {
-  background: linear-gradient(to left, rgba(228, 41, 3, 0.9) 0%, rgba(214, 47, 13, 0.9) 100%);
+  background: rgb(226, 0, 0);
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
   transform: translatey(1px);
+  border-left: 1px solid rgb(147, 3, 3);
+  border-right: 1px solid rgb(147, 3, 3);
 }
 .main_projets .btn-accueil::before {
   content: "";
@@ -1042,7 +1046,7 @@ header a {
   transform: translateX(500px) rotate(-45deg);
 }
 .main_projets .btn-accueil:hover, .main_projets .btn-accueil.redColor {
-  background: rgb(238, 5, 5);
+  background: rgb(226, 0, 0);
 }
 @media only screen and (max-width: 830px) {
   .main_projets .btn-accueil {
@@ -1149,9 +1153,9 @@ header a {
 .main_projets .bloc .btnProjet {
   border-radius: 9999px;
   outline: none;
-  border: 1px solid rgb(164, 0, 0);
+  border: 3px solid rgb(164, 0, 0);
   background: linear-gradient(250deg, rgb(164, 9, 9), rgb(170, 12, 12));
-  color: #f1f1f1;
+  color: #fff;
   padding: 15px 5px;
   font-size: 20px;
   margin: 35px auto;
@@ -1167,11 +1171,11 @@ header a {
   }
 }
 .main_projets .bloc .btnProjet:hover {
-  background: linear-gradient(to left, rgb(160, 41, 17) 0%, rgba(165, 34, 8, 0.973) 50%);
-  background: linear-gradient(to left, rgb(231, 16, 27) 0%, rgb(222, 8, 8) 100%);
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
   transform: translatey(1px);
-  background: crimson;
+  background: rgb(226, 0, 0);
+  border-left: none;
+  border-right: none;
 }
 .main_projets .bloc .btnProjet::before {
   content: "";
@@ -2069,33 +2073,36 @@ header a {
     font-size: 1.2rem;
   }
 }
-.main_contact .mail_link_contact {
+
+.mail_link_contact {
+  border-radius: 9999px;
+  outline: none;
+  border: 3px solid rgb(164, 0, 0);
+  background: linear-gradient(250deg, rgb(164, 9, 9), rgb(170, 12, 12));
+  color: #fff;
+  padding: 15px 5px;
+  font-size: 20px;
+  padding: 10px 25px 10px 25px;
+  margin: 35px auto;
+  width: 200px;
+  display: block;
   position: relative;
   overflow: hidden;
-  border-radius: 9999px;
-  text-align: center;
-  justify-content: center;
-  display: block;
-  text-decoration: none;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
-  border: 2px solid rgb(147, 3, 3);
-  color: #fff;
-  letter-spacing: 1px;
-  font-weight: 600;
-  transition: all 0.2s;
-  -webkit-transition: all 0.2s;
-  border-radius: 25px;
-  margin: 35px auto 10px;
-  width: 340px;
-  align-self: center;
-  background-color: rgb(164, 0, 0);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
 }
-.main_contact .mail_link_contact:hover {
-  background: linear-gradient(to left, rgba(228, 41, 3, 0.9) 0%, rgba(214, 47, 13, 0.9) 100%);
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+@media only screen and (max-width: 830px) {
+  .mail_link_contact {
+    margin: 5px auto 20px;
+  }
+}
+.mail_link_contact:hover {
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
   transform: translatey(1px);
+  background: rgb(226, 0, 0);
+  border-left: none;
+  border-right: none;
 }
-.main_contact .mail_link_contact::before {
+.mail_link_contact::before {
   content: "";
   position: absolute;
   width: 200px;
@@ -2104,25 +2111,9 @@ header a {
   transform: rotate(-45deg);
   left: -150px;
 }
-.main_contact .mail_link_contact:hover::before {
+.mail_link_contact:hover::before {
   transition: 0.8s transform linear;
   transform: translateX(500px) rotate(-45deg);
-}
-@media only screen and (max-width: 550px) {
-  .main_contact .mail_link_contact {
-    width: 300px;
-  }
-}
-.main_contact .mail_link_contact span {
-  display: block;
-  padding: 10px 15px 10px 15px;
-  line-height: 30px;
-}
-@media only screen and (max-width: 550px) {
-  .main_contact .mail_link_contact span {
-    padding: 10px 5px 10px 5px;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */
