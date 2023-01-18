@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: Arial, Georgia, 'Times New Roman', Times, serif;
+  // font-family: 'Poppins', Arial, Georgia, 'Times New Roman', Times, serif;
   font-family: 'Trebuchet MS', Georgia, 'Times New Roman', Times, serif;
   // background-color:rgb(58, 58, 58);
  
@@ -10,19 +10,16 @@ body {
     content: "";
     display: block;
     position: fixed;
-    
     width: 100vw;
     min-height: 100vh;  
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    
     z-index: -10;
     background-color:#000;
     // background: url('./../../../assets/img17.jpg') no-repeat center center;
     background: url('./../../e4.jpg') no-repeat center center;
-
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

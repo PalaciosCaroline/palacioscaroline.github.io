@@ -236,6 +236,7 @@
       height: 40px;
       @include devices(mobile) {
         border-radius: 15px 15px 0 0;
+        text-shadow: 1px 1px #232a2c, 1px 2px rgb(55 61 66), 1px 3px #4f4b4b, 1px 4px #4d5154;
       }
     }
     .cartes-skill:nth-child(2) h4 {
@@ -245,6 +246,11 @@
         rgb(21, 26, 38) 0%,
         rgb(71, 75, 70) 100%
       );
+      @include devices(mobile){
+        background: linear-gradient(to left, rgb(59, 174, 200) 0%, rgb(51 153 187) 100%);
+        // background: linear-gradient(224deg, rgb(59, 174, 200) 0%, rgb(37 129 159) 100%);
+        // background: linear-gradient(224deg, rgb(66 180 206) 0%, rgb(53 140 160) 100%);
+      }
       position: relative;
       overflow: hidden;
       transition: all 0.2s;
