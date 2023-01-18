@@ -42,16 +42,16 @@
     margin: 0 auto 0;
     height: auto;
     padding-bottom: 20px;
-    background: linear-gradient(
-      rgba(191, 191, 197, 0.1) 10%,
-      rgba(13, 13, 14, 0.4)
-    );
+    // background: linear-gradient(
+    //   rgba(191, 191, 197, 0.1) 10%,
+    //   rgba(13, 13, 14, 0.4)
+    // );
 
     box-shadow: 1px 1px 4px 1px rgba(96, 95, 95, 0.3);
     backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(3px);
     border-bottom: 7px solid #615f55;
-    background: rgba(113, 108, 108, 0.21);
+    // background: rgba(113, 108, 108, 0.21);
     border-radius: 0 0 16px 16px;
     // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border-left: 1px solid rgba(113, 108, 108, 0.4);

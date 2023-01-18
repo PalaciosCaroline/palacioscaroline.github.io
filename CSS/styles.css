@@ -18,6 +18,7 @@ body:before {
   z-index: -10;
   background-color: #000;
   background: url("./../../e4.jpg") no-repeat center center;
+  filter: brightness(1.5);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -473,7 +474,7 @@ header a {
   cursor: pointer;
   width: 170px;
   color: #fff;
-  text-shadow: 1px 1px #232a2c, 1px 2px rgb(55, 61, 66), 1px 3px #4f4b4b, 1px 4px #4d5154;
+  text-shadow: 1px 1px #267389, 1px 2px rgb(31, 85, 130), 1px 3px #2271af;
   font-weight: bold;
 }
 
@@ -917,12 +918,10 @@ header a {
   margin: 0 auto 0;
   height: auto;
   padding-bottom: 20px;
-  background: linear-gradient(rgba(191, 191, 197, 0.1) 10%, rgba(13, 13, 14, 0.4));
   box-shadow: 1px 1px 4px 1px rgba(96, 95, 95, 0.3);
   backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(3px);
   border-bottom: 7px solid #615f55;
-  background: rgba(113, 108, 108, 0.21);
   border-radius: 0 0 16px 16px;
   border-left: 1px solid rgba(113, 108, 108, 0.4);
   border-right: 1px solid rgba(113, 108, 108, 0.4);
@@ -1766,6 +1765,8 @@ header a {
     box-shadow: none;
     border-radius: 15px;
     padding: 0 0 20px 0;
+    border: 3px solid rgb(59, 174, 200);
+    border: 3px solid rgb(222, 171, 171);
   }
 }
 .main_formation .section-skill .cartes-skill::after {
@@ -1817,8 +1818,9 @@ header a {
 }
 @media only screen and (max-width: 550px) {
   .main_formation .section-skill .cartes-skill h4 {
-    border-radius: 15px 15px 0 0;
-    text-shadow: 1px 1px #232a2c, 1px 2px rgb(55, 61, 66), 1px 3px #4f4b4b, 1px 4px #4d5154;
+    border-radius: 10px 10px 0 0;
+    text-shadow: 1px 1px #19718c, 1px 2px rgb(30, 88, 134), 1px 3px #166982, 1px 4px #206da8;
+    border-bottom: 3px solid rgb(222, 171, 171);
   }
 }
 .main_formation .section-skill .cartes-skill:nth-child(2) h4 {

@@ -186,6 +186,8 @@
         box-shadow: none;
         border-radius: 15px;
         padding: 0 0 20px 0;
+        border: 3px solid rgb(59, 174, 200);
+        border: 3px solid rgb(222, 171, 171);
       }
       &::after {
         content: '';
@@ -235,8 +237,10 @@
 
       height: 40px;
       @include devices(mobile) {
-        border-radius: 15px 15px 0 0;
-        text-shadow: 1px 1px #232a2c, 1px 2px rgb(55 61 66), 1px 3px #4f4b4b, 1px 4px #4d5154;
+        border-radius: 10px 10px 0 0;
+        // text-shadow: 1px 1px #232a2c, 1px 2px rgb(55 61 66), 1px 3px #4f4b4b, 1px 4px #4d5154;
+        text-shadow: 1px 1px #19718c, 1px 2px rgb(30, 88, 134), 1px 3px #166982,1px 4px #206da8;
+        border-bottom: 3px solid rgb(222, 171, 171);
       }
     }
     .cartes-skill:nth-child(2) h4 {
