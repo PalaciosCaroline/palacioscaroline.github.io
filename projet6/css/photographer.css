@@ -19,6 +19,12 @@ button,
   cursor: pointer;
 }
 
+@media screen and (max-width: 600px) {
+  .modal header img{
+    width:30px;
+  }
+}
+
 .photograph-header {
   background-color: #fafafa;
   height: 300px;
@@ -203,12 +209,6 @@ header {
   margin-top: 0;
 }
 
-@media screen and (max-width: 700px) {
-  .modal #modalContactTitle {
-    font-size: 2.7rem;
-  }
-}
-
 .modal #modalContactTitle {
   margin-bottom: 20px;
   display: block;
@@ -216,6 +216,18 @@ header {
   font-size: 4rem;
   margin: 0;
 }
+
+@media screen and (max-width: 700px) {
+  .modal #modalContactTitle {
+    font-size: 2.4rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .modal #modalContactTitle {
+    font-size: 2.2rem;
+  }
+}
+
 
 .modal form {
   display: flex;
@@ -226,7 +238,7 @@ header {
 
 .modal form label {
   color: #312e2e;
-  font-size: 36px;
+  font-size: 2rem;
 }
 
 .modal form div {
@@ -245,6 +257,7 @@ header {
   font-size: 2rem;
   padding: 10px 10px 10px 10px;
 }
+
 
 .modal form input:focus,
 .form_textarea:focus {
@@ -290,6 +303,23 @@ header {
   margin-bottom: 40px;
   font-size: 2rem;
   background-color: #db8876;
+}
+
+@media screen and (max-width: 700px) {
+  .modal form input,.modal form label,
+  .modal .form_textarea {
+    font-size: 1.8rem;
+    width: 95%;
+  }
+  .modal form input{
+    height : 40px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .modal form input,.modal form label ,
+  .form_textarea {
+    font-size: 1.6rem;
+  }
 }
 
 /*sorting*/
