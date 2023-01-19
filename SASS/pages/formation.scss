@@ -186,8 +186,12 @@
         box-shadow: none;
         border-radius: 15px;
         padding: 0 0 20px 0;
-        border: 3px solid rgb(59, 174, 200);
         border: 3px solid rgb(222, 171, 171);
+        margin:0;
+      }
+      @include devices(small-mobile) {
+          width:330px;
+         
       }
       &::after {
         content: '';
