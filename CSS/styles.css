@@ -748,7 +748,6 @@ header a {
   width: 0;
   opacity: 0;
   font-weight: bold;
-  animation: typing 1.2s 2.52s steps(27, end) forwards, borderVisible 0.01s 2.4s forwards, borderHidden 0.01s 3.7s forwards;
   animation: typing 0.6s 1.9s steps(27, end) forwards, borderVisible 0.01s 1.9s forwards, borderHidden 0.01s 2.6s forwards;
 }
 #home .type2 {
@@ -760,7 +759,6 @@ header a {
   white-space: nowrap;
   width: 0;
   text-shadow: 1px 1px 1px rgb(63, 62, 62), 1px 1px 1px rgb(103, 3, 3), 1px 1px 1px rgb(101, 2, 2), 1px 1px 1px rgb(101, 2, 2), 1px 1px 1px rgb(101, 2, 2), 1px 1px 1px rgb(101, 2, 2), 1px 1px 1px rgb(101, 2, 2), 1px 1px 1px rgb(77, 3, 3);
-  animation: typing 1.1s 4s steps(27, end) forwards, blink 0.75s 3.7s infinite, borderVisible 0.01s 3.9s forwards, borderHidden2 0.01s 6.8s forwards;
   animation: typing 0.8s 2.6s steps(27, end) forwards, blink 0.75s 2.5s infinite, borderVisible 0.01s 2.7s forwards, borderHidden2 0.01s 5.6s forwards;
 }
 @keyframes typing {
