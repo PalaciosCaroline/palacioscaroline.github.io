@@ -4,26 +4,21 @@
 
 //Essai
 #header_fixed {
-  // background: rgb(31,31,31);
-
   height: 60px;
-  //essai
   width: 100%;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 110;
   background-color: rgba(50, 50, 50);
-  //animation
   z-index: 500;
-  // opacity: 1;
+  // opacity: 0;
   // animation: displaynav 0.1s forwards;
   // animation-delay: 1.9s;
   @include devices(small-pc) {
     background-color: inherit;
     position: sticky;
     top: 0;
-    z-index: 110;
+    z-index: 500;
   }
 }
 
