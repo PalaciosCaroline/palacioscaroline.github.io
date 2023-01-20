@@ -76,10 +76,7 @@ button, a {
   top: 0;
   z-index: 110;
   background-color: rgb(50, 50, 50);
-  z-index: 99999;
-  opacity: 0;
-  animation: displaynav 0.1s forwards;
-  animation-delay: 1.9s;
+  z-index: 500;
 }
 @media only screen and (max-width: 830px) {
   #header_fixed {
@@ -537,7 +534,7 @@ header a {
 }
 
 .loader_page {
-  z-index: 500;
+  z-index: 999;
   position: absolute;
   top: 0;
   left: 0;
@@ -556,7 +553,7 @@ header a {
 .loaderWrapper {
   position: relative;
   bottom: 50px;
-  z-index: 99;
+  z-index: 999;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -640,26 +637,17 @@ header a {
     background-color: #333;
   }
   70% {
-    opacity: 0.8;
+    opacity: 0.3;
     background-color: #333;
   }
   90% {
-    opacity: 0.6;
+    opacity: 0.1;
     background-color: #333;
   }
   100% {
     opacity: 0;
     display: none;
-    top: -100%;
     background-color: #333;
-  }
-}
-@keyframes displaynav {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 #home {

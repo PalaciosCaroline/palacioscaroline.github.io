@@ -15,10 +15,10 @@
   z-index: 110;
   background-color: rgba(50, 50, 50);
   //animation
-  z-index: 99999;
-  opacity: 0;
-  animation: displaynav 0.1s forwards;
-  animation-delay: 1.9s;
+  z-index: 500;
+  // opacity: 1;
+  // animation: displaynav 0.1s forwards;
+  // animation-delay: 1.9s;
   @include devices(small-pc) {
     background-color: inherit;
     position: sticky;
