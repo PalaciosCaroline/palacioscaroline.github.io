@@ -3,7 +3,8 @@
   color: #fff;
   padding: 20px 4% 20px 4%;
   background-color: rgb(50, 50, 50);
-
+  border-top: 8px solid rgb(126, 123, 123);
+  border-bottom: 8px solid rgb(126, 123, 123);
   @include devices(mobile) {
     padding: 20px 2% 20px 2%;
   }

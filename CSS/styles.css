@@ -1576,6 +1576,8 @@ header a {
   color: #fff;
   padding: 20px 4% 20px 4%;
   background-color: rgb(50, 50, 50);
+  border-top: 8px solid rgb(126, 123, 123);
+  border-bottom: 8px solid rgb(126, 123, 123);
 }
 @media only screen and (max-width: 550px) {
   .main_formation {
