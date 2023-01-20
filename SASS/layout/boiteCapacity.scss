@@ -42,22 +42,22 @@
 @media (max-width: 800px) {
   /*responsive lorsq ecran<800px)*/
 
-  .identite {
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-    transition: transform ease-out 0.5s; /*effet de transition, ease-in permet de commencer vite et de terminer doucement la transition ≠ ease-in*/
-    align-items: center;
-  }
-  .corps {
-    width: 90%;
-    height: 100%;
-    flex-direction: column;
-    transition: transform ease-out 0.5s; /*effet de transition, ease-in permet de commencer vite et de terminer doucement la transition ≠ ease-in*/
-    align-items: center;
-    padding: 2%;
-    margin: 2%;
-  }
+  // .identite {
+  //   width: 100%;
+  //   height: 100%;
+  //   flex-direction: column;
+  //   transition: transform ease-out 0.5s; /*effet de transition, ease-in permet de commencer vite et de terminer doucement la transition ≠ ease-in*/
+  //   align-items: center;
+  // }
+  // .corps {
+  //   width: 90%;
+  //   height: 100%;
+  //   flex-direction: column;
+  //   transition: transform ease-out 0.5s; /*effet de transition, ease-in permet de commencer vite et de terminer doucement la transition ≠ ease-in*/
+  //   align-items: center;
+  //   padding: 2%;
+  //   margin: 2%;
+  // }
 
   .skillcapacite {
     padding: 15px;
@@ -86,7 +86,7 @@
 
   background: rgb(255 31 31 / 100%);
   background: rgb(165 0 0 / 100%);
-
+  box-shadow: 2px 1px 4px rgba(0,0,0,0.5);
   padding: 10px 25px;
   color: #fff;
 }
