@@ -2013,9 +2013,9 @@ header a {
   margin-top: 90px;
   background-color: #454448;
   padding: 20px 20px 20px 20px;
-  box-shadow: 3px 3px 2px 3px rgba(225, 225, 225, 0.4);
-  width: 500px;
-  height: 350px;
+  box-shadow: 2px 2px 3px 1px rgba(228, 227, 227, 0.4);
+  width: 600px;
+  border-radius: 15px;
   font-size: 1.4rem;
 }
 @media only screen and (max-width: 830px) {
@@ -2096,7 +2096,7 @@ header a {
 }
 @media only screen and (max-width: 830px) {
   .mail_link_contact {
-    margin: 5px auto 20px;
+    margin: 15px auto 20px;
   }
 }
 

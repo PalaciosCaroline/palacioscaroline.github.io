@@ -16,9 +16,9 @@
     margin-top: 90px;
     background-color: #454448;
     padding: 20px 20px 20px 20px;
-    box-shadow: 3px 3px 2px 3px rgba(225, 225, 225, 0.4);
-    width: 500px;
-    height: 350px;
+    box-shadow: 2px 2px 3px 1px rgba(228, 227, 227, 0.4);
+    width: 600px;
+    border-radius:15px;
     font-size: 1.4rem;
     @include devices(small-pc) {
       width: 450px;
@@ -52,29 +52,6 @@
   }
 }
 
-// .mail_link_contact {
-//     @include btnRose;
-//     border-radius: 25px;
-//     margin: 35px auto 10px;
-//     width: 340px;
-//     align-self: center;
-//     background-color:rgba(164, 0, 0, 1);
-//     @include devices(mobile) {
-//       width: 300px;
-//     }
-//     span {
-//       display: block;
-//       padding: 10px 15px 10px 15px;
-//       line-height: 30px;
-//    ;
-//       @include devices(mobile) {
-//         padding: 10px 5px 10px 5px;
-//         box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8)
-//       }
-//     }
-//   }
-// }
-
 .mail_link_contact {
   @include btnRose;
   font-size: 1.2rem;
@@ -82,6 +59,6 @@
   margin: 35px auto;
   width: 240px;
   @include devices(small-pc) {
-    margin: 5px auto 20px;
+    margin: 15px auto 20px;
   }
 }
