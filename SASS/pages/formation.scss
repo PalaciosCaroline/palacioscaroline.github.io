@@ -249,7 +249,6 @@
       }
     }
     .cartes-skill:nth-child(2) h4 {
-      background: #b0445a;
       background: linear-gradient(
         to left,
         rgb(21, 26, 38) 0%,
@@ -257,8 +256,6 @@
       );
       @include devices(mobile){
         background: linear-gradient(to left, rgb(59, 174, 200) 0%, rgb(51 153 187) 100%);
-        // background: linear-gradient(224deg, rgb(59, 174, 200) 0%, rgb(37 129 159) 100%);
-        // background: linear-gradient(224deg, rgb(66 180 206) 0%, rgb(53 140 160) 100%);
       }
       position: relative;
       overflow: hidden;
@@ -294,24 +291,6 @@
       &:nth-child(1) {
         padding-top: 20px;
       }
-    }
-
-    .cartes-skill a {
-      display: block;
-      text-decoration: none;
-      border: 1px solid #333;
-      text-align: center;
-      width: 200px;
-      height: 50px;
-      border-radius: 9999px;
-      color: #fff;
-      font-size: 18px;
-      line-height: 50px;
-      margin: 20px auto;
-      transition: all 0.2s ease-in-out;
-    }
-    .cartes-skill a:hover {
-      background: #333;
     }
 
     @media screen and (max-width: 900px) {

@@ -831,6 +831,7 @@ header a {
   background: rgb(226, 0, 0);
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
   transform: translatey(1px);
+  border-color: rgb(226, 0, 0);
   border-left: 1px solid rgb(147, 3, 3);
   border-right: 1px solid rgb(147, 3, 3);
 }
@@ -998,9 +999,8 @@ header a {
   -webkit-transition: all 0.2s;
   font-size: 1.3rem;
   width: 200px;
-  height: 70px;
+  height: 60px;
   margin: 30px auto 15px;
-  padding-right: 5px;
   border: 3px solid rgb(164, 0, 0);
   background: inherit;
 }
@@ -1008,6 +1008,7 @@ header a {
   background: rgb(226, 0, 0);
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
   transform: translatey(1px);
+  border-color: rgb(226, 0, 0);
   border-left: 1px solid rgb(147, 3, 3);
   border-right: 1px solid rgb(147, 3, 3);
 }
@@ -1026,6 +1027,7 @@ header a {
 }
 .main_projets .btn-accueil:hover, .main_projets .btn-accueil.redColor {
   background: rgb(226, 0, 0);
+  border-color: rgb(226, 0, 0);
 }
 @media only screen and (max-width: 830px) {
   .main_projets .btn-accueil {
@@ -1130,31 +1132,34 @@ header a {
   padding: 15px;
 }
 .main_projets .bloc .btnProjet {
-  border-radius: 9999px;
-  outline: none;
-  border: 3px solid rgb(164, 0, 0);
-  background: linear-gradient(250deg, rgb(164, 9, 9), rgb(170, 12, 12));
-  color: #fff;
-  padding: 15px 5px;
-  font-size: 20px;
-  margin: 35px auto;
-  width: 200px;
-  display: block;
   position: relative;
   overflow: hidden;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
-}
-@media only screen and (max-width: 830px) {
-  .main_projets .bloc .btnProjet {
-    margin: 5px auto 20px;
-  }
+  border-radius: 9999px;
+  text-align: center;
+  justify-content: center;
+  display: block;
+  text-decoration: none;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  border: 3px solid rgb(147, 3, 3);
+  color: #fff;
+  letter-spacing: 1px;
+  background: rgb(164, 0, 0);
+  font-weight: 500;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  outline: none;
+  padding: 15px 5px;
+  font-size: 1.1rem;
+  margin: 35px auto;
+  width: 200px;
 }
 .main_projets .bloc .btnProjet:hover {
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
-  transform: translatey(1px);
   background: rgb(226, 0, 0);
-  border-left: none;
-  border-right: none;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+  transform: translatey(1px);
+  border-color: rgb(226, 0, 0);
+  border-left: 1px solid rgb(147, 3, 3);
+  border-right: 1px solid rgb(147, 3, 3);
 }
 .main_projets .bloc .btnProjet::before {
   content: "";
@@ -1168,6 +1173,11 @@ header a {
 .main_projets .bloc .btnProjet:hover::before {
   transition: 0.8s transform linear;
   transform: translateX(500px) rotate(-45deg);
+}
+@media only screen and (max-width: 830px) {
+  .main_projets .bloc .btnProjet {
+    margin: 5px auto 20px;
+  }
 }
 .main_projets .bloc-right {
   right: -300px;
@@ -1838,7 +1848,6 @@ header a {
   }
 }
 .main_formation .section-skill .cartes-skill:nth-child(2) h4 {
-  background: #b0445a;
   background: linear-gradient(to left, rgb(21, 26, 38) 0%, rgb(71, 75, 70) 100%);
   position: relative;
   overflow: hidden;
@@ -1880,23 +1889,6 @@ header a {
 }
 .main_formation .section-skill .cartes-skill p:nth-child(1) {
   padding-top: 20px;
-}
-.main_formation .section-skill .cartes-skill a {
-  display: block;
-  text-decoration: none;
-  border: 1px solid #333;
-  text-align: center;
-  width: 200px;
-  height: 50px;
-  border-radius: 9999px;
-  color: #fff;
-  font-size: 18px;
-  line-height: 50px;
-  margin: 20px auto;
-  transition: all 0.2s ease-in-out;
-}
-.main_formation .section-skill .cartes-skill a:hover {
-  background: #333;
 }
 @media screen and (max-width: 900px) {
   .main_formation .section-skill .section-skill h3 {
@@ -2061,32 +2053,33 @@ header a {
 }
 
 .mail_link_contact {
-  border-radius: 9999px;
-  outline: none;
-  border: 3px solid rgb(164, 0, 0);
-  background: linear-gradient(250deg, rgb(164, 9, 9), rgb(170, 12, 12));
-  color: #fff;
-  padding: 15px 5px;
-  font-size: 20px;
-  padding: 10px 25px 10px 25px;
-  margin: 35px auto;
-  width: 200px;
-  display: block;
   position: relative;
   overflow: hidden;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
-}
-@media only screen and (max-width: 830px) {
-  .mail_link_contact {
-    margin: 5px auto 20px;
-  }
+  border-radius: 9999px;
+  text-align: center;
+  justify-content: center;
+  display: block;
+  text-decoration: none;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  border: 3px solid rgb(147, 3, 3);
+  color: #fff;
+  letter-spacing: 1px;
+  background: rgb(164, 0, 0);
+  font-weight: 500;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  font-size: 1.2rem;
+  padding: 10px 25px 10px 25px;
+  margin: 35px auto;
+  width: 240px;
 }
 .mail_link_contact:hover {
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
-  transform: translatey(1px);
   background: rgb(226, 0, 0);
-  border-left: none;
-  border-right: none;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+  transform: translatey(1px);
+  border-color: rgb(226, 0, 0);
+  border-left: 1px solid rgb(147, 3, 3);
+  border-right: 1px solid rgb(147, 3, 3);
 }
 .mail_link_contact::before {
   content: "";
@@ -2100,6 +2093,11 @@ header a {
 .mail_link_contact:hover::before {
   transition: 0.8s transform linear;
   transform: translateX(500px) rotate(-45deg);
+}
+@media only screen and (max-width: 830px) {
+  .mail_link_contact {
+    margin: 5px auto 20px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
