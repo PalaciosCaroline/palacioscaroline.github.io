@@ -675,14 +675,19 @@ header a {
 }
 #home .wrapTitle {
   height: auto;
-}
-#home .wrapTitle.hidden {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 20px 0;
+  align-items: center;
 }
 #home .presentation {
   margin: 30px 0 30px 0;
   font-weight: 400;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #home .presentation h1,
 #home .presentation p {
@@ -693,13 +698,13 @@ header a {
   text-shadow: 1px 1px 3px #000;
 }
 #home h1 {
-  margin-bottom: 0px;
+  margin: 0px;
   font-size: 2.6rem;
-  line-height: 2.6rem;
+  line-height: 2rem;
 }
 @media only screen and (max-width: 550px) {
   #home h1 {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     line-height: 1.8rem;
   }
 }
@@ -713,38 +718,38 @@ header a {
 }
 @media only screen and (max-width: 550px) {
   #home .text_web {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 #home .c1 {
-  display: inline-block;
+  display: block;
   box-sizing: border-box;
 }
 #home .c2 {
-  display: inline-block;
+  display: block;
   box-sizing: border-box;
+  margin-top: 10px;
 }
 #home .type1 {
   position: relative;
   box-sizing: border-box;
   overflow: hidden;
-  border-right: 0.15em solid rgb(245, 242, 242);
   white-space: nowrap;
   width: 0;
   opacity: 0;
   font-weight: bold;
-  animation: typing 0.6s 1.9s steps(27, end) forwards, borderVisible 0.01s 1.9s forwards, borderHidden 0.01s 2.6s forwards;
+  animation: typing 0.6s 1.9s steps(27, end) forwards, borderVisible 0.01s 1.9s forwards;
 }
 #home .type2 {
   position: relative;
+  text-align: center;
   box-sizing: border-box;
   opacity: 0;
   overflow: hidden;
-  border-right: 0.16em solid rgb(243, 241, 241);
   white-space: nowrap;
   width: 0;
   text-shadow: 1px 1px 1px rgb(63, 62, 62), 1px 1px 1px rgb(103, 3, 3), 1px 1px 1px rgb(101, 2, 2), 1px 1px 1px rgb(101, 2, 2), 1px 1px 1px rgb(101, 2, 2), 1px 1px 1px rgb(101, 2, 2), 1px 1px 1px rgb(101, 2, 2), 1px 1px 1px rgb(77, 3, 3);
-  animation: typing 0.8s 2.6s steps(27, end) forwards, blink 0.75s 2.5s infinite, borderVisible 0.01s 2.7s forwards, borderHidden2 0.01s 5.6s forwards;
+  animation: typing 1s 2.6s steps(38, end) forwards, blink 0.75s 2.5s infinite, borderVisible 0.01s 2.7s forwards;
 }
 @keyframes typing {
   from {
@@ -876,13 +881,29 @@ header a {
   margin: 0;
   padding: 0 10px 0 30px;
 }
+@media only screen and (max-width: 550px) {
+  .main_projets #p_projet3 .p_projet,
+  .main_projets #p_projet4 .p_projet,
+  .main_projets #p_projet6 .p_projet,
+  .main_projets #p_projet7 .p_projet,
+  .main_projets #p_projet11 .p_projet,
+  .main_projets #p_projet12 .p_projet {
+    padding: 0 10px 0 20px;
+    text-justify: auto;
+  }
+}
 .main_projets .ul_projets {
   text-align: left;
   margin: 0 0 20px 0;
 }
 .main_projets .ul_projets li {
   text-align: left;
-  padding: 10px 0 10px 0;
+  padding: 10px 5px 10px 0;
+}
+@media only screen and (max-width: 550px) {
+  .main_projets .ul_projets li {
+    padding: 0 10px 0 0;
+  }
 }
 .main_projets .borderProjet {
   background: rgb(47, 45, 45);
@@ -1099,6 +1120,7 @@ header a {
 }
 .main_projets .bloc {
   background: linear-gradient(to left, rgb(34, 33, 33) 0%, rgb(52, 53, 57) 100%);
+  box-sizing: border-box;
   color: #fff;
   position: relative;
   height: 750px;
@@ -1383,6 +1405,14 @@ header a {
   .main_projets .bloc-txt-right h3 {
     font-size: 25px;
   }
+}
+@media only screen and (max-width: 600px) and (max-width: 550px) {
+  .main_projets .bloc-txt-left h3,
+  .main_projets .bloc-txt-right h3 {
+    margin: 20px 10px 20px 10px;
+  }
+}
+@media screen and (max-width: 600px) {
   .main_projets .bloc-txt-right {
     width: 100%;
   }

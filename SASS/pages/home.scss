@@ -25,15 +25,24 @@
   }
   .wrapTitle {
     height: auto;
-    &.hidden {
-      display: none;
-    }
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    margin: 20px 0 20px 0;
+    align-items: center;
+    // &.hidden {
+    //   display: none;
+    // }
   }
 
   .presentation {
     margin: 30px 0 30px 0;
     font-weight: 400;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     h1,
     p {
       margin: 0;
@@ -44,12 +53,11 @@
     text-shadow: 1px 1px 3px #000;
   }
   h1 {
-    margin-bottom: 0px;
+    margin: 0px;
     font-size: 2.6rem;
-    line-height: 2.6rem;
-
+    line-height: 2rem;
     @include devices(mobile) {
-      font-size: 1.8rem;
+      font-size: 2.2rem;
       line-height: 1.8rem;
     }
   }
@@ -65,47 +73,54 @@
     text-shadow: 1px 1px 1px rgb(244, 241, 241), 1px 1px 1px rgb(233, 230, 230),
       1px 1px 1px rgb(227, 224, 224), 1px 1px 1px rgb(224, 222, 222);
     @include devices(mobile) {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
   }
 
   .c1 {
-    display: inline-block;
-    box-sizing: border-box;
+    display: block;
+    box-sizing: border-box; 
   }
   .c2 {
-    display: inline-block;
+    display: block;
     box-sizing: border-box;
+    margin-top:10px;
   }
 
   .type1 {
     position: relative;
     box-sizing: border-box;
     overflow: hidden;
-    border-right: 0.15em solid rgb(245, 242, 242);
+    // border-right: 0.15em solid rgb(245, 242, 242);
     white-space: nowrap;
     width: 0;
     opacity: 0;
     font-weight: bold;
     animation: typing 0.6s 1.9s steps(27, end) forwards,
-      borderVisible 0.01s 1.9s forwards, borderHidden 0.01s 2.6s forwards;
+      borderVisible 0.01s 1.9s forwards;
+      //borderHidden 0.01s 2.6s forwards;
   }
 
   .type2 {
     position: relative;
+    text-align: center;
     box-sizing: border-box;
     opacity: 0;
     overflow: hidden;
-    border-right: 0.16em solid rgb(243, 241, 241);
+    // border-right: 0.16em solid rgb(243, 241, 241);
     white-space: nowrap;
     width: 0;
+    // margin-bottom:20px;
     text-shadow: 1px 1px 1px rgb(63, 62, 62), 1px 1px 1px rgb(103, 3, 3),
       1px 1px 1px rgb(101, 2, 2), 1px 1px 1px rgb(101, 2, 2),
       1px 1px 1px rgb(101, 2, 2), 1px 1px 1px rgb(101, 2, 2),
       1px 1px 1px rgb(101, 2, 2), 1px 1px 1px rgb(77, 3, 3);
-    animation: typing 0.8s 2.6s steps(27, end) forwards,
-      blink 0.75s 2.5s infinite, borderVisible 0.01s 2.7s forwards,
-      borderHidden2 0.01s 5.6s forwards;
+    animation: typing 1s 2.6s steps(38, end) forwards,
+      blink 0.75s 2.5s infinite,
+      borderVisible 0.01s 2.7s forwards;
+      // borderHidden2 0.01s 5.6s forwards;
+    // @include devices(mobile){  
+    // }
   }
 
   @keyframes typing {

@@ -16,9 +16,13 @@
       .p_projet{
         line-height:18px;
         font-size:1rem;
-      text-align: left;
-      margin:0;
-      padding:0 10px 0  30px;
+        text-align: left;
+        margin:0;
+        padding:0 10px 0  30px;
+        @include devices(mobile) {
+          padding: 0 10px 0 20px;
+          text-justify: auto;
+        }
       }
   }
   .ul_projets{
@@ -26,7 +30,11 @@
     margin:0 0 20px 0;
     li{
       text-align: left;
-      padding: 10px 0 10px 0;
+      padding: 10px 5px 10px 0;
+      @include devices(mobile) {
+        padding: 0 10px 0 0;
+
+      }
     }
    
   }
@@ -233,6 +241,7 @@
 
   .bloc {
     background: linear-gradient(to left, rgb(34 33 33) 0%, rgb(52 53 57) 100%);
+    box-sizing: border-box;
     color: #fff;
     position: relative;
     height: 750px;
@@ -494,6 +503,9 @@
     .bloc-txt-left h3,
     .bloc-txt-right h3 {
       font-size: 25px;
+      @include devices(mobile){
+        margin : 20px 10px 20px 10px;
+      }
     }
 
     .bloc-txt-right {
