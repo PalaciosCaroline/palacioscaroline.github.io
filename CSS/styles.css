@@ -2045,6 +2045,14 @@ header a {
     border-top: none;
   }
 }
+.main_contact .h2_contact {
+  font-size: 2.6rem;
+}
+@media only screen and (max-width: 830px) {
+  .main_contact .h2_contact {
+    font-size: 1.5rem;
+  }
+}
 .main_contact .wrap_contact {
   margin-top: 90px;
   background-color: #454448;
@@ -2075,11 +2083,6 @@ header a {
 @media only screen and (max-width: 550px) {
   .main_contact .wrap_contact hr {
     display: none;
-  }
-}
-@media only screen and (max-width: 830px) {
-  .main_contact .wrap_contact h1 {
-    font-size: 1.5rem;
   }
 }
 @media only screen and (max-width: 830px) {
