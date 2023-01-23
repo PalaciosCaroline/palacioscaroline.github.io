@@ -1692,6 +1692,7 @@ header a {
   margin: 0;
   text-align: center;
   position: relative;
+  font-size: 2.2rem;
 }
 @media only screen and (max-width: 1000px) {
   .main_formation .box_diplome h2 {
@@ -1700,7 +1701,7 @@ header a {
 }
 @media only screen and (max-width: 550px) {
   .main_formation .box_diplome h2 {
-    font-size: 2rem;
+    font-size: 1.9rem;
     margin-top: 30px;
   }
 }
@@ -1779,9 +1780,10 @@ header a {
 .main_formation .section-skill {
   padding-bottom: 50px;
 }
-.main_formation .section-skill h3 {
+.main_formation .section-skill h2 {
   text-align: center;
   margin: 30px 0 0 0;
+  font-size: 2.2rem;
   display: block;
   background-color: rgba(66, 65, 65, 0.8);
   padding-bottom: 20px;
@@ -1789,6 +1791,11 @@ header a {
   position: relative;
   border-bottom: 5px solid #5e5a4c;
   box-sizing: border-box;
+}
+@media only screen and (max-width: 550px) {
+  .main_formation .section-skill h2 {
+    font-size: 1.9rem;
+  }
 }
 .main_formation .section-skill .container-skill {
   display: flex;
@@ -1854,16 +1861,10 @@ header a {
     display: none;
   }
 }
-.main_formation .section-skill .cartes-skill i {
-  color: rgb(45, 211, 31);
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-right: 10px;
-}
 .main_formation .section-skill .cartes-skill:hover {
   transform: translateY(-8px);
 }
-.main_formation .section-skill .cartes-skill h4 {
+.main_formation .section-skill .cartes-skill h3 {
   margin: 0;
   text-align: center;
   padding: 20px 10px 10px 10px;
@@ -1871,13 +1872,13 @@ header a {
   height: 40px;
 }
 @media only screen and (max-width: 550px) {
-  .main_formation .section-skill .cartes-skill h4 {
+  .main_formation .section-skill .cartes-skill h3 {
     border-radius: 10px 10px 0 0;
     text-shadow: 1px 1px #19718c, 1px 2px rgb(30, 88, 134), 1px 3px #166982, 1px 4px #206da8;
     border-bottom: 3px solid rgb(222, 171, 171);
   }
 }
-.main_formation .section-skill .cartes-skill:nth-child(2) h4 {
+.main_formation .section-skill .cartes-skill:nth-child(2) h3 {
   background: linear-gradient(to left, rgb(21, 26, 38) 0%, rgb(71, 75, 70) 100%);
   position: relative;
   overflow: hidden;
@@ -1886,11 +1887,11 @@ header a {
   margin-bottom: 20px;
 }
 @media only screen and (max-width: 550px) {
-  .main_formation .section-skill .cartes-skill:nth-child(2) h4 {
+  .main_formation .section-skill .cartes-skill:nth-child(2) h3 {
     background: linear-gradient(to left, rgb(59, 174, 200) 0%, rgb(51, 153, 187) 100%);
   }
 }
-.main_formation .section-skill .cartes-skill:nth-child(2) h4::before {
+.main_formation .section-skill .cartes-skill:nth-child(2) h3::before {
   content: "";
   position: absolute;
   width: 200px;
@@ -1899,17 +1900,20 @@ header a {
   transform: rotate(-45deg);
   left: -150px;
 }
-.main_formation .section-skill .cartes-skill:nth-child(2) h4:hover::before {
+.main_formation .section-skill .cartes-skill:nth-child(2) h3:hover::before {
   transition: 0.8s transform linear;
   transform: translateX(500px) rotate(-45deg);
-}
-.main_formation .section-skill .cartes-skill:nth-child(3) h4 {
-  background: #f16b86;
 }
 .main_formation .section-skill .cartes-skill p {
   font-size: 1.2rem;
   padding: 0 5px 0 10px;
   margin: 10px 0 10px 0;
+}
+.main_formation .section-skill .cartes-skill p i {
+  color: rgb(45, 211, 31);
+  font-size: 1rem;
+  font-weight: bold;
+  margin-right: 8px;
 }
 @media only screen and (max-width: 550px) {
   .main_formation .section-skill .cartes-skill p {
@@ -1985,13 +1989,14 @@ header a {
     width: 100%;
   }
 }
-.certification .h3_formation {
+.certification .h2_formation {
   border-top: 1px solid #fff;
+  text-align: center;
   padding-top: 20px;
   display: block;
 }
 @media only screen and (max-width: 550px) {
-  .certification .h3_formation {
+  .certification .h2_formation {
     font-size: 1.6rem;
   }
 }
@@ -2001,6 +2006,7 @@ header a {
 }
 .certification .boxCertification p {
   font-size: 1.2rem;
+  margin: 5px 0;
 }
 @media only screen and (max-width: 550px) {
   .certification .boxCertification p {
