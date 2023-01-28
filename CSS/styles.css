@@ -347,7 +347,6 @@ header a {
   }
 }
 .boite {
-  /*capacité empeche le déformement*/
   background-color: #454448;
   justify-self: center;
   border-radius: 15px;
@@ -379,8 +378,6 @@ header a {
   margin-right: 15px;
 }
 .boite .skillcapacite .name span {
-  background-color: #0daac7;
-  background-color: #0992aa;
   background-color: #0ba9c5;
   padding: 5px 18px 12px 18px;
   width: 200px;
@@ -869,6 +866,17 @@ header a {
   /* Section asymétrique */
   /* Placement */
 }
+.main_projets h3 a {
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+}
+.main_projets h3 a .fa-github {
+  font-size: 2rem;
+}
+.main_projets h3 a:hover .fa-github {
+  transform: translatey(-3px);
+  color: #0ba9c5;
+}
 .main_projets #p_projet3 .p_projet,
 .main_projets #p_projet4 .p_projet,
 .main_projets #p_projet6 .p_projet,
@@ -931,6 +939,11 @@ header a {
   text-align: left;
   margin: 0 0 20px 0;
 }
+@media only screen and (max-width: 550px) {
+  .main_projets .ul_projets {
+    margin: 0 0 15px 0;
+  }
+}
 .main_projets .ul_projets li {
   text-align: left;
   padding: 5px 5px 5px 0;
@@ -939,6 +952,21 @@ header a {
   .main_projets .ul_projets li {
     padding: 0 10px 0 0;
   }
+}
+.main_projets .iconResponsive {
+  position: relative;
+  bottom: 0;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 550px) {
+  .main_projets .iconResponsive {
+    margin: 0 0 15px 0;
+  }
+}
+.main_projets .iconResponsive i {
+  padding-left: 6px;
+  padding-right: 6px;
+  font-size: 1.4rem;
 }
 .main_projets .borderProjet {
   background: rgb(47, 45, 45);
@@ -1450,11 +1478,11 @@ header a {
   }
   .main_projets .img-grid {
     width: 100%;
-    height: 500px;
+    height: 400px;
   }
   .main_projets .bloc-txt-left h3,
   .main_projets .bloc-txt-right h3 {
-    font-size: 25px;
+    font-size: 1.5rem;
   }
 }
 @media only screen and (max-width: 600px) and (max-width: 550px) {
@@ -1531,8 +1559,8 @@ header a {
 #imgProjet11_2,
 #imgProjet3_2,
 #imgProjet7_2 {
-  border-top: 1px solid rgb(117, 114, 114);
-  border-left: 1px solid rgb(133, 131, 131);
+  border-top: 1px solid rgb(212, 212, 212);
+  border-left: 1px solid rgb(211, 211, 211);
   position: absolute;
   box-sizing: border-box;
   bottom: 0;
@@ -1575,10 +1603,21 @@ header a {
 #imgProjet4_2 {
   height: 450px;
 }
+@media only screen and (max-width: 550px) {
+  #imgProjet4_2 {
+    height: 340px;
+  }
+}
 
 #imgProjet6_2,
 #imgProjet11_2 {
   height: 400px;
+}
+@media only screen and (max-width: 550px) {
+  #imgProjet6_2,
+  #imgProjet11_2 {
+    height: 300px;
+  }
 }
 
 #imgProjet_2 {
@@ -1597,16 +1636,26 @@ header a {
 #imgProjet3_2 {
   height: 400px;
 }
+@media only screen and (max-width: 550px) {
+  #imgProjet3_2 {
+    height: 300px;
+  }
+}
 
 #imgProjet7_2 {
   height: 400px;
+}
+@media only screen and (max-width: 550px) {
+  #imgProjet7_2 {
+    height: 280px;
+  }
 }
 
 #imgProjet6_3,
 #imgProjet12_2,
 #imgProjet11_3 {
-  border-top: 1px solid rgb(132, 130, 130);
-  border-right: 1px solid rgb(139, 137, 137);
+  border-top: 1px solid rgb(211, 211, 211);
+  border-right: 1px solid rgb(211, 211, 211);
   position: absolute;
   height: 250px;
   left: 0;
@@ -1623,6 +1672,25 @@ header a {
 #imgProjet12_2 img,
 #imgProjet11_3 img {
   height: 100%;
+}
+
+@media only screen and (max-width: 550px) {
+  #imgProjet6_2 {
+    height: 270px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #imgProjet11_3 {
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #imgProjet6_3,
+  #imgProjet12_2 {
+    height: 200px;
+  }
 }
 
 .box_imgProjet2 {

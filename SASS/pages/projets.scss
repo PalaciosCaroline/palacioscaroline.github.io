@@ -7,6 +7,21 @@
     rgba(26, 26, 30, 0.2),
     rgba(47, 44, 44, 0.1)
   );
+  h3 {
+    a{
+      transition: all 0.2s;
+      -webkit-transition: all 0.2s;
+      .fa-github{
+        font-size: 2rem; 
+      }
+    }
+    a:hover{
+      .fa-github{
+        transform: translatey(-3px);
+        color:#0ba9c5;
+      }
+    }
+  }
     #p_projet3,
     #p_projet4,
     #p_projet6,
@@ -54,16 +69,33 @@
   .ul_projets{
     text-align: left;
     margin:0 0 20px 0;
+    @include devices(mobile) {
+      margin:0 0 15px 0;
+    }
     li{
       text-align: left;
       padding: 5px 5px 5px 0;
       @include devices(mobile) {
         padding: 0 10px 0 0;
-
       }
     }
    
   }
+
+  .iconResponsive{
+    position: relative;
+    bottom: 0;
+    margin-bottom:10px;
+    @include devices(mobile) {
+      margin:0 0 15px 0;
+    }
+    i{
+      padding-left:6px;
+      padding-right:6px;
+      font-size: 1.4rem; 
+    }
+  }
+
   .borderProjet {
     background: rgb(47, 45, 45);
     height: 70px;
@@ -82,20 +114,13 @@
     margin: 0 auto 0;
     height: auto;
     padding-bottom: 20px;
-    // background: linear-gradient(
-    //   rgba(191, 191, 197, 0.1) 10%,
-    //   rgba(13, 13, 14, 0.4)
-    // );
     box-shadow: 1px 1px 4px 1px rgba(96, 95, 95, 0.3);
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
     border-bottom: 7px solid #615f55;
-    // background: rgba(113, 108, 108, 0.21);
     border-radius: 0 0 16px 16px;
-    // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border-left: 1px solid rgba(113, 108, 108, 0.4);
     border-right: 1px solid rgba(113, 108, 108, 0.4);
-
     @include devices(small-pc) {
       padding-top: 50px;
     }
@@ -542,12 +567,12 @@
 
     .img-grid {
       width: 100%;
-      height: 500px;
+      height: 400px;
     }
 
     .bloc-txt-left h3,
     .bloc-txt-right h3 {
-      font-size: 25px;
+      font-size: 1.5rem;
       @include devices(mobile){
         margin : 20px 10px 20px 10px;
       }
@@ -628,8 +653,8 @@
 #imgProjet11_2,
 #imgProjet3_2,
 #imgProjet7_2 {
-  border-top: 1px solid rgb(117, 114, 114);
-  border-left: 1px solid rgb(133, 131, 131);
+  border-top: 1px solid rgb(212, 212, 212);
+  border-left: 1px solid rgb(211, 211, 211);
   position: absolute;
   box-sizing: border-box;
   bottom: 0;
@@ -658,11 +683,17 @@
 
 #imgProjet4_2 {
   height: 450px;
+  @include devices(mobile){
+    height: 340px;
+  }
 }
 
 #imgProjet6_2,
 #imgProjet11_2 {
   height: 400px;
+  @include devices(mobile){
+    height: 300px;
+  }
 }
 
 #imgProjet_2 {
@@ -679,17 +710,23 @@
 
 #imgProjet3_2 {
   height: 400px;
+  @include devices(mobile){
+    height: 300px;
+  }
 }
 
 #imgProjet7_2 {
   height: 400px;
+  @include devices(mobile){
+    height: 280px;
+  }
 }
 
 #imgProjet6_3,
 #imgProjet12_2,
 #imgProjet11_3 {
-  border-top: 1px solid rgb(132, 130, 130);
-  border-right: 1px solid rgb(139, 137, 137);
+  border-top: 1px solid rgb(211, 211, 211);
+  border-right: 1px solid rgb(211, 211, 211);
   position: absolute;
   height: 250px;
   left: 0;
@@ -699,6 +736,23 @@
   }
   img {
     height: 100%;
+  }
+}
+#imgProjet6_2{
+  @include devices(mobile){
+    height: 270px;
+  }
+}
+
+#imgProjet11_3{
+  @include devices(mobile){
+    height: 200px;
+  }
+}
+#imgProjet6_3,
+#imgProjet12_2{
+  @include devices(mobile){
+    height: 200px;
   }
 }
 
