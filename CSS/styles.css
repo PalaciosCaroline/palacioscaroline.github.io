@@ -826,7 +826,7 @@ header a {
   -webkit-transition: all 0.2s;
   margin: 15px auto 0;
   padding: 10px 15px;
-  width: 220px;
+  width: 250px;
   font-size: 1.2rem;
 }
 #home #btn_home:hover {
@@ -1519,10 +1519,6 @@ header a {
 
 .bloc::after {
   content: "";
-  background-color: #bab9b1;
-  background-color: rgb(192, 119, 104);
-  background-color: rgb(168, 101, 99);
-  background-color: rgb(26, 66, 11);
   background-color: rgb(68, 75, 86);
   position: absolute;
   top: 10px;
@@ -1533,9 +1529,6 @@ header a {
 }
 .bloc::before {
   content: "";
-  background-color: #5e5a4c;
-  background-color: rgb(120, 76, 67);
-  background-color: rgb(19, 58, 11);
   background-color: rgb(41, 44, 55);
   position: absolute;
   bottom: -20px;
@@ -1655,13 +1648,23 @@ header a {
 }
 
 #imgProjet6_3,
+#imgProjet12_2,
 #imgProjet11_3 {
   border-top: 1px solid rgb(211, 211, 211);
   border-right: 1px solid rgb(211, 211, 211);
   position: absolute;
   height: 250px;
-  left: 0;
   bottom: 0;
+}
+#imgProjet6_3 img,
+#imgProjet12_2 img,
+#imgProjet11_3 img {
+  height: 100%;
+}
+
+#imgProjet6_3,
+#imgProjet11_3 {
+  left: 0;
 }
 @media only screen and (max-width: 830px) {
   #imgProjet6_3,
@@ -1669,26 +1672,14 @@ header a {
     left: 12px;
   }
 }
-#imgProjet6_3 img,
-#imgProjet11_3 img {
-  height: 100%;
-}
 
 #imgProjet12_2 {
-  border-top: 1px solid rgb(211, 211, 211);
-  border-right: 1px solid rgb(211, 211, 211);
-  position: absolute;
-  height: 250px;
   right: 0;
-  bottom: 0;
 }
 @media only screen and (max-width: 830px) {
   #imgProjet12_2 {
     right: 12px;
   }
-}
-#imgProjet12_2 img {
-  height: 100%;
 }
 
 @media only screen and (max-width: 550px) {
