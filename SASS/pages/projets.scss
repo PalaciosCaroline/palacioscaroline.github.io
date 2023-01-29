@@ -76,7 +76,7 @@
       text-align: left;
       padding: 5px 5px 5px 0;
       @include devices(mobile) {
-        padding: 0 10px 0 0;
+        padding: 0 15px 0 0;
       }
     }
    
@@ -545,7 +545,7 @@
       height: 100%;
     }
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 550px) {
     .section-asymetrique {
       grid-template: 120px repeat(6, auto) 1px / 100%;
     }
@@ -567,7 +567,11 @@
 
     .img-grid {
       width: 100%;
-      height: 400px;
+      height: 320px;
+    }
+
+    #img_projet12_1{
+      height: 300px;
     }
 
     .bloc-txt-left h3,
@@ -684,7 +688,7 @@
 #imgProjet4_2 {
   height: 450px;
   @include devices(mobile){
-    height: 340px;
+    height: 280px;
   }
 }
 
@@ -692,7 +696,7 @@
 #imgProjet11_2 {
   height: 400px;
   @include devices(mobile){
-    height: 300px;
+    height: 260px;
   }
 }
 
@@ -711,19 +715,18 @@
 #imgProjet3_2 {
   height: 400px;
   @include devices(mobile){
-    height: 300px;
+    height: 270px;
   }
 }
 
 #imgProjet7_2 {
   height: 400px;
   @include devices(mobile){
-    height: 280px;
+    height: 250px;
   }
 }
 
 #imgProjet6_3,
-#imgProjet12_2,
 #imgProjet11_3 {
   border-top: 1px solid rgb(211, 211, 211);
   border-right: 1px solid rgb(211, 211, 211);
@@ -738,9 +741,25 @@
     height: 100%;
   }
 }
+
+#imgProjet12_2{
+  border-top: 1px solid rgb(211, 211, 211);
+  border-right: 1px solid rgb(211, 211, 211);
+  position: absolute;
+  height: 250px;
+  right: 0;
+  bottom: 0;
+  @include devices(small-pc) {
+    right: 12px;
+  }
+  img {
+    height: 100%;
+  }
+}
+
 #imgProjet6_2{
   @include devices(mobile){
-    height: 270px;
+    height: 250px;
   }
 }
 
@@ -752,7 +771,7 @@
 #imgProjet6_3,
 #imgProjet12_2{
   @include devices(mobile){
-    height: 200px;
+    height: 140px;
   }
 }
 
