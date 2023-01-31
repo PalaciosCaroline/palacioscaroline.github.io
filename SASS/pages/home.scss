@@ -7,7 +7,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  //  background: rgb(50,50,50);
   .container {
     position: relative;
     top: -60px;
@@ -34,7 +33,6 @@
     //   display: none;
     // }
   }
-
   .presentation {
     margin: 30px 0 30px 0;
     font-weight: 400;
@@ -63,11 +61,7 @@
   }
   .text_web {
     font-size: 1.3rem;
-
-    color: rgb(173 34 0);
-    color: rgba(228, 41, 3, 0.9);
     color: rgba(193, 189, 188, 0.9);
-    // color : rgba(255,56,6);
     text-shadow: 1px 1px 1px #000, 1px 1px 1px #000, 1px 1px 1px #000,
       1px 1px 1px #000;
     text-shadow: 1px 1px 1px rgb(244, 241, 241), 1px 1px 1px rgb(233, 230, 230),
@@ -76,7 +70,6 @@
       font-size: 1.1rem;
     }
   }
-
   .c1 {
     display: block;
     box-sizing: border-box; 
@@ -96,9 +89,9 @@
     width: 0;
     opacity: 0;
     font-weight: bold;
-    animation: typing 0.6s 1.9s steps(27, end) forwards,
-      borderVisible 0.01s 1.9s forwards;
-      //borderHidden 0.01s 2.6s forwards;
+    animation: typing 0.6s 1.7s steps(27, end) forwards,
+      borderVisible 0.01s 1.7s forwards;
+      //borderHidden 0.01s 2.4s forwards;
   }
 
   .type2 {
@@ -115,9 +108,9 @@
       1px 1px 1px rgb(101, 2, 2), 1px 1px 1px rgb(101, 2, 2),
       1px 1px 1px rgb(101, 2, 2), 1px 1px 1px rgb(101, 2, 2),
       1px 1px 1px rgb(101, 2, 2), 1px 1px 1px rgb(77, 3, 3);
-    animation: typing 1s 2.6s steps(38, end) forwards,
-      blink 0.75s 2.5s infinite,
-      borderVisible 0.01s 2.7s forwards;
+    animation: typing 1s 2.4s steps(38, end) forwards,
+      blink 0.75s 2.3s infinite,
+      borderVisible 0.01s 2.5s forwards;
       // borderHidden2 0.01s 5.6s forwards;
     // @include devices(mobile){  
     // }
