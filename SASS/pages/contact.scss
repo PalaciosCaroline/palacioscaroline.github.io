@@ -5,6 +5,8 @@
   border-top: 2px solid rgb(214, 212, 212);
   color: #fff;
   background: rgb(50, 50, 50);
+  background: rgba(0, 0, 0, 0.8);
+
   @include devices(small-pc) {
     // border-top: none;
     background-color: inherit;
@@ -20,7 +22,8 @@
   }
   .wrap_contact {
     margin-top: 90px;
-    background-color: #454448;
+    // background-color: #454448;
+    background: linear-gradient(to left, rgb(34, 33, 33) 0%, rgb(52, 53, 57) 100%);
     padding: 20px 20px 20px 20px;
     box-shadow: 2px 2px 3px 1px rgba(228, 227, 227, 0.4);
     width: 600px;
@@ -28,6 +31,7 @@
     font-size: 1.4rem;
     @include devices(small-pc) {
       width: 450px;
+      background: linear-gradient(to left, rgba(17, 17, 17, 0.8) 0%, rgba(0, 0, 0,0.8) 100%);
     }
     @include devices(mobile) {
       margin-top: 100px;

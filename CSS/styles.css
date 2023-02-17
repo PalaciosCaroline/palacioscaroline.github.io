@@ -111,6 +111,7 @@ header a {
     border-bottom: none;
     background: rgb(41, 39, 39);
     background: rgb(64, 64, 64);
+    background-color: rgba(0, 0, 0, 0.9);
   }
 }
 
@@ -158,6 +159,7 @@ header a {
   border-radius: 0 50px 50px 0;
   height: 50px;
   background-color: rgb(164, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
   box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.4);
 }
 
@@ -348,6 +350,7 @@ header a {
 }
 .boite {
   background-color: #454448;
+  background: linear-gradient(to left, rgb(34, 33, 33) 0%, rgb(52, 53, 57) 100%);
   justify-self: center;
   border-radius: 15px;
 }
@@ -1738,6 +1741,7 @@ header a {
   padding: 20px 4% 20px 4%;
   background-color: rgb(50, 50, 50);
   border-top: 8px solid rgb(126, 123, 123);
+  background-color: rgba(0, 0, 0, 0.7);
   border-bottom: 8px solid rgb(126, 123, 123);
 }
 @media only screen and (max-width: 550px) {
@@ -1793,6 +1797,7 @@ header a {
 .main_formation .box_diplome .box_titre {
   background-color: rgb(37, 39, 43);
   background-color: #454448;
+  background: linear-gradient(to left, rgb(34, 33, 33) 0%, rgb(52, 53, 57) 100%);
   padding: 30px 30px 30px 30px;
   transition: all 0.2s ease-in-out;
   z-index: 2;
@@ -1809,6 +1814,7 @@ header a {
 .main_formation .box_diplome h2 {
   padding: 15px 0 15px 0;
   background-color: rgba(66, 65, 65, 0.8);
+  background: linear-gradient(to left, rgb(34, 33, 33) 0%, rgb(52, 53, 57) 100%);
   display: block;
   margin: 0;
   text-align: center;
@@ -1931,8 +1937,7 @@ header a {
   flex-wrap: wrap;
 }
 .main_formation .section-skill .cartes-skill {
-  background-color: rgb(37, 39, 43);
-  background-color: #454448;
+  background: linear-gradient(to left, rgb(34, 33, 33) 0%, rgb(52, 53, 57) 100%);
   color: #fff;
   z-index: 3;
   width: 350px;
@@ -2162,6 +2167,7 @@ header a {
   border-top: 2px solid rgb(214, 212, 212);
   color: #fff;
   background: rgb(50, 50, 50);
+  background: rgba(0, 0, 0, 0.8);
 }
 @media only screen and (max-width: 830px) {
   .main_contact {
@@ -2183,7 +2189,7 @@ header a {
 }
 .main_contact .wrap_contact {
   margin-top: 90px;
-  background-color: #454448;
+  background: linear-gradient(to left, rgb(34, 33, 33) 0%, rgb(52, 53, 57) 100%);
   padding: 20px 20px 20px 20px;
   box-shadow: 2px 2px 3px 1px rgba(228, 227, 227, 0.4);
   width: 600px;
@@ -2193,6 +2199,7 @@ header a {
 @media only screen and (max-width: 830px) {
   .main_contact .wrap_contact {
     width: 450px;
+    background: linear-gradient(to left, rgba(17, 17, 17, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%);
   }
 }
 @media only screen and (max-width: 550px) {

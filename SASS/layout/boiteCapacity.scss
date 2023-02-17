@@ -1,5 +1,6 @@
 .boite {
   background-color: #454448;
+  background: linear-gradient(to left, rgb(34, 33, 33) 0%, rgb(52, 53, 57) 100%);
   justify-self: center;
   border-radius: 15px;
   @include devices(1000-pc) {
