@@ -1480,6 +1480,8 @@ header a {
   .main_projets .img-grid {
     width: 100%;
     height: 320px;
+    padding: 20px 20px 20px 20px;
+    box-sizing: border-box;
   }
   .main_projets #img_projet12_1 {
     height: 300px;
@@ -1505,6 +1507,16 @@ header a {
   height: 100%;
   width: 100%;
   position: relative;
+}
+@media only screen and (max-width: 550px) {
+  .box_imgProjet {
+    padding: 20px 20px 20px 20px;
+    background: inherit;
+    background: linear-gradient(to left, rgba(34, 33, 33, 0.8) 0%, rgba(15, 15, 15, 0.8) 100%);
+    background: linear-gradient(to left, rgb(23, 113, 134) 0%, rgb(52, 125, 150) 100%);
+    background: linear-gradient(to left, rgb(51, 153, 187) 0%, rgb(59, 174, 200) 100%);
+    box-sizing: border-box;
+  }
 }
 
 .img-grid {
@@ -1602,7 +1614,8 @@ header a {
 }
 @media only screen and (max-width: 550px) {
   #imgProjet4_2 {
-    height: 280px;
+    height: 80%;
+    margin-bottom: 20px;
   }
 }
 
@@ -1613,7 +1626,8 @@ header a {
 @media only screen and (max-width: 550px) {
   #imgProjet6_2,
   #imgProjet11_2 {
-    height: 260px;
+    height: 80%;
+    margin-bottom: 20px;
   }
 }
 
@@ -1635,7 +1649,8 @@ header a {
 }
 @media only screen and (max-width: 550px) {
   #imgProjet3_2 {
-    height: 270px;
+    height: 80%;
+    margin-bottom: 20px;
   }
 }
 
@@ -1644,7 +1659,8 @@ header a {
 }
 @media only screen and (max-width: 550px) {
   #imgProjet7_2 {
-    height: 250px;
+    height: 60%;
+    margin-bottom: 20px;
   }
 }
 
@@ -1685,13 +1701,14 @@ header a {
 
 @media only screen and (max-width: 550px) {
   #imgProjet6_2 {
-    height: 250px;
+    height: 65%;
   }
 }
 
 @media only screen and (max-width: 550px) {
   #imgProjet11_3 {
-    height: 200px;
+    height: 60%;
+    margin-bottom: 20px;
   }
 }
 
@@ -1699,6 +1716,7 @@ header a {
   #imgProjet6_3,
   #imgProjet12_2 {
     height: 140px;
+    margin-bottom: 20px;
   }
 }
 
@@ -1917,7 +1935,7 @@ header a {
   margin: 30px 0 0 0;
   font-size: 2.2rem;
   display: block;
-  background-color: rgba(66, 65, 65, 0.8);
+  background: linear-gradient(to left, rgb(34, 33, 33) 0%, rgb(52, 53, 57) 100%);
   padding-bottom: 20px;
   padding-top: 20px;
   position: relative;
@@ -2020,6 +2038,7 @@ header a {
 }
 @media only screen and (max-width: 550px) {
   .main_formation .section-skill .cartes-skill:nth-child(2) h3 {
+    background: linear-gradient(to left, rgb(23, 113, 134) 0%, rgb(52, 125, 150) 100%);
     background: linear-gradient(to left, rgb(59, 174, 200) 0%, rgb(51, 153, 187) 100%);
   }
 }
