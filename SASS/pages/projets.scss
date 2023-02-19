@@ -582,14 +582,12 @@
   position: relative;
   @include devices(mobile){
   padding: 20px 20px 20px 20px;
-  // background-color: #000;
   background: inherit;
-  background: linear-gradient(to left, rgba(34, 33, 33, 0.8) 0%, rgba(15, 15, 15,0.8) 100%);
   background: linear-gradient(to left, rgb(23 113 134) 0%, rgb(52 125 150) 100%);
   background: linear-gradient(to left,rgb(51, 153, 187) 0%,  rgb(59, 174, 200) 100%);
   box-sizing: border-box;
   border: 3px solid rgb(222, 171, 171);
-  // box-shadow: 3px 3px 5px 2px #f9fbfb;
+  border-radius: 10px 10px 10px 10px;
   }
 }
 .img-grid {
