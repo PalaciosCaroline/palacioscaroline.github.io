@@ -1516,6 +1516,7 @@ header a {
     background: linear-gradient(to left, rgb(23, 113, 134) 0%, rgb(52, 125, 150) 100%);
     background: linear-gradient(to left, rgb(51, 153, 187) 0%, rgb(59, 174, 200) 100%);
     box-sizing: border-box;
+    border: 3px solid rgb(222, 171, 171);
   }
 }
 
