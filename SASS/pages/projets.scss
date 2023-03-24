@@ -213,12 +213,13 @@
     width: 200px;
     height: 60px;
     margin: 30px auto 15px;
-    border: 3px solid rgb(164, 0, 0);
+    // border: 3px solid rgb(164, 0, 0);
+    border: 3px solid rgb(242, 59, 80);
     background:inherit;
     &:hover,
     &.redColor {
-      background: rgb(226, 0, 0);
-      border-color: rgb(226, 0, 0);
+      // border-color: rgb(226, 0, 0);
+      border-color: rgb(189, 19, 39);
     }
     @include devices(small-pc) {
       width: 180px;
