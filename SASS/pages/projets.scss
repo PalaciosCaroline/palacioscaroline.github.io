@@ -27,6 +27,7 @@
     #p_projet6,
     #p_projet7,
     #p_projet11,
+    #p_projet14,
     #p_projet12{
       .p_projet{
         line-height:18px;
@@ -66,6 +67,7 @@
   }
     #p_projet4,
     #p_projet7,
+    #p_projet14,
     #p_projet12{
       .p_projet{
         padding:0 5px 0  5px;
@@ -816,16 +818,18 @@
   border-top: 1px solid rgb(211, 211, 211);
   border-right: 1px solid rgb(211, 211, 211);
   position: absolute;
-  height: 300px;
+  // height: 300px;
+  width: 450px;
+  height: auto;
   bottom: 0;
+  img {
+    width:100%;
+  }
   @include devices(mobile){
     height: 40%;
     margin-bottom:20px;
+    width: auto;
   }
-  img {
-    height: 100%;
-  }
-
 }
 
 

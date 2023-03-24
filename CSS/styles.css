@@ -882,6 +882,7 @@ header a {
 .main_projets #p_projet6 .p_projet,
 .main_projets #p_projet7 .p_projet,
 .main_projets #p_projet11 .p_projet,
+.main_projets #p_projet14 .p_projet,
 .main_projets #p_projet12 .p_projet {
   line-height: 18px;
   font-size: 1rem;
@@ -895,6 +896,7 @@ header a {
   .main_projets #p_projet6 .p_projet,
   .main_projets #p_projet7 .p_projet,
   .main_projets #p_projet11 .p_projet,
+  .main_projets #p_projet14 .p_projet,
   .main_projets #p_projet12 .p_projet {
     padding: 0 10px 0 20px;
     text-justify: auto;
@@ -930,12 +932,14 @@ header a {
 }
 .main_projets #p_projet4 .p_projet,
 .main_projets #p_projet7 .p_projet,
+.main_projets #p_projet14 .p_projet,
 .main_projets #p_projet12 .p_projet {
   padding: 0 5px 0 5px;
 }
 @media only screen and (max-width: 830px) {
   .main_projets #p_projet4 .p_projet,
   .main_projets #p_projet7 .p_projet,
+  .main_projets #p_projet14 .p_projet,
   .main_projets #p_projet12 .p_projet {
     padding: 0 10px 0 30px;
   }
@@ -943,6 +947,7 @@ header a {
 @media only screen and (max-width: 550px) {
   .main_projets #p_projet4 .p_projet,
   .main_projets #p_projet7 .p_projet,
+  .main_projets #p_projet14 .p_projet,
   .main_projets #p_projet12 .p_projet {
     padding: 0 10px 0 20px;
   }
@@ -1747,17 +1752,19 @@ header a {
   border-top: 1px solid rgb(211, 211, 211);
   border-right: 1px solid rgb(211, 211, 211);
   position: absolute;
-  height: 300px;
+  width: 450px;
+  height: auto;
   bottom: 0;
+}
+#imgProjet14_2 img {
+  width: 100%;
 }
 @media only screen and (max-width: 550px) {
   #imgProjet14_2 {
     height: 40%;
     margin-bottom: 20px;
+    width: auto;
   }
-}
-#imgProjet14_2 img {
-  height: 100%;
 }
 
 #imgProjet13_3 {
