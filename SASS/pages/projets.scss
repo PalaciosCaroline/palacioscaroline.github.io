@@ -649,7 +649,14 @@
   border: 3px solid rgb(222, 171, 171);
   border-radius: 10px 10px 10px 10px;
   }
+  .box_img14{
+    @include devices(mobile){
+   
+      position:relative;
+    }
+  }
 }
+
 .img-grid {
   background: linear-gradient(
     to right,

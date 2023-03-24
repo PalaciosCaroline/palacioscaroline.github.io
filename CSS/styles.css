@@ -817,11 +817,9 @@ header a {
   display: block;
   text-decoration: none;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
-  border: 3px solid rgb(147, 3, 3);
+  border: 3px solid rgb(242, 59, 80);
   color: #fff;
   letter-spacing: 1px;
-  background: rgb(164, 0, 0);
-  background: rgb(239, 84, 102);
   background: rgb(242, 59, 80);
   font-weight: 500;
   transition: all 0.2s;
@@ -832,12 +830,9 @@ header a {
   font-size: 1.2rem;
 }
 #home #btn_home:hover {
-  background: rgb(226, 0, 0);
-  background: rgb(164, 0, 0);
   background: rgb(189, 19, 39);
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
   transform: translatey(1px);
-  border-color: rgb(226, 0, 0);
   border-color: rgb(189, 19, 39);
   border-left: 1px solid rgb(189, 19, 39);
   border-right: 1px solid rgb(189, 19, 39);
@@ -1091,11 +1086,9 @@ header a {
   display: block;
   text-decoration: none;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
-  border: 3px solid rgb(147, 3, 3);
+  border: 3px solid rgb(242, 59, 80);
   color: #fff;
   letter-spacing: 1px;
-  background: rgb(164, 0, 0);
-  background: rgb(239, 84, 102);
   background: rgb(242, 59, 80);
   font-weight: 500;
   transition: all 0.2s;
@@ -1108,12 +1101,9 @@ header a {
   background: inherit;
 }
 .main_projets .btn-accueil:hover {
-  background: rgb(226, 0, 0);
-  background: rgb(164, 0, 0);
   background: rgb(189, 19, 39);
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
   transform: translatey(1px);
-  border-color: rgb(226, 0, 0);
   border-color: rgb(189, 19, 39);
   border-left: 1px solid rgb(189, 19, 39);
   border-right: 1px solid rgb(189, 19, 39);
@@ -1275,11 +1265,9 @@ header a {
   display: block;
   text-decoration: none;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
-  border: 3px solid rgb(147, 3, 3);
+  border: 3px solid rgb(242, 59, 80);
   color: #fff;
   letter-spacing: 1px;
-  background: rgb(164, 0, 0);
-  background: rgb(239, 84, 102);
   background: rgb(242, 59, 80);
   font-weight: 500;
   transition: all 0.2s;
@@ -1291,12 +1279,9 @@ header a {
   width: 200px;
 }
 .main_projets .bloc .btnProjet:hover {
-  background: rgb(226, 0, 0);
-  background: rgb(164, 0, 0);
   background: rgb(189, 19, 39);
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
   transform: translatey(1px);
-  border-color: rgb(226, 0, 0);
   border-color: rgb(189, 19, 39);
   border-left: 1px solid rgb(189, 19, 39);
   border-right: 1px solid rgb(189, 19, 39);
@@ -1575,6 +1560,11 @@ header a {
     box-sizing: border-box;
     border: 3px solid rgb(222, 171, 171);
     border-radius: 10px 10px 10px 10px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .box_imgProjet .box_img14 {
+    position: relative;
   }
 }
 
@@ -2360,11 +2350,9 @@ header a {
   display: block;
   text-decoration: none;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
-  border: 3px solid rgb(147, 3, 3);
+  border: 3px solid rgb(242, 59, 80);
   color: #fff;
   letter-spacing: 1px;
-  background: rgb(164, 0, 0);
-  background: rgb(239, 84, 102);
   background: rgb(242, 59, 80);
   font-weight: 500;
   transition: all 0.2s;
@@ -2375,12 +2363,9 @@ header a {
   width: 240px;
 }
 .mail_link_contact:hover {
-  background: rgb(226, 0, 0);
-  background: rgb(164, 0, 0);
   background: rgb(189, 19, 39);
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
   transform: translatey(1px);
-  border-color: rgb(226, 0, 0);
   border-color: rgb(189, 19, 39);
   border-left: 1px solid rgb(189, 19, 39);
   border-right: 1px solid rgb(189, 19, 39);
