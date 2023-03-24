@@ -1152,9 +1152,13 @@ header a {
   color: #fff;
   margin: 0;
 }
+.main_projets .section-asymetrique0 {
+  display: grid;
+  grid-template: 140px repeat(6, auto) 30px/1fr 600px 1fr;
+}
 .main_projets .section-asymetrique {
   display: grid;
-  grid-template: 140px repeat(6, auto) 10px/1fr 600px 1fr;
+  grid-template: 10px repeat(6, auto) 30px/1fr 600px 1fr;
 }
 .main_projets .section-asymetrique2 {
   grid-template: 10px repeat(6, auto) 30px/1fr 600px 1fr;
@@ -1208,6 +1212,11 @@ header a {
 }
 .main_projets .img-grid img {
   height: 100%;
+  object-fit: cover;
+}
+.main_projets .img-grid .imgTableprojet14 {
+  width: 100%;
+  height: auto;
   object-fit: cover;
 }
 .main_projets .bloc-1,
@@ -1503,8 +1512,11 @@ header a {
   }
 }
 @media screen and (max-width: 550px) {
-  .main_projets .section-asymetrique {
+  .main_projets .section-asymetrique0 {
     grid-template: 120px repeat(6, auto) 1px/100%;
+  }
+  .main_projets .section-asymetrique {
+    grid-template: 1px repeat(6, auto) 1px/100%;
   }
   .main_projets .section-asymetrique2 {
     grid-template: 1px repeat(6, auto) 1px/100%;
@@ -1738,6 +1750,23 @@ header a {
 #imgProjet12_2 img,
 #imgProjet13_3 img,
 #imgProjet11_3 img {
+  height: 100%;
+}
+
+#imgProjet14_2 {
+  border-top: 1px solid rgb(211, 211, 211);
+  border-right: 1px solid rgb(211, 211, 211);
+  position: absolute;
+  height: 300px;
+  bottom: 0;
+}
+@media only screen and (max-width: 550px) {
+  #imgProjet14_2 {
+    height: 40%;
+    margin-bottom: 20px;
+  }
+}
+#imgProjet14_2 img {
   height: 100%;
 }
 
