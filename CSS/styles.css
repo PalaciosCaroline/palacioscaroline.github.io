@@ -2001,11 +2001,14 @@ header a {
     font-size: 1rem;
   }
 }
+.main_formation .box_diplome .box_titre h3.title_formation {
+  margin: 10px 20px 10px 0;
+}
 .main_formation .box_diplome .box_titre h4 {
   padding-left: 25px;
   font-size: 1.1rem;
   color: rgb(222, 171, 171);
-  margin: 0 10px 15px 0;
+  margin: 0 10px 10px 0;
 }
 @media only screen and (max-width: 550px) {
   .main_formation .box_diplome .box_titre h4 {
