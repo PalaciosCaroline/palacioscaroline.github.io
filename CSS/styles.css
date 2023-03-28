@@ -392,7 +392,6 @@ header a {
 }
 
 @media (max-width: 800px) {
-  /*responsive lorsq ecran<800px)*/
   .skillcapacite {
     padding: 15px;
     margin-left: 10px;
@@ -864,13 +863,6 @@ header a {
   background: linear-gradient(250deg, rgba(26, 26, 30, 0.2), rgba(47, 44, 44, 0.1));
   /* Section asymétrique */
   /* Placement */
-}
-.main_projets h3 a {
-  transition: all 0.2s;
-  -webkit-transition: all 0.2s;
-}
-.main_projets h3 a .fa-github {
-  font-size: 2rem;
 }
 .main_projets #p_projet3 .p_projet,
 .main_projets #p_projet4 .p_projet,
@@ -1555,7 +1547,7 @@ header a {
   .box_imgProjet {
     padding: 20px 20px 20px 20px;
     background: inherit;
-    background: linear-gradient(to left, rgb(145, 149, 150) 0%, rgb(204, 209, 211) 100%);
+    background: linear-gradient(to left, rgb(127, 132, 133) 0%, rgb(181, 187, 189) 100%);
     box-sizing: border-box;
     border: 3px solid rgb(222, 171, 171);
     border-radius: 10px 10px 10px 10px;
@@ -1864,7 +1856,7 @@ header a {
   height: 40px;
   display: block;
   text-align: center;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.8);
   background-color: #fff;
   border-radius: 50%;
   color: #000;
@@ -1874,7 +1866,6 @@ header a {
 
 .wrapper_github .icon_github:hover a {
   background-color: #0ba9c5;
-  background-color: #1abdda;
 }
 
 .wrapper_github .icon_github a i {
@@ -1882,20 +1873,23 @@ header a {
   line-height: 40px;
 }
 
+.wrapper_github .icon_github:hover a i {
+  color: #fff;
+}
+
 .wrapper_github .icon_github .tooltip_github {
-  background-color: #fff;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
   font-size: 20px;
   padding: 10px 18px;
   border-radius: 25px;
   color: rgb(47, 45, 45);
   position: absolute;
-  top: -30px;
+  top: -25px;
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   background-color: #0ba9c5;
-  background-color: #1abdda;
+  color: #fff;
 }
 
 .wrapper_github .icon_github:hover .tooltip_github {
@@ -1914,7 +1908,6 @@ header a {
   left: 50%;
   transform: translateX(-50%) rotate(45deg);
   background-color: #0ba9c5;
-  background-color: #1abdda;
 }
 
 .main_formation {
