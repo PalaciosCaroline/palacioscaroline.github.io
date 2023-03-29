@@ -647,8 +647,8 @@
   @include devices(mobile){
   padding: 20px 20px 20px 20px;
   background: inherit;
-  // background: linear-gradient(to left, rgb(127 132 133) 0%, rgb(181 187 189) 100%);
-  background: linear-gradient(to left, rgb(97 96 96) 0%, rgb(139 136 136) 100%);
+  // background: linear-gradient(to left, rgb(97 96 96) 0%, rgb(139 136 136) 100%);
+  background: linear-gradient(to left, rgb(97, 96, 96) 0%, rgb(111 110 110) 100%);
   box-sizing: border-box;
   border: 4px solid rgb(222, 171, 171);
   border-radius: 10px 10px 10px 10px;
