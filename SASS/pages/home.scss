@@ -98,7 +98,7 @@
     width: 0;
     opacity: 0;
     font-weight: bold;
-    animation: typing 0.6s 1.7s steps(27, end) forwards,
+    animation: typing 0.4s 1.7s steps(27, end) forwards,
       borderVisible 0.01s 1.7s forwards;
       //borderHidden 0.01s 2.4s forwards;
   }
@@ -117,9 +117,9 @@
       1px 1px 1px rgb(101, 2, 2), 1px 1px 1px rgb(101, 2, 2),
       1px 1px 1px rgb(101, 2, 2), 1px 1px 1px rgb(101, 2, 2),
       1px 1px 1px rgb(101, 2, 2), 1px 1px 1px rgb(77, 3, 3);
-    animation: typing 1s 2.4s steps(38, end) forwards,
-      blink 0.75s 2.3s infinite,
-      borderVisible 0.01s 2.5s forwards;
+    animation: typing 0.8s 2.1s steps(38, end) forwards,
+      blink 0.75s 2.1s infinite,
+      borderVisible 0.01s 2.1s forwards;
       // borderHidden2 0.01s 5.6s forwards;
     // @include devices(mobile){  
     // }
