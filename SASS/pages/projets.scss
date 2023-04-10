@@ -542,10 +542,10 @@
     .bloc-right {
       right: 0px;
     }
-    .bloc-txt-left {
-      width: 100%;
-      height: 100%;
-    }
+    // .bloc-txt-left {
+    //   width: 100%;
+    //   height: 100%;
+    // }
     .img-grid2-1,
     .img-grid-3 {
       top: 0px;
@@ -563,7 +563,7 @@
     }
     .bloc-txt-left {
       width: 100%;
-      height: 100%;
+      height: 100%;  
     }
     #bloc-txt-left13 {
       width: 100%;
@@ -617,11 +617,12 @@
     }
     .img-grid {
       width: 100%;
-      height: 320px;
-      padding: 20px 20px 20px 20px;
-     
-      // background-color: #000;
+      // height: 320px;
+      // padding: 20px 20px 20px 20px;
       box-sizing: border-box;
+      height: 300px;
+      padding: 25px 30px 25px 30px;
+      
     }
     #img_projet12_1{
       height: 300px;
@@ -629,13 +630,14 @@
     .bloc-txt-left h3,
     .bloc-txt-right h3 {
       font-size: 1.5rem;
-      @include devices(mobile){
-        margin : 20px 10px 20px 10px;
-      }
+      margin : 20px 10px 20px 10px;
     }
-
     .bloc-txt-right {
       width: 100%;
+      font-size: 0.9rem;
+    }
+    .bloc-txt-left {
+      font-size: 0.9rem;
     }
   }
 }

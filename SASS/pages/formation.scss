@@ -2,9 +2,8 @@
 .main_formation {
   color: #fff;
   padding: 20px 4% 20px 4%;
-  background-color: rgb(50, 50, 50);
   border-top: 8px solid rgb(126, 123, 123);
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
   border-bottom: 8px solid rgb(126, 123, 123);
   @include devices(mobile) {
     padding: 20px 2% 20px 2%;
@@ -52,7 +51,6 @@
     display: flex;
     flex-direction: column;
     .box_titre {
-      background-color: rgb(37 39 43);
       background-color: #454448;
       background: linear-gradient(to left, rgb(34, 33, 33) 0%, rgb(52, 53, 57) 100%);
       padding: 30px 30px 30px 30px;
@@ -122,7 +120,7 @@
         font-size: 1.5rem;
         margin: 10px 20px 5px 0;
         @include devices(mobile) {
-          font-size: 1rem;
+          font-size: 0.9rem;
         }
         &.title_formation{
           margin: 10px 20px 10px 0;
@@ -202,6 +200,7 @@
       @include devices(mobile) {
         box-shadow: none;
         border-radius: 15px;
+        width: 320px;
         padding: 0 0 20px 0;
         border: 3px solid rgb(222, 171, 171);
         margin:0;
@@ -254,8 +253,8 @@
       height: 40px;
       @include devices(mobile) {
         border-radius: 10px 10px 0 0;
-        // text-shadow: 1px 1px #232a2c, 1px 2px rgb(55 61 66), 1px 3px #4f4b4b, 1px 4px #4d5154;
         text-shadow: 1px 1px #19718c, 1px 2px rgb(30, 88, 134), 1px 3px #166982,1px 4px #206da8;
+        font-size: 1.2rem;
         border-bottom: 3px solid rgb(222, 171, 171);
       }
     }
@@ -266,7 +265,6 @@
         rgb(71, 75, 70) 100%
       );
       @include devices(mobile){
-        background: linear-gradient(to left, rgb(23 113 134) 0%, rgb(52 125 150) 100%);
         background: linear-gradient(to left, rgb(59, 174, 200) 0%, rgb(51 153 187) 100%);
       }
       position: relative;
@@ -302,7 +300,7 @@
       @include devices(mobile) {
         padding: 0 5px 0 10px;
         margin: 5px 0 5px 0;
-        font-size: 1rem;
+        font-size: 0.9rem;
       }
       &:nth-child(1) {
         padding-top: 20px;
@@ -391,7 +389,7 @@
       font-size: 1.2rem;
       margin: 5px 0;
       @include devices(mobile) {
-        font-size: 1rem;
+        font-size: 0.9rem;
       }
       &:nth-child(1) {
         margin-top: 0;

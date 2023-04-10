@@ -1440,10 +1440,6 @@ header a {
   .main_projets .bloc-right {
     right: 0px;
   }
-  .main_projets .bloc-txt-left {
-    width: 100%;
-    height: 100%;
-  }
   .main_projets .img-grid2-1,
   .main_projets .img-grid-3 {
     top: 0px;
@@ -1514,9 +1510,9 @@ header a {
   }
   .main_projets .img-grid {
     width: 100%;
-    height: 320px;
-    padding: 20px 20px 20px 20px;
     box-sizing: border-box;
+    height: 300px;
+    padding: 25px 30px 25px 30px;
   }
   .main_projets #img_projet12_1 {
     height: 300px;
@@ -1524,17 +1520,14 @@ header a {
   .main_projets .bloc-txt-left h3,
   .main_projets .bloc-txt-right h3 {
     font-size: 1.5rem;
-  }
-}
-@media only screen and (max-width: 550px) and (max-width: 550px) {
-  .main_projets .bloc-txt-left h3,
-  .main_projets .bloc-txt-right h3 {
     margin: 20px 10px 20px 10px;
   }
-}
-@media screen and (max-width: 550px) {
   .main_projets .bloc-txt-right {
     width: 100%;
+    font-size: 0.9rem;
+  }
+  .main_projets .bloc-txt-left {
+    font-size: 0.9rem;
   }
 }
 
@@ -1547,9 +1540,9 @@ header a {
   .box_imgProjet {
     padding: 20px 20px 20px 20px;
     background: inherit;
-    background: linear-gradient(to left, rgb(97, 96, 96) 0%, rgb(139, 136, 136) 100%);
+    background: linear-gradient(to left, rgb(97, 96, 96) 0%, rgb(111, 110, 110) 100%);
     box-sizing: border-box;
-    border: 4px solid rgb(222, 171, 171);
+    border: 3px solid rgb(222, 171, 171);
     border-radius: 10px 10px 10px 10px;
   }
 }
@@ -1913,9 +1906,8 @@ header a {
 .main_formation {
   color: #fff;
   padding: 20px 4% 20px 4%;
-  background-color: rgb(50, 50, 50);
   border-top: 8px solid rgb(126, 123, 123);
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
   border-bottom: 8px solid rgb(126, 123, 123);
 }
 @media only screen and (max-width: 550px) {
@@ -1969,7 +1961,6 @@ header a {
   flex-direction: column;
 }
 .main_formation .box_diplome .box_titre {
-  background-color: rgb(37, 39, 43);
   background-color: #454448;
   background: linear-gradient(to left, rgb(34, 33, 33) 0%, rgb(52, 53, 57) 100%);
   padding: 30px 30px 30px 30px;
@@ -2049,7 +2040,7 @@ header a {
 }
 @media only screen and (max-width: 550px) {
   .main_formation .box_diplome .box_titre h3 {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 .main_formation .box_diplome .box_titre h3.title_formation {
@@ -2129,6 +2120,7 @@ header a {
   .main_formation .section-skill .cartes-skill {
     box-shadow: none;
     border-radius: 15px;
+    width: 320px;
     padding: 0 0 20px 0;
     border: 3px solid rgb(222, 171, 171);
     margin: 0;
@@ -2184,6 +2176,7 @@ header a {
   .main_formation .section-skill .cartes-skill h3 {
     border-radius: 10px 10px 0 0;
     text-shadow: 1px 1px #19718c, 1px 2px rgb(30, 88, 134), 1px 3px #166982, 1px 4px #206da8;
+    font-size: 1.2rem;
     border-bottom: 3px solid rgb(222, 171, 171);
   }
 }
@@ -2197,7 +2190,6 @@ header a {
 }
 @media only screen and (max-width: 550px) {
   .main_formation .section-skill .cartes-skill:nth-child(2) h3 {
-    background: linear-gradient(to left, rgb(23, 113, 134) 0%, rgb(52, 125, 150) 100%);
     background: linear-gradient(to left, rgb(59, 174, 200) 0%, rgb(51, 153, 187) 100%);
   }
 }
@@ -2229,7 +2221,7 @@ header a {
   .main_formation .section-skill .cartes-skill p {
     padding: 0 5px 0 10px;
     margin: 5px 0 5px 0;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 .main_formation .section-skill .cartes-skill p:nth-child(1) {
@@ -2321,7 +2313,7 @@ header a {
 }
 @media only screen and (max-width: 550px) {
   .certification .boxCertification p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 .certification .boxCertification p:nth-child(1) {
