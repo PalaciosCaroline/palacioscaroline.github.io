@@ -1525,9 +1525,11 @@ header a {
   .main_projets .bloc-txt-right {
     width: 100%;
     font-size: 0.9rem;
+    line-height: 1.2rem;
   }
   .main_projets .bloc-txt-left {
     font-size: 0.9rem;
+    line-height: 1.2rem;
   }
 }
 
