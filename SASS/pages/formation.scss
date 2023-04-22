@@ -368,6 +368,7 @@
 .certification {
   margin: 30px auto;
   width: 80%;
+  background-color: rgba(0, 0, 0, 0.6);
   @include devices(mobile) {
     width: 100%;
   }
