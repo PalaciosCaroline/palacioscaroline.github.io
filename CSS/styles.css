@@ -1299,9 +1299,12 @@ header a {
     margin: 5px auto 20px;
   }
 }
+.main_projets .bloc .btnProjet.btnProjet14 {
+  margin: 25px auto 25px;
+}
 @media only screen and (max-width: 830px) {
   .main_projets .bloc .btnProjet.btnProjet14 {
-    margin: 15px auto 20px;
+    margin: 5px auto 20px;
   }
 }
 .main_projets .bloc-right {
@@ -1834,7 +1837,8 @@ header a {
 #link_13,
 #link_13bis,
 #link_14,
-#link_14bis {
+#link_14bis,
+#linknpm_14 {
   margin-top: 5px;
   display: inline-block;
 }
@@ -1864,7 +1868,7 @@ header a {
   height: 40px;
   display: block;
   text-align: center;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
   background-color: #fff;
   border-radius: 50%;
   color: #000;

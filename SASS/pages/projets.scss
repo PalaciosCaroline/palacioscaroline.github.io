@@ -384,10 +384,11 @@
       margin: 5px auto 20px;
     }
   }
-
+  
   .bloc .btnProjet.btnProjet14 {
+    margin: 25px auto 25px;
     @include devices(small-pc) {
-      margin: 15px auto 20px;
+      margin: 5px auto 20px;
     }
   }
 
@@ -915,7 +916,8 @@
 #link_13,
 #link_13bis,
 #link_14,
-#link_14bis
+#link_14bis,
+#linknpm_14
 {
  margin-top:5px;
   display: inline-block;
@@ -946,7 +948,7 @@
   height: 40px;
   display: block;
   text-align: center;
-  box-shadow: 0 10px 10px rgba(0,0,0,0.8);
+  box-shadow: 0 5px 5px rgba(0,0,0,0.6);
   // box-shadow: 0px 5.91px 10px #d9dade, 0 5.91px 10px #ffffff,
   //  inset 0 5.91px 10px #ffffff;
   background-color: #fff;
