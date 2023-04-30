@@ -117,7 +117,7 @@
         align-self: flex-start;
         display: block;
         width: 100%;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         margin: 10px 20px 5px 0;
         @include devices(mobile) {
           font-size: 0.9rem;
@@ -128,7 +128,7 @@
       }
       h4 {
         padding-left: 25px;
-        font-size: 1.1rem;
+        font-size: 1rem;
         color: rgb(222 171 171);
         margin: 0 10px 10px 0;
         @include devices(mobile) {
@@ -288,7 +288,7 @@
     }
 
     .cartes-skill p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       padding: 0 5px 0 10px;
       margin: 10px 0 10px 0;
       i{
@@ -369,6 +369,8 @@
   margin: 30px auto;
   width: 80%;
   background-color: rgba(0, 0, 0, 0.6);
+  
+  padding-bottom:30px;
   @include devices(mobile) {
     width: 100%;
   }
@@ -385,12 +387,16 @@
   .boxCertification {
     column-count: 2;
     column-gap: 1em;
-
+    
     p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       margin: 5px 0;
+      padding-left:30px;
+      padding-right:30px;
       @include devices(mobile) {
         font-size: 0.9rem;
+        padding-left:5px;
+        padding-right:5px;
       }
       &:nth-child(1) {
         margin-top: 0;
