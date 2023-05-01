@@ -407,4 +407,29 @@
       padding-left: 15px;
     }
   }
+
+  
+}
+.icon_formation{
+  width:  35px;
+  height:  35px;
+  display: inline-block;
+  margin-top:4px;
+  margin-bottom:4px;
+}
+.icon_formation{
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.box-iconsFormation{
+  display: flex;
+  flex-wrap: wrap;
+  margin:10px 30px 10px 30px;
+  i{
+    margin-top:4px;
+    margin-bottom:4px;
+  }
 }

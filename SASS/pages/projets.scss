@@ -449,7 +449,10 @@
   }
 
   .bloc-txt-right #projet14 {
-    margin: 30px 15px 20px;
+    margin: 30px 15px 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
   }
   .bloc-txt-right p {
     line-height: 40px;
@@ -923,6 +926,11 @@
   display: inline-block;
 }
 
+#linknpm_14
+{
+ margin-bottom:4px;
+}
+
 #link_11{
   position:relative;
   bottom:0;
@@ -949,8 +957,6 @@
   display: block;
   text-align: center;
   box-shadow: 0 5px 5px rgba(0,0,0,0.6);
-  // box-shadow: 0px 5.91px 10px #d9dade, 0 5.91px 10px #ffffff,
-  //  inset 0 5.91px 10px #ffffff;
   background-color: #fff;
   border-radius: 50%;
   color:#000;
@@ -958,9 +964,12 @@
   z-index: 2;
 }
 
+.wrapper_github .icon_github.icon_github14 a{
+  height: 40px;
+}
+
 .wrapper_github .icon_github:hover a{
   background-color:#0ba9c5;
-  // background-color:#1abdda;
 }
 
 .wrapper_github .icon_github a i{

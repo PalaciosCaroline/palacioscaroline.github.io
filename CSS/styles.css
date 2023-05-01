@@ -1364,7 +1364,10 @@ header a {
   margin: 30px 15px;
 }
 .main_projets .bloc-txt-right #projet14 {
-  margin: 30px 15px 20px;
+  margin: 30px 15px 10px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 .main_projets .bloc-txt-right p {
   line-height: 40px;
@@ -1843,6 +1846,10 @@ header a {
   display: inline-block;
 }
 
+#linknpm_14 {
+  margin-bottom: 4px;
+}
+
 #link_11 {
   position: relative;
   bottom: 0;
@@ -1874,6 +1881,10 @@ header a {
   color: #000;
   position: relative;
   z-index: 2;
+}
+
+.wrapper_github .icon_github.icon_github14 a {
+  height: 40px;
 }
 
 .wrapper_github .icon_github:hover a {
@@ -2351,6 +2362,29 @@ header a {
     padding-right: 15px;
     padding-left: 15px;
   }
+}
+
+.icon_formation {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.icon_formation img {
+  width: 100%;
+  height: 100%;
+}
+
+.box-iconsFormation {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 30px 10px 30px;
+}
+.box-iconsFormation i {
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 .main_contact {
