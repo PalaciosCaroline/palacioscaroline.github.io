@@ -185,8 +185,6 @@
       flex-wrap: wrap;
     }
     .cartes-skill {
-      // background-color: rgb(37 39 43);
-      // background-color: #454448;
       background: linear-gradient(to left, rgb(34, 33, 33) 0%, rgb(52, 53, 57) 100%);
       color: #fff;
       z-index: 3;
@@ -200,7 +198,7 @@
       @include devices(mobile) {
         box-shadow: none;
         border-radius: 15px;
-        width: 300px;
+        width: 340px;
         padding: 0 0 20px 0;
         border: 3px solid rgb(222, 171, 171);
         margin:0;
@@ -208,7 +206,7 @@
       }
       
       @include devices(small-mobile) {
-          width:330px;
+          width:300px;
          
       }
       &::after {
@@ -300,7 +298,7 @@
       @include devices(mobile) {
         padding: 0 5px 0 10px;
         margin: 5px 0 5px 0;
-        font-size: 0.9rem;
+        font-size: 1rem;
       }
       &:nth-child(1) {
         padding-top: 20px;

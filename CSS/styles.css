@@ -1304,7 +1304,7 @@ header a {
 }
 @media only screen and (max-width: 830px) {
   .main_projets .bloc .btnProjet.btnProjet14 {
-    margin: 5px auto 20px;
+    margin: 20px auto 20px;
   }
 }
 .main_projets .bloc-right {
@@ -2139,7 +2139,7 @@ header a {
   .main_formation .section-skill .cartes-skill {
     box-shadow: none;
     border-radius: 15px;
-    width: 300px;
+    width: 340px;
     padding: 0 0 20px 0;
     border: 3px solid rgb(222, 171, 171);
     margin: 0;
@@ -2147,7 +2147,7 @@ header a {
 }
 @media only screen and (max-width: 360px) {
   .main_formation .section-skill .cartes-skill {
-    width: 330px;
+    width: 300px;
   }
 }
 .main_formation .section-skill .cartes-skill::after {
@@ -2240,7 +2240,7 @@ header a {
   .main_formation .section-skill .cartes-skill p {
     padding: 0 5px 0 10px;
     margin: 5px 0 5px 0;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 .main_formation .section-skill .cartes-skill p:nth-child(1) {
