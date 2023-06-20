@@ -40,7 +40,8 @@
     @include devices(mobile) {
       margin-top: 100px;
       width: 340px;
-      height: auto;
+      // height: auto;
+      height: 500px;
       border: none;
       box-shadow: none;
       background-color: inherit;
