@@ -83,23 +83,15 @@
     border: 3px solid rgb(242, 59, 80);
     color: #fff;
     letter-spacing: 1px;
-    // background:  rgb(164, 0, 0);
-    // background: rgb(239, 84, 102);
     background: rgb(242, 59, 80);
-    // background: rgb(247 43 67);
     font-weight: 500;
     transition: all 0.2s;
     -webkit-transition: all 0.2s;
     &:hover {
-    // background:  rgb(226, 0, 0);
-    // background:   rgb(164, 0, 0);
     background:   rgb(189, 19, 39);
     box-shadow: 1px 1px 4px rgba(0,0,0,0.8);
     transform: translatey(1px);
-    // border-color:rgb(226, 0, 0);
     border-color: rgb(189, 19, 39);
-    // border-left: 1px solid rgb(147, 3, 3);
-    // border-right:1px solid rgb(147, 3, 3);
     border-left: 1px solid rgb(189, 19, 39);
     border-right:1px solid rgb(189, 19, 39);
     }

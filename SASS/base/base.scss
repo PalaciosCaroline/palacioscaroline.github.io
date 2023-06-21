@@ -2,9 +2,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  // font-family: 'Poppins', Arial, Georgia, 'Times New Roman', Times, serif;
   font-family: 'Trebuchet MS', Georgia, 'Times New Roman', Times, serif;
-  // background-color:rgb(58, 58, 58);
  
   &:before {
     content: "";
@@ -18,7 +16,6 @@ body {
     right: 0;
     z-index: -10;
     background-color:#000;
-    // background: url('./../../../assets/img17.jpg') no-repeat center center;
     background: url('./../../e4.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
