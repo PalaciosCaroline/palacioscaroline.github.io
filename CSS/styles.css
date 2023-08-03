@@ -1998,6 +1998,11 @@ header a {
   z-index: 2;
   width: 90%;
 }
+.main_formation .box_diplome .box_titre .box-iconsFormation {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .main_formation .box_diplome .box_titre:hover {
   transform: translateY(-5px);
 }
