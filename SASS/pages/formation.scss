@@ -8,14 +8,14 @@
   @include devices(mobile) {
     padding: 20px 2% 20px 2%;
   }
-  
+
   h1,
   .h3_formation {
     text-align: center;
     color: #fff;
     font-size: 2rem;
   }
-  
+
   .box_savoir {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -52,7 +52,11 @@
     flex-direction: column;
     .box_titre {
       background-color: #454448;
-      background: linear-gradient(to left, rgb(34, 33, 33) 0%, rgb(52, 53, 57) 100%);
+      background: linear-gradient(
+        to left,
+        rgb(34, 33, 33) 0%,
+        rgb(52, 53, 57) 100%
+      );
       padding: 30px 30px 30px 30px;
       transition: all 0.2s ease-in-out;
       z-index: 2;
@@ -68,7 +72,11 @@
     h2 {
       padding: 15px 0 15px 0;
       background-color: rgb(66 65 65 / 80%);
-      background: linear-gradient(to left, rgb(34, 33, 33) 0%, rgb(52, 53, 57) 100%);
+      background: linear-gradient(
+        to left,
+        rgb(34, 33, 33) 0%,
+        rgb(52, 53, 57) 100%
+      );
       display: block;
       margin: 0;
       text-align: center;
@@ -122,7 +130,7 @@
         @include devices(mobile) {
           font-size: 0.9rem;
         }
-        &.title_formation{
+        &.title_formation {
           margin: 10px 20px 10px 0;
         }
       }
@@ -157,23 +165,27 @@
 
   .section-skill {
     padding-bottom: 50px;
-    @include devices(mobile){
+    @include devices(mobile) {
       padding-bottom: 20px;
     }
     h2 {
       text-align: center;
       margin: 30px 0 0 0;
-      font-size:2.2rem;
+      font-size: 2.2rem;
       display: block;
       // background-color: rgb(66 65 65 / 80%);
-      background: linear-gradient(to left, rgb(34, 33, 33) 0%, rgb(52, 53, 57) 100%);
+      background: linear-gradient(
+        to left,
+        rgb(34, 33, 33) 0%,
+        rgb(52, 53, 57) 100%
+      );
       padding-bottom: 20px;
       padding-top: 20px;
       position: relative;
       border-bottom: 5px solid #5e5a4c;
       box-sizing: border-box;
-      @include devices(mobile){
-        font-size:1.9rem;
+      @include devices(mobile) {
+        font-size: 1.9rem;
         margin: 20px 0 0 0;
       }
     }
@@ -185,7 +197,11 @@
       flex-wrap: wrap;
     }
     .cartes-skill {
-      background: linear-gradient(to left, rgb(34, 33, 33) 0%, rgb(52, 53, 57) 100%);
+      background: linear-gradient(
+        to left,
+        rgb(34, 33, 33) 0%,
+        rgb(52, 53, 57) 100%
+      );
       color: #fff;
       z-index: 3;
       width: 350px;
@@ -201,13 +217,11 @@
         width: 340px;
         padding: 0 0 20px 0;
         border: 3px solid rgb(222, 171, 171);
-        margin:0;
-        
+        margin: 0;
       }
-      
+
       @include devices(small-mobile) {
-          width:300px;
-         
+        width: 300px;
       }
       &::after {
         content: '';
@@ -251,7 +265,8 @@
       height: 40px;
       @include devices(mobile) {
         border-radius: 10px 10px 0 0;
-        text-shadow: 1px 1px #19718c, 1px 2px rgb(30, 88, 134), 1px 3px #166982,1px 4px #206da8;
+        text-shadow: 1px 1px #19718c, 1px 2px rgb(30, 88, 134), 1px 3px #166982,
+          1px 4px #206da8;
         font-size: 1.2rem;
         border-bottom: 3px solid rgb(222, 171, 171);
       }
@@ -262,8 +277,12 @@
         rgb(21, 26, 38) 0%,
         rgb(71, 75, 70) 100%
       );
-      @include devices(mobile){
-        background: linear-gradient(to left, rgb(59, 174, 200) 0%, rgb(51 153 187) 100%);
+      @include devices(mobile) {
+        background: linear-gradient(
+          to left,
+          rgb(59, 174, 200) 0%,
+          rgb(51 153 187) 100%
+        );
       }
       position: relative;
       overflow: hidden;
@@ -289,7 +308,7 @@
       font-size: 1.1rem;
       padding: 0 5px 0 10px;
       margin: 10px 0 10px 0;
-      i{
+      i {
         color: rgb(45, 211, 31);
         font-size: 1rem;
         font-weight: bold;
@@ -367,8 +386,8 @@
   margin: 30px auto;
   width: 80%;
   background-color: rgba(0, 0, 0, 0.6);
-  
-  padding-bottom:30px;
+
+  padding-bottom: 30px;
   @include devices(mobile) {
     width: 100%;
   }
@@ -385,16 +404,16 @@
   .boxCertification {
     column-count: 2;
     column-gap: 1em;
-    
+
     p {
       font-size: 1.1rem;
       margin: 5px 0;
-      padding-left:30px;
-      padding-right:30px;
+      padding-left: 30px;
+      padding-right: 30px;
       @include devices(mobile) {
         font-size: 0.9rem;
-        padding-left:5px;
-        padding-right:5px;
+        padding-left: 5px;
+        padding-right: 5px;
       }
       &:nth-child(1) {
         margin-top: 0;
@@ -408,28 +427,64 @@
     }
   }
 
-  
-}
-.icon_formation{
-  width:  35px;
-  height:  35px;
-  display: inline-block;
-  margin-top:4px;
-  margin-bottom:4px;
-}
-.icon_formation{
-  img{
-    width: 100%;
-    height: 100%;
-  }
-}
+  .boxInterets {
+    column-count: 5;
+    column-gap: 1em;
+    display: flex;
+    justify-content: space-between;
+    @include devices(1000-pc) {
+      column-count: 1;
+      flex-direction: column;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+    .colonne {
+      flex: 0 0 calc(20% - 20px);
+      margin: 20px 10px;
+      text-align: center;
+      @include devices(mobile) {
+        font-size: 0.9rem;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin: 10px 10px;
+      }
 
-.box-iconsFormation{
-  display: flex;
-  flex-wrap: wrap;
-  margin:10px 30px 10px 30px;
-  i{
-    margin-top:4px;
-    margin-bottom:4px;
+      i {
+        font-size: 2.5rem;
+        @include devices(mobile) {
+          font-size: 2rem;
+        }
+      }
+      img {
+        height: 60px;
+        @include devices(mobile) {
+          height: 40px;
+        }
+      }
+    }
+  }
+
+  .icon_formation {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  .icon_formation {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .box-iconsFormation {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 30px 10px 30px;
+    i {
+      margin-top: 4px;
+      margin-bottom: 4px;
+    }
   }
 }

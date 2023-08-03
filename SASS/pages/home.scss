@@ -59,8 +59,6 @@
   .text_web {
     font-size: 1.3rem;
     color: rgba(193, 189, 188, 0.9);
-    text-shadow: 1px 1px 1px #000, 1px 1px 1px #000, 1px 1px 1px #000,
-      1px 1px 1px #000;
     text-shadow: 1px 1px 1px rgb(244, 241, 241), 1px 1px 1px rgb(233, 230, 230),
       1px 1px 1px rgb(227, 224, 224), 1px 1px 1px rgb(224, 222, 222);
     @include devices(mobile) {
