@@ -704,8 +704,8 @@ header a {
 #home .container .box_photo .rond-blanc1 {
   top: -15px;
   left: 130px;
-  width: 15px;
-  height: 15px;
+  width: 13px;
+  height: 13px;
 }
 @media only screen and (max-width: 550px) {
   #home .container .box_photo .rond-blanc1 {
@@ -731,8 +731,6 @@ header a {
   left: 169px;
   top: -58px;
   z-index: 50;
-  opacity: 0;
-  animation: borderVisible 0.01s 2.2s forwards;
   box-shadow: none;
 }
 @media only screen and (max-width: 550px) {
@@ -869,8 +867,6 @@ header a {
   }
 }
 #home .box_photo {
-  border-radius: 50%;
-  border: 4px solid #333;
   height: 130px;
   width: 130px;
 }

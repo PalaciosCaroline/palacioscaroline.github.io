@@ -49,8 +49,8 @@
       .rond-blanc1{
         top:-15px;
         left:130px;
-        width: 15px;        
-        height: 15px;     
+        width: 13px;        
+        height: 13px;     
         @include devices(mobile) {
           width: 12px;        
           height: 12px; 
@@ -71,9 +71,7 @@
         position: absolute;
         left:169px;
         top:-58px;
-        z-index:50;
-        opacity: 0;
-        animation: borderVisible 0.01s 2.2s forwards;
+        z-index:50;       
         box-shadow:none;
         @include devices(mobile) {
           left:110px;
@@ -151,7 +149,6 @@
     position: relative;
     box-sizing: border-box;
     overflow: hidden;
-    // border-right: 0.15em solid rgb(245, 242, 242);
     white-space: nowrap;
     width: 0;
     opacity: 0;
@@ -222,10 +219,6 @@
   }
 
   .box_photo {
-    border-radius: 50%;
-    border: 4px solid #333;
-    // border: 1px solid rgba(145, 138, 138, 0.6);
-    // overflow: hidden;
     height: 130px;
     width: 130px;
     &.hiddenImg {
