@@ -722,6 +722,31 @@ header a {
 #home .c1 {
   display: block;
   box-sizing: border-box;
+  position: relative;
+}
+#home #github_home {
+  position: absolute;
+  left: 248px;
+  top: -32px;
+  z-index: 50;
+  opacity: 0;
+  animation: borderVisible 0.01s 2s forwards;
+  box-shadow: none;
+}
+@media only screen and (max-width: 550px) {
+  #home #github_home {
+    left: 205px;
+    top: -7px;
+    top: -32px;
+  }
+}
+#home #github_home .icon_github a {
+  width: 26px;
+  height: 26px;
+}
+#home #github_home .icon_github a i {
+  font-size: 22px;
+  line-height: 26px;
 }
 #home .c2 {
   display: block;
@@ -1830,6 +1855,7 @@ header a {
 }
 
 #link_11,
+#link_11home,
 #link_4,
 #link_7,
 #link_12 {
@@ -1850,7 +1876,7 @@ header a {
   margin-bottom: 4px;
 }
 
-#link_11 {
+#link_11, #link_11home {
   position: relative;
   bottom: 0;
 }

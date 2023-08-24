@@ -68,6 +68,29 @@
   .c1 {
     display: block;
     box-sizing: border-box; 
+    position: relative;
+  }
+  #github_home{
+    position: absolute;
+    left:248px;
+    top:-32px;
+    z-index:50;
+    opacity: 0;
+    animation: borderVisible 0.01s 2s forwards;
+    box-shadow:none;
+    @include devices(mobile) {
+      left:205px;
+      top:-7px;
+      top:-32px;
+    }
+    .icon_github a{
+      width: 26px;
+      height: 26px;
+      i {
+          font-size: 22px;
+          line-height: 26px;
+      }
+    }
   }
   .c2 {
     display: block;
